@@ -27,19 +27,3 @@ Following extensive consultation with agencies including the NCA, CAST, the Coll
 The approach has been to collate and review existing principles and standards in policing IT, in addition to those from different government bodies and the private sector.  This has then formed a baseline for future development to ensure standards are  developed in an efficient and timely manner and still support the principles of localism.
 
 Open standards are critical to support the flow and exchange of information. Making standards open will have significant advantages.  Many of the standards developed will not be unique to policing and will have application across the public sector including criminal justice.  Clearly where there is no need for police standards to differ from more general revised public sector standards, we would not look to divide the market by adopting a separate approach. However, the use and compliance of published standards will enable systems and services from a range of suppliers to interoperate, encouraging efficient and sustainable future development in a competitive market. The G – Cloud framework will support forces in future by providing shorter term contracts, thus enabling customers to move to those who offer value for money as both technology and standards continue to progress.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
