@@ -1,0 +1,602 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head><meta http-equiv="content-type" content="text/html;charset=utf-8" /><title>
+	NFLMS
+</title>   
+	<script type="text/javascript">
+	    function loadwiki(pageref) {
+
+	        var completeUrl, appName, openWindow;
+	        completeUrl = "http://wiki.listpoint.co.uk/index.php?title=" + pageref;
+	        openWindow = window.open(completeUrl, 'helpWindow', 'width=800,height=800,toolbar=yes,scrollbars=yes,resizable=yes');
+	        if (openWindow != null) {
+	            openWindow.focus();
+	        }
+	    }
+    </script>
+    
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><link href="App_Themes/CVMS/CVMS.css" type="text/css" rel="stylesheet" /><link href="App_Themes/CVMS/MasterLayout.css" type="text/css" rel="stylesheet" /><link href="App_Themes/CVMS/NavMenu.css" type="text/css" rel="stylesheet" /><link href="App_Themes/CVMS/TabMenu.css" type="text/css" rel="stylesheet" /></head>
+
+<body>
+    
+    
+    
+    
+    <script src="/javascript/CookiePolicy/cookieControl-5.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">//<![CDATA[
+        cookieControl({
+            introText: '<p>This site uses some unobtrusive cookies to store information on your computer.</p>',
+            fullText: '<p>Listpoint records the user\'s login status in a cookie called SessionId.  It also uses Google Analytics to record traffic information to enable us to manage the site better.  This means Google Analytics also stores one or more cookies in your browser. </p><p>We do not serve adverts so do not use advertiser tracking cookies.</p><p>By using our site you accept the terms of our <a href="/PrivacyPolicy">Privacy Policy</a>.</p>',
+            position: 'left', // left or right
+            shape: 'triangle', // triangle or diamond
+            theme: 'light', // light or dark
+            startOpen: true,
+            autoHide: 6000,
+            subdomains: true,
+            jQueryUrl: '/javascript/jquery.js',
+            protectedCookies: [], //list the cookies you do not want deleted ['analytics', 'twitter']
+            consentModel: 'explicit',
+            onAccept: function () { ccAddAnalytics() },
+            onReady: function () { },
+            onCookiesAllowed: function () { ccAddAnalytics() },
+            onCookiesNotAllowed: function () { CookieControl.reset() },
+            countries: 'United Kingdom' // Or supply a list ['United Kingdom', 'Greece']
+        });
+
+        function ccAddAnalytics() {
+            jQuery.getScript(('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + ".google-analytics.com/ga.js", function () {
+                var GATracker = _gat._createTracker('UA-26041153-1');
+                GATracker._trackPageview();
+            });
+        }
+       //]]>
+    </script>  
+    
+
+    <form name="aspnetForm" method="post" action="/Context.aspx?ContextName=NFLMS&amp;Version=0.1" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_scriptMaster_HiddenField" id="ctl00_scriptMaster_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+
+<script src="/WebResource.axd?d=T61oZ2CmlfQuBk-kTON78iOE3yJDZ-2jedToHbL4scj0XE3iMSZ1EXNIePCn4z-1VcktIDdQA9xjTkytqZKliiqgP2SCr4CUxyk_JXl_B4s1&amp;t=636396579000000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=CfpQOUtYjGJUzgmNiBn3s8rCCzoXg7UX1AFNH9GvS_hrNeuVOUxxhrh1iHmySa8lFFBAqKdxNmN3XnHc5tRy5XTXchve1nfwcRNzTORq6rdOpuh8M630jH6BE0uC_0t7hDNplDa6zw6IXYtrBsRZKQ2&amp;t=470de87b" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="javascript/jquery.js" type="text/javascript"></script>
+<script src="javascript/utility.js" type="text/javascript"></script>
+<script src="javascript/Upload/progressBar.js" type="text/javascript"></script>
+<script src="javascript/Upload/BaseUpload.js" type="text/javascript"></script>
+<script src="javascript/Upload/ContextUpload.js" type="text/javascript"></script>
+<script src="javascript/Upload/template.js" type="text/javascript"></script>
+<script src="javascript/WaitCursorOnAJAXUpdate.js" type="text/javascript"></script>
+<script src="AJAXWebServices/ContextUploadService.asmx/jsdebug" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D1F3D2D5" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Xc74acu8I7tMwmpMB395I4Qrsq205ZaQsjXXd26LpGfteX3GdYBL2UBb6SGz0oQ8Dj2qV8SfLzDpoqAIFd96O2fOakqR5VlTmGXNZ8ZFMNk9pHy+OuiJVNsce+dJPk8CYpSx1KFVT1vF+aiPmY/PyHyzHJLraqRhFghP4qHoTZDYU31Wu2UqGKEx745ctMr5jDQ9aWUvEidZqKl5Qj0orFb98rAKekkAL9MtJVzsaltoo+nK0/FpiZI5q/gKzlYPMCU8yrkvz63n4tGHBbvDB/dxbRMlxMk64rrqrF8m4KIY2NUL2uIdLRHQpUl8k4oe6G1Lv3F5XAiCjH31itIfzO3Cflyc4a2dvuj4kswKady0nWHMxuguZ/dNx5PK98i7vVK8nasI8BD634//xKxR0WFePNHC5hmW2GQ8+2i24fzfK3R+irkG0lKBXv2zl6z7licOLNiqB/e9jMWkpkG0hA==" />
+</div>
+    <input type="hidden" name="ctl00$hdnSessionUsername" id="ctl00_hdnSessionUsername" />
+    <input type="hidden" name="ctl00$hdnViewMode" id="ctl00_hdnViewMode" value="View" />
+   
+	
+    <div id="container">  
+    
+		<table width="100%" border="0">
+			<tr>
+				<td width="75%">
+					<div id="Div2">
+						<table width="100%">
+							<tr>
+								<td>
+                    				<a href="/ContextBrowseByCommunity" style="text-decoration:none;">
+									    <img id="ctl00_MainLogo" class="logo" alt="Listpoint Logo" src="/images/logos/Listpoint-public.png" style="border-width:0px;" />
+                                    </a>
+								</td>
+								<td>
+									<span id="header">Reference data service platform</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+
+				<td width="25%" align="center">	
+					<table width="50%" border="0">
+						<tr>
+							<td style="white-space:nowrap;width:25%;" align="left">
+								&nbsp;
+								
+							</td>
+							<td style="white-space:nowrap;width:25%;" align="left">
+								&nbsp;
+								
+							</td>
+							<td style="white-space:nowrap;width:25%;" align="left" >
+					             		<div class="socialbookmark">
+					                		<a target="_blank" href="http://www.facebook.com/Listpoint" title="Facebook" >
+                                                <img alt="Facebook-link" src="/images/facebook/f_logo.png" height="35px;" width="35px;"/>
+                                            </a>
+								</div>
+							</td>
+							<td style="white-space:nowrap;width:25%;" align="left" class="socialbookmark">
+					             		<div class="socialbookmark">
+							                <a target="_blank" href="https://twitter.com/#!/ListpointAlerts" title="Twitter">
+                                                <img alt="Twitter-link" src="/images/twitter/twitter-bird-light-bgs.png" height="42px;" width="42px;" />
+                                            </a>			
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+
+			</tr>
+		</table>
+
+	    
+    
+        
+        <div id="content"> 
+ 	            
+            <div id="navigation">
+              <div id="ctl00_menuSideBar_pnlLoggedOut">
+	
+    <a href="#ctl00_menuSideBar_mnuLoggedOut_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=tMlfUSlgdub3xk1fxG-TIF9KlqbGdThrz_AatnEGVfgNH7H-3n7VS28S_oCv9LeIEgUDtJ5VS1-P826zaz7Zj5yXq05b7UM7FjFgB6S_dQ01&amp;t=636396579000000000" width="0" height="0" style="border-width:0px;" /></a><table id="ctl00_menuSideBar_mnuLoggedOut" class="NavMenu" cellpadding="0" cellspacing="0" border="0">
+		<tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn0">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Home" style="text-decoration:none;border-style:none;">Home</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn1">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/OpenData" style="text-decoration:none;border-style:none;">Intro To Big Data</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn2">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/InDepth" style="text-decoration:none;border-style:none;">Listpoint in depth</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn3">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Government" style="text-decoration:none;border-style:none;">Government</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn4">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Integrators" style="text-decoration:none;border-style:none;">Integrators</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn5">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Developers" style="text-decoration:none;border-style:none;">Developers</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn6">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/User/create" style="text-decoration:none;border-style:none;">Register</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn7">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/ContextBrowseByCommunity" style="text-decoration:none;border-style:none;">Getting Started</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn8">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Media" style="text-decoration:none;border-style:none;">Media and Resources</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn9">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Search" style="text-decoration:none;border-style:none;">Search</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn10">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/ContactUs2" style="text-decoration:none;border-style:none;">Contact Us</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn11">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="javascript:loadwiki(&#39;Main_Page&#39;)" style="text-decoration:none;border-style:none;">Wiki</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn12">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/User/login" style="text-decoration:none;border-style:none;">Login</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><a id="ctl00_menuSideBar_mnuLoggedOut_SkipLink"></a>
+
+</div>
+
+
+            </div>
+ 	         
+                 
+            <div id="detail">
+                
+                
+
+ 
+<script type="text/javascript" language="javascript">
+	function DisableTabListValidation(){
+		var validatorsStr= "";
+		var validators=validatorsStr.split(',');
+		for(var i=0; i < validators.length; i++){
+			if(validators[i] != ""){
+				var valObj=document.getElementById(validators[i]);
+				ValidatorEnable(valObj, false);
+			}
+		}
+		return true;
+	}
+</script>
+
+	<input type="hidden" name="ctl00$PageBody$AdminItemIdHF" id="ctl00_PageBody_AdminItemIdHF" value="2037" />
+	
+	
+	
+	<div id="ctl00_PageBody_TopPanel" class="TopPanel">
+	<fieldset>
+		<legend>
+			Context
+		</legend>
+		<a href="javascript:loadwiki('Context')"><img id="ctl00_PageBody_img12Help" src="images/Info/help.GIF" style="border-width:0px;" /></a> 
+		<div style="float: left; width: 80%">
+		
+				<div>
+			<table cellspacing="0" cellpadding="2" Border="0" border="0" id="ctl00_PageBody_ContextDV" style="width:100%;border-collapse:collapse;">
+				<tr>
+					<td style="width:20%;">Name</td><td style="white-space:nowrap;">
+								<span id="ctl00_PageBody_ContextDV_NameLbl" style="font-weight:bold;">NFLMS v0.1</span>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">Logo</td><td>
+								<img id="ctl00_PageBody_ContextDV_Image41" src="http://images/orgnlogos/npia.gif" alt="Logo" style="height:50px;width:100px;border-width:0px;" />
+							</td>
+				</tr><tr>
+					<td style="width:20%;">Status <a href="javascript:loadwiki('Admin_Status')">
+									<img id="ctl00_PageBody_ContextDV_img12Help" src="images/Info/help.GIF" style="border-width:0px;" /></a>
+							</td><td style="white-space:nowrap;">
+							    <img id="ctl00_PageBody_ContextDV_StatusImg1" src="images/AdminStatus/2.gif" alt="Latest" align="absbottom" style="border-width:0px;" />
+							    <span id="ctl00_PageBody_ContextDV_Label8">Latest</span>
+							    
+							    
+    						    <span id="ctl00_PageBody_ContextDV_ValidateBriefMessageLbl"></span>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">Scope <a href="javascript:loadwiki('Registration_Status')">
+									<img id="ctl00_PageBody_ContextDV_img01Help" src="images/Info/help.GIF" style="border-width:0px;" /></a>
+							</td><td style="white-space:nowrap;">
+								<img id="ctl00_PageBody_ContextDV_Image23" src="images/RegistrationStatus/1.gif" alt="Application" align="absbottom" style="border-width:0px;" />
+								<span id="ctl00_PageBody_ContextDV_Label9">Application</span>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">
+								Type <a href="javascript:loadwiki('Context')">
+									<img id="ctl00_PageBody_ContextDV_img02Help" src="images/Info/help.GIF" style="border-width:0px;" /></a>
+							</td><td style="white-space:nowrap;">
+								<img id="ctl00_PageBody_ContextDV_Image24" src="images/ContextType/3.gif" alt="Application" align="absbottom" style="border-width:0px;" />
+								<span id="ctl00_PageBody_ContextDV_Label11">Application</span>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">
+								Publication Policy <a href="javascript:loadwiki('Publication Policy')">
+									<img id="ctl00_PageBody_ContextDV_img602Help" src="images/Info/help.GIF" style="border-width:0px;" /></a>
+							</td><td style="white-space:nowrap;">
+								<span id="ctl00_PageBody_ContextDV_Label611">Public</span>
+                            </td>
+				</tr><tr>
+					<td style="width:20%;">Description</td><td>
+								<span id="ctl00_PageBody_ContextDV_Label2">The National Firearms License Management System (NFLMS) is a central, national register of all persons who have applied for, or have been granted a certificate for a firearm or shotgun.</span>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">Website</td><td style="white-space:nowrap;">
+								<a id="ctl00_PageBody_ContextDV_HyperLink2" href="http://www.npia.police.uk/en/5973.htm">To website</a>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">Usage Guidelines</td><td>
+								<span id="ctl00_PageBody_ContextDV_Label802">This version of the NFLMS Context is an early draft of CVs and has not been reviewed by the development team for accuracy or completeness.</span>
+							</td>
+				</tr><tr>
+					<td colspan="2">
+						
+						
+    					
+						
+						
+						
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+				<input type="hidden" name="ctl00$PageBody$AdminStatusIdHF" id="ctl00_PageBody_AdminStatusIdHF" value="2" />
+				<input type="hidden" name="ctl00$PageBody$StewardTeamIdHF" id="ctl00_PageBody_StewardTeamIdHF" value="69" />
+			
+		</div>
+   		<div style="float:right; width:19%">
+			<img id="ctl00_PageBody_Image2" class="Icon" src="images/app100.gif" style="border-width:0px;" />
+		</div>
+
+		<br style="clear: both" />
+		
+	
+	</fieldset>
+</div>
+	<a href="#ctl00_PageBody_TabRackMenu_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=tMlfUSlgdub3xk1fxG-TIF9KlqbGdThrz_AatnEGVfgNH7H-3n7VS28S_oCv9LeIEgUDtJ5VS1-P826zaz7Zj5yXq05b7UM7FjFgB6S_dQ01&amp;t=636396579000000000" width="0" height="0" style="border-width:0px;" /></a><table id="ctl00_PageBody_TabRackMenu" class="TabMenu" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun0"><table class="TabMenuCellSelected TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCellSelected TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Enum Data Types&#39;)" style="text-decoration:none;border-style:none;">Data Types</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun1"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Interested Teams&#39;)" style="text-decoration:none;border-style:none;">Interested Teams</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun2"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Admin details&#39;)" style="text-decoration:none;border-style:none;">Admin details</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun3"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;History&#39;)" style="text-decoration:none;border-style:none;">History</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun4"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Download&#39;)" style="text-decoration:none;border-style:none;">Download</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun5"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Context Maps&#39;)" style="text-decoration:none;border-style:none;">Context Maps</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun6"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Differences&#39;)" style="text-decoration:none;border-style:none;">Differences</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td id="ctl00_PageBody_TabRackMenun7"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" disabled="true" style="text-decoration:none;border-style:none;">Upload</a></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><a id="ctl00_PageBody_TabRackMenu_SkipLink"></a>
+	<div id="ctl00_PageBody_UnderTabPanel" class="TabRack">
+	
+		
+				
+				
+				<div>
+		<table cellspacing="0" cellpadding="4" Border="0" border="0" id="ctl00_PageBody_EDTsMSGV" style="width:100%;border-collapse:collapse;text-align: left; overflow: auto;">
+			<tr class="StandardGridHeader">
+				<th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$PageBody$EDTsMSGV&#39;,&#39;Sort$TypeName&#39;)">Data Type Name</a></th><th scope="col">Type</th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$PageBody$EDTsMSGV&#39;,&#39;Sort$CVSetName&#39;)">uses Code List</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$PageBody$EDTsMSGV&#39;,&#39;Sort$CVSetAdminStatusId&#39;)">Status</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$PageBody$EDTsMSGV&#39;,&#39;Sort$CVSetRegistrationStatusId&#39;)">Scope</a></th>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Action">Action</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Action/1.1">Weapon Action v1.1</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Addresstype">Addresstype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Address%20Type/1.0">Address Type v1.0</a></td><td align="center"><img src="images/AdminStatus/3.gif" alt="Superseded" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Alarmtype">Alarmtype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Alarm%20Type/1.0">Alarm Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Applicationstatus">Applicationstatus</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20License%20Application%20Status/1.0">Firearms License Application Status v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Applicationsubstatus">Applicationsubstatus</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20License%20Application%20Status/1.0">Firearms License Application Status v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Applicationtype">Applicationtype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20License%20Application%20Type/1.1">Firearms License Application Type v1.1</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Approvaltype">Approvaltype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20License%20Approval%20Type/1.0">Firearms License Approval Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Calibre">Calibre</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Calibre/1.0">Weapon Calibre v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Capacitytype">Capacitytype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Capacity%20Type/1.0">Capacity Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Certificatestatus">Certificatestatus</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20Certificate%20Status/1.5">Firearms Certificate Status v1.5</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Certificatesubstatus">Certificatesubstatus</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20Certificate%20Status/1.5">Firearms Certificate Status v1.5</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Certificatetype">Certificatetype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20Certificate%20Type/1.37">Firearms Certificate Type v1.37</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Clubstatus">Clubstatus</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Club%20Status/1.0">Club Status v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Colour">Colour</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/SkinColourClass/2.0">SkinColourClass v2.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/2.gif" alt="Police Service" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Condition">Condition</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20Licensing%20Condition/1.6">Firearms Licensing Condition v1.6</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Constructiontype">Constructiontype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Construction%20Type/1.0">Construction Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Enquirytype">Enquirytype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20Enquiry%20Type/1.0">Firearms Enquiry Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Ethnicity">Ethnicity</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Ethnicity/1.0">NFLMS Ethnicity v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Eumemberstate">Eumemberstate</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/EU%20Member%20State/1.0">EU Member State v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Exemptiontype">Exemptiontype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20License%20Exemption%20Type/1.0">Firearms License Exemption Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Logeventtype">Logeventtype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Log%20Event%20Type/1.0">NFLMS Log Event Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Long%20title">Long title</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Long%20Title/1.0">Long Title v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Manufacturer">Manufacturer</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Manufacturer/1.0">Weapon Manufacturer v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Measurement">Measurement</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Measurement%20Unit/0.1">Measurement Unit v0.1</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Nationality">Nationality</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Nationality/0.1">NFLMS Nationality v0.1</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Notetype">Notetype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Note%20Type/1.0">NFLMS Note Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Occupation">Occupation</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Occupation/1.0">NFLMS Occupation v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Othertype">Othertype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Other%20Type/1.0">NFLMS Other Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Outstandingactiontype">Outstandingactiontype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Outstanding%20Action%20Type/1.0">NFLMS Outstanding Action Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Perceivedethnicity">Perceivedethnicity</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Perceived%20Ethnicity/1.0">NFLMS Perceived Ethnicity v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Personmarkertype">Personmarkertype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Person%20Marker%20Type/1.1">Person Marker Type v1.1</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Personrelationshiptype">Personrelationshiptype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Person%20Family%20Relationship%20Type/1.0">Person Family Relationship Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Personroleinclubtype">Personroleinclubtype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Person%20Role%20in%20Club%20Type/1.0">Person Role in Club Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Personroleincompanytype">Personroleincompanytype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Person%20Role%20in%20Company%20Type/1.0">Person Role in Company Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Personroletype">Personroletype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Person%20NFLMS%20Role%20Type/1.0">Person NFLMS Role Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Policeregstorelimittype">Policeregstorelimittype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Police%20Reg%20Store%20Limit%20Type/1.0">Police Reg Store Limit Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Premisestype">Premisestype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Premises%20Type/1.0">NFLMS Premises Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Quarry">Quarry</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Quarry%20Type/1.0">Quarry Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Rangetype">Rangetype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20Range%20Type/1.0">Firearms Range Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Refusalcode">Refusalcode</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Firearms%20License%20Refusal%20Code/1.0">Firearms License Refusal Code v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Section5subsection">Section5subsection</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Section%205%20subsection/1.0">NFLMS Section 5 subsection v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Securitytype">Securitytype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Security%20Type/1.0">Weapon Security Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Sex">Sex</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NFLMS%20Sex/1.0">NFLMS Sex v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Short%20title">Short title</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Short%20Title/1.0">Short Title v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Storagetype">Storagetype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Storage%20Type/1.0">Weapon Storage Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Telnumbertype">Telnumbertype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Telephone%20Number%20Usage%20Type/1.0">Telephone Number Usage Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Transactiontype">Transactiontype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Financial%20Transaction%20Type/1.0">Financial Transaction Type v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Unnumber">Unnumber</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/UN%20Number/1.0">UN Number v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Weaponacquisitioncode">Weaponacquisitioncode</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Acquisition%20Code/1.0">Weapon Acquisition Code v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Weaponcategory">Weaponcategory</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Category/1.0">Weapon Category v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Weaponclass">Weaponclass</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Class/1.0">Weapon Class v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Weapondisposalcode">Weapondisposalcode</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Disposal%20Code/1.1">Weapon Disposal Code v1.1</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Weaponstatus">Weaponstatus</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Status/1.0">Weapon Status v1.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NFLMS/0.1/Weapontype">Weapontype</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/Weapon%20Type/1.16">Weapon Type v1.16</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr>
+		</table>
+	</div>
+			
+	
+</div>
+	
+	<script type="text/javascript" language="javascript">
+	
+	var _divFrame;
+  
+	 $(function() {
+                SetIFrame();
+            
+            });      
+            
+             
+        
+        function SetIFrame()
+        {
+            _divFrame = document.getElementById('divFrame');
+            var contextId = getDocElementById('ctl00_PageBody_AdminItemIdHF').value;
+            var iFrameUrl = '/ContextUploadFrame.aspx';
+            iFrameUrl = iFrameUrl + "?adminItemId=" + contextId;
+            
+            var iFrameHTML;
+            if( _divFrame != null)
+            {
+                iFrameHTML = "<iframe id='ifrXMLUpload' onload='initUpload()' scrolling='no' frameborder='0' hidefocus='true' style='text-align:center;vertical-align:middle;border-style:none;margin:0px;width:100%;height:55px' src='" + iFrameUrl + "'></iframe>";
+                _divFrame.innerHTML=iFrameHTML;
+            }
+            
+        }
+	      
+      </script>  
+      <script type="text/javascript" language="javascript">
+          function CheckDrafts() {
+              DisableTabListValidation();
+              var control = document.getElementById('ctl00_PageBody_ContextDV_OpenDraftButton');
+              if (control != null)
+                  return confirm('A draft already exists. Start another?');
+              else
+                  return true;
+          }
+      </script>
+      
+
+                
+            </div>
+             
+        
+        </div>
+        
+        <br />     
+     </div>
+
+    
+
+	<div id="footer">
+
+
+
+
+
+<a href="/TermsAndConditions" style="text-decoration:none;">Terms and Conditions</a>
+|
+<a href="/PrivacyPolicy" style="text-decoration:none;">Privacy Policy</a>
+|
+<a href="/Charter" style="text-decoration:none;">Charter</a>
+|
+<a href="/Glossary" style="text-decoration:none;">Glossary</a>
+|
+<span id="ctl00_CVMSEnvLabel">Public Live Environment</span>
+|
+<span id="ctl00_ListpointBuild">1.2.0003</span>
+
+
+	</div>    
+		
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ctl00_scriptMaster_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();var ctl00_menuSideBar_mnuLoggedOut_Data = new Object();
+ctl00_menuSideBar_mnuLoggedOut_Data.disappearAfter = 500;
+ctl00_menuSideBar_mnuLoggedOut_Data.horizontalOffset = 0;
+ctl00_menuSideBar_mnuLoggedOut_Data.verticalOffset = 0;
+var ctl00_PageBody_TabRackMenu_Data = new Object();
+ctl00_PageBody_TabRackMenu_Data.disappearAfter = 500;
+ctl00_PageBody_TabRackMenu_Data.horizontalOffset = 0;
+ctl00_PageBody_TabRackMenu_Data.verticalOffset = 0;
+//]]>
+</script>
+</form>
+</body>
+</html>

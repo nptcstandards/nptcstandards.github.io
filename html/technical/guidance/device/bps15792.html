@@ -1,0 +1,1705 @@
+
+<!doctype html>
+<!--[if lte IE 7]> <html class="ie7"  lang="en-gb"> <![endif]-->
+<!--[if IE 8]>     <html class="ie8"  lang="en-gb"> <![endif]-->
+<!--[if IE 9]>     <html class="ie9"  lang="en-gb"> <![endif]-->
+<!--[if !IE]><!--> <html class="no-js"  lang="en-gb"> <!--<![endif]-->
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <link rel="apple-touch-icon" sizes="60x60" href="/global/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/global/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/global/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/global/favicons/manifest.json"/>
+  <link rel="mask-icon" href="/global/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
+  <meta name="msapplication-TileColor" content="#da532c"/>
+  <meta name="msapplication-TileImage" content="/global/favicons/mstile-144x144.png"/>
+  <meta name="theme-color" content="#ffffff"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if IE]><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Secure configuration for devices running Windows 10 1703 “Creators Update”" />
+<link rel="canonical" href="https://www.ncsc.gov.uk/guidance/eud-security-guidance-windows-10-1703" />
+<link rel="shortlink" href="https://www.ncsc.gov.uk/node/2053" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@NCSC" />
+<meta name="twitter:site:id" content="4210241608" />
+<meta name="twitter:creator" content="@NCSC" />
+<meta name="twitter:creator:id" content="4210241608" />
+<meta name="twitter:url" content="https://www.ncsc.gov.uk/guidance/eud-security-guidance-windows-10-1703" />
+<meta name="twitter:title" content="EUD Security Guidance: Windows 10 - 1703" />
+<meta name="twitter:description" content="Secure configuration for devices running Windows 10 1703 “Creators Update”" />
+<meta name="twitter:image:width" content="316" />
+<meta name="twitter:image:height" content="243" />
+<!--[if lte IE 9]><script src="/sites/all/themes/depweb_1/bower_components/html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+<!--[if lt IE 8]>
+<script src="/sites/all/themes/depweb_1/bower_components/JSON-js/json2.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="/sites/all/themes/depweb_1/bower_components/selectivizr/selectivizr.js"></script>
+<noscript><link rel="stylesheet" href="[fallback css]" /></noscript><![endif]-->
+  <title>EUD Security Guidance: Windows 10 - 1703 - NCSC Site</title>
+  <link type="text/css" rel="stylesheet" href="/content/files/advagg_css/css__DW6H5_3ogRzstl1c7ii6WT-rVtV43cDOB43ghBHhUfo__aqbyWbQF56bW1URQetv3cuoCI7kMeWXyVxVB0XDF3rI__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.css" media="all" />
+<style>#sliding-popup.sliding-popup-top{background:#0779BF;}#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text p{color:#ffffff !important;}
+</style>
+<link type="text/css" rel="stylesheet" href="/content/files/advagg_css/css__usLuyLeu9fT5AJ79qZJ-Dlq4BN0ImTw_ZshZgo6yPqk__-3cZhcgkxcdo-XsWouP8pIL4kneRcaTVoyaxQbmj8ZA__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/content/files/advagg_css/css__loUPmsdovOcNU7VoD0rBOy5ujwTYYy5VM_qGzi91hBc__sq5P4WEJ8SOjtjHujnH0fo0T5RBZwBp5OGhQMRqnY7A__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.css" media="print" />
+<link type="text/css" rel="stylesheet" href="/content/files/advagg_css/css__erxrUz7nvJ1u8qXwTRh-JfGHRI-fAGub0JwxBwgOXls__WPJnkv7QK0YlNbYU0QO7M2aEYvnGocVp5f5f0ZhB8EI__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/content/files/advagg_css/css__tz63_nW3OuydMxkZ_LmstfPpJgn1cv28zoQzziilpcI__hY7A84TVb-y_XuDJEKNvsRxnekp5v8LoiCo58OhA60Y__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/content/files/advagg_css/css__-hrxCsq510M0XQkukPqu4MshgHDGTESkuHHVQhscHk4__FYoTRzJX4c64N2jve8VNIPduDNAmULz7Is9vU0XWWOU__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/content/files/advagg_css/css__IQRr6gl4y7Bwn8X6eQGoMCOUtiO53le8DhmLuST0sCY__No2f8vBXx_7FW1HLA7601kQqYvkc7RfiUVMjimVUzDw__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/content/files/advagg_css/css__WLb5wVaw7c7Ia9UH631BaVmCPVlvBuwfZ5XoxZZM0Sw__GChpvLmD0zPnNla6hl8QS6KbB77ci4t2XXBryex2eWk__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.css" media="screen" />
+  <script src="/sites/all/themes/depweb_1/bower_components/respond/dest/respond.src.js?p0m95p"></script>
+<script src="/content/files/advagg_js/js__2UzFrLvhTfwjM9Q9OHx4ax6pT4Ne9fzDnlgeiNfFj9o__QIKoygrkJey9AyXXvVbEiQ4aQX_h_vpthTDzDZ9Z0kk__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.js"></script>
+<script>document.createElement( "picture" );</script>
+<script src="/content/files/advagg_js/js__1rXITafRD_fI2_qQTmq-qWtGXGEN0sUNgGDhB5MyQSc__NeveUP0zs-2suTbs_HfbZYlMMmargpawXI_W57td7jM__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.js"></script>
+<script>jQuery.noConflict()</script>
+<script src="/content/files/advagg_js/js__bp4wPEczJjSLdvmIU0gx0G14ICP7yvLJMLVBaSu8AdA__MtfP_9wKiwvDO1vCzL8qdiJkt8PJTAf9rGuqMTFa9X8__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.js"></script>
+<script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "/piwik/" : "/piwik/");_paq.push(["setSiteId", "4"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["trackPageView"]);_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"piwik.js";s.parentNode.insertBefore(g,s);})();</script>
+<script src="/content/files/advagg_js/js__QWx5Tt5dVLlOEp8LUFSQRbdnxRZJntk_8FGPU2MBe0s__gxYXVR9sFSov3jvDReCmXdlsNLvFnzgmdO7eXq-wp58__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"depweb_1","theme_token":"cDIoOxwpBytwdr5VjstG73n2cDRiRqmQfw7eHB1OJ3w","jquery_version":"1.9","css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/contrib_modified\/ldap\/ldap_user\/ldap_user.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"sites\/all\/modules\/contrib\/youtube\/css\/youtube.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib_modified\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"0":1,"sites\/all\/modules\/contrib_modified\/eu_cookie_compliance\/css\/eu_cookie_compliance.css":1,"sites\/all\/themes\/depweb_1\/ds_layouts\/depweb_simple_article\/depweb_simple_article.css":1,"sites\/all\/modules\/contrib\/hide_submit\/css\/hide_submit.css":1,"sites\/all\/themes\/depweb_1\/css\/print.css":1,"sites\/all\/themes\/depweb_1\/css\/bootstrap.css":1,"sites\/all\/themes\/depweb_1\/css\/style.css":1,"sites\/all\/themes\/depweb_1\/css\/depweb_extra.css":1,"sites\/all\/themes\/depweb_1\/css\/depweb_1_dev_overrides_tmp.css":1},"js":{"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"sites\/all\/modules\/contrib_modified\/eu_cookie_compliance\/js\/eu_cookie_compliance.js":1,"sites\/all\/modules\/custom\/depweb_search\/js\/interactions.typeahead.js":1,"sites\/all\/modules\/custom\/depweb_search\/js\/typeahead.bundle.js":1,"sites\/all\/themes\/depweb_1\/bower_components\/respond\/dest\/respond.src.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.9\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery.form\/3\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/custom\/depweb_piwik\/js\/depweb_piwik.js":1,"sites\/all\/modules\/contrib\/spamspan\/spamspan.js":1,"sites\/all\/themes\/bootstrap\/js\/misc\/_progress.js":1,"sites\/all\/modules\/contrib\/views\/js\/base.js":1,"sites\/all\/modules\/contrib\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/contrib\/piwik\/piwik.js":1,"sites\/all\/themes\/depweb_1\/js\/jquery.mCustomScrollbar.concat.min.js":1,"sites\/all\/modules\/contrib\/hide_submit\/js\/hide_submit.js":1,"sites\/all\/modules\/features\/content_type_professional_service\/js\/professional_service.js":1,"sites\/all\/themes\/depweb_1\/js\/interactions.js":1,"sites\/all\/themes\/depweb_1\/js\/hide_submit_button.js":1,"sites\/all\/themes\/depweb_1\/bower_components\/modernizr\/modernizr.js":1,"sites\/all\/themes\/bootstrap\/js\/misc\/ajax.js":1,"sites\/all\/themes\/bootstrap\/js\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/themes\/depweb_1\/js\/bootstrap.js":1}},"facetapi":{"view_args":{"v34_fields_for_guidance_tabs_revisions:about_doc_revisions":["20609","20609","20609","20609","20609","20609","20609","20609","20609","20609"],"v34_fields_for_guidance_tabs_revisions:block_1":["20609","20609","20609","20609","20609","20609","20609","20609","20609"],"v34_fields_for_guidance_tabs_revisions:block_2":["2053","2053","2053","2053","2053","2053","2053","2053"],"v60_guidance_collections_groups_cont_rev:collection_g_block":["20609","20609","20609","20609","20609","20609","20609"],"v55_further_reading:block_2":["20609","20609","20609","20609","20609","20609"],"v55_further_reading:summary":["20609","20609","20609","20609","20609"],"v12_most_shared_popular:block":[],"v12_most_shared_popular:block_1":[],"v11_related_content:block":["2053","2053"],"v51_topic_cloud_vid:block_1":["20609"]},"exposed_input":{"v34_fields_for_guidance_tabs_revisions:about_doc_revisions":[],"v34_fields_for_guidance_tabs_revisions:block_1":[],"v34_fields_for_guidance_tabs_revisions:block_2":[],"v60_guidance_collections_groups_cont_rev:collection_g_block":[],"v55_further_reading:block_2":[],"v55_further_reading:summary":[],"v12_most_shared_popular:block":[],"v12_most_shared_popular:block_1":[],"v11_related_content:block":[],"v51_topic_cloud_vid:block_1":[]},"view_path":{"v34_fields_for_guidance_tabs_revisions:about_doc_revisions":null,"v34_fields_for_guidance_tabs_revisions:block_1":null,"v34_fields_for_guidance_tabs_revisions:block_2":null,"v60_guidance_collections_groups_cont_rev:collection_g_block":null,"v55_further_reading:block_2":null,"v55_further_reading:summary":null,"v12_most_shared_popular:block":null,"v12_most_shared_popular:block_1":null,"v11_related_content:block":null,"v51_topic_cloud_vid:block_1":null},"view_dom_id":{"v34_fields_for_guidance_tabs_revisions:about_doc_revisions":"5b2eb544794e138d60bb5cdf6b039fd5","v34_fields_for_guidance_tabs_revisions:block_1":"37cbf3337d8395fb61d8d6d5326516c9","v34_fields_for_guidance_tabs_revisions:block_2":"d5501fff350630de0ace5247840d87c2","v60_guidance_collections_groups_cont_rev:collection_g_block":"04fc9fff93e39b63a7840fdb7dbb5bbb","v55_further_reading:block_2":"0dee6dc73787b407f42d3474d1b6099b","v55_further_reading:summary":"3b018fec16e02d556d375266521e3020","v12_most_shared_popular:block":"119ca11b29c23d42b2c6030450416a66","v12_most_shared_popular:block_1":"d306a345cd42e8efdbb861fdbf9f6c76","v11_related_content:block":"3170b805efa28c4464eab3dcbac6bd2b","v51_topic_cloud_vid:block_1":"4a293ef5972bacc29d8dd0bfba62c0a7"}},"hide_submit":{"hide_submit_status":true,"hide_submit_method":"disable","hide_submit_css":"hide-submit-disable","hide_submit_abtext":"","hide_submit_atext":"","hide_submit_hide_css":"hide-submit-processing","hide_submit_hide_text":"Processing...","hide_submit_indicator_style":"expand-left","hide_submit_spinner_color":"#000","hide_submit_spinner_lines":12,"hide_submit_hide_fx":false,"hide_submit_reset_time":5000},"urlIsAjaxTrusted":{"\/search":true},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":0,"popup_html_info":"\u003Cdiv class=\u0022fluid-container clearfix\u0022 id=\u0022cookie-consent\u0022\u003E\n\t\u003Cdiv class=\u0022clearfix\u0022 id=\u0022cookie-consent\u0022\u003E\n\t\t\u003Cdiv class=\u0022cookie-consent-background\u0022\u003E\u003C\/div\u003E\n\t\t\u003Cdiv class=\u0022container sm-no-padding xs-no-padding\u0022\u003E\n\t\t\t\u003Cdiv class=\u0022row\u0022\u003E\n\t\t\t\t\u003Cdiv class=\u0022col-sm-12\u0022\u003E\n\t\t\t\t\t\u003Cdiv class=\u0022row  cookie-consent-banner\u0022\u003E\n\t\t\t\t\t\t\u003Cdiv class=\u0022col-xs-2 logo-wrapper\u0022\u003E\n\t\t\t\t\t\t\t\u003Cimg class=\u0022logo\u0022 src=\u0022\/global\/logos\/ncsc-white.png\u0022 alt=\u0022Home\u0022\/\u003E\n\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\u003Cdiv class=\u0022col-md-6 col-sm-7 col-xs-12\u0022\u003E\n\t\t\t\t\t\t\t\u003Cp\u003EWe are using cookies to give you the best experience on our\n\t\t\t\t\t\t\t\tsite. By continuing to use our website without changing the\n\t\t\t\t\t\t\t\tsettings, you are agreeing to our use of cookies.\u003C\/p\u003E\n\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\u003Cdiv class=\u0022col-sm-4 col-xs-12 actions-wrapper\u0022\u003E\n\t\t\t\t\t\t\t\u003Cdiv class=\u0022row\u0022\u003E\n\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022col-md-12 col-xs-12\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cbutton class=\u0022agree-button btn btn-primary btn-sm padding\u0022 type=\u0022button\u0022 aria-label=\u0022Agree\u0022\u003EYes, I agree\u003C\/button\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022col-md-12 col-xs-12 padding-left-large no-padding\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan class=\u0022find-more-button plain faux-link\u0022\u003ENo, I want to find out more\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\u003C\/div\u003E\n\t\t\t\u003C\/div\u003E\n\t\t\u003C\/div\u003E\n\t\u003C\/div\u003E\n\u003C\/div\u003E\n","popup_html_agreed":"\n\u003Cdiv\u003E\n\t\u003Cdiv class=\u0022fluid-container clearfix\u0022 id=\u0022cookie-consent\u0022\u003E\n\t\t\u003Cdiv class=\u0022cookie-consent-background\u0022\u003E\u003C\/div\u003E\n\t\t\u003Cdiv class=\u0022container sm-no-padding xs-no-padding\u0022\u003E\n\t\t\t\u003Cdiv class=\u0022row  cookie-consent-banner\u0022\u003E\n\t\t\t\t\u003Cdiv class=\u0022col-xs-2 logo-wrapper\u0022\u003E\n\t\t\t\t\t\u003Cimg class=\u0022logo\u0022 src=\u0022\/global\/logos\/ncsc-white.png\u0022 alt=\u0022Home\u0022\/\u003E\n\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\u003Cdiv class=\u0022col-md-6 col-sm-7 col-xs-12\u0022\u003E\n\t\t\t\t\t\u003Cp\u003EThank you for accepting cookies. You can now hide this message or find out more about cookies.\u003C\/p\u003E\n\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\u003Cdiv class=\u0022col-sm-4 col-xs-12 actions-wrapper\u0022\u003E\n\t\t\t\t\t\u003Cdiv class=\u0022row\u0022\u003E\n\t\t\t\t\t\t\u003Cdiv class=\u0022col-md-6 col-xs-12\u0022\u003E\n\t\t\t\t\t\t\t\u003Cbutton class=\u0022hide-popup-button btn btn-primary btn-sm\u0022\n\t\t\t\t\t\t\t\t\t\t\ttype=\u0022button\u0022\n\t\t\t\t\t\t\t\t\t\t\taria-label=\u0022Agree\u0022\u003EHide\u003C\/button\u003E\n\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\u003Cdiv class=\u0022col-md-6 col-xs-12 padding-left-large no-padding\u0022\u003E\n\t\t\t\t\t\t\t\u003Cspan class=\u0022find-more-button plain faux-link\u0022\u003E\n\t\t\t\t\t\t\t\tMore information\t\t\t\t\t\t\t\u003C\/span\u003E\n\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\u003C\/div\u003E\n\t\t\t\u003C\/div\u003E\n\t\t\u003C\/div\u003E\n\t\u003C\/div\u003E\n\u003C\/div\u003E","popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/cookie-policy","popup_link_new_window":1,"popup_position":1,"popup_language":"en","domain":"ncsc.gov.uk"},"piwik":{"trackMailto":1},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"popoverEnabled":0,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":0,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="main-body-bg detail-content published published" >
+<!--  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>-->
+    <div class="page-wrap">
+	<!--START page-wrap-->
+
+	<div class="skiplink-container">
+	</div>
+
+	<header class="fluid-container">
+		<div class="">
+			<div class="row no-margin no-padding">
+				<div class="col-xs-12 no-padding">
+					<div class="">
+						<div class="container no-padding">
+							<div class="col-sm-12 col-xs-12 logo-wrapper">
+																	<a href="/" title="Home"><img class="logo" src="https://www.ncsc.gov.uk/global/logos/logo.png" alt="Home"></a>
+								
+																	        
+<div class="block search" >
+  <form class="search-wrapper" name="searchForm" role="search" action="/search" method="get" id="views-exposed-form-search-page" accept-charset="UTF-8"><div>
+  <div class="search-input-with-icon-wrapper">
+              <div class="form-type-textfield form-item-keyword form-item form-group">
+ <label for="faux-search-input" class="hidden">Search</label><input id="faux-search-input" autocomplete="off" placeholder="Search" class="form-control form-text" type="text" name="keyword" value="" size="30" maxlength="255" /><button class="close-icon" type="reset" aria-hidden="true" tabindex="-1"></button>
+</div>
+        <button class="btn btn-information btn-sm btn btn-primary form-submit" id="edit-submit" name="" value="&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;Search" type="submit"><span class="glyphicon glyphicon-search"></span>Search</button>
+</div>
+
+</div></form></div> <!-- /.block -->
+															</div>
+
+						</div>
+						<div class="col-xs-12 no-padding no-margin">
+							<nav role="navigation" class="navbar two-tier-navbar">
+	<div class="">
+		<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+								data-toggle="collapse" data-target="#bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+					<span class="padding-right-half">Menu</span>
+				</button>
+				<div class="visible-xs visible-sm search-button-mobile">
+					<span class="mobile-close">
+						<span class="glyphicon glyphicon-remove"></span>
+						<span class="padding-left-half">Close</span>
+					</span>
+					<span class="mobile-search">
+						<span class="glyphicon glyphicon-search"></span>
+						Search
+					</span>
+				</div>
+			</div>
+		
+		<div class="collapse navbar-collapse menu-items-wrapper"
+				 id="bs-navbar-collapse">
+			<div class="container no-padding">
+									<div class="browseTopics pull-right hidden-xs">
+						<a href="/">
+							<span class="glyphicon glyphicon-th padding-right-half"></span>
+							Topics
+							<span class="smaller glyphicon glyphicon-triangle-bottom"></span>
+						</a>
+					</div>
+				
+																	        <div class="container navbarContainer no-padding"><ul class ="nav navbar-nav"><li class="first expanded active-trail focusable-nav-pill guidance-style hoverable-menu"><a href="/guidance" class="active-trail active">Guidance</a><div class="nested bg-color"><ul class="container no-padding"><li class="first leaf"><a href="/index/guidance" title="">Published guidance</a></li>
+<li class="leaf"><a href="/information/infographics-ncsc" title="NCSC Infographics">Infographics</a></li>
+<li class="last leaf"><a href="/glossary" title="">NCSC glossary</a></li>
+</ul></div></li>
+<li class="expanded focusable-nav-pill threats-style hoverable-menu"><a href="/threats">Threats</a><div class="nested bg-color"><ul class="container no-padding"><li class="first leaf"><a href="/index/alerts-and-advisories" title="">Alerts and advisories</a></li>
+<li class="leaf"><a href="/index/report" title="">Reports</a></li>
+<li class="last leaf"><a href="/cisp" title="">Join our CiSP Community</a></li>
+</ul></div></li>
+<li class="expanded focusable-nav-pill incident-management-style hoverable-menu"><a href="/incident-management" title="">Incident Management</a><div class="nested bg-color"><ul class="container no-padding"><li class="first last leaf"><a href="/cisp" title="">Join our CiSP Community</a></li>
+</ul></div></li>
+<li class="expanded focusable-nav-pill marketplace-style hoverable-menu"><a href="/marketplace">Marketplace</a><div class="nested bg-color"><ul class="container no-padding"><li class="first leaf"><a href="/index/professional-service?f%25255B0%25255D=field_assurance_status%3AAssured&amp;f%5B0%5D=field_assurance_status%3AAssured" title="">Professional services</a></li>
+<li class="leaf"><a href="/index/off-the-shelf-service?f%5B0%5D=field_assurance_status%3AAssured" title="">Off the shelf services</a></li>
+<li class="leaf"><a href="/index/certified-product?f%2525B0%2525255D=field_assurance_statusZAssured" title="">Certified products</a></li>
+<li class="last leaf"><a href="/index/organisation" title="">Organisations</a></li>
+</ul></div></li>
+<li class="expanded focusable-nav-pill education-and-research-style hoverable-menu"><a href="/education-research" title="">Education &amp; Research</a><div class="nested bg-color"><ul class="container no-padding"><li class="first leaf"><a href="/new-talent">New talent</a></li>
+<li class="leaf"><a href="/Academics-and-researchers">Academics and researchers</a></li>
+<li class="last leaf"><a href="/industry">Industry</a></li>
+</ul></div></li>
+<li class="collapsed focusable-nav-pill insight-style hoverable-menu"><a href="/insight">Insight</a><div class="nested bg-color"><ul class="container no-padding"></ul></div></li>
+<li class="last collapsed focusable-nav-pill press-and-media-style hoverable-menu"><a href="/press-and-media" title="">Press &amp; Media</a><div class="nested bg-color"><ul class="container no-padding"></ul></div></li>
+<li class="browse-topics hidden-md hidden-lg"><a href ="/topics-all">Topics</a></li></ul></div
+				
+			</div>
+		</div>
+	</div>
+</nav>							<div class="container browseTopics-container">
+								<div class="topicsContainer">
+	<div class="topicBrowser">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 topicListContainer">
+					<h2>Topics</h2>
+				</div>
+				<div class="col-md-12 padding-bottom-large">
+					<div class ="row">
+						<div class="col-xs-12">
+							        <div class="row padding-top"><div class="col-md-3 topicListItem d"><h3 class="link-header"><a href="/topics/cyber-strategy" title="Cyber strategy" class="header-link">Cyber strategy</a></h3><ul><li class="first leaf"><a href="/topics/flexible-working" title="Flexible working">Flexible working</a></li><li class="leaf"><a href="/topics/sociotechnical-security" title="Sociotechnical security">Sociotechnical security</a></li><li class="leaf"><a href="/topics/government-strategy" title="Government strategy">Government strategy</a></li><li class="leaf"><a href="/topics/incident-management" title="Incident management">Incident management</a></li><li class="leaf"><a href="/topics/operational-security" title="Operational security">Operational security</a></li><li class="leaf"><a href="/topics/physical-security" title="Physical security">Physical security</a></li><li class="leaf"><a href="/topics/personnel-security" title="Personnel security">Personnel security</a></li><li class="leaf"><a href="/topics/research" title="Research">Research</a></li><li class="leaf"><a href="/topics/risk-management" title="Risk management">Risk management</a></li><li class="leaf"><a href="/topics/secure-default" title="Secure by default">Secure by default</a></li><li class="last leaf"><a href="/topics/skills-and-training" title="Skills and training">Skills and training</a></li></ul></div><div class="col-md-3 topicListItem d"><h3 class="link-header"><a href="/topics/it-infrastructure" title="IT infrastructure" class="header-link">IT infrastructure</a></h3><ul><li class="first leaf"><a href="/topics/cryptography" title="Cryptography">Cryptography</a></li><li class="leaf"><a href="/topics/data-transit" title="Data in transit">Data in transit</a></li><li class="leaf"><a href="/topics/design-and-configuration" title="Design and configuration">Design and configuration</a></li><li class="leaf"><a href="/topics/destruction-and-disposal" title="Destruction and disposal">Destruction and disposal</a></li><li class="leaf"><a href="/topics/malware-protection" title="Malware protection">Malware protection</a></li><li class="leaf"><a href="/topics/monitoring" title="Monitoring">Monitoring</a></li><li class="leaf"><a href="/topics/network-security" title="Network security">Network security</a></li><li class="leaf"><a href="/topics/patch-management" title="Patch management">Patch management</a></li><li class="leaf"><a href="/topics/secure-storage" title="Secure storage">Secure storage</a></li><li class="last leaf"><a href="/topics/technology-official" title="Technology at OFFICIAL">Technology at OFFICIAL</a></li></ul></div><div class="col-md-3 topicListItem d"><h3 class="link-header"><a href="/topics/end-user-technology" title="End user technology" class="header-link">End user technology</a></h3><ul><li class="first leaf"><a href="/topics/browser-security" title="Browser security">Browser security</a></li><li class="leaf"><a href="/topics/byod" title="BYOD">BYOD</a></li><li class="leaf"><a href="/topics/end-user-device" title="End user device">End user device</a></li><li class="leaf"><a href="/topics/identity-and-passwords" title="Identity and passwords">Identity and passwords</a></li><li class="last leaf"><a href="/topics/secure-communications" title="Secure communications">Secure communications</a></li></ul></div><div class="col-md-3 topicListItem d"><h3 class="link-header"><a href="/topics/digital-services" title="Digital services" class="header-link">Digital services</a></h3><ul><li class="first leaf"><a href="/topics/citizen-services" title="Citizen services">Citizen services</a></li><li class="leaf"><a href="/topics/cloud-security" title="Cloud security">Cloud security</a></li><li class="leaf"><a href="/topics/saas-offerings" title="SaaS offerings">SaaS offerings</a></li><li class="leaf"><a href="/topics/social-media" title="Social media">Social media</a></li><li class="last leaf"><a href="/topics/transaction-monitoring" title="Transaction monitoring">Transaction monitoring</a></li></ul></div></div><div class="row padding-top"><div class="col-md-3 topicListItem d"><h3 class="link-header"><a href="/topics/operational-technology" title="Operational technology" class="header-link">Operational technology</a></h3><ul><li class="first last leaf"><a href="/topics/industrial-control-systems" title="Industrial control systems">Industrial control systems</a></li></ul></div><div class="col-md-3 topicListItem d"><h3 class="link-header"><a href="/topics/cyber-threats" title="Cyber threats" class="header-link">Cyber threats</a></h3><ul><li class="first leaf"><a href="/topics/cyber-attacks" title="Cyber attacks">Cyber attacks</a></li><li class="last leaf"><a href="/topics/vulnerabilities" title="Vulnerabilities">Vulnerabilities</a></li></ul></div><div class="col-md-3 topicListItem d"><h3 class="link-header"><a href="/topics/ncsc" title="The NCSC" class="header-link">The NCSC</a></h3><ul><li class="first leaf"><a href="/topics/assurance" title="Assurance">Assurance</a></li><li class="leaf"><a href="/topics/nis-directive" title="NIS Directive">NIS Directive</a></li><li class="leaf"><a href="/topics/new-talent" title="New talent">New talent</a></li><li class="leaf"><a href="/topics/partnerships" title="Partnerships">Partnerships</a></li><li class="last leaf"><a href="/topics/sectoral-engagement" title="Sectoral engagement">Sectoral engagement</a></li></ul></div><div class="col-md-3 topicListItem d"><h3 class="link-header"><a href="/topics/archived-guidance" title="Archived guidance" class="header-link">Archived guidance</a></h3><ul><li class="first leaf"><a href="/topics/cert-uk-archive" title="CERT-UK archive">CERT-UK archive</a></li><li class="leaf"><a href="/topics/cesg-archive" title="CESG archive">CESG archive</a></li><li class="last leaf"><a href="/topics/cpni-archive" title="CPNI archive">CPNI archive</a></li></ul></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="search-results-wrapper">
+		<input type="search" class="fadeout typeahead" placeholder="Search for..."
+					 id="search-input"/>
+	</div>
+
+	<div class="container xs-no-padding ">
+	</div>
+
+	<!--NODE -->
+	<div
+		class="container pageContainer guidance-style"
+		role="main">
+					<div class="row">    <!--BREADCRUMB ON PAGE-->
+				<div class="col-xs-12">
+					<div class="breadcrumbs">
+						<h2 class="element-invisible">You are here</h2><div class="breadcrumb"><li class="inline odd first"><a href="/">Home</a></li> <li class="delimiter"><span class="glyphicon glyphicon-menu-right"></span></li> <li class="inline even"><a href="/guidance">Guidance</a></li> <li class="delimiter"><span class="glyphicon glyphicon-menu-right"></span></li> <li class="inline odd last"><a href="/index/guidance">Published guidance</a></li></div>					</div>
+				</div>
+			</div>    <!--END	BREADCRUMB ON PAGE-->
+		
+		<!--SYSTEM ELEMENTS HELP-->
+				<!--END SYSTEM ELEMENTS HELP -->
+
+
+		<!--TITLE -->
+				<!--TITLE END-->
+
+		
+		        
+<div class="block clearfix " >
+
+      
+  <div id="workbench-info-block" class="workbench-info-block"></div>
+</div> <!-- /.block -->
+
+<!--DEPWEBSIMPLE ARTICLE LAYOUT TPL-->
+
+  	
+	
+
+    <div class="row hero-level-container">
+	  <!--HERO SECTION-->
+		<div class="col-md-8">
+		  
+<div class="field-content-type pre-title">
+            Guidance    </div>
+<h1 class="page-main-header">EUD Security Guidance: Windows 10 - 1703</h1>
+<div class="field-date-created inline bold-title meta">
+      <span>Created:&nbsp;</span>
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-10-25T00:00:00+01:00">25 Oct 2017</span>    </div>
+
+<div class="field-date-updated inline bold-title meta">
+      <span>Updated:&nbsp;</span>
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-10-25T00:00:00+01:00">25 Oct 2017</span>    </div>
+
+<div class="field-v34-guidance-belongs-to-collecti inline bold-title meta">
+      <span>Part of:&nbsp;</span>
+                    <a href="/guidance/end-user-device-security">End User Device Security Collection</a>    </div>
+		</div>
+	  <!--END HERO SECTION-->
+	  
+        <div class="col-md-4">
+		  		</div>
+    </div>
+      
+   
+    
+   
+<!--    MAIN SECTIONS-->
+    <div class="row">
+      <div class="col-md-8 padding-bottom-xlarge">
+        
+<div class="field-body-summary abstract padding-bottom">
+            Secure configuration for devices running Windows 10 1703 “Creators Update”    </div>
+
+<div class="row field-guidance-tabs">
+  <div class="col-xs-12">
+                              <div id="quicktabs-guidances_tabs" class="tabbable"><ul class="no-print nav nav-tabs one padding-top-large"><li class="active"><a  href="#quicktabs-guidances_tabs1" data-toggle="tab"><span class="title-wrapper"><span class="link-color visible-xs">Docu.</span><span class="link-color hidden-xs">Document</span></span></a></li></ul><div class="tab-content"><div role="tabpanel"  id="quicktabs-guidances_tabs1" class="tab-pane active fade in"><div class="tab-contents">
+<div class="block clearfix " >
+
+      
+  
+    <div>
+      
+          
+<h3 id="Aboutthisguidance">About this guidance</h3>
+
+<p>This guidance has been updated to cover the 1703 &ldquo;Creators Update&rdquo; of Windows 10 Enterprise. It builds on the previous 1607 &ldquo;Anniversary Edition&rdquo; guidance.</p>
+
+<p>Testing was performed on a&nbsp;<a href="http://msdn.microsoft.com/en-US/library/windows/hardware/dn423132.aspx" rel="nofollow">Windows Hardware Certified</a>&nbsp;device, running Windows 10 Enterprise.&nbsp;The hardware was a Dell XPS 13,&nbsp;managed with Active Directory on&nbsp;Server 2016. This guidance is not applicable to&nbsp;Windows devices managed via an MDM&nbsp;or Windows To Go.</p>
+
+<p>It's important to remember that this guidance has been conceived as a way to satisfy the&nbsp;<a href="/guidance/end-user-devices-security-principles" rel="nofollow">12 End User Device Security Principles</a>. As such, it consists of&nbsp;<em>recommendations&nbsp;</em>and&nbsp;should&nbsp;<em>not&nbsp;</em>be seen as a set of mandatory&nbsp;instructions requiring no further thought.</p>
+
+<p>Risk owners and administrators should agree a configuration which balances business requirements, usability and security.</p>
+
+<h3 id="Riskownerssummary">Risk owners&rsquo; summary</h3>
+
+<p>We recommend the following architectural choices for Windows 10:</p>
+
+<ul><li>All data should be routed over a secure enterprise VPN to ensure the confidentiality and integrity of the traffic. This also allows the devices, and data on them, to be protected by enterprise protective monitoring solutions.</li>
+	<li>Installation of arbitrary third-party applications by users is not permitted on the device. Applications should be authorised by an administrator and deployed via a trusted mechanism.</li>
+	<li>Most users should have accounts with no administrative privileges. Users that require administrative privileges should use a separate unprivileged account for email and web browsing.&nbsp;It is recommended that local administrator accounts have a unique strong password per device.</li>
+</ul><p>When configured in this way, risk owners should be aware of the following technical risks associated with this platform:</p>
+
+<table><tbody><tr><td>
+				<p><strong>Associated security principle</strong></p>
+			</td>
+			<td>
+				<p><strong>Explanation of risks</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Secure boot</p>
+			</td>
+			<td>
+				<p>Windows 10 can support secure boot, but is dependent on supported and correctly configured hardware</p>
+			</td>
+		</tr></tbody></table><h3 id="Administratorsdeploymentguide">Administrators&rsquo; deployment guide</h3>
+
+<h4>Overview</h4>
+
+<p>To meet the principles outlined in the&nbsp;<a href="https://www.gov.uk/government/publications/end-user-device-strategy-security-framework-and-controls" rel="nofollow">End User Devices Security Framework</a>, several recommendations are given in the table below.</p>
+
+<table><tbody><tr><td style="width:18%">
+				<p><strong>Security principle</strong></p>
+			</td>
+			<td style="width:82%">
+				<p><strong>Explanation</strong></p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Assured data-in-transit protection</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>Use&nbsp;the&nbsp;<a href="https://technet.microsoft.com/en-us/itpro/windows/keep-secure/vpn-connection-type" rel="nofollow">Windows 10 Built-In VPN Client</a>&nbsp;configured as per the NCSC&nbsp;customisation guide&nbsp;(available via&nbsp;<span class="spamspan"><span class="u">enquiries</span>@<span class="d">ncsc.gov.uk</span><span class="t"> (NCSC&nbsp;Enquiries)</span></span>).</p>
+
+				<p>Configure the built-in Windows firewall to block outbound connections when the VPN is not active. An&nbsp;example firewall profile&nbsp;is provided in the&nbsp;<a href="#firewallconfiguration" rel="nofollow">Firewall configuration</a>&nbsp;section.</p>
+
+				<p>Use certificates for user or machine credentials. It is recommended that&nbsp;<a href="https://technet.microsoft.com/en-us/windows-server-docs/identity/ad-ds/manage/component-updates/tpm-key-attestation" rel="nofollow">Windows Key Attestation</a>&nbsp;or&nbsp;<a href="https://technet.microsoft.com/en-us/itpro/windows/keep-secure/manage-identity-verification-using-microsoft-passport" rel="nofollow">Windows Hello for Business</a>&nbsp;is used to bind these credential to the device&rsquo;s hardware.</p>
+
+				<p>Alternatively, use&nbsp;<a href="http://technet.microsoft.com/en-gb/network/dd420463.aspx" rel="nofollow">DirectAccess</a>&nbsp;or the&nbsp;legacy&nbsp;IKEv2 IPsec clients, configured as per the NCSC customisation guide.&nbsp;Or a third party, correctly configured, CPA Foundation grade VPN app which makes use of the UWP (<a href="https://docs.microsoft.com/en-gb/windows/uwp/get-started/universal-application-platform-guide" rel="nofollow">Universal Windows Platform</a>) VPN plug-in platform.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Assured data-at-rest protection</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>Use one of the following configurations to provide full volume encryption:</p>
+
+				<ul><li>BitLocker with a TPM and PIN configured in alignment with the&nbsp;<a href="#bitlockerconfig" rel="nofollow">BitLocker configuration</a> settings.</li>
+					<li>An independently assured CPA Foundation Grade, Data at Rest encryption product that supports UEFI and Windows Secure Boot, configured in alignment with the security procedures for that product.</li>
+				</ul><p>If using BitLocker, deploy the configuration settings&nbsp;before encryption is started.</p>
+
+				<p>BitLocker is not&nbsp;<a href="/articles/foundation-grade-explained" rel="nofollow">Foundation Grade</a>&nbsp;certified. However, NCSC has determined that the level of protection it provides is equivalent to Foundation Grade when configured as per this guidance.</p>
+
+				<p>&ldquo;Device Encryption&rdquo; introduced for Connected Standby devices in Windows 10 does not allow the use of a passphrase to unlock the disk and so does not support some of the mandatory requirements expected from assured disk encryption products. BitLocker, or an evaluated third-party product, should be used instead.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Authentication</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>The user implicitly authenticates to the device by decrypting BitLocker on boot.</p>
+
+				<p>The user then has a secondary credential to use when authenticating to the platform after boot and when unlocking the device.&nbsp;A good user experience will be achieved by enabling&nbsp;<a href="https://blogs.windows.com/windowsexperience/2015/03/17/making-windows-10-more-personal-and-more-secure-with-windows-hello/#PAQG6a643i7kooMe.97" rel="nofollow">Windows Hello</a>&nbsp;and&nbsp;allowing the user to log in with a PIN code. For both Windows Hello and traditional passwords, the credential derives a key which protects other credentials that give access to corporate services.</p>
+
+				<p>In an enterprise environment, the user will also be issued with an Active Directory credential which will be&nbsp;required&nbsp;when they use a device for the first time. This credential will be best protected if Credential Guard is enabled, the user is a member of the Protected Users group on the domain and that&nbsp;domain is running 2016 Functional Domain Level.</p>
+
+				<p>Windows&nbsp;Hello also permits&nbsp;biometric unlock of devices but the strength of its security is difficult to measure. In cases where there is a business requirement to use biometric authentication, and the risks of doing so are understood, biometric authentication can be enabled.</p>
+
+				<p>Accounts with administrative privileges should only be present on End User Devices used to perform administrative functions and should take advantage of the&nbsp;<a href="http://technet.microsoft.com/en-us/library/dn408190.aspx" rel="nofollow">Restricted Admin</a>&nbsp;feature of Remote Desktop Connections. User accounts with administrative privileges should have a strong password and ideally a second factor to authenticate them to the platform at logon and unlock time. The credentials will be best protected if the administrative user is a member of the&nbsp;<a href="https://technet.microsoft.com/en-us/library/dn466518(v=ws.11).aspx" rel="nofollow">Protected Users group</a>&nbsp;on the domain, and have&nbsp;<a href="http://technet.microsoft.com/en-us/library/dn486813.aspx" rel="nofollow">Authentication Policy Silos</a>&nbsp;applied.</p>
+
+				<p>Microsoft provides guidance on the use of&nbsp;<a href="https://aka.ms/cyberpaw" rel="nofollow">administrative workstations</a>,&nbsp;<a href="https://aka.ms/tiermodel" rel="nofollow">delegation of privilege</a>&nbsp;and other&nbsp;<a href="https://aka.ms/privsec" rel="nofollow">good administrative practices</a>.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Secure boot</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>On Windows 10, this requirement is met on a correctly configured platform deployed on the&nbsp;<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn939961(v=vs.85).aspx" rel="nofollow">Hardware Compatibility Program</a>.</p>
+
+				<p>A UEFI password can make it more difficult for an attacker to modify the boot process. With physical access, the boot process can still be compromised.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Platform integrity and application sandboxing</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>No configuration is required.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Application whitelisting</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>An enterprise configuration can be applied to implement application control using AppLocker. A&nbsp;recommended sample configuration&nbsp;that only allows Administrator-installed applications to run is provided&nbsp;<a href="#applockerconfig" rel="nofollow">below</a>.</p>
+
+				<p>Device Guard&nbsp;can also be used to reinforce application control rules. As it is more complex to configure and maintain, it is not currently recommended for most deployments.</p>
+
+				<p>AppLocker can be used to restrict which pre-installed Windows Apps are available to users, and if the public Windows Store is enabled it can control which applications a user can install.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Malicious code detection and prevention</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>Windows 10 includes&nbsp;<a href="http://windows.microsoft.com/en-GB/windows7/products/features/windows-defender" rel="nofollow">Windows Defender</a>&nbsp;and Windows SmartScreen that attempt to detect malicious code for this platform. Cloud sample submission can be disabled. Alternatively, third party anti-malware products are available. If using a third-party product, those that implement the Anti-Malware Scan Interface (AMSI) should be preferred to improve compatibility with future Feature Updates.</p>
+
+				<p>The Early Launch Anti-Malware (ELAM) driver provides signature checking for known bad drivers on ELAM-compliant systems that are configured to use Secure Boot.</p>
+
+				<p>Windows Store for Business, or a Company Store, can be used to distribute user-installable universal apps. Such stores should only contain vetted apps. If the public Windows Store is enabled, AppLocker can be used to control which applications a user is able to install. Content-based attacks can be filtered by scanning capabilities in the enterprise.</p>
+
+				<p>The Microsoft&nbsp;<a href="http://support.microsoft.com/kb/2458544" rel="nofollow">Enhanced Mitigation Experience Toolkit</a>&nbsp;(EMET) can be used to help prevent vulnerabilities in older software from being successfully exploited.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Security policy enforcement</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>Settings applied through Group Policy cannot be modified by unprivileged users.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>External interface protection</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>Interfaces can be configured using group policy. USB removable media can be blocked through Group Policy if required. Direct Memory Access (DMA) is possible from peripherals connected to some external interfaces including FireWire and Thunderbolt unless disabled through group policy as <a href="#systemhardening" rel="nofollow">detailed&nbsp;below</a>,&nbsp;or in the UEFI/BIOS. With&nbsp;<em>Windows 10 Connected Standby</em>&nbsp;devices, part of the hardware compliance mitigates DMA attacks by disallowing these interfaces.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Device updates</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>Windows Update can automatically download and install updates. If the Windows Store is enabled, it should be configured to automatically update Windows Store apps.</p>
+
+				<p>Some devices will allow the UEFI firmware to be updated automatically via Windows Update. Devices that do not implement this will require updates via another mechanism whenever a new firmware is released.</p>
+
+				<p><a href="http://blogs.windows.com/windowsexperience/2015/05/04/announcing-windows-update-for-business/" rel="nofollow">Windows Update for Business</a>&nbsp;or Windows Server Update Services (WSUS) can optionally be used to monitor and enforce updates of the core platform, system firmware and any Windows applications.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Event collection</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>Event collection can be carried out using Windows Event Forwarding for central event log collection.</p>
+			</td>
+		</tr><tr><td style="width:18%">
+				<p><strong>Incident response</strong></p>
+			</td>
+			<td style="width:82%">
+				<p>The combination of BitLocker drive encryption and enterprise revocation of user credentials are appropriate for managing this security recommendation.</p>
+			</td>
+		</tr></tbody></table><h3 id="Recommendednetworkarchitecture">Recommended network architecture</h3>
+
+<p>All remote or mobile working scenarios should consider using a typical remote access architecture based on the Walled Garden Architectural Pattern. The following network diagram describes the recommended architecture for this platform. The remote device will need Active Directory access in order&nbsp;to authenticate and retrieve group policy.</p>
+
+<p><div  class="media-image-tweak"><img alt="Recommended Network Architecture" title="Recommended Network Architecture" height="539" width="960" class="media-element file-default" typeof="foaf:Image" src="https://www.ncsc.gov.uk/content/files/Slide1_0.JPG" />
+  <div class="field-caption">
+      </div>
+</div></p>
+
+<p>Figure 1: Recommended walled garden network architecture for Windows 10 deployments</p>
+
+<p>Alternatively,&nbsp;consider a reduced presentation layer that allows direct access from the VPN gateway to internal services via the internal firewall.&nbsp;This is the same architecture proposed for use in the DirectAcess NCSC Customisation Guide. The inner firewall should be used to restrict access where possible. The risk of allowing more direct access to the core network can be reduced by binding the authentication certificate to the end user device, ensuring that it is only possible for legitimate devices to connect.</p>
+
+<p><div  class="media-image-tweak"><img alt="DirectAccess&amp;nbsp;architecture for Remote Access" title="DirectAccess&amp;nbsp;architecture for Remote Access" height="549" width="960" class="media-element file-default" typeof="foaf:Image" src="https://www.ncsc.gov.uk/content/files/directaccess_0.jpg" />
+  <div class="field-caption">
+      </div>
+</div></p>
+
+<p>Figure 2:&nbsp;DirectAccess&nbsp;architecture for Remote Access</p>
+
+<h3 id="Preparationfordeployment">Preparation for deployment</h3>
+
+<p>The steps below should be followed to prepare your organisational infrastructure to host a deployment of these devices:</p>
+
+<ol><li>Procure, deploy and configure network components, including an approved IPsec VPN Gateway.</li>
+	<li>Configure the&nbsp;<a href="https://technet.microsoft.com/en-us/windows/dn475741.aspx" rel="nofollow">Microsoft Deployment Toolkit</a>&nbsp;to deploy your organisation's standard desktop build, using a clean Windows 10 Enterprise image. For larger deployments, include credential management tools such as&nbsp;<a href="https://technet.microsoft.com/library/security/3062591" rel="nofollow">LAPS</a>&nbsp;and&nbsp;<a href="https://technet.microsoft.com/en-us/windows/hh826072.aspx" rel="nofollow">MBAM</a>.</li>
+	<li>Create Group Policies for user and computer groups in accordance with the settings later in this section, ensuring that the Microsoft Baseline settings have the lowest precedence when being deployed.</li>
+	<li>Deploy an AppLocker rule set using Group Policy following guidance in the&nbsp;<a href="#applicationwhitelisting" rel="nofollow">Application Whitelisting&nbsp;section</a>. A sample configuration which allows only applications installed by an Administrator to run, is outlined in the&nbsp;<a href="#systemhardening" rel="nofollow">Group Policy settings</a>&nbsp;below.</li>
+	<li>Create Event Forwarding Subscriptions and configure Group Policy to forward at least AppLocker, Application, System and Security logs that have a level of Critical Error or Warning, to an event management system as per&nbsp;<a href="http://www.nsa.gov/ia/_files/app/Spotting_the_Adversary_with_Windows_Event_Log_Monitoring.pdf" rel="nofollow">NSA guidance</a>.</li>
+	<li>Configure user groups according to the principle of least privilege. Where available, configure these users to be in the Protected Users group and apply Restricted Admin and Authentication Policy Silos to privileged users.</li>
+	<li>
+		<p>Deploy&nbsp;<a href="https://docs.microsoft.com/en-us/sccm/index" rel="nofollow">System Center Configuration Manager (SCCM</a>) or additional OEM-dependent infrastructure if you wish to implement remote management of&nbsp;<a href="#devicefirmware" rel="nofollow">device firmware</a>.</p>
+	</li>
+</ol><h3 id="Deviceprovisioningsteps">Device provisioning steps</h3>
+
+<p>The steps below should be followed to provision each end user device onto your organisation&rsquo;s network, preparing it for distribution to end users:</p>
+
+<ol><li>Update the system firmware to the latest version available from the vendor. This may be called a UEFI or BIOS update.</li>
+	<li>Configure the system firmware to boot in UEFI mode, enable TPM, Secure Boot and virtualisation extensions. Disable unused hardware interfaces, check the boot order to prioritise internal storage and set a password to prevent changes. Most of these settings will be pre-configured on a&nbsp;Windows Hardware Compatibility Program device.</li>
+	<li>Install a clean version of Windows from a known good source.</li>
+	<li>Deploy the most recent version of&nbsp;<a href="https://support.microsoft.com/kb/2458544" rel="nofollow">EMET</a>&nbsp;(5.52 at the time of writing) and configure it using&nbsp;<a href="#systemhardening" rel="nofollow">Group Policy configuration</a>&nbsp;given below.</li>
+</ol><h3 id="Recommendedpoliciesandsettings">Recommended policies and settings</h3>
+
+<p>This section details important security policy settings which are recommended for a Windows 10 deployment. Other settings (e.g. server address) should be chosen according to the relevant network configuration.</p>
+
+<p>Remember, any guidance points given here are recommendations - they are not mandatory. Risk owners and administrators should agree a configuration which balances business requirements, usability and the security of the platform.&nbsp;</p>
+
+<p>Settings not listed in this section are either not applicable to this mode or should be chosen according to your organisational policy and requirements.</p>
+
+<h3 id="Microsoftbaselines">Microsoft baselines</h3>
+
+<p>The configuration below builds on the enterprise baselines distributed by Microsoft.&nbsp;<a href="https://www.microsoft.com/en-us/download/details.aspx?id=55319" rel="nofollow">Microsoft Security Compliance Toolkit 1.0</a>&nbsp;can be used to&nbsp;help&nbsp;assess the differences&nbsp;between&nbsp;security configurations. The below has been tested to work with the Windows 10&nbsp;version 1703 baseline configurations.</p>
+
+<p>You should use the following Microsoft baseline GPO settings:</p>
+
+<ul><li>MSFT Windows 10 and Server 2016 - Credential Guard</li>
+	<li>MSFT Windows 10 and Server 2016 - Defender</li>
+	<li>MSFT Windows 10 RS2 - BitLocker</li>
+	<li>MSFT Windows 10 RS2 - Computer</li>
+	<li>MSFT Windows 10 RS2 - User</li>
+	<li>MSFT Internet Explorer 11 - User*&nbsp;</li>
+	<li>MSFT Internet Explorer 11 - Computer*&nbsp;</li>
+</ul><p>These should be used in combination with the custom NCSC Group Policy Object (GPO)&nbsp;settings described throughout this document.&nbsp;For easy configuration, the NCSC &amp; MSFT GPO settings are also available&nbsp;<a href="https://s3-eu-west-1.amazonaws.com/cesg-security-guidance/win10_1703_gpo.zip" rel="nofollow">in a zip file.</a>&nbsp;</p>
+
+<p>* Security baselines for web browsers are not needed if Internet Explorer is removed from the provisioned Enterprise image. The suggested Internet Explorer 11 baselines are used to attempt to mitigate some of the risks of using IE11 that are mitigated by default in more modern web browsers.&nbsp;</p>
+
+<p>The US Information Assurance Directorate publishes&nbsp;<a href="https://github.com/iadgov/Secure-Host-Baseline/tree/master/EMET" rel="nofollow">a sample EMET configuration</a>&nbsp;that mitigates common attack vectors including those that exploit weaknesses in Office and AppLocker.</p>
+
+<h3 id="Useraccounthardening">User account hardening</h3>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy</strong></p>
+			</td>
+			<td>
+				<p><strong>Value(s)</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Network &gt; Network Connections &gt; Require domain users to elevate when setting a network&rsquo;s location</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Credential User Interface &gt; Do not display the password reveal button</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; OneDrive &gt; Prevent the usage of OneDrive for file storage</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Sync your settings &gt; Do not sync</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+
+				<p>Allow users to turn syncing on: Disabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Search &gt;&nbsp;Allow Cortana</p>
+			</td>
+			<td>
+				<p>Disabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Search &gt; Don&rsquo;t search the web or display web results in Search</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Store &gt; Turn off the Store application</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>User Configuration &gt; Administrative Templates &gt; Control Panel &gt; Personalization &gt; Screen saver timeout</p>
+			</td>
+			<td>
+				<p>600 seconds</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; System &gt; Logon &gt; Turn off picture password sign-in</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt;&nbsp;Administrative Templates &gt; Windows Components &gt; Windows Hello for Business &gt;&nbsp;Use a hardware security device</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr></tbody></table><h3 id="Authenticationpolicy">Authentication policy</h3>
+
+<p>Your organisation should have a consistent authentication policy which applies to all users and devices capable of accessing its data.&nbsp;You can use our published&nbsp;<a href="/guidance/password-guidance-simplifying-your-approach" rel="nofollow">password guidance</a>&nbsp;to help inform any password policy.</p>
+
+<p>An administrator should&nbsp;configure the&nbsp;relevant on-device&nbsp;settings&nbsp;in line with your authentication policy.</p>
+
+<p>For further guidance on authentication policies, see the&nbsp;<a href="/guidance/end-user-devices-authentication-policy" rel="nofollow">NCSC EUD Authentication guidance</a>.</p>
+
+<p>Windows 10 Enterprise implements a number of relevant settings as Fine Grained Password Policies that should be configured on the Domain Controller.</p>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy</strong></p>
+			</td>
+			<td>
+				<p><strong>Value(s)</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>CN=System &gt; CN=Password Settings Container &gt; CN=Granular Password Settings Users</p>
+			</td>
+			<td>
+				<p>Precedence: 2</p>
+
+				<p>Enforce minimum password length</p>
+
+				<p>Enforce lockout policy</p>
+
+				<p>Account will be locked out:&nbsp;Until an administrator manually unlocks the account</p>
+
+				<p>Directly Applies To: Domain Users</p>
+			</td>
+		</tr><tr><td>
+				<p>CN=System &gt; CN=Password Settings Container &gt; CN=Granular Password Settings Administrators</p>
+			</td>
+			<td>
+				<p>Precedence: 1</p>
+
+				<p>Enforce minimum password length</p>
+
+				<p>Password must meet complexity requirements</p>
+
+				<p>Enforce lockout policy</p>
+
+				<p>Account will be locked out: Until an administrator manually unlocks the account</p>
+
+				<p>Directly Applies To: Domain Admins</p>
+
+				<p>Protect from accidental deletion: Enabled</p>
+			</td>
+		</tr></tbody></table><h4>Active Directory</h4>
+
+<p>A user&rsquo;s Active Directory password will normally only be used when enrolling against a device for the first time. It is not backed by a second factor or by hardware-backed anti-hammer, even when Credential Guard is deployed. Different requirements can be set for different account types using&nbsp;<a href="https://technet.microsoft.com/en-us/library/cc770394(v=ws.10).aspx" rel="nofollow">Fine Grained Password Policies</a>. If the Active Directory password is only used for device enrolment, it needs to be easy to type in but does not need to be memorable.</p>
+
+<h4>Windows Hello and Hardware Strengthening</h4>
+
+<p>The user should log in to a device or unlock it using Windows Hello or&nbsp;<a href="https://technet.microsoft.com/en-us/itpro/windows/keep-secure/manage-identity-verification-using-microsoft-passport" rel="nofollow">Windows Hello for Business</a>&nbsp;(previously known as Microsoft Passport). This is a new type of user credential that is tied to the physical device using a PIN or biometric. When run on Windows 10 Certified devices, it provides&nbsp;hardware-backed anti-hammer. Windows Hello should only be enabled on devices that use a hardware security device.</p>
+
+<p>Users can choose to set a PIN after they have logged on to the device for the first time. A number of group policies can be used to configure the PIN requirements including:</p>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy &gt;&nbsp;Computer&nbsp;Configuration &gt; Administrative Templates &gt; Windows Components &gt; Windows Hello for Business</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Use Windows Hello for Business</p>
+			</td>
+		</tr><tr><td>
+				<p>PIN Complexity &gt; Maximum PIN length</p>
+			</td>
+		</tr><tr><td>
+				<p>PIN Complexity &gt; Minimum PIN length</p>
+			</td>
+		</tr><tr><td>
+				<p>PIN Complexity &gt; Require digits</p>
+			</td>
+		</tr><tr><td>
+				<p>PIN Complexity &gt; Require lowercase letters</p>
+			</td>
+		</tr><tr><td>
+				<p>PIN Complexity &gt; Require special characters</p>
+			</td>
+		</tr><tr><td>
+				<p>PIN Complexity &gt; Require uppercase characters</p>
+			</td>
+		</tr></tbody></table><p>Once a PIN is set, if the device has the right sensors the user can also enrol a biometric to unlock it. The strength of the security of the different types of biometric sensor is difficult to measure. If the risks of enabling biometrics are understood and accepted,&nbsp;biometric authentication&nbsp;can be enabled.</p>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy &gt; Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt;&nbsp;Windows Hello for Business</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Use Biometrics</p>
+			</td>
+		</tr></tbody></table><p>Organisations that are not using Windows Hello for Business still have the option to set a &ldquo;Convenience PIN&rdquo; (formerly&nbsp;known as &ldquo;Windows Hello&nbsp;PIN&rdquo;). By default, in the Anniversary (1607) release any domain joined client will have this option disabled, any client with this option already enabled before updating will still have the option to sign in with the Convenience PIN. To enable:</p>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy</strong></p>
+			</td>
+			<td>
+				<p><strong>Value(s)</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; System &gt; Logon &gt; Turn on&nbsp;convenience PIN&nbsp;sign-in</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr></tbody></table><p>The configuration provided in this guidance enables&nbsp;<a href="https://blogs.technet.microsoft.com/ash/2016/03/02/windows-10-device-guard-and-credential-guard-demystified/" rel="nofollow">Virtual Secure Mode and Credential Guard</a>&nbsp;on supported devices. Biometrics should not be used unless these features are installed and enabled. Biometrics are enabled by default on Windows 10, so group policy should be used to disable biometrics if they are not being used.&nbsp;For more information see Microsoft&rsquo;s paper on&nbsp;<a href="https://technet.microsoft.com/en-gb/itpro/windows/keep-secure/credential-guard" rel="nofollow">credential guard</a>.</p>
+
+<h3 id="Systemhardening"><a id="systemhardening" name="systemhardening"></a>System hardening</h3>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy</strong></p>
+			</td>
+			<td>
+				<p><strong>Value(s)</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Data Collection and Preview Builds &gt; Allow Telemetry</p>
+			</td>
+			<td>
+				<p>Enabled:</p>
+
+				<p>0 - Security</p>
+
+				<p>Note - If using Windows Update for Business this will need to be set to 1 (Basic).</p>
+
+				<p>See&nbsp;<a href="#enterpriseconsiderations" rel="nofollow">Windows 10 feature updates</a><strong>&nbsp;</strong>for more details.</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Windows Error Reporting &gt; Disable Windows Error Reporting</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; System &gt; Device Installation &gt; Device Installation Restrictions &gt; Prevent installation of devices that match these device IDs</p>
+			</td>
+			<td>
+				<p>Enabled: PCI\CC_0C0A</p>
+
+				<p>Also apply to matching devices that are already installed: Disabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; System &gt; Device Installation &gt; Device Installation Restrictions &gt; Prevent installation of drivers matching these device setup classes</p>
+			</td>
+			<td>
+				<p>Enabled:</p>
+
+				<p>{d48179be-ec20-11d1-b6b8-00c04fa372a7}</p>
+
+				<p>{7ebefbc0-3200-11d2-b4c2-00a0C9697d07}</p>
+
+				<p>{c06ff265-ae09-48f0-812c-16753d7cba83}</p>
+
+				<p>{6bdd1fc1-810f-11d0-bec7-08002be2092f}</p>
+
+				<p>Also apply to matching devices that are already installed: Disabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Store &gt; Turn off Automatic Download and Install of updates</p>
+			</td>
+			<td>
+				<p>Disabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; App runtime &gt; Block launching Windows Store apps with Windows Runtime API access from hosted content.</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Network &gt; Network Isolation &gt; Proxy definitions are authoritative</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Network &gt; Network Isolation &gt; Subnet definitions are authoritative</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Portable Operating System &gt; Windows To Go Default Startup Options</p>
+			</td>
+			<td>
+				<p>Disabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Preferences &gt; Windows Settings &gt; Registry &gt; Replace &gt; HKLM\Software\Microsoft\Windows\CurrentVersion\policies\system\</p>
+			</td>
+			<td>
+				<p>(DWORD) SafeModeBlockNonAdmins = 1</p>
+			</td>
+		</tr></tbody></table><p>Group Policy can be used to limit user access to removable media such as USB mass storage devices, if required by organisational policy. The settings can be found in Computer Configuration &gt; Administrative Templates &gt; System &gt; Removable Storage Access.</p>
+
+<p>Group Policy can also be used to fully whitelist all devices or device classes which are allowed to be installed. In this way you could allow, for example, basic peripherals such as mice, keyboards, monitors and network cards, but refuse the connection and installation of other devices. It is important to whitelist enough classes of device to allow a successful boot on a variety of hardware.</p>
+
+<p>Details on how to enable whitelisting of specific devices can be found on&nbsp;<a href="http://msdn.microsoft.com/en-us/library/bb530324.aspx" rel="nofollow">MSDN</a>.</p>
+
+<h3 id="WindowsDefenderconfiguration">Windows Defender configuration</h3>
+
+<p>If using Windows Defender, configure it to enable&nbsp;<a href="https://technet.microsoft.com/en-gb/itpro/windows/keep-secure/windows-defender-block-at-first-sight" rel="nofollow">cloud-backed protections</a>&nbsp;while limiting its ability to send sensitive data for analysis.</p>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy</strong></p>
+			</td>
+			<td>
+				<p><strong>Value(s)</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Windows Defender &gt; MAPS &gt; Configure the &lsquo;Block at First Sight&rsquo; feature</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Windows Defender &gt; MAPS &gt; Join Microsoft MAPS</p>
+			</td>
+			<td>
+				<p>Enabled: Advanced</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Windows Defender &gt; MAPS &gt; Send file samples when further analysis is required</p>
+			</td>
+			<td>
+				<p>Enabled: Send safe samples automatically</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Windows Defender &gt; Real-time Protection &gt; Turn off real-time protection</p>
+			</td>
+			<td>
+				<p>Disabled</p>
+			</td>
+		</tr></tbody></table><h3>&nbsp;</h3>
+
+<h3 id="AppLockerconfiguration"><a id="applockerconfig" name="applockerconfig"></a>AppLocker&nbsp;configuration</h3>
+
+<p>This example set of AppLocker rules implements&nbsp;the application whitelisting principles&nbsp;outlined in&nbsp;<a href="#enterpriseconsiderations" rel="nofollow">Enterprise Considerations</a>&nbsp;below. It can be modified to allow the user to install and run apps from either an enterprise software center or the Windows Store.</p>
+
+<p>Scripting languages such as Visual Basic Scripting should be disabled unless they are specifically needed. The Australian Cyber Security Center&nbsp;<a href="http://www.asd.gov.au/publications/protect/securing-powershell.htm" rel="nofollow">describe how to secure Powershell in the enterprise</a>&nbsp;if it is to be used.</p>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy</strong></p>
+			</td>
+			<td>
+				<p><strong>Value(s)</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker &gt; Enforcement &gt; Executable Rules</p>
+			</td>
+			<td>
+				<p>Configured: True Enforce Rules</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker &gt;&nbsp;Executable Rules</p>
+			</td>
+			<td>
+				<p>Allow Everyone: All files located in the Program Files folder</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow Everyone: All files located in the Windows folder - with exceptions</p>
+
+				<p>Exception: %SYSTEM32%\com\dmp\*</p>
+
+				<p>Exception: %SYSTEM32%\FxsTmp\*</p>
+
+				<p>Exception: %SYSTEM32%\Spool\drivers\color\*</p>
+
+				<p>Exception: %SYSTEM32%\Spool\PRINTERS\*</p>
+
+				<p>Exception: %SYSTEM32%\Spool\SERVERS\*</p>
+
+				<p>Exception: %SYSTEM32%\Tasks\*</p>
+
+				<p>Exception: %SYSTEM32%\PresentationHost.exe</p>
+
+				<p>Exception:&nbsp;%SYSTEM32%\microsoft\crypto\rsa\machinekeys\*</p>
+
+				<p>Exception: %SYSTEM32%\mshta.exe</p>
+
+				<p>Exception: %SYSTEM32%\wbem\WMIC.exe</p>
+
+				<p>Exception: %SYSTEM32%\cipher.exe</p>
+
+				<p>Exception: %SYSTEM32%\cmstp.exe</p>
+
+				<p>Exception: %WINDIR%\tasks\*</p>
+
+				<p>Exception: %WINDIR%\temp\*</p>
+
+				<p>Exception: %WINDIR%\tracing\*</p>
+
+				<p>Exception: %WINDIR%\registration\crmlog\*</p>
+
+				<p>Exception: %WINDIR%\servicing\packages\*</p>
+
+				<p>Exception: %WINDIR%\servicing\sessions\*</p>
+
+				<p>Exception: %Microsoft.NET%\Framework64\v2.0.50727\IEExec.exe</p>
+
+				<p>Exception: %Microsoft.NET%\Framework64\v2.0.50727\InstallUtil.exe</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow Administrators: All files</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker &gt; Enforcement &gt; Windows Installer Rules</p>
+			</td>
+			<td>
+				<p>Configured: True Enforce Rules</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker &gt; Windows Installer Rules</p>
+			</td>
+			<td>
+				<p>Allow Administrators: All Windows Installer files</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow Everyone: %WINDIR%\Installer\*</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker &gt; Enforcement &gt; Script Rules</p>
+			</td>
+			<td>
+				<p>Configured: True Enforce Rules</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker &gt; Script Rules &gt; Enforce rules of this type</p>
+			</td>
+			<td>
+				<p>Allow Everyone: All Scripts located in the Program Files folder</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow Everyone: All Scripts located in the Windows folder - with exceptions</p>
+
+				<p>Exception: %SYSTEM32%\com\dmp\*</p>
+
+				<p>Exception: %SYSTEM32%\FxsTmp\*</p>
+
+				<p>Exception: %SYSTEM32%\Spool\drivers\color\*</p>
+
+				<p>Exception: %SYSTEM32%\Spool\PRINTERS\*</p>
+
+				<p>Exception: %SYSTEM32%\Spool\SERVERS\*</p>
+
+				<p>Exception: %SYSTEM32%\Tasks\*</p>
+
+				<p>Exception: %WINDIR%\registration\crmlog\*</p>
+
+				<p>Exception: %WINDIR%\tasks\*</p>
+
+				<p>Exception: %WINDIR%\temp\*</p>
+
+				<p>Exception: %WINDIR%\tracing\*</p>
+
+				<p>Exception: %WINDIR%\servicing\packages\*</p>
+
+				<p>Exception: %WINDIR%\servicing\sessions\*</p>
+
+				<p>Exception: %SYSTEM32%\microsoft\crypto\rsa\machinekeys\*</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow Administrators: All scripts</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker &gt; Enforcement &gt; DLL Rules</p>
+			</td>
+			<td>
+				<p>Configured: True Enforce Rules</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker &gt; DLL Rules</p>
+			</td>
+			<td>
+				<p>Allow Everyone: All DLLs located in the Program Files folder</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow Everyone: All DLLs located in the Windows folder - with exceptions</p>
+
+				<p>Exception: %SYSTEM32%\com\dmp\*</p>
+
+				<p>Exception: %SYSTEM32%\FxsTmp\*</p>
+
+				<p>Exception: %SYSTEM32%\Spool\drivers\color\*</p>
+
+				<p>Exception: %SYSTEM32%\Spool\PRINTERS\*</p>
+
+				<p>Exception: %SYSTEM32%\Spool\SERVERS\*</p>
+
+				<p>Exception: %SYSTEM32%\Tasks\*</p>
+
+				<p>Exception: %SYSTEM32%\microsoft\crypto\rsa\machinekeys\*</p>
+
+				<p>Exception: %WINDIR%\registration\crmlog\*</p>
+
+				<p>Exception: %WINDIR%\tasks\*</p>
+
+				<p>Exception: %WINDIR%\temp\*</p>
+
+				<p>Exception: %WINDIR%\tracing\*</p>
+
+				<p>Exception: %WINDIR%\servicing\packages\*</p>
+
+				<p>Exception: %WINDIR%\servicing\sessions\*</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow Administrators: All DLLs</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker &gt; Enforcement &gt; Packaged app Rules</p>
+			</td>
+			<td>
+				<p>Configured: True Enforce Rules</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker &gt; Packaged app rules</p>
+			</td>
+			<td>
+				<p>Allow Everyone: All signed packaged apps</p>
+
+				<p>Exception: Microsoft.Getstarted</p>
+
+				<p>Exception: Microsoft.MicrosoftOfficeHub</p>
+
+				<p>Exception: Microsoft.SkypeApp</p>
+
+				<p>Exception: Microsoft.WindowsFeedback</p>
+			</td>
+		</tr></tbody></table><h3>&nbsp;</h3>
+
+<h3 id="BitLockerconfiguration"><a id="bitlockerconfig" name="bitlockerconfig"></a>BitLocker configuration</h3>
+
+<p>The following settings should be configured to use full&nbsp;volume encryption in TPM and PIN mode.</p>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy</strong></p>
+			</td>
+			<td>
+				<p><strong>Value(s)</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; BitLocker Drive Encryption &gt; Operating System Drives &gt; Enforce drive encryption type on operating system drives</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+
+				<p>Select the encryption type: Full encryption</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; BitLocker Drive Encryption &gt; Operating System Drives &gt; Require additional authentication at startup</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+
+				<p>Allow BitLocker without a compatible TPM (Requires a password or startup key on a USB flash drive): Unticked</p>
+
+				<p>Configure TPM startup: Do not allow TPM</p>
+
+				<p>Configure TPM startup PIN: Allow startup PIN with TPM</p>
+
+				<p>Configure TPM startup key: Do not allow startup key with TPM</p>
+
+				<p>Confgure TPM startup key and PIN: Allow startup key and PIN with TPM</p>
+			</td>
+		</tr></tbody></table><p>The BitLocker PIN should be in line with your organisation&rsquo;s password policy. The NCSC has published&nbsp;<a href="/guidance/password-guidance-simplifying-your-approach" rel="nofollow">password guidance</a>&nbsp;to inform this. Please contact us if you need help devising an appropriate password policy. Deployments that include fixed-location workstations may prefer to use&nbsp;<a href="https://technet.microsoft.com/en-us/library/jj574173.aspx" rel="nofollow">BitLocker Network Unlock</a>&nbsp;as an alternative to a PIN.</p>
+
+<p>Users can change the PIN after they have logged on to the device for the first time. A number of group policies can be used to configure the PIN requirements including:</p>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy &gt; Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Operating System Drives</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Allow enhanced PINs for startup</p>
+			</td>
+		</tr><tr><td>
+				<p>Configure minimum PIN length for startup</p>
+			</td>
+		</tr><tr><td>
+				<p>Configure use of passwords for operating system drives</p>
+			</td>
+		</tr></tbody></table><h3>&nbsp;</h3>
+
+<h3 id="EMETconfiguration">EMET configuration</h3>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy</strong></p>
+			</td>
+			<td>
+				<p><strong>Value(s)</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; EMET &gt; Default Action and Mitigation Settings</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+
+				<p>Deep Hooks: Enabled</p>
+
+				<p>Anti Detours: Enabled</p>
+
+				<p>Banned Functions: Enabled</p>
+
+				<p>Exploit Action: Stop Program</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; EMET &gt; System DEP</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+
+				<p>DEP Setting: Always On&nbsp;</p>
+			</td>
+		</tr></tbody></table><p>Group Policy should be used to apply EMET to Enterprise applications which render untrusted data, such as those which are Internet facing. The required settings can be found in Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; EMET &gt; Application&nbsp;Configuration.</p>
+
+<p>Windows 10 now receives regular patches and feature updates. The security features that were initially part of EMET are making their way into Windows 10 by default. With this in mind, Microsoft recently announced end-of-life for EMET and therefore will be stopping support by the end of July 2018 (see&nbsp;<a href="https://blogs.technet.microsoft.com/srd/2016/11/03/beyond-emet/" rel="nofollow">Microsoft&rsquo;s blog</a>). As with all unsupported software, after this date EMET should be removed. Until then, it is recommended to continue deploying EMET. We believe EMET will continue to add value until around the end of 2017,&nbsp;after which, you should begin migrating away from it. Once end-of-life has been reached, this guidance will be updated to reflect the changing recommendation.</p>
+
+<h3 id="firewallconfiguration"><a id="firewallconfiguration" name="firewallconfiguration"></a>Firewall&nbsp;configuration</h3>
+
+<p>This firewall configuration is used to enforce the use of an always-on VPN.</p>
+
+<p>You may also need to add rules to allow your VPN client to make outbound connections when the device is in either a public or private profile. Sample rules are provided with the NCSC configuration guide.</p>
+
+<p>If you need to add firewall exceptions to allow for remote management, they should only be applied to the Domain profile.</p>
+
+<table><tbody><tr><td>
+				<p><strong>Group Policy</strong></p>
+			</td>
+			<td>
+				<p><strong>Value(s)</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Windows Firewall with Advanced Security &gt; Windows Firewall Properties &gt; Domain Profile</p>
+			</td>
+			<td>
+				<p>Firewall State : On (Recommended)</p>
+
+				<p>Inbound connections : Block (default)</p>
+
+				<p>Outbound connections : Allow (default)</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Windows Firewall with Advanced Security &gt; Windows Firewall Properties &gt; Domain Profile &gt; Settings &gt; Customize &gt; Apply local firewall rules</p>
+			</td>
+			<td>
+				<p>No</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Windows Firewall with Advanced Security &gt; Windows Firewall Properties &gt; Private Profile</p>
+			</td>
+			<td>
+				<p>Firewall State : On (Recommended)</p>
+
+				<p>Inbound connections : Block (default)</p>
+
+				<p>Outbound connections : Block</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Windows Firewall with Advanced Security &gt; Windows Firewall Properties &gt; Private Profile &gt; Settings &gt; Customize &gt; Apply local firewall rules</p>
+			</td>
+			<td>
+				<p>No</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Windows Firewall with Advanced Security &gt; Windows Firewall Properties &gt; Public Profile</p>
+			</td>
+			<td>
+				<p>Firewall State : On (Recommended)</p>
+
+				<p>Inbound connections : Block (default)</p>
+
+				<p>Outbound connections : Block</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Windows Firewall with Advanced Security &gt; Windows Firewall Properties &gt; Public Profile &gt; Settings &gt; Customize &gt; Apply local firewall rules</p>
+			</td>
+			<td>
+				<p>No</p>
+			</td>
+		</tr><tr><td>
+				<p>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Windows Firewall with Advanced Security &gt; Outbound Rules</p>
+			</td>
+			<td>
+				<p>Enabled</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow outbound DHCP</p>
+
+				<p>General &gt; Action: Allow the connection</p>
+
+				<p>Programs and Services &gt; Programs &gt; This Program &gt; %SystemRoot%\system32\svchost.exe</p>
+
+				<p>Allow Programs and Services &gt; Service &gt; Apply to this service &gt; DHCP Client (Dhcp)</p>
+
+				<p>Advanced &gt; Profiles: Private, Public</p>
+
+				<p>Protocols and Ports &gt; Local port: UDP 68</p>
+
+				<p>Protocols and Ports &gt; Remote port: UDP 67</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow outbound DNS</p>
+
+				<p>General &gt; Action: Allow the connection</p>
+
+				<p>Programs and Services &gt; Programs &gt; This Program &gt; %SystemRoot%\system32\svchost.exe</p>
+
+				<p>Allow Programs and Services &gt; Service &gt; Apply to this service &gt; DNS Client (Dnscache)</p>
+
+				<p>Advanced &gt; Profiles: Private, Public</p>
+
+				<p>Protocols and Ports &gt; Remote port: TCP 53, UDP 53</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow outbound Kerberos</p>
+
+				<p>General &gt; Action: Allow the connection</p>
+
+				<p>Programs and Services &gt; Programs &gt; This Program &gt; %SystemRoot%\system32\lsass.exe</p>
+
+				<p>Advanced &gt; Profiles: Private, Public</p>
+
+				<p>Protocols and Ports &gt; Remote port: All TCP and UDP ports</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow outbound LDAP</p>
+
+				<p>General &gt; Action: Allow the connection</p>
+
+				<p>Programs and Services &gt; Programs &gt; This Program &gt; All programs that meet the specified conditions</p>
+
+				<p>Advanced &gt; Profiles: Private, Public</p>
+
+				<p>Protocols and Ports &gt; Remote port: TCP 389, UDP 389</p>
+
+				<p>&nbsp;</p>
+
+				<p>Allow outbound NCSI Probe</p>
+
+				<p>General &gt; Action: Allow the connection</p>
+
+				<p>Programs and Services &gt; Programs &gt; This Program &gt; %SystemRoot%\system32\svchost.exe</p>
+
+				<p>Allow Programs and Services &gt; Service &gt; Apply to this service &gt; Network Location Awareness (NlaSvc)</p>
+
+				<p>Advanced &gt; Profiles: Private, Public</p>
+
+				<p>Protocols and Ports &gt; Remote port: TCP 80</p>
+			</td>
+		</tr></tbody></table><h3 id="VPNconfiguration">VPN configuration</h3>
+
+<p>You should deploy VPN infrastructure configured either to support the PRIME or Foundation profiles as detailed in the&nbsp;<a href="/guidance/using-ipsec-protect-data" rel="nofollow">NCSC's IPsec Guidance</a>. Customisation guides are available for either the Windows 10 Built-In VPN Client, the legacy IKEv2 IPsec VPN client or the DirectAccess client. Contact&nbsp;<a href="/contact" rel="nofollow">NCSC enquiries</a>&nbsp;to obtain a copy. These configurations differ slightly from that of other End User Devices (which follow the PRIME profile) as the profile is not completely supported by Windows 10. A secondary VPN server or configuration may therefore need to be configured to run in parallel if other devices are being deployed.</p>
+
+<p>PRIME is the recommended IPsec cipher suite profile for protecting information, and it requires a PKI infrastructure configured to support Elliptic Curve cryptography. A non-authoritative summary is provided in the table below:</p>
+
+<p>&nbsp;</p>
+
+<table><tbody><tr><td>
+				<p><strong>IKEv2</strong></p>
+			</td>
+			<td>
+				<p><strong>Selection</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Encryption</p>
+			</td>
+			<td>
+				<p>AES with 128-bit keys in GCM-128 mode</p>
+			</td>
+		</tr><tr><td>
+				<p>Pseudo-Random Function</p>
+			</td>
+			<td>
+				<p>HMAC-SHA-256 (RFC4868)</p>
+			</td>
+		</tr><tr><td>
+				<p>Diffie-Hellman Group</p>
+			</td>
+			<td>
+				<p>Group 19 256-bit random ECP (RFC5903)</p>
+			</td>
+		</tr><tr><td>
+				<p>Authentication</p>
+			</td>
+			<td>
+				<p>X.509 certificates with ECDSA signatures (256-bit) on the P-256 curve and SHA-256 (RFC4945 and RFC4055)</p>
+			</td>
+		</tr><tr><td>
+				<p><strong>ESP</strong></p>
+			</td>
+			<td>
+				<p><strong>Selection</strong></p>
+			</td>
+		</tr><tr><td>
+				<p>Encryption</p>
+			</td>
+			<td>
+				<p>AES with 128-bit keys in CBC mode (RFC3602)</p>
+			</td>
+		</tr><tr><td>
+				<p>Integrity</p>
+			</td>
+			<td>
+				<p>SHA-256 (RFC4846)</p>
+			</td>
+		</tr></tbody></table><p>If you are using a third-party VPN client, you should prefer one that has been built on top of the Windows 10 UWP VPN plug-in platform.&nbsp;These will likely integrate better into the platform and be more reliable, as the Windows platform is regularly updated.</p>
+
+<h3 id="devicefirmware"><a id="devicefirmware" name="devicefirmware"></a>Device firmware</h3>
+
+<p>Devices should meet the minimum required Unified Extensible Firmware Interface (UEFI) specification 2.3.1c, boot in UEFI mode, and enable secure boot by default. UEFI legacy fall back options and direct memory access (DMA) ports should also be disabled during boot. Devices certified under the&nbsp;<a href="https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/systems" rel="nofollow">Windows 10 Hardware Compatibility</a>&nbsp;program implement these features by default.</p>
+
+<p>You should also ensure that purchased devices implement signed manufacturer firmware updates by default. This should be checked with the manufacturer as part of your procurement process.</p>
+
+<h4>Management of UEFI firmware settings</h4>
+
+<p>There are several ways in which you can manage the firmware settings of your devices:</p>
+
+<ul><li>Manage them locally on the device using the pre-boot UEFI console.</li>
+	<li>Use OEM-provided tools for management of firmware settings locally from within the running OS. Examples include&nbsp;<a href="http://www8.hp.com/us/en/ads/clientmanagement/overview.html#manageability-tools" rel="nofollow">HP BIOS Configuration Utility</a>&nbsp;and&nbsp;<a href="http://en.community.dell.com/techcenter/enterprise-client/w/wiki/7532.dell-command-configure" rel="nofollow">Dell Command Configure</a>.</li>
+	<li>Use these same tools in conjunction with device management infrastructure such as&nbsp;<a href="https://docs.microsoft.com/en-us/sccm/index" rel="nofollow">System Center Configuration Manager (SCCM)</a>&nbsp;to remotely manage devices&rsquo; firmware settings.</li>
+	<li>Manage them remotely using enterprise management features provided by the OEM that are integrated specifically in to device management infrastructure such as&nbsp;<a href="https://docs.microsoft.com/en-us/sccm/index" rel="nofollow">System Center Configuration Manager (SCCM)</a>. An example is&nbsp;<a href="http://www8.hp.com/us/en/ads/clientmanagement/overview.html#manageability-tools" rel="nofollow">HP Manageability Integration Kit (MIK)</a>.</li>
+</ul><p>One of these approaches should be taken, and used to configure the settings below.</p>
+
+<h4>Recommended settings</h4>
+
+<p>The following UEFI settings should be applied. Some of these settings are hardware dependent and may not be available on all platforms.</p>
+
+<table><tr><th>
+				<p>Setting</p>
+			</th>
+			<th>
+				<p>Value</p>
+			</th>
+		</tr><tbody><tr><td>
+				<p>Administrator/Setup Password + UEFI Lockout</p>
+			</td>
+			<td>
+				<p>A UEFI administrator or setup password should be set and UEFI console lockout enabled to prevent unauthorised changes to UEFI settings.</p>
+			</td>
+		</tr><tr><td>
+				<p>Boot Mode</p>
+			</td>
+			<td>UEFI</td>
+		</tr><tr><td>Secure Boot</td>
+			<td>Enabled</td>
+		</tr><tr><td>
+				<p>Legacy Boot Options and Legacy Option ROMs</p>
+			</td>
+			<td>Disabled</td>
+		</tr><tr><td>
+				<p>Manufacturer Signed Firmware Updates</p>
+			</td>
+			<td>Enabled</td>
+		</tr><tr><td>
+				<p>Trusted Platform Module (TPM)</p>
+			</td>
+			<td>Enabled</td>
+		</tr><tr><td>
+				<p>UEFI Firmware Rollback</p>
+			</td>
+			<td>Disabled</td>
+		</tr><tr><td>
+				<p>Boot Options</p>
+			</td>
+			<td>
+				<p>Restricted to only those that are required. Priority should be given to internal storage.</p>
+			</td>
+		</tr><tr><td>
+				<p>Boot Order</p>
+			</td>
+			<td>Locked</td>
+		</tr><tr><td>
+				<p>No Execute (NX)</p>
+			</td>
+			<td>Enabled</td>
+		</tr><tr><td>
+				<p>Virtualisation Extensions</p>
+			</td>
+			<td>Enabled</td>
+		</tr><tr><td>
+				<p>Input/Output Memory Management Unit (IOMMU)</p>
+			</td>
+			<td>Enabled</td>
+		</tr><tr><td>Thunderbolt</td>
+			<td>
+				<p>Ports should be disabled if not required&nbsp;</p>
+
+				<p>If required</p>
+
+				<ul><li>Disable Thunderbolt boot support if not required.</li>
+					<li>Disable Thunderbolt pre-boot module support.</li>
+					<li>Set a minimum Thunderbolt Security Level of User Authorisation.&nbsp;</li>
+				</ul></td>
+		</tr></tbody></table><h4>Automating Updates</h4>
+
+<p>Device firmware updates should be automated where possible. The NCSC recommends one of the following techniques for automating system firmware updates:</p>
+
+<ul><li>Windows 10 can support firmware updates via&nbsp;<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/system-and-device-firmware-updates-via-a-firmware-driver-package" rel="nofollow">Windows Update</a>. This simplifies the automation of firmware updates. You should check with your OEM that they support this update mechanism, as it is typically only used with Microsoft&rsquo;s own hardware.</li>
+	<li>Some OEMs, including&nbsp;<a href="http://en.community.dell.com/techcenter/enterprise-client/w/wiki/7536.dell-command-update-catalog" rel="nofollow">Dell</a>&nbsp;and&nbsp;<a href="http://www8.hp.com/us/en/ads/clientmanagement/overview.html#microsoft" rel="nofollow">HP</a>, distribute firmware updates as 3<sup>rd</sup>&nbsp;party Windows Server Update Services (WSUS) update package catalogues.&nbsp;<a href="https://docs.microsoft.com/en-us/sccm/index" rel="nofollow">System Center Configuration Manager (SCCM)</a>&nbsp;and&nbsp;<a href="https://docs.microsoft.com/en-us/sccm/sum/tools/updates-publisher" rel="nofollow">System Center Update Publisher (SCUP)</a>can then be used to import the catalogues. The firmware updates can then be published directly in to SCCM and deployed as a&nbsp;<a href="https://docs.microsoft.com/en-us/sccm/sum/understand/software-updates-introduction" rel="nofollow">software update</a>.</li>
+</ul><p><strong>Note:</strong>&nbsp;In some cases, additional client agent software may be required to support the deployment. This is dependent on the OEM - their documentation should be consulted in addition to the steps described above.</p>
+
+<ul><li>Firmware update utilities that are available from the OEM as Microsoft Installer Packages (.msi) can be deployed directly as a required application through an Enterprise Management solution such as&nbsp;<a href="https://docs.microsoft.com/en-us/sccm/apps/understand/introduction-to-application-management" rel="nofollow">System Center Configuration Manager (SCCM)</a>.</li>
+	<li><a href="https://docs.microsoft.com/en-us/sccm/osd/deploy-use/create-a-custom-task-sequence" rel="nofollow">Custom Task Sequences</a>&nbsp;in&nbsp;<a href="https://docs.microsoft.com/en-us/sccm/index" rel="nofollow">System Center Configuration Manager (SCCM)</a>&nbsp;can also provide a method to deploy firmware updates. They provide a flexible deployment option if built-in features in SCCM such as application installation and software updates cannot meet the requirements to deploy the firmware update. A typical task sequence would comprise steps to target the firmware update, perform a silent installation of the firmware update utility, an option to suspend BitLocker and force a device restart.</li>
+</ul><p>Note that there can be significant variation in the command line flags that are required to perform a silent installation for a specific OEM device and corresponding system firmware update utility. You should consult OEM documentation when designing the custom task sequence.</p>
+
+<ul><li>OEMs in many cases also provide their own client solutions that include management of firmware updates. You should refer to your OEM to determine if these solutions meet the needs of your organisation.</li>
+</ul><h4>Firmware Integrity and Recovery</h4>
+
+<p>Some OEM devices provide support for automated firmware recovery if an update fails or the firmware becomes corrupted. These features should be enabled if supported.</p>
+
+<p>In addition, some OEMs provide enhanced hardware-backed protection for integrity of firmware, which can detect unauthorised changes to the firmware and alert or automatically recover from these changes. Devices with these features (e.g.&nbsp;<a href="https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/security-technologies-4th-gen-core-retail-paper.pdf" rel="nofollow">Intel Boot Guard</a>&nbsp;or&nbsp;<a href="http://h10032.www1.hp.com/ctg/Manual/c05163901?_sm_au_=iVV41QpLvNQFRv0M" rel="nofollow">HP Sure Start</a>)&nbsp;should be preferred if available.</p>
+
+<h3 id="Enterpriseconsiderations"><a id="enterpriseconsiderations" name="enterpriseconsiderations"></a>Enterprise considerations</h3>
+
+<p>The following points are in addition to the&nbsp;<a href="/guidance/end-user-devices-common-questions" rel="nofollow">common enterprise considerations</a>&nbsp;and contain specific issues for Windows 10 deployments.</p>
+
+<h4>Windows 10 feature updates</h4>
+
+<p>The Windows 10&nbsp;<a href="https://blogs.technet.microsoft.com/windowsitpro/2017/07/27/waas-simplified-and-aligned/" rel="nofollow">Semi-Annual Channel</a>&nbsp;receives feature updates twice-per-year. These feature updates will be serviced for 18 months from the date of release and will replace Current Branch (CB) and Current Branch for Business (CBB) concepts.</p>
+
+<p>The NCSC recommends organisations deploy feature updates immediately to a targeted deployment to validate that the apps, devices and infrastructure used work well with the new release. Once validation is complete, begin deploying broadly. You can defer feature updates for up to 365 days from release. To help with this approach organisations using Azure Active Directory may deploy&nbsp;<em>Insider</em>&nbsp;<em>builds</em>&nbsp;to a select group of devices via the&nbsp;<a href="https://insider.windows.com/en-us/for-business/" rel="nofollow">Windows Insider Program for Business</a>.</p>
+
+<p>Monthly Quality Updates, which include critical security and driver updates should be downloaded and installed automatically.</p>
+
+<p>If your organisation is using Windows Update for Business you will need to set the Telemetry level from 0 (Security) to 1 (Basic) for update policies to be honoured, as no Windows update information is gathered when set to 0. If you are using Windows Server Update Services (WSUS) or System Center Configuration Manager (SCCM) you will not be affected. For more information on Windows telemetry settings see&nbsp;<a href="https://docs.microsoft.com/en-us/windows/configuration/configure-windows-telemetry-in-your-organization" rel="nofollow">here</a>&nbsp;and for more information on configuring Windows Update for Business see&nbsp;<a href="https://docs.microsoft.com/en-us/windows/deployment/update/waas-configure-wufb" rel="nofollow">here</a>.</p>
+
+<p>When choosing third party products that alter the behaviour of the platform (such as VPN clients, anti-malware tools, management agents and auditing tools), it is important to consider that these may also need to be updated to remain compatible with newer versions of Windows 10. Products are more likely to be supported on future versions of Windows 10 if they use legitimate API&rsquo;s such as the Anti-Malware Scan Interface and the Windows Runtime API for VPN&rsquo;s.</p>
+
+<p>This guidance may be updated in the future to cover significant new features in Windows 10 if they can improve the usability of the platform, while best addressing each of the security recommendations. The Windows 10 Long-Term Servicing Channel is designed for devices that never change, such as medical equipment and components in industrial control systems. It should not be deployed on End User Devices that are used to browse the web or use enterprise productivity software.</p>
+
+<h4>Device selection</h4>
+
+<p>Windows 10 can run on a wide variety of device types with a wide variety of internal hardware. Many of the newer Windows&nbsp;security mitigations require the device to have specific hardware components and for them to be turned on.</p>
+
+<p>Even if you are not deploying these mitigations at the moment, you should seek to buy a&nbsp;Windows Hardware Compatibility Program&nbsp;device&nbsp;that support TPM 2.0, UEFI v2.3.1 or higher and have a processor with virtualisation extensions.</p>
+
+<p>The NCSC recommends devices that support InstantGo. Devices that are InstantGo certified will not have ports that allow DMA access and will have TPM 2.0 or later. InstantGo will maintain network connectivity when your screen is off in standby mode and will automatically have device encryption enabled.</p>
+
+<p>If you are using Windows Hello with biometric authentication, you will need to buy special hardware,&nbsp;see&nbsp;<a href="https://blogs.windows.com/windowsexperience/2015/03/17/making-windows-10-more-personal-and-more-secure-with-windows-hello/#RCyAP8aetlQZ8WR6.97" rel="nofollow">Microsoft's blog</a>&nbsp;for more information.&nbsp;</p>
+
+<p>Signature Edition devices can be used if the required hardware is available. If using these devices, you may not need to reinstall Windows.</p>
+
+<h4 id="applicationwhitelisting">Application whitelisting</h4>
+
+<p>When configuring additional application whitelists for a Windows device, it is important that the following conditions are considered:</p>
+
+<ul><li>Users should&nbsp;<em>not</em>&nbsp;be allowed to run programs from areas where they are permitted to write files.</li>
+	<li>Care should be taken to ensure that application updates do not conflict with whitelisting rules.</li>
+	<li>Applications should be reviewed before being approved enterprise-wide, to ensure they don&rsquo;t undermine application whitelisting. This is especially important for scripting languages which have their own execution environment.</li>
+</ul><p>The suggested AppLocker configuration in this guidance will implement those rules if using software that adheres to the requirements of Microsoft&rsquo;s&nbsp;<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/hh749939.aspx" rel="nofollow">Desktop App Certification Program</a>. If the rules do need to be customised, follow Microsoft's&nbsp;Design Guide&nbsp;to minimise the impact to the operation of the enterprise.</p>
+
+<h4>Universal applications</h4>
+
+<p>The configuration given above prevents users from accessing the Windows Store to install applications, but an organisation can still host its own store to distribute in-house applications to their employees, if required. This can be implemented either using the Windows Store for Business in the cloud, or via a Company Store app deployed to devices.</p>
+
+<p>If the Windows Store is enabled, users should explicitly use their corporate Microsoft ID to sign into the Store app rather than associating their work device with their personal Microsoft ID. AppLocker can be configured to only allow installation of apps that are on an enterprise-configured &ldquo;allow&rdquo; list. The Windows Store can be configured to automatically update any installed Universal applications. The same mechanism can also be used to remove Universal Apps that come with Windows &ndash; ones that the user is not allowed to run will be disallowed and removed from the Start menu.</p>
+
+<h4>Desktop applications</h4>
+
+<p>Enterprise software that handles data downloaded from the Internet needs additional protections.</p>
+
+<p>Application sandboxing and content rendering controls should be considered essential. For applications such as Microsoft Office, or Adobe Acrobat, the use of their enterprise security controls should be considered. These security controls aim to help protect the end user when processing these potentially malicious files.</p>
+
+<p>As well as providing a trusted platform to run enterprise web apps, modern web browsers have to process a wide variety of rich content from the Internet &ndash; some of which must be considered untrustworthy. You should consider the security controls available when choosing a web browser. If choosing a Microsoft browser, Edge should be preferred, with Internet Explorer only being used for specific website compatibility. If it is feasible, remove Internet Explorer from the installed image.</p>
+
+<p>The update mechanisms built into Windows can be used to deploy and update Microsoft products but cannot keep third party products up to date. Where available, the auto-update mechanism built into third party products should be use to install updates &ndash; where this is not available it will be necessary to deploy updates using an enterprise system management service.</p>
+
+<h4>Cloud integration</h4>
+
+<p>Windows 10 devices do not need to be associated with a Microsoft ID to operate as required within an enterprise. Users should not enable personal, non-enterprise Microsoft ID (Live ID) accounts on the device, as this may allow data to leak through Microsoft cloud services backup and application storage.</p>
+
+<p>However, organisations wishing to use cloud based services such as OneDrive can use the&nbsp;<a href="/guidance/cloud-security-collection" rel="nofollow">NCSC Cloud Security Guidance</a>&nbsp;to help them understand both the benefits and risks of using online services.&nbsp;</p>
+  </div>
+
+
+</div> <!-- /.block -->
+</div></div></div></div>  </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="section-divider"></div>
+    </div>
+</div>
+<div class="row field-v51-topic-cloud-vid">
+  <div class="col-xs-12">
+        <h2>Topics</h2>
+                      <div class="additional-info">
+      
+
+        
+
+        
+    
+    <div class="row">
+      <div class="col-sm-4 padding-bottom">  
+          <a href="/topics/end-user-technology">End user technology</a>  </div> <div class="col-sm-4 padding-bottom">  
+          <a href="/topics/end-user-device">End user device</a>  </div>    </div>
+     </div>
+
+  </div>
+</div><div class="row">
+    <div class="col-xs-12">
+        <div class="section-divider"></div>
+    </div>
+</div>
+<div class="row field-share-this-page no-print social-media">
+  <div class="col-xs-12">
+        <h2>Share this page</h2>
+                      <div class="social no-padding"><a href="http://twitter.com/share?url=https://www.ncsc.gov.uk/guidance/eud-security-guidance-windows-10-1703/ "class="plain" tabindex="89"><span class="sr-only">twitter</span><span class="icon icon-box icon-twitter reverseMargin"></span></a><a href="http://www.facebook.com/sharer.php?u=https://www.ncsc.gov.uk/guidance/eud-security-guidance-windows-10-1703/ "class="plain" tabindex="88"><span class="sr-only">facebook</span><span class="icon icon-box icon-facebook reverseMargin"></span></a><a href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ncsc.gov.uk/guidance/eud-security-guidance-windows-10-1703/ "class="plain" tabindex="87"><span class="sr-only">linkedin</span><span class="icon icon-box icon-linkedin reverseMargin"></span></a></div>  </div>
+</div><div class="row">
+    <div class="col-xs-12">
+        <div class="section-divider"></div>
+    </div>
+</div>
+<div class="row field-depweb-piwik">
+  <div class="col-xs-12">
+                      <div class="emphasize" id="emphasize">
+  <h3>Was this guidance helpful?</h3>
+  <p>We need your feedback to improve this content.</p>
+  <span class="btn btn-primary piwik-feedback"
+        data-informative='Yes'>Yes</span>
+  <span class="btn btn-primary piwik-feedback"
+        data-informative='No'>No</span>
+</div>
+  </div>
+</div>      </div>
+      
+      <aside class="col-md-4">
+        
+<div class="block field-subscribe-to-guidance-updates">
+          <h4>Subscribe to guidance updates</h4>
+    
+
+                      
+            <div class="padding-bottom-half">
+  <a class="btn btn-feed btn-sm" href="https://www.ncsc.gov.uk/feeds/guidance.xml" target="_blank">
+    <span class="icon icon-feed"></span>
+    <span>Guidance RSS Feed</span>
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+      
+      
+</div>
+
+<div class="block field-related-content-v11">
+          <h4>More like this</h4>
+    
+
+                      
+            
+<!-- !!! REMOVE view view-v11-related-content view-id-v11_related_content view-display-id-block view-dom-id-3170b805efa28c4464eab3dcbac6bd2b --> 
+<div>
+        
+  
+  
+            <ul>          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/guidance/end-user-devices-advice-end-users">End User Devices: Advice for End Users</a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/guidance/eud-security-guidance-windows-10-mobile-device-management">EUD Security Guidance: Windows 10 with Mobile Device Management </a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/blog-post/modernising-windows-10-management">Modernising Windows 10 Management</a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/guidance/end-user-devices-security-guidance-apple-ios-6-application-development">End User Devices Security Guidance: Apple iOS 6 Application Development</a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/blog-post/automating-uefi-firmware-updates">Automating UEFI Firmware Updates</a></span>  </div></li>
+      </ul>  
+  
+  
+  
+  
+  
+</div>
+      
+      
+</div>
+
+<div class="block field-v12-most-shared-popular number-list">
+    
+
+                      
+            <div id="quicktabs-most_popular_shared" class="tabbable"><ul class="no-print nav nav-tabs two "><li class="active"><a  href="#quicktabs-most_popular_shared1" data-toggle="tab"><span class="title-wrapper"><span class="link-color visible-xs">Most.</span><span class="link-color hidden-xs">Most Popular</span></span></a></li><li><a  href="#quicktabs-most_popular_shared2" data-toggle="tab"><span class="title-wrapper"><span class="link-color visible-xs">Most.</span><span class="link-color hidden-xs">Most Shared</span></span></a></li></ul><div class="tab-content"><div role="tabpanel"  id="quicktabs-most_popular_shared1" class="tab-pane active"><div class="tab-contents">
+<!-- !!! REMOVE view view-v12-most-shared-popular view-id-v12_most_shared_popular view-display-id-block view-dom-id-119ca11b29c23d42b2c6030450416a66 --> 
+<div>
+        
+  
+  
+        <div class="item-list">    <ol>          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/blog-post/what-does-ncsc-think-password-managers">What does the NCSC think of password managers?</a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/blog-post/three-random-words-or-thinkrandom-0">Three random words or #thinkrandom</a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/blog-post/managing-supply-chain-risk-cloud-enabled-products">Managing supply chain risk in cloud-enabled products</a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/guidance/10-steps-cyber-security">10 Steps to Cyber Security </a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/cisp">Cyber Security Information Sharing Partnership (CiSP)</a></span>  </div></li>
+      </ol></div>  
+  
+  
+  
+  
+  
+</div></div></div><div role="tabpanel"  id="quicktabs-most_popular_shared2" class="tab-pane"><div class="tab-contents">
+<!-- !!! REMOVE view view-v12-most-shared-popular view-id-v12_most_shared_popular view-display-id-block_1 view-dom-id-d306a345cd42e8efdbb861fdbf9f6c76 --> 
+<div>
+        
+  
+  
+        <div class="item-list">    <ol>          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/guidance/ransomware-latest-ncsc-guidance">Ransomware: Latest NCSC Guidance</a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/guidance/password-guidance-simplifying-your-approach">Password Guidance: Simplifying Your Approach</a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/smallbusiness">Cyber Security: Small Business Guide</a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/guidance/protecting-your-organisation-ransomware">Protecting your organisation from ransomware</a></span>  </div></li>
+          <li class="">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/events/cyberuk-2017">CYBERUK 2017</a></span>  </div></li>
+      </ol></div>  
+  
+  
+  
+  
+  
+</div></div></div></div></div>
+      
+      
+</div>
+        
+      </aside>
+    </div>
+<!--   END  MAIN SECTIONS-->
+
+
+<!--END C SIMPLE ARTICLE LAYOUT TPL--> 
+
+
+	</div><!-- end container page-wrap-->
+
+	<!--END page-wrap-->
+</div>
+
+
+<footer class="site-footer">
+		<nav class="no-print">
+		<div class="container">
+
+			<div class="row padding-top">
+				<div class="col-xs-12 no-padding padding-top-large xs-text-left">
+					<h2 class="sr-only">Footer navigation</h2>
+												<img class="padding-bottom"
+								 alt="National Cyber Security Centre logo"
+								 src="/global/logos/ncsc-white.png"/>
+				</div>
+			</div>
+			<div class="row padding-top-large">
+
+				<div class="col-xs-12 col-sm-6 col-md-4 no-padding padding-right xs-no-padding">
+					        
+<div class="block clearfix " >
+
+        <h4 class="block-title">Quick links</h4>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="/contact" title="">Contact us</a></li>
+<li class="leaf"><a href="/information/about-ncsc" title="">About us</a></li>
+<li class="leaf"><a href="/articles/careers-national-cyber-security-centre" title="">Careers</a></li>
+<li class="leaf"><a href="/index/news" title="">News archive</a></li>
+<li class="last leaf"><a href="/index/guidance" title="">Published guidance</a></li>
+</ul>
+</div> <!-- /.block -->
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4 no-padding padding-right padding-left xs-no-padding">
+					        
+<div class="block clearfix " >
+
+        <h4 class="block-title">External links</h4>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="https://www.gchq.gov.uk/" title="">GCHQ</a></li>
+<li class="leaf"><a href="http://www.actionfraud.police.uk/" title="">Action Fraud</a></li>
+<li class="leaf"><a href="http://www.cpni.gov.uk/" title="">CPNI</a></li>
+<li class="last leaf"><a href="https://www.gov.uk/" title="">GOV.UK</a></li>
+</ul>
+</div> <!-- /.block -->
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4 no-padding padding-left xs-no-padding">
+					        
+<div class="block clearfix " >
+
+        <h4 class="block-title">Social</h4>
+    
+  <ul class="menu nav"><li><i class="icon icon-twitter padding-right"></i><a href="https://twitter.com/NCSC" class="plain">@NCSC on Twitter</a></li></ul>
+</div> <!-- /.block -->
+				</div>
+			</div>
+
+
+			<div class="row footer-meta">
+				<div class="col-xs-12 no-padding">
+					<hr>
+				</div>
+				<div class="col-sm-9 col-xs-12 no-padding">
+
+					<div class="support-links padding-top padding-bottom">
+						        
+<div class="block clearfix " >
+
+      
+  <ul class="menu nav"><li class="first leaf"><a href="/sitemap" title="">Sitemap</a></li>
+<li class="leaf"><a href="/accessibility-policy" title="">Accessibility</a></li>
+<li class="leaf"><a href="/cookies-policy" title="">Cookies</a></li>
+<li class="leaf"><a href="/terms-and-conditions" title="">Terms and Conditions</a></li>
+<li class="leaf"><a href="/twitter-policy" title="">Twitter</a></li>
+<li class="last leaf"><a href="/privacy-policy" title="">Privacy Policy</a></li>
+</ul>
+</div> <!-- /.block -->
+					</div>
+									</div>
+				<div class="copyright col-sm-3 col-xs-12 padding-top padding-bottom text-right">
+					<a class="no-link"
+						 href="https://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm"
+						 rel="external">
+						<span>© Crown copyright</span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</nav></footer>
+  <script src="/content/files/advagg_js/js__GM3GJPR36rRIz0TRkjC5OQwrioSyN9aoYRivDhCO_AM__qAl84FcCv2jyN22yFGS5Oc85cjd9zKX6p_cFNLGhe-M__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.js" async="async"></script>
+<script src="/content/files/advagg_js/js__MBPlzduHuYIGIl4KxHjdBEI5sEPADbknnhGV3KqMVxk__rZUD1ppe8TTkJ2LQKip36JXbQxKFv3Vghb5SbdugS6o__KkLDeN-NdHOz_BS9j6yqFaIC5NT5BGd79lvtoAVMiXI.js"></script>
+</body>
+</html>
