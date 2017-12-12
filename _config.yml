@@ -17,7 +17,7 @@ title: NPTC Standards Working Group - Beta
 email: trustee@standards.police.uk
 description: >- # this means to ignore newlines until "baseurl:"
   National Standards for UK Policing.
-  This site is currently in Beta and not approved for production use.
+  This site is currently in Beta and *NOT* approved for production use.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
