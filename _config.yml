@@ -13,10 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: NPTC Standards Working Group
+title: NPTC Standards Working Group - Beta
 email: trustee@standards.police.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  National Standards for UK Policing
+  National Standards for UK Policing.
+  This site is currently in Beta and not approved for production use.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
