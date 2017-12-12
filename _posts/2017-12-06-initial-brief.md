@@ -2,7 +2,7 @@
 layout: post
 title:  "Initial Brief"
 date:   2017-12-06 19:47:47 +0000
-categories: jekyll update
+categories: brief PoliceICT
 ---
 During a Supplier’s Summit in October 2014, co-hosted by the APCC and the Home Office, the key issue raised by workshop participants was the perceived lack of IT standards, and in any case published IT standards, across policing ICT.
 
