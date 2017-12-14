@@ -15,64 +15,62 @@ Some documents may have content that crosscut the hierarchy and therefore may be
 The taxonomy presented here is a work in progress and will continue to evolve as standards are adopted or developed and added to the catalogue.
 
 # business
-governance > process
-governance > roles
++ governance > process
++ governance > roles
 
-guidance > collaboration
-guidance > commercial
-guidance > cyber
-guidance > data
-guidance > legislation
-guidance > monitoring
-guidance > process
-guidance > product
-guidance > professional-practice
-guidance > standards
-guidance > strategy
-guidance > style
-guidance > user-research
++ guidance > collaboration
++ guidance > commercial
++ guidance > cyber
++ guidance > data
++ guidance > legislation
++ guidance > monitoring
++ guidance > process
++ guidance > product
++ guidance > professional-practice
++ guidance > standards
++ guidance > strategy
++ guidance > style
++ guidance > user-research
 
-policy > commercial
-policy > compliance
-policy > data
-policy > TBD
++ policy > commercial
++ policy > compliance
++ policy > data
 
-reference > catalogue
-reference > templates
-reference > terms
++ reference > catalogue
++ reference > templates
++ reference > terms
 
 # Security
-guidance > access
-guidance > data
-guidance > email
-guidance > network
-guidance > product
++ guidance > access
++ guidance > data
++ guidance > email
++ guidance > network
++ guidance > product
 
-policy > access
-policy > audit
-policy > collaboration-sharing
-policy > data
-policy > device
-policy > framework
-policy > notices
-policy > roles
-
++ policy > access
++ policy > audit
++ policy > collaboration-sharing
++ policy > data
++ policy > device
++ policy > framework
++ policy > notices
++ policy > roles
 
 # Technical
-guidance > architecture
-guidance > data
-guidance > device
-guidance > disaster-recovery
-guidance > naming-conventions
-guidance > protocol
-guidance > service-management
-guidance > versioning
++ guidance > architecture
++ guidance > data
++ guidance > device
++ guidance > disaster-recovery
++ guidance > naming-conventions
++ guidance > protocol
++ guidance > service-management
++ guidance > versioning
 
-policy > data
++ policy > data
 
-specification > data
-specification > device
-specification > protocol
++ specification > data
++ specification > device
++ specification > protocol
 
 
 
