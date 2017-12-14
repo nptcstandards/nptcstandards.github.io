@@ -2,25 +2,83 @@
 title: Taxonomy
 layout: page
 ---
-There are many ways that standards can be classified and no one solution will fit all purposes. This page provides guidance on the taxonomy NPTS uses to classifies standards.
+There are many ways that standards can be classified as users will want to view things through different lenses so no one solution will fit all purposes. 
 
-# Technical
-A technical standard is an established norm or requirement in regard to technical systems. It is usually a formal document that establishes uniform engineering or technical criteria, methods, processes and practices
+The method NPTS is currently applying is:
 
-### Specification
-Specification (technical standard) ... A requirement specification is a documented requirement, or set of documented requirements, to be satisfied by a given material, design, product, service, etc.
+*Key Responsibility Area* > *Document Purpose/Function* > *Asset or Activity* to which the purpose is applied.
 
-### Data
-Data standards are the rules by which data are described and recorded. In order to share, exchange, and understand data, we must standardize the format as well as the meaning
+The hierarchy can be extended downwards to create greater specificity, as required.
 
-# Business
-The word "business" can refer to a particular organization or to an entire market sector (for example, "the finance business" is "the financial sector") or to all economic sectors collectively ("the business sector"). Compound forms such as "agribusiness" represent subsets of the concept's broader meaning, which encompasses all activity by suppliers of goods and services.
+Some documents may have content that crosscut the hierarchy and therefore may be tagged in more than one classification.
 
-# Reference
-Reference is a relation between objects in which one object designates, or acts as a means by which to connect to or link to, another object. The first object in this relation is said to refer to the second object.
+The taxonomy presented here is a work in progress and will continue to evolve as standards are adopted or developed and added to the catalogue.
 
-# Template
-The term template, when used in the context of word processing software, refers to a sample document that has already some details in place; those can be adapted (that is added/completed, removed or changed, differently from a fill-in-the-blank approach as in a form) either by hand or through an automated iterative process, such as with a software assistant.
+# business
+governance > process
+governance > roles
+
+guidance > collaboration
+guidance > commercial
+guidance > cyber
+guidance > data
+guidance > legislation
+guidance > monitoring
+guidance > process
+guidance > product
+guidance > professional-practice
+guidance > standards
+guidance > strategy
+guidance > style
+guidance > user-research
+
+policy > commercial
+policy > compliance
+policy > data
+policy > TBD
+
+reference > catalogue
+reference > templates
+reference > terms
 
 # Security
+guidance > access
+guidance > data
+guidance > email
+guidance > network
+guidance > product
+
+policy > access
+policy > audit
+policy > collaboration-sharing
+policy > data
+policy > device
+policy > framework
+policy > notices
+policy > roles
+
+
+# Technical
+guidance > architecture
+guidance > data
+guidance > device
+guidance > disaster-recovery
+guidance > naming-conventions
+guidance > protocol
+guidance > service-management
+guidance > versioning
+
+policy > data
+
+specification > data
+specification > device
+specification > protocol
+
+
+
+
+
+ 
+
+
 
