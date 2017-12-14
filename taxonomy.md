@@ -6,9 +6,9 @@ There are many ways that standards can be classified as users will want to view 
 
 The method NPTS is currently applying is:
 
-*Key Responsibility Area* > *Document Purpose/Function* > *Asset or Activity* to which the purpose is applied.
+**Key Responsibility Area* > **Document Purpose/Function** > **Asset or Activity** to which the purpose is applied.
 
-The hierarchy can be extended downwards to create greater specificity, as required.
+The hierarchy can be extended downwards to create greater specificity of the type of asset or activity involved, if required.
 
 Some documents may have content that crosscut the hierarchy and therefore may be tagged in more than one classification.
 
