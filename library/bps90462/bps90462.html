@@ -1,0 +1,572 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head><meta http-equiv="content-type" content="text/html;charset=utf-8" /><title>
+	NSPIS Custody
+</title>   
+	<script type="text/javascript">
+	    function loadwiki(pageref) {
+
+	        var completeUrl, appName, openWindow;
+	        completeUrl = "http://wiki.listpoint.co.uk/index.php?title=" + pageref;
+	        openWindow = window.open(completeUrl, 'helpWindow', 'width=800,height=800,toolbar=yes,scrollbars=yes,resizable=yes');
+	        if (openWindow != null) {
+	            openWindow.focus();
+	        }
+	    }
+    </script>
+    
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><link href="App_Themes/CVMS/CVMS.css" type="text/css" rel="stylesheet" /><link href="App_Themes/CVMS/MasterLayout.css" type="text/css" rel="stylesheet" /><link href="App_Themes/CVMS/NavMenu.css" type="text/css" rel="stylesheet" /><link href="App_Themes/CVMS/TabMenu.css" type="text/css" rel="stylesheet" /></head>
+
+<body>
+    
+    
+    
+    
+    <script src="/javascript/CookiePolicy/cookieControl-5.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">//<![CDATA[
+        cookieControl({
+            introText: '<p>This site uses some unobtrusive cookies to store information on your computer.</p>',
+            fullText: '<p>Listpoint records the user\'s login status in a cookie called SessionId.  It also uses Google Analytics to record traffic information to enable us to manage the site better.  This means Google Analytics also stores one or more cookies in your browser. </p><p>We do not serve adverts so do not use advertiser tracking cookies.</p><p>By using our site you accept the terms of our <a href="/PrivacyPolicy">Privacy Policy</a>.</p>',
+            position: 'left', // left or right
+            shape: 'triangle', // triangle or diamond
+            theme: 'light', // light or dark
+            startOpen: true,
+            autoHide: 6000,
+            subdomains: true,
+            jQueryUrl: '/javascript/jquery.js',
+            protectedCookies: [], //list the cookies you do not want deleted ['analytics', 'twitter']
+            consentModel: 'explicit',
+            onAccept: function () { ccAddAnalytics() },
+            onReady: function () { },
+            onCookiesAllowed: function () { ccAddAnalytics() },
+            onCookiesNotAllowed: function () { CookieControl.reset() },
+            countries: 'United Kingdom' // Or supply a list ['United Kingdom', 'Greece']
+        });
+
+        function ccAddAnalytics() {
+            jQuery.getScript(('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + ".google-analytics.com/ga.js", function () {
+                var GATracker = _gat._createTracker('UA-26041153-1');
+                GATracker._trackPageview();
+            });
+        }
+       //]]>
+    </script>  
+    
+
+    <form name="aspnetForm" method="post" action="/Context.aspx?ContextName=NSPIS%20Custody&amp;Version=0.2" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_scriptMaster_HiddenField" id="ctl00_scriptMaster_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+
+<script src="/WebResource.axd?d=T61oZ2CmlfQuBk-kTON78iOE3yJDZ-2jedToHbL4scj0XE3iMSZ1EXNIePCn4z-1VcktIDdQA9xjTkytqZKliiqgP2SCr4CUxyk_JXl_B4s1&amp;t=636396579000000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=CfpQOUtYjGJUzgmNiBn3s8rCCzoXg7UX1AFNH9GvS_hrNeuVOUxxhrh1iHmySa8lFFBAqKdxNmN3XnHc5tRy5XTXchve1nfwcRNzTORq6rdOpuh8M630jH6BE0uC_0t7hDNplDa6zw6IXYtrBsRZKQ2&amp;t=470de87b" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="javascript/jquery.js" type="text/javascript"></script>
+<script src="javascript/utility.js" type="text/javascript"></script>
+<script src="javascript/Upload/progressBar.js" type="text/javascript"></script>
+<script src="javascript/Upload/BaseUpload.js" type="text/javascript"></script>
+<script src="javascript/Upload/ContextUpload.js" type="text/javascript"></script>
+<script src="javascript/Upload/template.js" type="text/javascript"></script>
+<script src="javascript/WaitCursorOnAJAXUpdate.js" type="text/javascript"></script>
+<script src="AJAXWebServices/ContextUploadService.asmx/jsdebug" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D1F3D2D5" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="gIRFrBgewxOTL7iOKiGNz0VQ2uPnmrQZ7TqCgoklaAD5E3SLVJfWoFpinE4IuMGP/o7/cJyDrHjUHrHLVDXmE++F44E3tnWMtswfX2jKZVeKZmbxBvAc/emgk6xehHh32z1V9NOOD9heHlZkOvyWJmiBE2V4QWIKNuIT7NeWWAa8NPmOSLOTncfYXLCzHqcns9Fyzy/ohY0zZQvl1HCzucZeuqb46ltNxnI7mBqitconvuzXUVnVffC6Ns9h1YX9Y0+Y0XgtgBX2VDak+b6ewaB98BC2QrQbtF9jz/d/lCy+J1T8j3Nmc76X664b+R4mjzNRQH0a1wgMRtW1aoUFHjmoTIXfmtCsrGfrlKZ+j/nSGQoJHf9V7ODEh7vV3eimPzhRiYMM6KlhYroTPAJtxbW5Qgp1rYTiqNZW0eSaIwW0itb87VMj0N2gFEpLhq+JfOzpvUj4dGXwRDT+5AZbjA==" />
+</div>
+    <input type="hidden" name="ctl00$hdnSessionUsername" id="ctl00_hdnSessionUsername" />
+    <input type="hidden" name="ctl00$hdnViewMode" id="ctl00_hdnViewMode" value="View" />
+   
+	
+    <div id="container">  
+    
+		<table width="100%" border="0">
+			<tr>
+				<td width="75%">
+					<div id="Div2">
+						<table width="100%">
+							<tr>
+								<td>
+                    				<a href="/ContextBrowseByCommunity" style="text-decoration:none;">
+									    <img id="ctl00_MainLogo" class="logo" alt="Listpoint Logo" src="/images/logos/Listpoint-public.png" style="border-width:0px;" />
+                                    </a>
+								</td>
+								<td>
+									<span id="header">Reference data service platform</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+
+				<td width="25%" align="center">	
+					<table width="50%" border="0">
+						<tr>
+							<td style="white-space:nowrap;width:25%;" align="left">
+								&nbsp;
+								
+							</td>
+							<td style="white-space:nowrap;width:25%;" align="left">
+								&nbsp;
+								
+							</td>
+							<td style="white-space:nowrap;width:25%;" align="left" >
+					             		<div class="socialbookmark">
+					                		<a target="_blank" href="http://www.facebook.com/Listpoint" title="Facebook" >
+                                                <img alt="Facebook-link" src="/images/facebook/f_logo.png" height="35px;" width="35px;"/>
+                                            </a>
+								</div>
+							</td>
+							<td style="white-space:nowrap;width:25%;" align="left" class="socialbookmark">
+					             		<div class="socialbookmark">
+							                <a target="_blank" href="https://twitter.com/#!/ListpointAlerts" title="Twitter">
+                                                <img alt="Twitter-link" src="/images/twitter/twitter-bird-light-bgs.png" height="42px;" width="42px;" />
+                                            </a>			
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+
+			</tr>
+		</table>
+
+	    
+    
+        
+        <div id="content"> 
+ 	            
+            <div id="navigation">
+              <div id="ctl00_menuSideBar_pnlLoggedOut">
+	
+    <a href="#ctl00_menuSideBar_mnuLoggedOut_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=tMlfUSlgdub3xk1fxG-TIF9KlqbGdThrz_AatnEGVfgNH7H-3n7VS28S_oCv9LeIEgUDtJ5VS1-P826zaz7Zj5yXq05b7UM7FjFgB6S_dQ01&amp;t=636396579000000000" width="0" height="0" style="border-width:0px;" /></a><table id="ctl00_menuSideBar_mnuLoggedOut" class="NavMenu" cellpadding="0" cellspacing="0" border="0">
+		<tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn0">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Home" style="text-decoration:none;border-style:none;">Home</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn1">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/OpenData" style="text-decoration:none;border-style:none;">Intro To Big Data</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn2">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/InDepth" style="text-decoration:none;border-style:none;">Listpoint in depth</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn3">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Government" style="text-decoration:none;border-style:none;">Government</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn4">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Integrators" style="text-decoration:none;border-style:none;">Integrators</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn5">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Developers" style="text-decoration:none;border-style:none;">Developers</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn6">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/User/create" style="text-decoration:none;border-style:none;">Register</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn7">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/ContextBrowseByCommunity" style="text-decoration:none;border-style:none;">Getting Started</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn8">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Media" style="text-decoration:none;border-style:none;">Media and Resources</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn9">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/Search" style="text-decoration:none;border-style:none;">Search</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn10">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/ContactUs2" style="text-decoration:none;border-style:none;">Contact Us</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn11">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="javascript:loadwiki(&#39;Main_Page&#39;)" style="text-decoration:none;border-style:none;">Wiki</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_menuSideBar_mnuLoggedOutn12">
+			<td><table class="NavMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="NavMenuCell" href="/User/login" style="text-decoration:none;border-style:none;">Login</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><a id="ctl00_menuSideBar_mnuLoggedOut_SkipLink"></a>
+
+</div>
+
+
+            </div>
+ 	         
+                 
+            <div id="detail">
+                
+                
+
+ 
+<script type="text/javascript" language="javascript">
+	function DisableTabListValidation(){
+		var validatorsStr= "";
+		var validators=validatorsStr.split(',');
+		for(var i=0; i < validators.length; i++){
+			if(validators[i] != ""){
+				var valObj=document.getElementById(validators[i]);
+				ValidatorEnable(valObj, false);
+			}
+		}
+		return true;
+	}
+</script>
+
+	<input type="hidden" name="ctl00$PageBody$AdminItemIdHF" id="ctl00_PageBody_AdminItemIdHF" value="14828" />
+	
+	
+	
+	<div id="ctl00_PageBody_TopPanel" class="TopPanel">
+	<fieldset>
+		<legend>
+			Context
+		</legend>
+		<a href="javascript:loadwiki('Context')"><img id="ctl00_PageBody_img12Help" src="images/Info/help.GIF" style="border-width:0px;" /></a> 
+		<div style="float: left; width: 80%">
+		
+				<div>
+			<table cellspacing="0" cellpadding="2" Border="0" border="0" id="ctl00_PageBody_ContextDV" style="width:100%;border-collapse:collapse;">
+				<tr>
+					<td style="width:20%;">Name</td><td style="white-space:nowrap;">
+								<span id="ctl00_PageBody_ContextDV_NameLbl" style="font-weight:bold;">NSPIS Custody v0.2</span>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">Logo</td><td>
+								<img id="ctl00_PageBody_ContextDV_Image41" src="images/contextlogos/caseprep_comp.gif" alt="Logo" style="height:50px;width:100px;border-width:0px;" />
+							</td>
+				</tr><tr>
+					<td style="width:20%;">Status <a href="javascript:loadwiki('Admin_Status')">
+									<img id="ctl00_PageBody_ContextDV_img12Help" src="images/Info/help.GIF" style="border-width:0px;" /></a>
+							</td><td style="white-space:nowrap;">
+							    <img id="ctl00_PageBody_ContextDV_StatusImg1" src="images/AdminStatus/2.gif" alt="Latest" align="absbottom" style="border-width:0px;" />
+							    <span id="ctl00_PageBody_ContextDV_Label8">Latest</span>
+							    
+							    
+    						    <span id="ctl00_PageBody_ContextDV_ValidateBriefMessageLbl"></span>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">Scope <a href="javascript:loadwiki('Registration_Status')">
+									<img id="ctl00_PageBody_ContextDV_img01Help" src="images/Info/help.GIF" style="border-width:0px;" /></a>
+							</td><td style="white-space:nowrap;">
+								<img id="ctl00_PageBody_ContextDV_Image23" src="images/RegistrationStatus/1.gif" alt="Application" align="absbottom" style="border-width:0px;" />
+								<span id="ctl00_PageBody_ContextDV_Label9">Application</span>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">
+								Type <a href="javascript:loadwiki('Context')">
+									<img id="ctl00_PageBody_ContextDV_img02Help" src="images/Info/help.GIF" style="border-width:0px;" /></a>
+							</td><td style="white-space:nowrap;">
+								<img id="ctl00_PageBody_ContextDV_Image24" src="images/ContextType/3.gif" alt="Application" align="absbottom" style="border-width:0px;" />
+								<span id="ctl00_PageBody_ContextDV_Label11">Application</span>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">
+								Publication Policy <a href="javascript:loadwiki('Publication Policy')">
+									<img id="ctl00_PageBody_ContextDV_img602Help" src="images/Info/help.GIF" style="border-width:0px;" /></a>
+							</td><td style="white-space:nowrap;">
+								<span id="ctl00_PageBody_ContextDV_Label611">Public</span>
+                            </td>
+				</tr><tr>
+					<td style="width:20%;">Reason for change</td><td>
+								<span id="ctl00_PageBody_ContextDV_Label803">Cloned</span>
+							</td>
+				</tr><tr>
+					<td style="width:20%;">Planned Live Date</td><td>
+								<span id="ctl00_PageBody_ContextDV_Label804">24/Nov/2009</span>
+							</td>
+				</tr><tr>
+					<td colspan="2">
+						
+						
+    					
+						
+						
+						
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+				<input type="hidden" name="ctl00$PageBody$AdminStatusIdHF" id="ctl00_PageBody_AdminStatusIdHF" value="2" />
+				<input type="hidden" name="ctl00$PageBody$StewardTeamIdHF" id="ctl00_PageBody_StewardTeamIdHF" value="60" />
+			
+		</div>
+   		<div style="float:right; width:19%">
+			<img id="ctl00_PageBody_Image2" class="Icon" src="images/app100.gif" style="border-width:0px;" />
+		</div>
+
+		<br style="clear: both" />
+		
+	
+	</fieldset>
+</div>
+	<a href="#ctl00_PageBody_TabRackMenu_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=tMlfUSlgdub3xk1fxG-TIF9KlqbGdThrz_AatnEGVfgNH7H-3n7VS28S_oCv9LeIEgUDtJ5VS1-P826zaz7Zj5yXq05b7UM7FjFgB6S_dQ01&amp;t=636396579000000000" width="0" height="0" style="border-width:0px;" /></a><table id="ctl00_PageBody_TabRackMenu" class="TabMenu" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun0"><table class="TabMenuCellSelected TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCellSelected TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Enum Data Types&#39;)" style="text-decoration:none;border-style:none;">Data Types</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun1"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Interested Teams&#39;)" style="text-decoration:none;border-style:none;">Interested Teams</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun2"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Admin details&#39;)" style="text-decoration:none;border-style:none;">Admin details</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun3"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;History&#39;)" style="text-decoration:none;border-style:none;">History</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun4"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Download&#39;)" style="text-decoration:none;border-style:none;">Download</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun5"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Context Maps&#39;)" style="text-decoration:none;border-style:none;">Context Maps</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_PageBody_TabRackMenun6"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" href="javascript:__doPostBack(&#39;ctl00$PageBody$TabRackMenu&#39;,&#39;Differences&#39;)" style="text-decoration:none;border-style:none;">Differences</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td id="ctl00_PageBody_TabRackMenun7"><table class="TabMenuCell" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="TabMenuCell" disabled="true" style="text-decoration:none;border-style:none;">Upload</a></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><a id="ctl00_PageBody_TabRackMenu_SkipLink"></a>
+	<div id="ctl00_PageBody_UnderTabPanel" class="TabRack">
+	
+		
+				
+				
+				<div>
+		<table cellspacing="0" cellpadding="4" Border="0" border="0" id="ctl00_PageBody_EDTsMSGV" style="width:100%;border-collapse:collapse;text-align: left; overflow: auto;">
+			<tr class="StandardGridHeader">
+				<th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$PageBody$EDTsMSGV&#39;,&#39;Sort$TypeName&#39;)">Data Type Name</a></th><th scope="col">Type</th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$PageBody$EDTsMSGV&#39;,&#39;Sort$CVSetName&#39;)">uses Code List</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$PageBody$EDTsMSGV&#39;,&#39;Sort$CVSetAdminStatusId&#39;)">Status</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$PageBody$EDTsMSGV&#39;,&#39;Sort$CVSetRegistrationStatusId&#39;)">Scope</a></th>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/Accent">Accent</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_Accent/0.2">NSPIS_Custody_Accent v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/AddressType-PNC">AddressType-PNC</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_AddressType-PNC/0.2">NSPIS_Custody_AddressType-PNC v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/ArrestReason">ArrestReason</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/ArrestInitialReasonClass/2.0">ArrestInitialReasonClass v2.0</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/2.gif" alt="Police Service" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/Build-PNC">Build-PNC</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_Build-PNC/0.2">NSPIS_Custody_Build-PNC v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/CCCJSCode">CCCJSCode</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_CCCJSCode/0.2">NSPIS_Custody_CCCJSCode v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/CustodyDisposal">CustodyDisposal</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_CustodyDisposal/0.2">NSPIS_Custody_CustodyDisposal v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/DetaineeRiskAssessmentPurpose">DetaineeRiskAssessmentPurpose</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_DetaineeRiskAssessmentPurpose/0.2">NSPIS_Custody_DetaineeRiskAssessmentPurpose v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/EthnicAppearance">EthnicAppearance</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_EthnicAppearance/0.2">NSPIS_Custody_EthnicAppearance v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/Ethnicity">Ethnicity</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_Ethnicity/0.2">NSPIS_Custody_Ethnicity v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/EthnicityNotStatedReason">EthnicityNotStatedReason</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_EthnicityNotStatedReason/0.2">NSPIS_Custody_EthnicityNotStatedReason v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/EyeColour">EyeColour</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_EyeColour/0.2">NSPIS_Custody_EyeColour v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/FacialHairType">FacialHairType</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_FacialHairType/0.2">NSPIS_Custody_FacialHairType v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/FromType">FromType</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_FromType/0.2">NSPIS_Custody_FromType v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/GlassesWorn">GlassesWorn</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_GlassesWorn/0.2">NSPIS_Custody_GlassesWorn v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/GroundsForImposingConditions">GroundsForImposingConditions</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_GroundsForImposingConditions/0.2">NSPIS_Custody_GroundsForImposingConditions v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/HairColour">HairColour</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_HairColour/0.2">NSPIS_Custody_HairColour v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/HairColourArtificial">HairColourArtificial</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_HairColourArtificial/0.2">NSPIS_Custody_HairColourArtificial v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/HairDyedOrGreying">HairDyedOrGreying</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_HairDyedOrGreying/0.2">NSPIS_Custody_HairDyedOrGreying v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/HairFeatues">HairFeatues</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_HairFeatures/0.2">NSPIS_Custody_HairFeatures v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/HairPosition">HairPosition</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_HairPosition/0.2">NSPIS_Custody_HairPosition v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/HairType">HairType</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_HairType/0.2">NSPIS_Custody_HairType v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/Handed">Handed</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_Handed/0.2">NSPIS_Custody_Handed v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/JewelleryType">JewelleryType</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_JewelleryType/0.2">NSPIS_Custody_JewelleryType v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/MarksScarsAbnormalitiesBodyPart">MarksScarsAbnormalitiesBodyPart</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_MarksScarsAbnormalitiesBodyPart/0.2">NSPIS_Custody_MarksScarsAbnormalitiesBodyPart v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/MarksScarsAbnormalitiesKeywords">MarksScarsAbnormalitiesKeywords</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_MarksScarsAbnormalitiesKeywords/0.2">NSPIS_Custody_MarksScarsAbnormalitiesKeywords v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/MarksScarsAbnormalitiesLocation">MarksScarsAbnormalitiesLocation</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_MarksScarsAbnormalitiesLocation/0.2">NSPIS_Custody_MarksScarsAbnormalitiesLocation v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/MarksScarsAbnormalitiesType">MarksScarsAbnormalitiesType</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_MarksScarsAbnormalitiesType/0.2">NSPIS_Custody_MarksScarsAbnormalitiesType v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/MOCategory">MOCategory</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_MOCategory/0.2">NSPIS_Custody_MOCategory v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/MOSubCategory">MOSubCategory</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_MOSubCategory/0.2">NSPIS_Custody_MOSubCategory v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/MOType">MOType</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_MOType/0.2">NSPIS_Custody_MOType v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/NationalOfCountry">NationalOfCountry</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_NationalOfCountry/0.2">NSPIS_Custody_NationalOfCountry v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/OccupationSubcategory">OccupationSubcategory</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_OccupationSubcategory/0.2">NSPIS_Custody_OccupationSubcategory v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/OffenceQualifier">OffenceQualifier</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_OffenceQualifier/0.2">NSPIS_Custody_OffenceQualifier v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/Offences">Offences</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_Offences/0.2">NSPIS_Custody_Offences v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/PersonIdentityNumberType">PersonIdentityNumberType</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_PersonIdentityNumberType/0.2">NSPIS_Custody_PersonIdentityNumberType v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/PersonNameType">PersonNameType</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_PersonNameType/0.2">NSPIS_Custody_PersonNameType v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/PNCForceStationCode">PNCForceStationCode</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_PNCForceStationCode/0.2">NSPIS_Custody_PNCForceStationCode v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/ReasonForRefusingBail">ReasonForRefusingBail</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_ReasonForRefusingBail/0.2">NSPIS_Custody_ReasonForRefusingBail v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/Sex">Sex</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_Sex/0.2">NSPIS_Custody_Sex v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/ShoeSizeBritish">ShoeSizeBritish</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_ShoeSizeBritish/0.2">NSPIS_Custody_ShoeSizeBritish v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr><tr>
+				<td><a href="Context/details/NSPIS%20Custody/0.2/TypeOfSample">TypeOfSample</a></td><td>Enumeration</td><td align="left"><a href="CodeList/details/NSPIS_Custody_TypeOfSample/0.2">NSPIS_Custody_TypeOfSample v0.2</a></td><td align="center"><img src="images/AdminStatus/2.gif" alt="Latest" style="height:24px;width:24px;border-width:0px;" /></td><td align="center"><img src="images/RegistrationStatus/1.gif" alt="Application" style="height:24px;width:24px;border-width:0px;" /></td>
+			</tr>
+		</table>
+	</div>
+			
+	
+</div>
+	
+	<script type="text/javascript" language="javascript">
+	
+	var _divFrame;
+  
+	 $(function() {
+                SetIFrame();
+            
+            });      
+            
+             
+        
+        function SetIFrame()
+        {
+            _divFrame = document.getElementById('divFrame');
+            var contextId = getDocElementById('ctl00_PageBody_AdminItemIdHF').value;
+            var iFrameUrl = '/ContextUploadFrame.aspx';
+            iFrameUrl = iFrameUrl + "?adminItemId=" + contextId;
+            
+            var iFrameHTML;
+            if( _divFrame != null)
+            {
+                iFrameHTML = "<iframe id='ifrXMLUpload' onload='initUpload()' scrolling='no' frameborder='0' hidefocus='true' style='text-align:center;vertical-align:middle;border-style:none;margin:0px;width:100%;height:55px' src='" + iFrameUrl + "'></iframe>";
+                _divFrame.innerHTML=iFrameHTML;
+            }
+            
+        }
+	      
+      </script>  
+      <script type="text/javascript" language="javascript">
+          function CheckDrafts() {
+              DisableTabListValidation();
+              var control = document.getElementById('ctl00_PageBody_ContextDV_OpenDraftButton');
+              if (control != null)
+                  return confirm('A draft already exists. Start another?');
+              else
+                  return true;
+          }
+      </script>
+      
+
+                
+            </div>
+             
+        
+        </div>
+        
+        <br />     
+     </div>
+
+    
+
+	<div id="footer">
+
+
+
+
+
+<a href="/TermsAndConditions" style="text-decoration:none;">Terms and Conditions</a>
+|
+<a href="/PrivacyPolicy" style="text-decoration:none;">Privacy Policy</a>
+|
+<a href="/Charter" style="text-decoration:none;">Charter</a>
+|
+<a href="/Glossary" style="text-decoration:none;">Glossary</a>
+|
+<span id="ctl00_CVMSEnvLabel">Public Live Environment</span>
+|
+<span id="ctl00_ListpointBuild">1.2.0003</span>
+
+
+	</div>    
+		
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ctl00_scriptMaster_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();var ctl00_menuSideBar_mnuLoggedOut_Data = new Object();
+ctl00_menuSideBar_mnuLoggedOut_Data.disappearAfter = 500;
+ctl00_menuSideBar_mnuLoggedOut_Data.horizontalOffset = 0;
+ctl00_menuSideBar_mnuLoggedOut_Data.verticalOffset = 0;
+var ctl00_PageBody_TabRackMenu_Data = new Object();
+ctl00_PageBody_TabRackMenu_Data.disappearAfter = 500;
+ctl00_PageBody_TabRackMenu_Data.horizontalOffset = 0;
+ctl00_PageBody_TabRackMenu_Data.verticalOffset = 0;
+//]]>
+</script>
+</form>
+</body>
+</html>

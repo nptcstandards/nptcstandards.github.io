@@ -1,0 +1,20 @@
+NPTS:
+  name: NPTC Standards Working Group
+  lead: Steve Havard
+  parent_org:
+  standards_liaison_representative: Not Applicable
+  description:
+NPTC:
+  name: National Police Technology Council
+  lead: 
+  description: The NPTC membership is selected from heads of IT and IT directors from the UKs police services.
+NEP:
+  name: National Enabling Programmes
+  lead: Ian Bell
+  standards_liaison_representative: Jason Corbishley
+  description: 
+PoliceICT:
+  name: Police ICT Company
+  lead: TBC
+  standards_liaison_representative: Nora Davies
+  description:

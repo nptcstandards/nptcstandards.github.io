@@ -1,0 +1,64 @@
+- name: O365 Desktop Deployment Best Common Practice
+  bps_reference: bps38120
+  std_sponsor: National Enabling Programmes
+  author_org: 
+  project_status: In-Progress
+  document_abstract:
+  start_date:
+  estimated_completion_date:
+- name: POLE Exchange Data Encoding Schema
+  bps_reference: bps18786
+  std_sponsor: 
+  author_org: 
+  project_status: Paused
+  document_abstract:
+  start_date:
+  estimated_completion_date:
+- name: POLE Exchange Hypermedia Graph Schema
+  bps_reference: bps10671
+  std_sponsor: 
+  author_org: 
+  project_status: Paused
+  document_abstract:
+  start_date:
+  estimated_completion_date:
+- name: POLE Exchange Message Protocol
+  bps_reference: bps20515
+  std_sponsor: 
+  author_org: 
+  project_status: Paused
+  document_abstract:
+  start_date:
+  estimated_completion_date:
+- name: Police User Identity Attributes & Metadata
+  bps_reference: bps87543
+  std_sponsor: National Enabling Programmes
+  author_org: 
+  project_status: In-Progress
+  document_abstract:
+  start_date:
+  estimated_completion_date:
+- name: Risk Management & Methodology
+  bps_reference: bps37942
+  std_sponsor: National Enabling Programmes
+  author_org: 
+  project_status: In-Progress
+  document_abstract:
+  start_date:
+  estimated_completion_date:
+- name: Technical Configuration for Windows 10 Fall Creators Update (Build 1709) End User Devices (desktops/laptops)
+  bps_reference: bps20961
+  std_sponsor: 
+  author_org: 
+  project_status: In-Progress
+  document_abstract:
+  start_date:
+  estimated_completion_date:
+- name: Management of Windows 10 End User Devices (desktops/laptops)
+  bps_reference: bps29614
+  std_sponsor: 
+  author_org: 
+  project_status: Scheduled
+  document_abstract:
+  start_date:
+  estimated_completion_date:

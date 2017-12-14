@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>
+      Technology Code of Practice - GOV.UK
+  </title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-2775f99eaec64ff8121bfbfb3eb67b0c2b4b7c3fc78d25da30e12db2a09d30d6.css" crossorigin="anonymous" integrity="sha256-J3X5nq7GT/gSG/v7PrZ7DCtLfD/HjSXaMOEtsqCdMNY=">
+<!--<![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie6-5bb08c355a12ac38b0ac9d2446da122ec0f81c78e02dcd2a98766f53c23793c8.css" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie7-be1ea757827710f20eae59ae3ebfd172b7dbeabb171a79945ba610947eebb3cc.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie8-5ab4d0c7b42f2bf10f8c7aadf331a11f7399be832b0ee2c68c94071195a1e36e.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css" crossorigin="anonymous" integrity="sha256-EHZRlSHC//u/das7DTsy7i2WrH6XePHN+sF3Hu/RocA=">
+
+    <!--[if IE 8]><link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-ie8-f5e3c18a96ecb0f37246556a27330202d6e18feffa05a3b67825024609629ac8.css" /><![endif]-->
+    <!--[if gte IE 9]><!--><link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-5ff8c53913434afd0072a480d7cfca67cace4c8d03f6ef96b78a4455728ce745.css" crossorigin="anonymous" integrity="sha256-X/jFORNDSv0AcqSA18/KZ8rOTI0D9u+Wt4pEVXKM50U=">
+<!--<![endif]-->
+    <!--[if lt IE 9]><script src="https://assets.publishing.service.gov.uk/static/ie-d31395a9030b68584b0a191af4b68cb7bef1bb6024898c719fb61241f9e18d0e.js" crossorigin="anonymous" integrity="sha256-0xOVqQMLaFhLChka9LaMt77xu2AkiYxxn7YSQfnhjQ4="></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.publishing.service.gov.uk/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-6432a80f7829cad510b2ebaae98fcc9ebe2e99561fff5a97ecc9c7d0cff21537.css" crossorigin="anonymous" integrity="sha256-ZDKoD3gpytUQsuuq6Y/Mnr4umVYf/1qX7MnH0M/yFTc=">
+<!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie6-dc8819787f616e63b05de96300a178b00a9aae74630ac4188329db03bf3d6b1e.css" /><script>var ieVersion = 6;</script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie7-67473e60ee01211611f919664a9eff21f3a2307db0df87c0b285887010237109.css" /><script>var ieVersion = 7;</script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie8-8cd16a38daba39516bfe4c4100c3143667ec6bbdee6c4404d320e596e6fee58e.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/core-layout-print-774f7d274d27182a629690248f3d33de4aab74e12244f02483d1343c5f7f7265.css" crossorigin="anonymous" integrity="sha256-d099J00nGCpilpAkjz0z3kqrdOEiRPAkg9E0PF9/cmU=">
+
+
+  <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-baec48be27231b3198f572cc8d0ebc2ca62c044025e70166b9260c2b8a6362ec.css" crossorigin="anonymous" integrity="sha256-uuxIvicjGzGY9XLMjQ68LKYsBEAl5wFmuSYMK4pjYuw=">
+<!--<![endif]--><link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/government-frontend/print-9e52619a28f6d0ef9fb0a8b9d8fe0c4f2ff35d8dbb2d28db2d600b8bffcc4e9a.css" crossorigin="anonymous" integrity="sha256-nlJhmij20O+fsKi52P4MTy/zXY27LSjbLWALi//MTpo=">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="iFrBu32wpOE+bw/po8G1k05yuLkhHmNE3swhJdGTht30x9egfr9Q4No7fnc4xwFEQc9hThnGscuxGZbSsOv+Sw==">
+<meta name="govuk:format" content="html_publication">
+<meta name="govuk:schema-name" content="html_publication">
+<meta name="govuk:analytics:organisations" content="&lt;OT1056&gt;">
+<meta name="govuk:user-journey-stage" content="thing">
+<meta name="govuk:navigation-document-type" content="other">
+<meta name="govuk:content-id" content="f58eda0c-5e46-4080-90f9-bab2790a25e4">
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-ie6-2a849fa0fc5268876d33c1fb82eeea322afde5f2632b10ba8eadb4803882e83b.css" /><script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-ie7-2a849fa0fc5268876d33c1fb82eeea322afde5f2632b10ba8eadb4803882e83b.css" /><script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-ie8-3db45210664d20dc97436d1f67dbab5da4b1e6020d84ae0c5f500b296f784dec.css" /><script>var ieVersion = 8;</script><![endif]--><meta name="govuk:rendering-application" content="government-frontend">
+</head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+        <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+    </div>
+
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img src="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" width="36" height="32" alt=""> GOV.UK
+            </a>
+          </div>
+            <a href="#search" class="search-toggle js-header-toggle">Search</a>
+
+  <form id="search" class="site-search" action="/search" method="get" role="search">
+    <div class="content">
+      <label for="site-search-text">Search</label>
+      <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus">
+      <input class="submit" type="submit" value="Search">
+    </div>
+  </form>
+
+        </div>
+        
+      </div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      <div id="wrapper" class="direction-ltr">
+    
+          
+<div class="govuk-breadcrumbs " data-module="track-click">
+  <ol>
+
+    <li class="">
+        <a data-track-category="breadcrumbClicked" data-track-action="1" data-track-label="/" data-track-options='{"dimension28":"2","dimension29":"Home"}' class="" aria-current="false" href="/">Home</a>
+    </li>
+
+    <li class="">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/government/publications/technology-code-of-practice" data-track-options='{"dimension28":"2","dimension29":"Technology Code of Practice"}' class="" aria-current="false" href="/government/publications/technology-code-of-practice">Technology Code of Practice</a>
+    </li>
+  </ol>
+</div>
+
+
+    <main role="main" id="content" class="html-publication" lang="en">
+      
+<div class="publication-external">
+  <ol class="organisation-logos">
+      <li class="organisation-logo">
+        <div class="govuk-organisation-logo cabinet-office">
+    <a href="/government/organisations/government-digital-service" class="logo-container logo-link logo-with-crest crest-single-identity">
+
+    <span>Government Digital Service</span>
+
+    </a>
+</div>
+
+      </li>
+  </ol>
+</div>
+
+<header class="app-c-publication-header">
+  <div class="pub-c-title
+  pub-c-title--inverse
+  ">
+    <p class="pub-c-title__context">
+      Guidance
+    </p>
+  <h1 class="pub-c-title__text ">
+    Technology Code of Practice
+  </h1>
+</div>
+
+  <p class="app-c-publication-header__last-changed">Updated 6 November 2017</p>
+</header>
+
+
+
+
+<div class="grid-row sidebar-with-body" data-module="sticky-element-container" id="contents">
+    <div class="column-quarter-desktop-only">
+        <nav role="navigation" class="app-c-contents-list">
+    <h2>
+      Contents
+    </h2>
+    <ol class="app-c-contents-list__list">
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#the-purpose-of-the-technology-code-of-practice">
+            The purpose of the Technology Code of Practice
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#using-the-technology-code-of-practice">
+            Using the Technology Code of Practice
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#the-technology-code-of-practice">
+            The Technology Code of Practice
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#define-user-needs">
+            <span class="app-c-contents-list__number">1. </span><span class="app-c-contents-list__numbered-text">Define user needs</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#make-things-accessible">
+            <span class="app-c-contents-list__number">2. </span><span class="app-c-contents-list__numbered-text">Make things accessible</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#be-open-and-use-open-source">
+            <span class="app-c-contents-list__number">3. </span><span class="app-c-contents-list__numbered-text">Be open and use open source</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#make-use-of-open-standards">
+            <span class="app-c-contents-list__number">4. </span><span class="app-c-contents-list__numbered-text">Make use of open standards</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#use-cloud-first">
+            <span class="app-c-contents-list__number">5. </span><span class="app-c-contents-list__numbered-text">Use cloud first</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#make-things-secure">
+            <span class="app-c-contents-list__number">6. </span><span class="app-c-contents-list__numbered-text">Make things secure</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#make-privacy-integral">
+            <span class="app-c-contents-list__number">7. </span><span class="app-c-contents-list__numbered-text">Make privacy integral</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#share-and-reuse-technology">
+            <span class="app-c-contents-list__number">8. </span><span class="app-c-contents-list__numbered-text">Share and reuse technology</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#integrate-and-adapt-technology">
+            <span class="app-c-contents-list__number">9. </span><span class="app-c-contents-list__numbered-text">Integrate and adapt technology</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#make-better-use-of-data">
+            <span class="app-c-contents-list__number">10. </span><span class="app-c-contents-list__numbered-text">Make better use of data</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#define-your-purchasing-strategy">
+            <span class="app-c-contents-list__number">11. </span><span class="app-c-contents-list__numbered-text">Define your purchasing strategy</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#meet-the-digital-service-standard-for-digital-services">
+            <span class="app-c-contents-list__number">12. </span><span class="app-c-contents-list__numbered-text">Meet the Digital Service Standard for digital services</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#contact">
+            Who to contact for help
+</a>        </li>
+    </ol>
+  </nav>
+
+    </div>
+
+  <div class="print-wrapper">
+    <div class="print-meta-data">
+      <p>
+  <img class="print-meta-data-licence" src="https://assets.publishing.service.gov.uk/government-frontend/open-government-licence-min-e98134ae65ff5fe99a524d8c383350b3998f91c298dc24b36126e65f1656c578.png" alt="Open government licence min">
+</p>
+<p>
+  © Crown copyright 2017
+</p>
+<p>
+  This publication is licensed under the terms of the Open Government Licence v3.0 except where otherwise stated. To view this licence, visit <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3">nationalarchives.gov.uk/doc/open-government-licence/version/3</a> or write to the Information Policy Team, The National Archives, Kew, London TW9 4DU, or email: <a href="mailto:psi@nationalarchives.gsi.gov.uk">psi@nationalarchives.gsi.gov.uk</a>.
+</p>
+<p>
+  Where we have identified any third party copyright information you will need to obtain permission from the copyright holders concerned.
+</p>
+<p>
+  This publication is available at https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice
+</p>
+
+
+
+    </div>
+  </div>
+
+  <div class="column-three-quarters-desktop-only ">
+    <div class="govuk-govspeak-html-publication">
+  
+<div class="govuk-govspeak direction-ltr">
+  <div class="govspeak">
+<p>The Technology Code of Practice is a set of criteria to help government design, build and buy better technology. It’s used as a cross-government agreed standard in the <a href="https://www.gov.uk/service-manual/agile-delivery/apply-for-approval-to-spend-money-on-a-service">spend control process</a>.</p>
+
+<p>The Technology Code of Practice is part of the <a href="https://www.gov.uk/government/publications/government-transformation-strategy-2017-to-2020/government-transformation-strategy">Transformation Strategy 2017-2020</a>.</p>
+
+<p>You must follow this code from the start of your technology programme or project.</p>
+
+<h2 id="the-purpose-of-the-technology-code-of-practice">The purpose of the Technology Code of Practice</h2>
+
+<p>Following the Technology Code of Practice will help you <a href="https://www.gov.uk/service-manual/agile-delivery/spend-controls-check-if-you-need-approval-to-spend-money-on-a-service#when-you-need-approval-for-technology">gain approval to spend</a> from your department spend control process, or from the <a href="https://www.gov.uk/service-manual/agile-delivery/spend-controls-check-if-you-need-approval-to-spend-money-on-a-service">GDS Standards Assurance team</a>, avoiding activities that’ll result in your <a href="https://www.gov.uk/service-manual/agile-delivery/spend-controls-check-if-you-need-approval-to-spend-money-on-a-service#projects-that-usually-wont-be-approved">application being rejected</a>. It will also help you introduce technology that:</p>
+
+<ul>
+  <li>meets <a href="https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs">user needs</a>, based on research with your users</li>
+  <li>can be shared across government</li>
+  <li>is easily maintained</li>
+  <li>scales for future use</li>
+  <li>is less dependent on single third-party suppliers</li>
+  <li>provides better value for money</li>
+</ul>
+
+<p>The Technology Code of Practice contains guidance and case studies to help you migrate from legacy infrastructure and manage the full lifecycle of your technology. More guidance and case studies will continue to be added.</p>
+
+<h2 id="using-the-technology-code-of-practice">Using the Technology Code of Practice</h2>
+
+<p>You should use the Technology Code of Practice for all of your technology projects or programmes. If your project or programme needs <a href="https://www.gov.uk/service-manual/agile-delivery/apply-for-approval-to-spend-money-on-a-service">spend control approval</a> you should <a href="mailto:%20gdsapprovals@digital.cabinet-office.gov.uk">contact the Government Digital Service (GDS) Standards Assurance team</a> as soon as possible. They’ll guide you through the approvals process which can provide you with greater confidence that <a href="https://www.gov.uk/service-manual/agile-delivery/apply-for-approval-to-spend-money-on-a-service#how-to-apply">your spend request</a> will be approved.</p>
+
+<p>All points of the Technology Code of Practice must be considered. Where legacy technology limits your ability to adhere to the standard, this must be explained as part of the spend control process. The Standards Assurance team consider individual circumstances for each application.</p>
+
+<h2 id="the-technology-code-of-practice">The Technology Code of Practice</h2>
+
+<h2 id="define-user-needs">
+<span class="number">1. </span> Define user needs</h2>
+
+<p>Understand your users and their needs. Develop knowledge of your users and what that means for your technology project or programme.</p>
+
+<p><a href="https://www.gov.uk/guidance/define-user-needs">Read more about point 1</a></p>
+
+<h2 id="make-things-accessible">
+<span class="number">2. </span> Make things accessible</h2>
+
+<p>Make sure your technology, infrastructure and systems are accessible for users.</p>
+
+<p><a href="https://www.gov.uk/guidance/make-things-accessible">Read more about point 2</a></p>
+
+<h2 id="be-open-and-use-open-source">
+<span class="number">3. </span> Be open and use open source</h2>
+
+<p>Publish your code and use open source to improve transparency, flexibility and accountability.</p>
+
+<p><a href="https://www.gov.uk/guidance/be-open-and-use-open-source">Read more about point 3</a></p>
+
+<h2 id="make-use-of-open-standards">
+<span class="number">4. </span> Make use of open standards</h2>
+
+<p>Build technology that uses open standards to ensure your technology works and communicates with other technology, and can easily be upgraded and expanded.</p>
+
+<p><a href="https://www.gov.uk/guidance/make-use-of-open-standards">Read more on point 4</a></p>
+
+<h2 id="use-cloud-first">
+<span class="number">5. </span> Use cloud first</h2>
+
+<p>Use public cloud first as stated in the government’s cloud first policy.</p>
+
+<p><a href="https://www.gov.uk/guidance/use-cloud-first">Read more about point 5</a></p>
+
+<h2 id="make-things-secure">
+<span class="number">6. </span> Make things secure</h2>
+
+<p>Keep systems and data safe with the appropriate level of security.</p>
+
+<p><a href="https://www.gov.uk/guidance/make-things-secure">Read more about point 6</a></p>
+
+<h2 id="make-privacy-integral">
+<span class="number">7. </span> Make privacy integral</h2>
+
+<p>Make sure citizens’ rights are protected by integrating privacy as an essential part of your system.</p>
+
+<p><a href="https://www.gov.uk/guidance/make-privacy-integral">Read more about point 7</a></p>
+
+<h2 id="share-and-reuse-technology">
+<span class="number">8. </span> Share and reuse technology</h2>
+
+<p>Promote good practice and avoid duplicated efforts by sharing and reusing services, data and software components.</p>
+
+<p><a href="https://www.gov.uk/guidance/share-and-reuse-technology">Read more about point 8</a></p>
+
+<h2 id="integrate-and-adapt-technology">
+<span class="number">9. </span> Integrate and adapt technology</h2>
+
+<p>Your technology should work with existing technologies, processes and infrastructure in your organisation, and adapt to future demands.</p>
+
+<p><a href="https://www.gov.uk/guidance/integrate-and-adapt-technology">Read more about point 9</a></p>
+
+<h2 id="make-better-use-of-data">
+<span class="number">10. </span> Make better use of data</h2>
+
+<p>Consider how to minimise data collection and reuse data to avoid duplication of datasets.</p>
+
+<p><a href="https://www.gov.uk/guidance/make-better-use-of-data">Read more about point 10</a></p>
+
+<h2 id="define-your-purchasing-strategy">
+<span class="number">11. </span> Define your purchasing strategy</h2>
+
+<p>Your purchasing strategy must show you’ve considered commercial and technology aspects, and contractual limitations.</p>
+
+<p><a href="https://www.gov.uk/guidance/define-your-purchasing-strategy">Read more about point 11</a></p>
+
+<h2 id="meet-the-digital-service-standard-for-digital-services">
+<span class="number">12. </span> Meet the Digital Service Standard for digital services</h2>
+
+<p>If you are building a service as part of your technology project or programme you will also need to meet the <a href="https://www.gov.uk/service-manual/service-standard">Digital Service Standard</a>.</p>
+
+<h2 id="contact">Who to contact for help</h2>
+
+<h3 id="gds-standards-assurance-team">GDS Standards Assurance team</h3>
+
+<p><a href="mailto:gdsapprovals@digital.cabinet-office.gov.uk">gdsapprovals@digital.cabinet-office.gov.uk</a></p>
+
+<p>You can email for help with:</p>
+
+<ul>
+  <li>implementing the Technology Code of Practice</li>
+  <li>designing an appropriate strategy for breaking up large systems and services</li>
+  <li>evaluating the maturity of the technology market you want to buy from</li>
+  <li>identifying opportunities to use common government platforms and components</li>
+</ul>
+
+<h3 id="crown-commercial-service">Crown Commercial Service</h3>
+
+<p><a href="mailto:info@crowncommercial.gov.uk">info@crowncommercial.gov.uk</a></p>
+
+<p>You can email for help with buying commodity services through procurement frameworks.</p>
+
+<h3 id="cabinet-office-complex-transactions-team">Cabinet Office Complex Transactions Team</h3>
+
+<p><a href="mailto:gdsapprovals@digital.cabinet-office.gov.uk%20with%20any%20queries">gdsapprovals@digital.cabinet-office.gov.uk with any queries</a></p>
+
+<p>You can email for help with:</p>
+
+<ul>
+  <li>simplifying and defining complex sourcing strategies</li>
+  <li>planning and organising transactions with suppliers such as contract exits and re-procurements</li>
+  <li>leading and supporting negotiations with technology suppliers</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+  </div>
+
+  <div data-sticky-element class="govuk-sticky-element">
+    <a class="app-c-back-to-top dont-print" href="#contents">
+    <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewbox="0 0 13 17">
+      <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+    </svg>
+    Contents
+</a>
+
+  </div>
+</div>
+
+    </main>
+  <div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2>Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice">
+        
+          <input id="source" name="source" type="hidden" value="">
+        
+        
+          <input id="page_owner" name="page_owner" type="hidden" value="">
+        
+
+        <p>Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+        <label for="what_doing">What you were doing</label>
+        <input id="what_doing" name="what_doing" type="text">
+
+        <label for="what_wrong">What went wrong</label>
+        <input id="what_wrong" name="what_wrong" type="text">
+
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+            <div class="footer-categories">
+      <div class="footer-explore">
+        <h2>Services and information</h2>
+
+        <ul>
+          <li><a href="/browse/benefits">Benefits</a></li>
+          <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+          <li><a href="/browse/business">Business and self-employed</a></li>
+          <li><a href="/browse/childcare-parenting">Childcare and parenting</a></li>
+          <li><a href="/browse/citizenship">Citizenship and living in the UK</a></li>
+          <li><a href="/browse/justice">Crime, justice and the law</a></li>
+          <li><a href="/browse/disabilities">Disabled people</a></li>
+          <li><a href="/browse/driving">Driving and transport</a></li>
+        </ul>
+        <ul>
+          <li><a href="/browse/education">Education and learning</a></li>
+          <li><a href="/browse/employing-people">Employing people</a></li>
+          <li><a href="/browse/environment-countryside">Environment and countryside</a></li>
+          <li><a href="/browse/housing-local-services">Housing and local services</a></li>
+          <li><a href="/browse/tax">Money and tax</a></li>
+          <li><a href="/browse/abroad">Passports, travel and living abroad</a></li>
+          <li><a href="/browse/visas-immigration">Visas and immigration</a></li>
+          <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-inside-government">
+        <h2>Departments and policy</h2>
+
+        <ul>
+          <li><a href="/government/how-government-works">How government works</a></li>
+          <li><a href="/government/organisations">Departments</a></li>
+          <li><a href="/world">Worldwide</a></li>
+          <li><a href="/government/policies">Policies</a></li>
+          <li><a href="/government/publications">Publications</a></li>
+          <li><a href="/government/announcements">Announcements</a></li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="/help">Help</a></li>
+  <li><a href="/help/cookies">Cookies</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help/terms-conditions">Terms and conditions</a></li>
+  <li><a href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+</li>
+</ul>
+
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="https://assets.publishing.service.gov.uk/static/govuk-template-d4ba5ab8f60c9df5c733e7d3c7c469ff93dc6b64d2b2a8feb94afa8f77c66193.js" crossorigin="anonymous" integrity="sha256-1LpauPYMnfXHM+fTx8Rp/5Pca2TSsqj+uUr6j3fGYZM="></script>
+
+      <script src="https://assets.publishing.service.gov.uk/static/libs/jquery/jquery-1.12.4-395e36e8b50840dbe9f754bd87c5098de66e33f81061d9452420dbdb9ee760f1.js" crossorigin="anonymous" integrity="sha256-OV426LUIQNvp91S9h8UJjeZuM/gQYdlFJCDb257nYPE="></script>
+<script src="https://assets.publishing.service.gov.uk/static/header-footer-only-f064d14bd8bdbd0247972b404350af141b2daef30ee6570edc003e15d5aea5e2.js" crossorigin="anonymous" integrity="sha256-8GTRS9i9vQJHlytAQ1CvFBstrvMO5lcO3AA+FdWupeI="></script>
+<script src="https://assets.publishing.service.gov.uk/static/surveys-b4d2c42a58bec8f6d153a702ea9164489c281c29ef63f3631ebb87dfa3562d78.js" crossorigin="anonymous" integrity="sha256-tNLEKli+yPbRU6cC6pFkSJwoHCnvY/NjHruH36NWLXg="></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="https://assets.publishing.service.gov.uk/government-frontend/application-b6f76ea584cb41524e6a9c32a2e7e8140ad51c8550962df9bfa446d52bf93180.js" crossorigin="anonymous" integrity="sha256-tvdupYTLQVJOapwyoufoFArVHIVQli35v6RG1Sv5MYA="></script>
+</body>
+</html>
