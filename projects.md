@@ -2,7 +2,6 @@
 layout: default
 title: Projects
 ---
-
 {% for project in site.data.projects %}
 ## {{project.bps_reference}} : {{ project.name }}
 <table>
@@ -20,21 +19,31 @@ title: Projects
     </tr>
     <tr>
         <td>Abstract:</td>
-        <td><a href="./meta/{{ project.bps_reference }}_meta.html">{{ project.bps_reference }}_meta.html</a></td>
+        <td>{{project.document_abstract}}</td>
     </tr>
+{% if project.start_date %}    
     <tr>
         <td>Start Date:</td>
         <td>{{project.start_date}}</td>
     </tr>
+{% endif %}
+{% if project.estimated_completion_date %}
     <tr>
         <td>Estimated Completion Date:</td>
         <td>{{project.estimated_completion_date}}</td>
     </tr>
+{% endif %}
+{% if project.url %}
     <tr>
         <td>Project URL:</td>
         <td>
             <a href="{{project.url}}"/>
         </td>
     </tr>
+{% endif %}
 </table>
+  
+
 {% endfor %}
+
+

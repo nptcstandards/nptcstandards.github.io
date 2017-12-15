@@ -21,7 +21,7 @@
     RDF extends the linking structure of the Web to use URIs to name the relationship between things as well as the two ends of the link (this is usually referred to as a “triple”). Using this simple model, it allows structured and semi-structured data to be mixed, exposed, and shared across different applications.
     
     This linking structure forms a directed, labeled graph, where the edges represent the named link between two resources, represented by the graph nodes. This graph view is the easiest possible mental model for RDF and is often used in easy-to-understand visual explanations.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.w3.org/standards/techs/rdf#w3c_all
   path: 
@@ -47,7 +47,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Collision Reporting And Sharing Data Types
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/CRASH/1.1
   path: 
@@ -95,7 +95,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Enabling Programmes
   sponsor_org_email: 
   document_abstract: >-
     A baseline security questionnaire for B2B suppliers to establish suitability for sharing/collaboration of information.
@@ -125,7 +125,7 @@
   sponsor_org_email: 
   document_abstract: >-
     A subset of the Enumerated Data Types used in the Met Police NSPIS Custody system as at 04 Apr 07
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/MP Custody/1.0
   path: 
@@ -151,7 +151,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Arrest and detention, use of force, detainee care, including children and young persons, risk assessment and buildings and facilities.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/detention-and-custody-2/?s=
   path: 
@@ -177,7 +177,7 @@
   sponsor_org_email: 
   document_abstract: >-
     As part of the investigation and delivery of any new service, you need to first conduct user research to ascertain who the users of the technology shall be, how best their needs can be met and what their current pain points are.
-  project_status: 
+  project_status: Backlog
   content_urls:
     - https://github.com/HS2SystemsDevelopment/user-needs- http-//localhost-4000/HS2SystemsDevelopment/user-needs/blob/master/HS2%20IT%20User%20Research%20Toolkit%20V1p0.pdf
   path: 
@@ -203,7 +203,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Charging and case preparation, trial, justice, offender management and victim and witness care.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/prosecution-and-case-management/?s=
   path: 
@@ -229,7 +229,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Civil contingencies, disaster victim identification and casualty bureau.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/civil-emergencies/?s=
   path: 
@@ -255,7 +255,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Command and Control Data Types
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/C%20and%20C/0.1
   path: 
@@ -281,7 +281,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Command and control structures, interoperability, planning and review.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/operations/?s=
   path: 
@@ -307,7 +307,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Cyber Essentials Plus Certification still has the trademark simplicity of approach. The protections you need to have in place are the same as Cyber Essentials, but the verification of your cyber security is carried out independently by a Certification Body.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.cyberessentials.ncsc.gov.uk/getting-certified/
   path: 
@@ -333,7 +333,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Cyber-dependent and cyber-enabled crime, communications data, understanding the digital footprint and digital forensics.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/digital-investigation-and-intelligence/?s=
   path: 
@@ -359,7 +359,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Definition of a fair and effective stop and search encounter, how and why stop and search encounters should be fair, legal, professional and transparent.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/stop-and-search/
   path: 
@@ -385,7 +385,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Draft context for Home Office Large Major Enquiry System 3 Data Types
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/HOLMES3/0.4
   path: 
@@ -411,7 +411,7 @@
   sponsor_org_email: 
   document_abstract: >-
     DVLA Makes and Models up to August 2017
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/Vehicle%20Makes%20and%20Models/2017.8
   path: 
@@ -437,7 +437,7 @@
   sponsor_org_email: 
   document_abstract: >-
     European Pool against Organised Crime - Research Project IV v1.0 Data Types
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/European%20Pool%20against%20Organised%20Crime%20(EPOC%20IV)/1.0
   path: 
@@ -459,7 +459,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Police Technology Standards
   sponsor_org_email: 
   document_abstract: >-
     Given a version number MAJOR.MINOR.PATCH, increment the-
@@ -469,7 +469,7 @@
         PATCH version when you make backwards-compatible bug fixes.
     
     Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
-  project_status: Backlog
+  project_status: Scheduled
   content_urls:
     - http://semver.org/
   path: 
@@ -495,7 +495,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Governance, vetting, complaints and misconduct and counter-corruption.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/professional-standards/?s=
   path: 
@@ -525,7 +525,7 @@
     As a set of baseline technical controls, the Cyber Essentials scheme has a very wide audience. Organisations large and small, public, private and charitable can all benefit from the provisions set out in the scheme.
     
     The process of certification has been designed to be light weight and easily manageable while at the same time providing a respected standard in cyber security.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.cyberessentials.ncsc.gov.uk/advice/
   path: 
@@ -551,7 +551,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Government email administrators should follow this implementation guide to configure email services securely. It describes how to implement encryption and anti-spoofing, and how to pass an assessment to ensure your email service is configured and run in a secure way. Doing these three things will add your domain to a whitelist, which organisations can use to filter inbound and outbound email
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.gov.uk/guidance/set-up-government-email-services-securely#configure-cloud-or-internet-based-email-services
   path: 
@@ -577,7 +577,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Guidance on covert-related activity including undercover.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/covert-policing/?s=
   path: 
@@ -603,7 +603,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Guidance on engaging with the community, communication platforms and relations with the media.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/engagement-and-communication/?s=
   path: 
@@ -629,7 +629,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Guidance on how organisations can protect themselves in cyberspace, including the 10 steps to cyber security.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.ncsc.gov.uk/guidance/10-steps-cyber-security
   path: 
@@ -681,7 +681,7 @@
   sponsor_org_email: 
   document_abstract: >-
     IDENT1 Project Data Types
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/IDENT1/0.2
   path: 
@@ -715,7 +715,7 @@
     is compatible with a wide range of software
     is a reliable long-term solution for storing and accessing information
     This guidance gives general information on the standard, as well as more detailed information for chief technology officers and government procurement officers.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.gov.uk/guidance/open-document-format-odf-guidance-for-uk-government
   path: 
@@ -741,7 +741,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Legislation, command, planning and deployment, tactical options, football.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/public-order/?s=
   path: 
@@ -767,7 +767,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Legislation, weapons and equipment, command and deployment.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/armed-policing/?s=
   path: 
@@ -793,7 +793,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Managing critical incidents and restoring public confidence.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/critical-incident-management/?s=
   path: 
@@ -819,7 +819,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Managing incidents, pursuits and investigating road deaths.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/road-policing-2/?s=
   path: 
@@ -845,7 +845,7 @@
   sponsor_org_email: 
   document_abstract: >-
     `
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/information-management/?s=
   path: 
@@ -871,7 +871,7 @@
   sponsor_org_email: 
   document_abstract: >-
     National Management Information System Data Types
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/NMIS/3.0
   path: 
@@ -897,7 +897,7 @@
   sponsor_org_email: 
   document_abstract: >-
     NSPIS Custody Data Types
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/NSPIS%20Custody/0.2
   path: 
@@ -923,7 +923,7 @@
   sponsor_org_email: 
   document_abstract: >-
     PITO Human Resources Data Types
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/HR/0.1
   path: 
@@ -949,7 +949,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Policing elections, preventing and investigating electoral malpractice.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/policing-elections/?s=
   path: 
@@ -975,7 +975,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Principles, landscape, planning, preparing and responding.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/mobilisation/?s=
   path: 
@@ -1001,7 +1001,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Process, tasking and coordination, intelligence products and analysis.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/intelligence-management/?s=
   path: 
@@ -1027,7 +1027,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Responding to incidents involving people experiencing mental illness and learning disabilities. Mental health law, mental capacity, recognising vulnerability, AWOL patients, safe and well checks.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/mental-health/?s=
   path: 
@@ -1053,7 +1053,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Responding to public protection and major investigation issues, eg, child abuse, child sexual exploitation and firearms licensing.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/major-investigation-and-public-protection/?s=
   path: 
@@ -1079,7 +1079,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Secure configuration for devices running Windows 10 1607 “Anniversary Edition”
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.ncsc.gov.uk/guidance/eud-security-guidance-windows-10-1703
   path: 
@@ -1105,7 +1105,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Ten principles related to taking and reviewing risk.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/risk-2/?s=
   path: 
@@ -1131,14 +1131,14 @@
   sponsor_org_email: 
   document_abstract: >-
     The approach to creating and sharing digital witness statements within the Criminal Justice System in a device and software agnostic way.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https-//policeict-knowledgehub.s3.amazonaws.com/cms_page_media/190/Digital%20Witness%20Statement%20-%20Business%20Process%20-%20v1_V1.pdf?Signature=vJ40FamCv3UZOQ3HOt4yIRq5Of4%3D&Expires=1509982036&AWSAccessKeyId=AKIAJWWRJEITG5KJMHXA
   path: 
   published_date: 
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Criminal Justice System Exchange Data Standards Catalogue 
+- document_title: Criminal Justice System Exchange Data Standards Catalogue
   bps_security_classification: 
   access_group: 
   bps_reference: bps24351
@@ -1157,7 +1157,7 @@
   sponsor_org_email: 
   document_abstract: >-
     The CJS Data Standards Catalogue is a collection of data standards used by Criminal Justice Organisations in England & Wales to support interoperability between their different ICT systems.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https-//www.gov.uk/government/uploads/system/uploads/attachment_data/file/360582/cjs-data-standards-catalogue-5.0.pdf
   path: 
@@ -1189,7 +1189,7 @@
     These standards are available to the public under the Open Government Licence.
     
     The selection of the CJS data standards is made by the CJS Data Standards Forum. This is a technical forum which has representatives from the principal CJOs.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.gov.uk/guidance/criminal-justice-system-data-standards-forum-guidance
   path: 
@@ -1215,7 +1215,7 @@
   sponsor_org_email: 
   document_abstract: >-
     The Code List Management Service data types and code lists - Used by PND.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/CLMS/5.3.1021
   path: 
@@ -1241,7 +1241,7 @@
   sponsor_org_email: 
   document_abstract: >-
     The model and recording and reviewing decision making.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/national-decision-model/?s=
   path: 
@@ -1267,7 +1267,7 @@
   sponsor_org_email: 
   document_abstract: >-
     The National Firearms License Management System (NFLMS) is a central, national register of all persons who have applied for, or have been granted a certificate for a firearm or shotgun. This version of the NFLMS Context is an early draft of CVs and has not been reviewed by the development team for accuracy or completeness.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/NFLMS/0.1
   path: 
@@ -1278,7 +1278,7 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18630
-  bps_ref_part: 1
+  bps_ref_part: 1.0
   bps_ref_published_date: 
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -1330,7 +1330,7 @@
   sponsor_org_email: 
   document_abstract: >-
     The National Security Strategy and Strategic Defence and Security Review 2015 sets out the government's approach to national security.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https-//www.gov.uk/government/uploads/system/uploads/attachment_data/file/478933/52309_Cm_9161_NSS_SD_Review_web_only.pdf
   path: 
@@ -1356,7 +1356,7 @@
   sponsor_org_email: 
   document_abstract: >-
     The process, interviewing, strategies and European investigations.
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.app.college.police.uk/app-content/investigations/?s=
   path: 
@@ -1382,7 +1382,7 @@
   sponsor_org_email: 
   document_abstract: >-
     The Public Services Network (PSN) provides technical policies regarding the operation of its network. At the Technology Leaders Network (TLN) a set of high level policies were agreed that provide high level guidance and ambition for the way in which government networks as a whole will be managed.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.gov.uk/government/publications/government-network-policy-changes/government-network-policy-changes
   path: 
@@ -1408,7 +1408,7 @@
   sponsor_org_email: 
   document_abstract: >-
     These principles provide the basis for NCSC guidance on the configuration of specific EUDs.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.ncsc.gov.uk/guidance/end-user-devices-security-principles
   path: 
@@ -1435,7 +1435,7 @@
   document_abstract: >-
     This document is a Tier Four Standard and forms part of the Security Policy Framework (SPF) reference [a]) and therefore it must be used by Central Government  Departments  and  Agencies. 
     It is also recommended for the wider public sector. It directly supports SPF Mandatory Requirements(MRs) 1,3,6, 8, 9 and 11.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https-//www.ncsc.gov.uk/content/files/guidance_files/IS1%20%26%202%20-%20Information%20Risk%20Management%20-%20issue%204.0%20April%202012%20-%20NCSC%20Web.pdf
   path: 
@@ -1461,12 +1461,12 @@
   sponsor_org_email: 
   document_abstract: >-
     Understand government secure email policy, improve email security and pass a service assessment for secure cloud-based email services.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.gov.uk/guidance/securing-government-email
   path: 
   published_date: 2016-08-01 00:00:00
-  last_updated_date: 25/08/2016  00-00-00
+  last_updated_date: 2016-08-25 00:00:00
   subject_group_common_name: GDS eMail Guidance
 - document_title: Guidance - Transport Layer Security (TLS) Guidance
   bps_security_classification: 
@@ -1487,7 +1487,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Understand government secure email policy, improve email security and pass a service assessment for secure cloud-based email services.
-  project_status: 
+  project_status: n-a
   content_urls:
     
   path: 
@@ -1513,7 +1513,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Understand government secure email policy, improve email security and pass a service assessment for secure cloud-based email services.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.gov.uk/government/publications/email-security-standards/domain-based-message-authentication-reporting-and-conformance-dmarc
   path: 
@@ -1539,7 +1539,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Understand government secure email policy, improve email security and pass a service assessment for secure cloud-based email services.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf
   path: 
@@ -1565,7 +1565,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Understand government secure email policy, improve email security and pass a service assessment for secure cloud-based email services.
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.gov.uk/government/publications/email-security-standards/domainkeys-identified-mail-dkim
   path: 
@@ -1591,7 +1591,7 @@
   sponsor_org_email: 
   document_abstract: >-
     Vehicle Procedures/Fixed Penalty Office Data Types
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://www.listpoint.co.uk/Context/details/VPFPO/0.1
   path: 
@@ -1613,7 +1613,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Enabling Programmes
   sponsor_org_email: 
   document_abstract: >-
     
@@ -1643,7 +1643,7 @@
   sponsor_org_email: 
   document_abstract: >-
     
-  project_status: 
+  project_status: n-a
   content_urls:
     
   path: 
@@ -1654,7 +1654,7 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps25439
-  bps_ref_part: 
+  bps_ref_part: 1.0
   bps_ref_published_date: 
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -1669,7 +1669,7 @@
   sponsor_org_email: 
   document_abstract: >-
     
-  project_status: 
+  project_status: n-a
   content_urls:
     
   path: 
@@ -1679,8 +1679,8 @@
 - document_title: ACRO Checks - Immigration Services Use of Response
   bps_security_classification: 
   access_group: 
-  bps_reference: bps70134
-  bps_ref_part: 
+  bps_reference: bps25439
+  bps_ref_part: 2.0
   bps_ref_published_date: 
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -1695,7 +1695,7 @@
   sponsor_org_email: 
   document_abstract: >-
     
-  project_status: 
+  project_status: n-a
   content_urls:
     
   path: 
@@ -1705,8 +1705,8 @@
 - document_title: ACRO Checks - Police Use of Response
   bps_security_classification: 
   access_group: 
-  bps_reference: bps23547
-  bps_ref_part: 
+  bps_reference: bps25439
+  bps_ref_part: 3.0
   bps_ref_published_date: 
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -1721,7 +1721,7 @@
   sponsor_org_email: 
   document_abstract: >-
     
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     
   path: 
@@ -2044,7 +2044,7 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
-  bps_ref_part: 4
+  bps_ref_part: 4.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -2059,7 +2059,7 @@
   sponsor_org_email: 
   document_abstract: >-
     
-  project_status: 
+  project_status: n-a
   content_urls:
     
   path: 
@@ -2319,7 +2319,7 @@
   sponsor_org_email: 
   document_abstract: >-
     
-  project_status: 
+  project_status: n-a
   content_urls:
     - https://ico.org.uk/media/about-the-ico/consultations/2014789/draft-gdpr-contracts-guidance-v1-for-consultation-september-2017.pdf
   path: 
@@ -2533,7 +2533,7 @@
   sponsor_org_email: 
   document_abstract: >-
     
-  project_status: Backlog
+  project_status: n-a
   content_urls:
     - https://www.nist.gov/cyberframework- https-//www.nist.gov/document-3766
   path: 
@@ -2634,7 +2634,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Police Technology Council
   sponsor_org_email: 
   document_abstract: >-
     
@@ -2660,7 +2660,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Police Technology Council
   sponsor_org_email: 
   document_abstract: >-
     
@@ -2686,7 +2686,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Police Technology Council
   sponsor_org_email: 
   document_abstract: >-
     
@@ -2727,7 +2727,7 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
-  bps_ref_part: 3
+  bps_ref_part: 3.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -2936,7 +2936,7 @@
 - document_title: Software Provisioning & Procurement Requirements for Suppliers
   bps_security_classification: 
   access_group: 
-  bps_reference: bps30717 
+  bps_reference: bps30717
   bps_ref_part: 
   bps_ref_published_date: 
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
@@ -2959,11 +2959,11 @@
   published_date: 
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Standardised Data Handling Tags & policy
+- document_title: Data Handling Tags & policy
   bps_security_classification: 
   access_group: 
   bps_reference: bps13687
-  bps_ref_part: ripa
+  bps_ref_part: 
   bps_ref_published_date: 
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -2985,7 +2985,7 @@
   published_date: 
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Standardised Document/File Formats Best Common Practice
+- document_title: Document/File Formats Best Common Practice
   bps_security_classification: 
   access_group: 
   bps_reference: bps91652
@@ -3011,7 +3011,7 @@
   published_date: 
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Standardised Information Asset Metadata Tagging
+- document_title: Information Asset Metadata Tagging
   bps_security_classification: 
   access_group: 
   bps_reference: bps25147
@@ -3053,9 +3053,9 @@
   author_org: 
   author_org_email: 
   std_sponsor: National Enabling Programmes
-  sponsor_org_email: NEP
+  sponsor_org_email: 
   document_abstract: >-
-    
+    Definition of a common white pages schema of objects, attributes and their syntax for user identity in the Policing domain.
   project_status: In-Progress
   content_urls:
     
@@ -3063,11 +3063,11 @@
   published_date: 
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Standards Catalogue
+- document_title: NPTS Framework Catalogue
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 6
+  bps_ref_part: 6.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -3078,7 +3078,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Police Technology Council
   sponsor_org_email: 
   document_abstract: >-
     
@@ -3088,12 +3088,12 @@
   path: 
   published_date: 
   last_updated_date: 
-  subject_group_common_name: British Policing Standards Framework
-- document_title: Standards Framework Overview
+  subject_group_common_name: NPTS Framework
+- document_title: NPTS Framework Overview
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 1
+  bps_ref_part: 1.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -3104,7 +3104,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Police Technology Council
   sponsor_org_email: 
   document_abstract: >-
     
@@ -3114,12 +3114,12 @@
   path: 
   published_date: 
   last_updated_date: 
-  subject_group_common_name: British Policing Standards Framework
-- document_title: Standards Governance
+  subject_group_common_name: NPTS Framework
+- document_title: NPTS Framework Governance
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 2
+  bps_ref_part: 2.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -3130,7 +3130,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Police Technology Council
   sponsor_org_email: 
   document_abstract: >-
     
@@ -3140,12 +3140,12 @@
   path: 
   published_date: 
   last_updated_date: 
-  subject_group_common_name: British Policing Standards Framework
-- document_title: Standards Nomenclature
+  subject_group_common_name: NPTS Framework
+- document_title: NPTS Framework Nomenclature
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 5
+  bps_ref_part: 5.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -3156,7 +3156,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Police Technology Council
   sponsor_org_email: 
   document_abstract: >-
     
@@ -3166,12 +3166,12 @@
   path: 
   published_date: 
   last_updated_date: 
-  subject_group_common_name: British Policing Standards Framework
-- document_title: Standards Process
+  subject_group_common_name: NPTS Framework
+- document_title: NPTS Framework Process
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 3
+  bps_ref_part: 3.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -3182,7 +3182,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Police Technology Council
   sponsor_org_email: 
   document_abstract: >-
     
@@ -3192,7 +3192,7 @@
   path: 
   published_date: 
   last_updated_date: 
-  subject_group_common_name: British Policing Standards Framework
+  subject_group_common_name: NPTS Framework
 - document_title: Risk Management & Methodology
   bps_security_classification: 
   access_group: 
@@ -3220,11 +3220,11 @@
   published_date: 
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Standards Style Guide
+- document_title: NPTS Framework Style Guide
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 4
+  bps_ref_part: 4.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -3245,12 +3245,12 @@
   path: 
   published_date: 
   last_updated_date: 
-  subject_group_common_name: British Policing Standards Framework
-- document_title: Standards Template
+  subject_group_common_name: NPTS Framework
+- document_title: NPTS Framework Template
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 7
+  bps_ref_part: 7.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -3271,7 +3271,7 @@
   path: 
   published_date: 
   last_updated_date: 
-  subject_group_common_name: British Policing Standards Framework
+  subject_group_common_name: NPTS Framework
 - document_title: Statutory Code of Practice on the Management of Police Information (MoPI Code of Practice)
   bps_security_classification: 
   access_group: 
@@ -3306,7 +3306,7 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
-  bps_ref_part: 1
+  bps_ref_part: 1.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -3332,7 +3332,7 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
-  bps_ref_part: 2
+  bps_ref_part: 2.0
   bps_ref_published_date: 2017-06
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -3369,7 +3369,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Enabling Programmes
   sponsor_org_email: 
   document_abstract: >-
     A complete technical configuration for Windows 10 Fall Creators Update (Build 1709) including architecture, device lifecycle, build, configuration and security aligned to [NCSC guidance](./meta/bps15792_meta.html).
@@ -3499,7 +3499,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: OASIS – Advancing open standards for the information society
+  std_sponsor: 
   sponsor_org_email: 
   document_abstract: >-
     OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming RESTful APIs. The OData protocol is comprised of a set of specifications for representing and interacting with structured content. The core specification for the protocol is in [OData-Protocol]; this document is an extension of the core protocol. This document defines representations for the OData requests and responses using the JavaScript Object Notation (JSON), see [RFC4627]. OData RESTful APIs are simple to consume. The OData metadata, a machine-readable description of the data model of the APIs, enables the creation of powerful generic client proxies and tools.
@@ -3570,7 +3570,7 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18630
-  bps_ref_part: 2
+  bps_ref_part: 2.0
   bps_ref_published_date: 
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
@@ -3829,7 +3829,7 @@
   path: 
   published_date: 2013-10-01 00:00:00
   last_updated_date: 
-  subject_group_common_name: 
+  subject_group_common_name: ISO27K
 - document_title: Security techniques -- Code of practice for information security controls
   bps_security_classification: 
   access_group: 
@@ -3855,7 +3855,7 @@
   path: 
   published_date: 2013-10-01 00:00:00
   last_updated_date: 
-  subject_group_common_name: 
+  subject_group_common_name: ISO27K
 - document_title: Seurity techniques - Guidance for code of practice for security controls
   bps_security_classification: 
   access_group: 
@@ -3881,7 +3881,7 @@
   path: 
   published_date: 2017-03-01 00:00:00
   last_updated_date: 
-  subject_group_common_name: 
+  subject_group_common_name: ISO27K
 - document_title: Information security management -- Monitoring, measurement, analysis and evaluation
   bps_security_classification: 
   access_group: 
@@ -3915,7 +3915,7 @@
   path: 
   published_date: 2016-12-01 00:00:00
   last_updated_date: 
-  subject_group_common_name: 
+  subject_group_common_name: ISO27K
 - document_title: Guidance on the integrated implementation of ISO/IEC 27001 and ISO/IEC 20000-1
   bps_security_classification: 
   access_group: 
@@ -3951,7 +3951,7 @@
   path: 
   published_date: 2016-12-01 00:00:00
   last_updated_date: 
-  subject_group_common_name: 
+  subject_group_common_name: ISO27K
 - document_title: Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors
   bps_security_classification: 
   access_group: 
@@ -3977,7 +3977,7 @@
   path: 
   published_date: 2014-08-01 00:00:00
   last_updated_date: 
-  subject_group_common_name: 
+  subject_group_common_name: ISO27K
 - document_title: Guidelines for information and communication technology readiness for business continuity
   bps_security_classification: 
   access_group: 
@@ -4003,7 +4003,7 @@
   path: 
   published_date: 2017-11-03 00:00:00
   last_updated_date: 
-  subject_group_common_name: 
+  subject_group_common_name: ISO27K
 - document_title: Security techniques -- Guidelines for cybersecurity
   bps_security_classification: 
   access_group: 
@@ -4029,7 +4029,7 @@
   path: 
   published_date: 2017-12-07 00:00:00
   last_updated_date: 
-  subject_group_common_name: 
+  subject_group_common_name: ISO27K
 - document_title: Network security -- Part 1- Overview and concepts
   bps_security_classification: 
   access_group: 
@@ -4055,7 +4055,7 @@
   path: 
   published_date: 2015-08-01 00:00:00
   last_updated_date: 
-  subject_group_common_name: 
+  subject_group_common_name: ISO27K
 - document_title: Application security -- Part 2- Organization normative framework
   bps_security_classification: 
   access_group: 
@@ -4081,7 +4081,7 @@
   path: 
   published_date: 2015-08-01 00:00:00
   last_updated_date: 
-  subject_group_common_name: 
+  subject_group_common_name: ISO27K
 - document_title: Business continuity management systems --- Requirements
   bps_security_classification: 
   access_group: 
@@ -4136,7 +4136,7 @@
   published_date: 2017-11-11 00:00:00
   last_updated_date: 
   subject_group_common_name: 
-- document_title:  Service Management - Requirements
+- document_title: Service Management - Requirements
   bps_security_classification: 
   access_group: 
   bps_reference: bps20763
@@ -4207,7 +4207,7 @@
 - document_title: Management of Windows 10 End User Devices (desktops/laptops)
   bps_security_classification: 
   access_group: 
-  bps_reference: bps29614
+  bps_reference: bps14848
   bps_ref_part: 
   bps_ref_published_date: 
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
@@ -4219,10 +4219,36 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Enabling Programmes
   sponsor_org_email: 
   document_abstract: >-
+    Guidance on Modern Management
+  project_status: Scheduled
+  content_urls:
     
+  path: 
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Police Security Policy Framework
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps09441
+  bps_ref_part: 
+  bps_ref_published_date: 
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: National Enabling Programmes
+  sponsor_org_email: 
+  document_abstract: >-
+    This document provides the policy framework that needs to be applied to ensure that the Police comply and adhere to; current national and supranational legislation, regulations, UK Government Policy, National Policing Policy, National Institute of Standards and Technology recommended policies and those recommended through the ISO27000 range.
   project_status: Scheduled
   content_urls:
     

@@ -1,64 +1,88 @@
+- name: Semantic Versioning
+  bps_reference: bps38125
+  std_sponsor: National Police Technology Standards
+  author_org: NPTC Standards
+  project_status: Scheduled
+  document_abstract: Given a version number MAJOR.MINOR.PATCH, increment the-
+    
+        MAJOR version when you make incompatible API changes,
+        MINOR version when you add functionality in a backwards-compatible manner, and
+        PATCH version when you make backwards-compatible bug fixes.
+    
+    Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+  start_date:
+  estimated_completion_date:
 - name: O365 Desktop Deployment Best Common Practice
   bps_reference: bps38120
   std_sponsor: National Enabling Programmes
-  author_org: 
+  author_org: NPTC Standards
   project_status: In-Progress
-  document_abstract:
+  document_abstract: This guide provides the best current practice (BCP) for the preparation, deployment and maintenance of Office Pro Plus 365 applications onto an end user endpoint in a Policing environment.
+    It is intended that by providing guidance that policing organisations can converge on a common methodology and configuration that will facilitate integration into the national strategy for Productivity Services as developed by the National Enabling Programmes (NEP).
   start_date:
   estimated_completion_date:
 - name: POLE Exchange Data Encoding Schema
   bps_reference: bps18786
-  std_sponsor: 
-  author_org: 
+  std_sponsor: National Police Technology Council
+  author_org: NPTC Standards
   project_status: Paused
-  document_abstract:
+  document_abstract: 
   start_date:
   estimated_completion_date:
 - name: POLE Exchange Hypermedia Graph Schema
   bps_reference: bps10671
-  std_sponsor: 
-  author_org: 
+  std_sponsor: National Police Technology Council
+  author_org: NPTC Standards
   project_status: Paused
-  document_abstract:
+  document_abstract: 
   start_date:
   estimated_completion_date:
 - name: POLE Exchange Message Protocol
   bps_reference: bps20515
-  std_sponsor: 
-  author_org: 
+  std_sponsor: National Police Technology Council
+  author_org: NPTC Standards
   project_status: Paused
-  document_abstract:
+  document_abstract: 
   start_date:
   estimated_completion_date:
 - name: Police User Identity Attributes & Metadata
   bps_reference: bps87543
   std_sponsor: National Enabling Programmes
-  author_org: 
+  author_org: NPTC Standards
   project_status: In-Progress
-  document_abstract:
+  document_abstract: Definition of a common white pages schema of objects, attributes and their syntax for user identity in the Policing domain.
   start_date:
   estimated_completion_date:
 - name: Risk Management & Methodology
   bps_reference: bps37942
   std_sponsor: National Enabling Programmes
-  author_org: 
+  author_org: NPTC Standards
   project_status: In-Progress
-  document_abstract:
+  document_abstract: This document provides UK Policing with a methodology to security, accreditation and risk management which has been designed as an enabler to The UK Policing Vision 2025.
+    In addition to defining an approved methodology to follow, this document also provides appendices of predefined useable baseline product inputs to be leveraged by other policing projects to reduce the time and effort involved in performing their required risk management and assessment work. The predefined material is based on the actual risk work that was executed on behalf of the National Enabling Programmes (NEP) to allow it to achieve accreditation on its’ projects.
   start_date:
   estimated_completion_date:
 - name: Technical Configuration for Windows 10 Fall Creators Update (Build 1709) End User Devices (desktops/laptops)
   bps_reference: bps20961
-  std_sponsor: 
-  author_org: 
+  std_sponsor: National Enabling Programmes
+  author_org: National Enabling Programmes
   project_status: In-Progress
-  document_abstract:
+  document_abstract: A complete technical configuration for Windows 10 Fall Creators Update (Build 1709) including architecture, device lifecycle, build, configuration and security aligned to [NCSC guidance](./meta/bps15792_meta.html).
   start_date:
   estimated_completion_date:
 - name: Management of Windows 10 End User Devices (desktops/laptops)
-  bps_reference: bps29614
-  std_sponsor: 
-  author_org: 
+  bps_reference: bps14848
+  std_sponsor: National Enabling Programmes
+  author_org: National Enabling Programmes
   project_status: Scheduled
-  document_abstract:
+  document_abstract: Guidance on Modern Management
+  start_date:
+  estimated_completion_date:
+- name: Police Security Policy Framework
+  bps_reference: bps09441
+  std_sponsor: National Enabling Programmes
+  author_org: National Enabling Programmes
+  project_status: Scheduled
+  document_abstract: This document provides the policy framework that needs to be applied to ensure that the Police comply and adhere to; current national and supranational legislation, regulations, UK Government Policy, National Policing Policy, National Institute of Standards and Technology recommended policies and those recommended through the ISO27000 range.
   start_date:
   estimated_completion_date:
