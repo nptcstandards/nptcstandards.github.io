@@ -1,0 +1,1188 @@
+- document_title: B2B Baseline Sharing/Collaboration Questionnaire Template
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps16342
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps16342
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: National Enabling Programmes
+  sponsor_org_email: 
+  document_abstract: >-
+    A baseline security questionnaire for B2B suppliers to establish suitability for sharing/collaboration of information.
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.reference.templates
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: IT User Research Project Toolkit
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps95231
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps95231
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    As part of the investigation and delivery of any new service, you need to first conduct user research to ascertain who the users of the technology shall be, how best their needs can be met and what their current pain points are.
+  project_status: Backlog
+  content_urls:
+    - https://github.com/HS2SystemsDevelopment/user-needs- http-//localhost-4000/HS2SystemsDevelopment/user-needs/blob/master/HS2%20IT%20User%20Research%20Toolkit%20V1p0.pdf
+  primary_classification: business.guidance.user-research
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Hypercat  - Internet of Things Standard
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps18572
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps18572
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    Hypercat is a Global Alliance and standard (PAS 212) driving secure and interoperable Internet of Things (IoT) for Industry and cities. The Hypercat specification allows Internet of Things (IoT) clients to discover information about IoT assets over the web. With Hypercat developers can write applications that will work across many servers, breaking down the walls between vertical silos.
+  project_status: Backlog
+  content_urls:
+    - http://www.hypercat.io/standard.html
+  primary_classification: technical.specification.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Access To Cloud Productivity Services Best Current Practice
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps31624
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps31624
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: National Enabling Programmes
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.guidance.access
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: API Specification Formats (REST, SOAP, thrift)
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps93846
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps93846
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.guidance.protocol
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Approved Authentication Standards
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps14659
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps14659
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.access
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Approved End User Devices & Minimum Specification Requirements
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps91284
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps91284
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.specification.device
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Approved Video Formats
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps62943
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps62943
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Approved/Accredited Mobile Device Management Solutions
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps25437
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps25437
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.guidance.product
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Body Worn Video
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps94285
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps94285
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.specification.device
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: BWV
+- document_title: Business Process Specific Shared Site Templates
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps12978
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps12978
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.reference.templates
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Character Encodings
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps36784
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps36784
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.guidance.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Character Sets
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps20496
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps20496
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Cloud Hosted Data Residency Requirements
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps18053
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps18053
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Consistent Naming Conventions for Cloud Tenants
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps41305
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps41305
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.guidance.naming-conventions
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Data Loss Prevention policy
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps43105
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps43105
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Document Deletion policy
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps75621
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps75621
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Document Formats for Open Collaboration
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps11731
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps11731
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Domain Blacklisting & Whitelisting policy
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps42639
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps42639
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.collaboration-sharing
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: DPA - Placeholder
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps62714
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps62714
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.guidance.legislation
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Email Tagging & Deletion policy
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps62578
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps62578
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Encryption Standards for Cloud Data Storage
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps60539
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps60539
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.guidance.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Encryption Standards for Data in Transit
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps72861
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps72861
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: FOIA - Placeholder
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps30798
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps30798
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.guidance.legislation
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: GDPR - Placeholder
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps27196
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps27196
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.guidance.legislation
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Image Formats
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps91408
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps91408
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Information Asset Exchange policy
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps78965
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps78965
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Information Asset Preservation policy
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps47219
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps47219
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Issue & Resolution Logging of Supplier Guidance
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps89017
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps89017
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.guidance.process
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: MOPI - Placeholder
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps31497
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps31497
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.guidance.legislation
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: NEP O365 Procurement Licensing Model
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps65793
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps65793
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.guidance.commercial
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Password Complexity & Expiry policy
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps86293
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps86293
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.access
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Police Security Classification
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps27208
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps27208
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Privilege Escalation policy & Procedures
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps08942
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps08942
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.roles
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Reference Architectures Best Common Practice
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps17594
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps17594
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.guidance.architecture
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Retention & Deletion policy for Business Personal Cloud Sites
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps62958
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps62958
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Securing EMail
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps67019
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps67019
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    - https://www.gov.uk/guidance/securing-government-email
+  primary_classification: security.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Server & End User Device Provisioning Policies
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps07498
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps07498
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.device
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: SOC Audit & Data Log Capture Requirements
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps43671
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps43671
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Software Provisioning & Procurement Requirements for Suppliers
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps30717
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps30717
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.policy.commercial
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Data Handling Tags & policy
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps13687
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps13687
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: security.policy.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Document/File Formats Best Common Practice
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps91652
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps91652
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.guidance.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Information Asset Metadata Tagging
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps25147
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps25147
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: business.guidance.data
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: OData (Open Data Protocol) JSON Format
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps97283
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps97283
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming RESTful APIs. The OData protocol is comprised of a set of specifications for representing and interacting with structured content. The core specification for the protocol is in [OData-Protocol]; this document is an extension of the core protocol. This document defines representations for the OData requests and responses using the JavaScript Object Notation (JSON), see [RFC4627]. OData RESTful APIs are simple to consume. The OData metadata, a machine-readable description of the data model of the APIs, enables the creation of powerful generic client proxies and tools.
+  project_status: Backlog
+  content_urls:
+    - https://www.oasis-open.org/standards#odatajsonv4.0
+  primary_classification: technical.guidance.architecture
+  published_date: 2014-02-01 00:00:00
+  last_updated_date: 
+  subject_group_common_name: OASIS
