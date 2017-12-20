@@ -66,4 +66,4 @@ collections:
     permalink: /:collection/:path
 # End
 
-environment: test
+environment: production
