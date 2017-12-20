@@ -14,7 +14,7 @@ Some documents may have content that crosscut the hierarchy and therefore may be
 
 The taxonomy presented here is a work in progress and will continue to evolve as standards are adopted or developed and added to the catalogue.
 
-# business
+# Business
 + governance > process
 + governance > roles
 
