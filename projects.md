@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Projects
+layout: page
+title: Roadmap
 ---
 {% for project in site.data.projects %}
 ## {{project.bps_reference}} : {{ project.name }}

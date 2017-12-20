@@ -5,6 +5,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps68059
+  bps_part_reference: bps68059
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -36,6 +37,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps49873
+  bps_part_reference: bps49873
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -63,6 +65,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps27560
+  bps_part_reference: bps27560
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -90,6 +93,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps62784
+  bps_part_reference: bps62784
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -117,6 +121,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps20392
+  bps_part_reference: bps20392
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -144,6 +149,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps23488
+  bps_part_reference: bps23488
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -171,6 +177,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps22807
+  bps_part_reference: bps22807
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -198,6 +205,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps82567
+  bps_part_reference: bps82567
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -225,6 +233,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps20905
+  bps_part_reference: bps20905
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -252,6 +261,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps03546
+  bps_part_reference: bps03546
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -279,6 +289,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps24531
+  bps_part_reference: bps24531
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -306,6 +317,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps16835
+  bps_part_reference: bps16835
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -333,6 +345,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps07234
+  bps_part_reference: bps07234
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -360,6 +373,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps10467
+  bps_part_reference: bps10467
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -387,6 +401,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps86405
+  bps_part_reference: bps86405
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -414,6 +429,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps12425
+  bps_part_reference: bps12425
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -441,6 +457,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps56792
+  bps_part_reference: bps56792
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -472,6 +489,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps60128
+  bps_part_reference: bps60128
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -499,6 +517,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps28947
+  bps_part_reference: bps28947
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -526,6 +545,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps20023
+  bps_part_reference: bps20023
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -553,6 +573,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps59481
+  bps_part_reference: bps59481
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -580,6 +601,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps45236
+  bps_part_reference: bps45236
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -607,6 +629,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps21094
+  bps_part_reference: bps21094
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -642,6 +665,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps20666
+  bps_part_reference: bps20666
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -669,6 +693,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps21119
+  bps_part_reference: bps21119
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -696,6 +721,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps26609
+  bps_part_reference: bps26609
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -723,6 +749,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps16260
+  bps_part_reference: bps16260
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -750,6 +777,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps21385
+  bps_part_reference: bps21385
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -777,6 +805,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps39714
+  bps_part_reference: bps39714
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -804,6 +833,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps90462
+  bps_part_reference: bps90462
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -831,6 +861,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps15439
+  bps_part_reference: bps15439
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -858,6 +889,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps26325
+  bps_part_reference: bps26325
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -885,6 +917,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps16275
+  bps_part_reference: bps16275
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -912,6 +945,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps17879
+  bps_part_reference: bps17879
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -939,6 +973,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps17672
+  bps_part_reference: bps17672
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -966,6 +1001,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps16391
+  bps_part_reference: bps16391
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -993,6 +1029,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps15792
+  bps_part_reference: bps15792
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1020,6 +1057,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps14066
+  bps_part_reference: bps14066
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1047,6 +1085,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps61027
+  bps_part_reference: bps61027
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1074,6 +1113,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps24351
+  bps_part_reference: bps24351
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1101,6 +1141,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps34576
+  bps_part_reference: bps34576
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1134,6 +1175,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps37650
+  bps_part_reference: bps37650
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1161,6 +1203,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps24631
+  bps_part_reference: bps24631
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1188,6 +1231,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps92154
+  bps_part_reference: bps92154
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1212,9 +1256,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18630
-  bps_ref_part: 1.0
+  bps_ref_part: 1
   bps_ref_published_date: 
   bps_full_reference: bps18630-1
+  bps_part_reference: bps18630-1
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1253,6 +1298,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps81524
+  bps_part_reference: bps81524
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1280,6 +1326,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps31744
+  bps_part_reference: bps31744
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1307,6 +1354,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps34152
+  bps_part_reference: bps34152
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1334,6 +1382,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps90861
+  bps_part_reference: bps90861
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1361,6 +1410,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps68723
+  bps_part_reference: bps68723
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1389,6 +1439,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps83625
+  bps_part_reference: bps83625
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1416,6 +1467,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps95410
+  bps_part_reference: bps95410
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1443,6 +1495,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps67240
+  bps_part_reference: bps67240
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1470,6 +1523,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps39176
+  bps_part_reference: bps39176
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1497,6 +1551,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps93471
+  bps_part_reference: bps93471
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1524,6 +1579,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps94312
+  bps_part_reference: bps94312
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1551,6 +1607,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps73624
+  bps_part_reference: bps73624
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1575,9 +1632,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps25439
-  bps_ref_part: 1.0
+  bps_ref_part: 1
   bps_ref_published_date: 
   bps_full_reference: bps25439-1
+  bps_part_reference: bps25439-1
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1602,9 +1660,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps25439
-  bps_ref_part: 2.0
+  bps_ref_part: 2
   bps_ref_published_date: 
   bps_full_reference: bps25439-2
+  bps_part_reference: bps25439-2
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1629,9 +1688,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps25439
-  bps_ref_part: 3.0
+  bps_ref_part: 3
   bps_ref_published_date: 
   bps_full_reference: bps25439-3
+  bps_part_reference: bps25439-3
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1656,9 +1716,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
-  bps_ref_part: 4.0
+  bps_ref_part: 4
   bps_ref_published_date: 2017-06
   bps_full_reference: bps18651-4:2017-06
+  bps_part_reference: bps18651-4
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1686,6 +1747,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps07834
+  bps_part_reference: bps07834
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1713,6 +1775,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps46321
+  bps_part_reference: bps46321
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1746,6 +1809,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps65902
+  bps_part_reference: bps65902
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1773,6 +1837,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps10267
+  bps_part_reference: bps10267
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1797,9 +1862,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
-  bps_ref_part: 3.0
+  bps_ref_part: 3
   bps_ref_published_date: 2017-06
   bps_full_reference: bps18651-3:2017-06
+  bps_part_reference: bps18651-3
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1827,6 +1893,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps04217
+  bps_part_reference: bps04217
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1853,9 +1920,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 6.0
+  bps_ref_part: 6
   bps_ref_published_date: 2017-06
   bps_full_reference: bps00001-6:2017-06
+  bps_part_reference: bps00001-6
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1880,9 +1948,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 1.0
+  bps_ref_part: 1
   bps_ref_published_date: 2017-06
   bps_full_reference: bps00001-1:2017-06
+  bps_part_reference: bps00001-1
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1907,9 +1976,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 2.0
+  bps_ref_part: 2
   bps_ref_published_date: 2017-06
   bps_full_reference: bps00001-2:2017-06
+  bps_part_reference: bps00001-2
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1934,9 +2004,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 5.0
+  bps_ref_part: 5
   bps_ref_published_date: 2017-06
   bps_full_reference: bps00001-5:2017-06
+  bps_part_reference: bps00001-5
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1961,9 +2032,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 3.0
+  bps_ref_part: 3
   bps_ref_published_date: 2017-06
   bps_full_reference: bps00001-3:2017-06
+  bps_part_reference: bps00001-3
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1988,9 +2060,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 4.0
+  bps_ref_part: 4
   bps_ref_published_date: 2017-06
   bps_full_reference: bps00001-4:2017-06
+  bps_part_reference: bps00001-4
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2015,9 +2088,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
-  bps_ref_part: 7.0
+  bps_ref_part: 7
   bps_ref_published_date: 2017-06
   bps_full_reference: bps00001-7:2017-06
+  bps_part_reference: bps00001-7
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2045,6 +2119,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps97541
+  bps_part_reference: bps97541
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2073,9 +2148,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
-  bps_ref_part: 1.0
+  bps_ref_part: 1
   bps_ref_published_date: 2017-06
   bps_full_reference: bps18651-1:2017-06
+  bps_part_reference: bps18651-1
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2100,9 +2176,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
-  bps_ref_part: 2.0
+  bps_ref_part: 2
   bps_ref_published_date: 2017-06
   bps_full_reference: bps18651-2:2017-06
+  bps_part_reference: bps18651-2
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2130,6 +2207,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps04196
+  bps_part_reference: bps04196
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2157,6 +2235,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps18749
+  bps_part_reference: bps18749
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2184,6 +2263,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps71548
+  bps_part_reference: bps71548
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2211,6 +2291,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps52410
+  bps_part_reference: bps52410
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2238,6 +2319,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps36890
+  bps_part_reference: bps36890
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2269,6 +2351,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps69853
+  bps_part_reference: bps69853
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2293,9 +2376,10 @@
   bps_security_classification: 
   access_group: 
   bps_reference: bps18630
-  bps_ref_part: 2.0
+  bps_ref_part: 2
   bps_ref_published_date: 
   bps_full_reference: bps18630-2
+  bps_part_reference: bps18630-2
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2334,6 +2418,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps36284
+  bps_part_reference: bps36284
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2361,6 +2446,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps79618
+  bps_part_reference: bps79618
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2394,6 +2480,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps39576
+  bps_part_reference: bps39576
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2428,6 +2515,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps68497
+  bps_part_reference: bps68497
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2455,6 +2543,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps03167
+  bps_part_reference: bps03167
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2486,6 +2575,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps91524
+  bps_part_reference: bps91524
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2515,6 +2605,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps32098
+  bps_part_reference: bps32098
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2542,6 +2633,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps01657
+  bps_part_reference: bps01657
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2569,6 +2661,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps04936
+  bps_part_reference: bps04936
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2596,6 +2689,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps93074
+  bps_part_reference: bps93074
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2623,6 +2717,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps21953
+  bps_part_reference: bps21953
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2658,6 +2753,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps64013
+  bps_part_reference: bps64013
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2695,6 +2791,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps07894
+  bps_part_reference: bps07894
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2722,6 +2819,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps90268
+  bps_part_reference: bps90268
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2749,6 +2847,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps27486
+  bps_part_reference: bps27486
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2776,6 +2875,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps79102
+  bps_part_reference: bps79102
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2803,6 +2903,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps06275
+  bps_part_reference: bps06275
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2830,6 +2931,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps35780
+  bps_part_reference: bps35780
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2857,6 +2959,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps49381
+  bps_part_reference: bps49381
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2886,6 +2989,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps20763
+  bps_part_reference: bps20763
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -2922,6 +3026,7 @@
   bps_ref_part: 
   bps_ref_published_date: 
   bps_full_reference: bps84739
+  bps_part_reference: bps84739
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 

@@ -1,0 +1,11 @@
+---
+# Front matter is only requried for only the main Sass file. 
+---
+/**
+ * Copyright (c) 2017 National Police Technology standards
+ */
+
+// Do not change this file.
+// Edits should be performed in the _sass folder if there are any changes.
+$baseurl: "{{ site.baseurl }}";
+@import "npts-theme";

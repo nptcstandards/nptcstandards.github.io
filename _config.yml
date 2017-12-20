@@ -14,18 +14,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: NPTC Standards Working Group - Beta
+logo: /assets/img/logo/npts_logo_10mm.png
 email: trustee@standards.police.uk
 description: >- # this means to ignore newlines until "baseurl:"
   National Standards for UK Policing.
   This site is currently in Beta and *NOT* approved for production use.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-# github_username:  jekyll
+twitter_username: nptcstandards
+github_username:  nptcstandards
+linked_in_group: 
 
 # Build settings
 markdown: kramdown
-theme: minima
+
+sass:
+  style: compressed
+
 plugins:
   - jekyll-feed
 #  - jekyll-sitemap
@@ -33,11 +38,30 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Site menu settings
+menu:
+  - title: "Standards"
+    url: "/catalogue.html"
+  - title: "Roadmap"
+    url: "/projects.html"
+  - title: "Backlog"
+    url: "/backlog.html"
+  - title: "Blog"
+    url: "/blog"
+# End
+
+# Collections settings
+collections:
+  standards:
+    output: true
+    permalink: /:collection/:path
+# End

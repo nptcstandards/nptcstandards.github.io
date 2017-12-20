@@ -3,10 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-# Purpose
-
-To enable the production of ICT standards relating to Policing requirements that are agreed and accepted by a consensus of stakeholders, using a consistent, repeatable and understood process.
+Our purpose is to enable the production of Standards relating to UK Policing requirements that are agreed and accepted by a consensus of stakeholders, using a consistent, repeatable and understood process.
 
 Through adoption of these standards by suppliers, national applications & integration as well as ICT departments, they will assist in delivering:
 
@@ -30,7 +27,7 @@ Through adoption of these standards by suppliers, national applications & integr
 
     Costs of externally procured systems will go down as development is streamlined, reduced integration costs / administration, more competition through a demystified Police market.
 
-    e.g. Interfaces take a fraction of the time as HODH and PND require the same formats, ‘write once’ promoting reuse  
+    e.g. Interfaces take a fraction of the time as HODH and PND require the same formats, ‘write once’ promoting reuse.
 
 5.  Improved competition
 
@@ -54,13 +51,11 @@ Through adoption of these standards by suppliers, national applications & integr
 
 # Scope
 
-The NPTS group is concerned with ICT standards relating to Policing requirements, i.e. those standards where by its’ nature and composition the Police Technology Council and this working group is best positioned to guide.
+The NPTS group is concerned with standards relating to Policing requirements, i.e. those standards where by its’ nature and composition the Police Technology Council and this working group are best positioned to guide.
 
 Discover, identify, collate, consolidate, define, agree and manage Standards for recommended use in policing. 
 
 Adopt existing standards which are available and in use by national bodies and industry. 
-
-Business standards are not in scope and are the responsibility of the ORB.  However, technology standards are there to support the business function and so will be driven by the business and any associated regulation and compliance, as such it will not always be possible to isolate all crossover with other non ICT Policing standards bodies but that overlap will be addressed by collaboration and documented appropriately.
 
 Examples of ICT standards can be found in the glossary at the end of this document. 
 
@@ -91,16 +86,14 @@ The following function will be delivered by the NPTS working group:
     
 6.  Maintenance and Publication
 
-    The body for the maintenance and communication to PitCo in the publication of standards via the [Pitco website] (https://ict.police.uk/national-standards/).
+    The body for the maintenance and communication to PictCo in the publication of standards via the [Police ICT Company website](https://ict.police.uk).
     
 # Products and outputs for the NPTS
 
 1.  Framework
-
     Development and production of the processes and methodology for the production of Standards & Guidance.
     
 2.  Production of Standards & Guidance Documents
-
     Ownership of the production of Standards & Guidance documents.
     
 # Membership

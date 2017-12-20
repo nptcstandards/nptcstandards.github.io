@@ -6,11 +6,9 @@ layout: page
 {% assign sorted_classification_list = classification_list | sort: 'name' %}
 {% for classification in sorted_classification_list %}
 ## {{ classification.name | replace: '.', ' > ' }}
-<table>
 {% for standard in classification.items %}
-<tr>
-<td><strong>{{standard.document_title}}</strong></td>
-</tr>
+### {{standard.document_title}}
+<table>
 <tr>
 <td>Proposed By</td>
 <td>{{standard.sponsor}}</td>
@@ -19,6 +17,6 @@ layout: page
 <td>Description</td>
 <td>{{standard.document_abstract}}</td>
 </tr>
-{% endfor %}
 </table>
+{% endfor %}
 {% endfor %}
