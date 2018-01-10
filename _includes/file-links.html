@@ -1,0 +1,25 @@
+{% if include.project_status != 'In Progress' %}
+{% if include.docx_link != '' %}
+<a target="_blank" href="{{ include.docx_link }}">
+    <img src="../images/docx@0.5x.png" alt="docx link" title="docx link" style="max-height:35px;">
+</a>
+{% endif %}
+{% if include.pdf_link != '' %}
+<a target="_blank" href="{{ include.pdf_link }}">
+    <img src="../images/pdf@0.5x.png" alt="pdf link" title="pdf link" style="max-height:35px;">
+</a>
+{% endif %}
+{% if include.odt_link != '' %}
+<a target="_blank" href="{{include.odt_link}}">
+    <img src="../images/odt@0.5x.png" alt="odt link" title="odt link" style="max-height:35px;">
+</a>
+{% endif %}
+{% if include.html_link != '' %}
+<a target="_blank" href="{{include.html_link}}">
+    <img src="../images/html@0.5x.png" alt="html link" title="html link" style="max-height:35px;">
+</a>
+{% endif %}
+{% else %}
+Development of this Standard is currently <strong>In Progress</strong>. Please email <a
+    href="mailto:trustee@standards.police.uk">trustee@standards.police.uk</a> for further information.
+{% endif %}

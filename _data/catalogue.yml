@@ -1101,7 +1101,7 @@
     The approach to creating and sharing digital witness statements within the Criminal Justice System in a device and software agnostic way.
   project_status: n-a
   content_urls:
-    - https-//policeict-knowledgehub.s3.amazonaws.com/cms_page_media/190/Digital%20Witness%20Statement%20-%20Business%20Process%20-%20v1_V1.pdf?Signature=vJ40FamCv3UZOQ3HOt4yIRq5Of4%3D&Expires=1509982036&AWSAccessKeyId=AKIAJWWRJEITG5KJMHXA
+    - https://policeict-knowledgehub.s3.amazonaws.com/cms_page_media/190/Digital%20Witness%20Statement%20-%20Business%20Process%20-%20v1_V1.pdf?Signature=vJ40FamCv3UZOQ3HOt4yIRq5Of4%3D&Expires=1509982036&AWSAccessKeyId=AKIAJWWRJEITG5KJMHXA
   primary_classification: business.process.governance
   published_date: 
   last_updated_date: 
@@ -1129,7 +1129,7 @@
     The CJS Data Standards Catalogue is a collection of data standards used by Criminal Justice Organisations in England & Wales to support interoperability between their different ICT systems.
   project_status: n-a
   content_urls:
-    - https-//www.gov.uk/government/uploads/system/uploads/attachment_data/file/360582/cjs-data-standards-catalogue-5.0.pdf
+    - https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/360582/cjs-data-standards-catalogue-5.0.pdf
   primary_classification: technical.specification.data
   published_date: 
   last_updated_date: 
@@ -1286,7 +1286,7 @@
         It adopted many aspects of TOGAF including the Standards Information Base.
   project_status: n-a
   content_urls:
-    - https-//ict.police.uk/wp-content/uploads/2015/03/ISS4PS_V3_Volume_One.pdf
+    - https://ict.police.uk/wp-content/uploads/2015/03/ISS4PS_V3_Volume_One.pdf
   primary_classification: business.guidance.strategy
   published_date: 2016-01-01 00:00:00
   last_updated_date: 
@@ -1314,7 +1314,7 @@
     The National Security Strategy and Strategic Defence and Security Review 2015 sets out the government's approach to national security.
   project_status: n-a
   content_urls:
-    - https-//www.gov.uk/government/uploads/system/uploads/attachment_data/file/478933/52309_Cm_9161_NSS_SD_Review_web_only.pdf
+    - https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/478933/52309_Cm_9161_NSS_SD_Review_web_only.pdf
   primary_classification: business.policy.TBD
   published_date: 2015-11-01 00:00:00
   last_updated_date: 
@@ -1427,7 +1427,7 @@
     It is also recommended for the wider public sector. It directly supports SPF Mandatory Requirements(MRs) 1,3,6, 8, 9 and 11.
   project_status: n-a
   content_urls:
-    - https-//www.ncsc.gov.uk/content/files/guidance_files/IS1%20%26%202%20-%20Information%20Risk%20Management%20-%20issue%204.0%20April%202012%20-%20NCSC%20Web.pdf
+    - https://www.ncsc.gov.uk/content/files/guidance_files/IS1%20%26%202%20-%20Information%20Risk%20Management%20-%20issue%204.0%20April%202012%20-%20NCSC%20Web.pdf
   primary_classification: security.policy.framework
   published_date: 2012-04-01 00:00:00
   last_updated_date: 
@@ -1797,7 +1797,7 @@
     We believe that its widespread introduction will improve the overall efficiency and performance of control rooms and the 999 system itself, enhancing the ability of emergency responders to delivering an effective and efficient service to the public.
   project_status: n-a
   content_urls:
-    - https://www.bapco.org.uk/what-we-do/mait/- https-//cm.findlay.co.uk/article-images/116578/2016_Multi-Agency-Incident-Transfer_MAIT_v1-0-0.pdf
+    - https://www.bapco.org.uk/what-we-do/mait/- https://cm.findlay.co.uk/article-images/116578/2016_Multi-Agency-Incident-Transfer_MAIT_v1-0-0.pdf
   primary_classification: technical.specification.protocol
   published_date: 
   last_updated_date: 
@@ -1825,7 +1825,7 @@
     
   project_status: n-a
   content_urls:
-    - https://www.nist.gov/cyberframework- https-//www.nist.gov/document-3766
+    - https://www.nist.gov/cyberframework- https://www.nist.gov/document-3766
   primary_classification: security.policy.framework
   published_date: 
   last_updated_date: 
@@ -1853,7 +1853,7 @@
     
   project_status: n-a
   content_urls:
-    - https-//www.gov.uk/government/uploads/system/uploads/attachment_data/file/117589/pace-code-c-2012.pdf
+    - https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/117589/pace-code-c-2012.pdf
   primary_classification: business.guidance.legislation
   published_date: 
   last_updated_date: 
@@ -2139,7 +2139,7 @@
     to assist the police to carry out that duty.
   project_status: n-a
   content_urls:
-    - http-//library.college.police.uk/docs/APPref/Management-of-Police-Information.pdf
+    - http://library.college.police.uk/docs/APPref/Management-of-Police-Information.pdf
   primary_classification: business.policy.data
   published_date: 
   last_updated_date: 
@@ -2406,7 +2406,7 @@
         It adopted many aspects of TOGAF including the Standards Information Base.
   project_status: n-a
   content_urls:
-    - https-//ict.police.uk/wp-content/uploads/2015/03/ISS4PS_V3_Volume_Two.pdf
+    - https://ict.police.uk/wp-content/uploads/2015/03/ISS4PS_V3_Volume_Two.pdf
   primary_classification: business.guidance.strategy
   published_date: 2006-01-01 00:00:00
   last_updated_date: 
@@ -2468,7 +2468,7 @@
         Managing the associated risks
   project_status: n-a
   content_urls:
-    - https-//s3-eu-west-1.amazonaws.com/media-ict-police/uploads/2015/03/National-Intelligence-Model-Standard.doc
+    - https://s3-eu-west-1.amazonaws.com/media-ict-police/uploads/2015/03/National-Intelligence-Model-Standard.doc
   primary_classification: business.guidance.strategy
   published_date: 2008-01-01 00:00:00
   last_updated_date: 
@@ -2503,7 +2503,7 @@
         ISO/IEC27001 – though there are now many other documents in the 27000 range
   project_status: n-a
   content_urls:
-    - http-//library.college.police.uk/docs/APP-Community-Security-Policy-2014.pdf
+    - http://library.college.police.uk/docs/APP-Community-Security-Policy-2014.pdf
   primary_classification: security.guidance.tbd
   published_date: 2014-01-01 00:00:00
   last_updated_date: 
@@ -2531,7 +2531,7 @@
     This standard describes and informs force, agency SIROS, National Information Asset Owners, National and force/agency Accrediators/Projects/programmes and other interested parties of the National Information Risk Appetite and its implications
   project_status: n-a
   content_urls:
-    - http-//library.college.police.uk/docs/ACPO/National-Information-Risk-Appetite-Statement-2012.pdf
+    - http://library.college.police.uk/docs/ACPO/National-Information-Risk-Appetite-Statement-2012.pdf
   primary_classification: security.guidance.risk-management
   published_date: 2015-05-01 00:00:00
   last_updated_date: 
@@ -2563,7 +2563,7 @@
     This Framework describes the Cabinet Secretary and SO’s expectations of how HMG organisations and third parties handling HMG information and other assets will apply protective security to ensure HMG can function effectively, efficiently and securely.
   project_status: n-a
   content_urls:
-    - https://www.gov.uk/government/publications/security-policy-framework/hmg-security-policy-framework- https-//www.gov.uk/government/uploads/system/uploads/attachment_data/file/316182/Security_Policy_Framework_-_web_-_April_2014.pdf
+    - https://www.gov.uk/government/publications/security-policy-framework/hmg-security-policy-framework- https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/316182/Security_Policy_Framework_-_web_-_April_2014.pdf
   primary_classification: security.policy.framework
   published_date: 2014-07-01 00:00:00
   last_updated_date: 
@@ -3052,5 +3052,33 @@
     - https://www.iso.org/standard/41532.html
   primary_classification: technical.guidance.disaster-recovery
   published_date: 2008-02-01 00:00:00
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: User Experience Guidance
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps30124
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps30124
+  bps_part_reference: bps30124
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: National Police Technology Standards
+  sponsor_org_email: 
+  document_abstract: >-
+    The purpose of this document is to establish a core set of User Interface (UI) standards for UK Policing applications. It is essential that new policing systems have well designed user centric interfaces created according to the customer needs. Balancing of the business goals around how users use technology and not creating interfaces based on the technology is key to creating a good application.
+  project_status: n-a
+  content_urls:
+    - file:///Users/monkey/Qua Muse/NPTC Standards Delivery Team - Documents/_library/bps30124/bps30124.html
+  primary_classification: technical.guidance.ux
+  published_date: 
   last_updated_date: 
   subject_group_common_name: 
