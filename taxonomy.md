@@ -2,7 +2,7 @@
 title: Taxonomy
 layout: page
 ---
-There are many ways that standards can be classified as users will want to view things through different lenses so no one solution will fit all purposes. 
+There are many ways that standards can be classified, as users will want to view things through different lenses, so no one solution will fit all purposes. 
 
 The method NPTS is currently applying is:
 
