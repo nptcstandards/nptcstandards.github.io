@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>DCMI: DCMI Specifications</title>
-    <meta name="generator" content="Hugo 0.26" />
-
-    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
-
-    
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-    
-    
-    
-    <link rel="stylesheet" href="/css/main.css" type="text/css" />
-    <link rel="stylesheet" href="/css/tables.css" type="text/css" />
-    <link rel="stylesheet" href="/css/fixes_to_old_embedded_css.css" type="text/css" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="DCMI RSS" />
-    <link href="/index.xml" rel="feed" type="application/rss+xml" title="DCMI RSS" />
-    <meta name="google-site-verification" content="gC-CBWWuKRpe-1q8OfQfyG_CYkOk_Du8sMdVpWkNVT8" />
-    
-  </head>
+	<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>DCMI: DCMI Specifications</title>
+  <meta name="generator" content="Hugo 0.32.3" />
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+  <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/dcmi.css" type="text/css" />
+  <link rel="stylesheet" href="/css/dcmi_tables.css" type="text/css" />
+  <link rel="stylesheet" href="/css/fixes_to_old_embedded_css.css" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="DCMI RSS" />
+  <link href="/index.xml" rel="feed" type="application/rss+xml" title="DCMI RSS" />
+  <meta name="google-site-verification" content="gC-CBWWuKRpe-1q8OfQfyG_CYkOk_Du8sMdVpWkNVT8" />
+</head>
   <body>
+  	<div class="container-fluid">
+	  	<div class="row justify-content-between">
+  <div class="col-xs-7">
+    &nbsp;<i>innovation in metadata design, implementation &amp; best practices</i>
+  </div>
+  <div class="col-xs-5 float-right">
+    <a href="https://www.youtube.com/channel/UCaFJkvrnVj59F66kZ2AhedA/videos" title="Youtube" name="Youtube">
+      <img class="header-icon" src="/theme_images/icons/youtube.png"/>
+    </a>
+    <a href="https://twitter.com/dublincore" title="Twitter" name="Twitter">
+      <img class="header-icon" src="/theme_images/icons/twitter.png"/>
+    </a>
+    <a href="https://github.com/dcmi" title="Github" name="Github">
+      <img class="header-icon" src="/theme_images/icons/github.png"/>
+    </a>
+    <a type="application/rss+xml" href="/index.xml" title="RSS" name="RSS">
+      <img class="header-icon" src="/theme_images/icons/rss.png"/>
+    </a>
+  </div>
+</div>
+<div class="row justify-content-start">
+  <div class="col-xs-12">
+    <a href="/">
+      <img class="home-page-logo" src="/images/_site_images/header.png"/>
+    </a>
+  </div>
+</div>
+	  	<div id="navbar" class="row justify-content-between">
+  <div class="col-xs-8">
+    <nav class="nav nav-fill">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/news/">News</a>
+      <a class="nav-link" href="/specifications/">DCMI Specifications</a>
+      <a class="nav-link" href="/community-and-events/">Community and Events</a>
+      <a class="nav-link" href="/support/">Join / Support</a>
+      <a class="nav-link" href="/about/">About</a>
+    </nav>
+  </div>
+  <form action="/search" method="get">
+    <input class="form-control-sm" type="text" name="q" placeholder="quick search...."/>
+  </form>
+</div>
 
-    <div class="row-fluid">
-      <div class="col-xs-7">
-        &nbsp;<i>innovation in metadata design, implementation &amp; best practices</i>
-      </div>
-      <div class="col-xs-5">
-        <a href="https://www.youtube.com/channel/UCaFJkvrnVj59F66kZ2AhedA/videos" title="Youtube" name="Youtube">
-          <img class="navbar-icon" src="/theme_images/icons/youtube.png"/>
-        </a>
 
-        <a href="https://twitter.com/dublincore" title="Twitter" name="Twitter">
-          <img class="navbar-icon" src="/theme_images/icons/twitter.png"/>
-        </a>
-        <a href="https://github.com/dcmi" title="Github" name="Github">
-          <img class="navbar-icon" src="/theme_images/icons/github.png"/>
-        </a>
-        <a type="application/rss+xml" href="/index.xml" title="RSS" name="RSS">
-          <img class="navbar-icon" src="/theme_images/icons/rss.png"/>
-        </a>
-      </div>
-    </div>
-    <div class="row-fluid">
-      <div class="col-xs-12">
-        <a href="/">
-          <img class="home-page-logo" src="/images/_site_images/header.png"/>
-        </a>
-      </div>
-    </div>
-    <div class="row-fluid"><div class="col-xs-12 text-right"><div class="navbar"><div class="navbar-inner"><ul class="nav nav-pills"><li><a class="navbar-link" href="/">Home</a></li><li><a class="navbar-link" href="/news/">News</a></li><!-- li --><!--   a.navbar-link href="/metadata-basics/" Metadata Basics --><li><a class="navbar-link" href="/specifications/">DCMI Specifications</a></li><li><a class="navbar-link" href="/community-and-events/">Community and Events</a></li><li><a class="navbar-link" href="/support/">Join / Support</a></li><li><a class="navbar-link" href="/about/">About</a></li><form class="navbar-form pull-right form-inline input-sm" action="/search" method="get"><input class="form-control input-sm" type="text" name="q" placeholder="quick search...."></form></ul></div></div><hr></div></div>
 
-<div class="row-fluid"><div class="col-xs-12"><h1>DCMI Specifications</h1>
+
+	  	
+  <div class="row justify-content-start">
+    <div class="col">
+    	<h1>DCMI Specifications</h1>
+    	
 
 <ul>
 <li><a href="/documents/#recommendations">Recommendations</a></li>
@@ -131,30 +147,33 @@
 </ul>
 
 <p><strong><a href="/documents/dc-rdf/">DC-RDF</a></strong> [DCMI Recommendation]. &quot;Expressing Dublin Core metadata using the Resource Description Framework (RDF)&quot; describes how constructs of the DCMI Abstract Model may be expressed in RDF graphs. How this document relates to earlier styles for expressing Dublin Core metadata in RDF is discussed in <a href="/documents/dc-rdf-notes/">&quot;Notes on DCMI specifications for Dublin Core metadata in RDF&quot;</a>.</p>
-</div></div><div class="row-fluid">
-  <div class="col-xs-12">
-    <hr/>
-    <div id="footer">
-      <p>
 
-
-        Unless indicated otherwise, DCMI documents are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. Please see the <a href="/about/copyright/#documentnotice">DCMI Document Notice</a> for further instructions.
-      </p>
-
-
-
-      <p>
-        <a href="/about/copyright/#copyright">Copyright</a> &#169; 1995-2017 <acronym title="Dublin Core Metadata Initiative"><a href="/">DCMI</a></acronym>. All Rights Reserved. DCMI <a href="/about/copyright/#liability">liability</a>, <a href="/about/copyright/#trademark">trademark/service mark</a>, <a href="/about/copyright/#documentnotice">document use</a> and <a href="/about/software/">software licensing</a> rules apply. Your interactions with this site are in accordance with our <a href="/about/privacy/">privacy</a> statements.
-      </p>
-      <p>
-        The Dublin Core Metadata Initiative (DCMI) is a project of ASIS&amp;T&mdash;a U.S. 501(c)(3) nonprofit under the U.S. Internal Revenue Code.  Contributions to DCMI through ASIS&amp;T are tax-deductible to the full extent of the law in the United States.
-        <br />
-        The <a href="/">DCMI Web site</a> is hosted by the <a href="http://www.nl.go.kr/" target="_blank">National Library of Korea</a>.
-        <br />
-        The <a href="http://purl.org/dcregistry" target="_blank">Dublin Core Metadata Registry</a> is hosted by the <a href="http://www.kc.tsukuba.ac.jp/index_en.html" target="_blank">Research Center for Knowledge Communities</a> at the University Of Tsukuba, Japan.
-      </p>
-      <p>Deployed with Hugo v. 0.26</p>
     </div>
+  </div>
+
+
+			<div id="footer" class="row justify-content-left">
+  <div class="col">
+
+    <p>
+
+
+      Unless indicated otherwise, DCMI documents are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. Please see the <a href="/about/copyright/#documentnotice">DCMI Document Notice</a> for further instructions.
+    </p>
+
+
+
+    <p>
+      <a href="/about/copyright/#copyright">Copyright</a> &#169; 1995-2017 <acronym title="Dublin Core Metadata Initiative"><a href="/">DCMI</a></acronym>. All Rights Reserved. DCMI <a href="/about/copyright/#liability">liability</a>, <a href="/about/copyright/#trademark">trademark/service mark</a>, <a href="/about/copyright/#documentnotice">document use</a> and <a href="/about/software/">software licensing</a> rules apply. Your interactions with this site are in accordance with our <a href="/about/privacy/">privacy</a> statements.
+    </p>
+    <p>
+      The Dublin Core Metadata Initiative (DCMI) is a project of ASIS&amp;T&mdash;a U.S. 501(c)(3) nonprofit under the U.S. Internal Revenue Code.  Contributions to DCMI through ASIS&amp;T are tax-deductible to the full extent of the law in the United States.
+      <br />
+      The <a href="/">DCMI Web site</a> is hosted by the <a href="http://www.nl.go.kr/" target="_blank">National Library of Korea</a>.
+      <br />
+      The <a href="http://purl.org/dcregistry" target="_blank">Dublin Core Metadata Registry</a> is hosted by the <a href="http://www.kc.tsukuba.ac.jp/index_en.html" target="_blank">Research Center for Knowledge Communities</a> at the University Of Tsukuba, Japan.
+    </p>
+    <p>Deployed with Hugo v. 0.32.3</p>
   </div>
 </div>
 
@@ -180,3 +199,8 @@
 
 </body>
 </html>
+		</div>
+  </body>
+</html>
+
+			

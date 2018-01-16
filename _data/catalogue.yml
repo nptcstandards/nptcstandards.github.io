@@ -2372,7 +2372,7 @@
   published_date: 2000-01-01 00:00:00
   last_updated_date: 
   subject_group_common_name: Legislation
-- document_title: Information Systems Strategy for the Police Service (ISS4PS) - Volume two
+- document_title: Information Systems Strategy for the Police Service (ISS4PS) - Volume Two
   bps_security_classification: 
   access_group: 
   bps_reference: bps18630
@@ -2473,7 +2473,7 @@
   published_date: 2008-01-01 00:00:00
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Security techniques - Guidance for code of practice for security controls
+- document_title: Security Techniques - Guidance for Code of Practice for Security Controls
   bps_security_classification: 
   access_group: 
   bps_reference: bps39576
@@ -2536,7 +2536,7 @@
   published_date: 2015-05-01 00:00:00
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Security policy framework
+- document_title: Security Policy Framework
   bps_security_classification: 
   access_group: 
   bps_reference: bps03167
@@ -2654,7 +2654,7 @@
   published_date: 2013-10-01 00:00:00
   last_updated_date: 
   subject_group_common_name: ISO27K
-- document_title: Security techniques -- Code of practice for information security controls
+- document_title: Security Techniques -- Code of Practice for Information Security Controls
   bps_security_classification: 
   access_group: 
   bps_reference: bps04936
@@ -2682,7 +2682,7 @@
   published_date: 2013-10-01 00:00:00
   last_updated_date: 
   subject_group_common_name: ISO27K
-- document_title: Seurity techniques - Guidance for code of practice for security controls
+- document_title: Security Techniques - Guidance for Code of Practice for Security Controls
   bps_security_classification: 
   access_group: 
   bps_reference: bps93074
@@ -2710,7 +2710,7 @@
   published_date: 2017-03-01 00:00:00
   last_updated_date: 
   subject_group_common_name: ISO27K
-- document_title: Information security management -- Monitoring, measurement, analysis and evaluation
+- document_title: Information Security Management -- Monitoring, Measurement, Analysis and Evaluation
   bps_security_classification: 
   access_group: 
   bps_reference: bps21953
@@ -2784,7 +2784,7 @@
   published_date: 2016-12-01 00:00:00
   last_updated_date: 
   subject_group_common_name: ISO27K
-- document_title: Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors
+- document_title: Code of Practice for Protection of Personally Identifiable Information (PII) in Public Clouds acting as PII Processors
   bps_security_classification: 
   access_group: 
   bps_reference: bps07894
@@ -2840,7 +2840,7 @@
   published_date: 2017-11-03 00:00:00
   last_updated_date: 
   subject_group_common_name: ISO27K
-- document_title: Security techniques -- Guidelines for cybersecurity
+- document_title: Security Techniques -- Guidelines for Cybersecurity
   bps_security_classification: 
   access_group: 
   bps_reference: bps27486
@@ -2868,7 +2868,7 @@
   published_date: 2017-12-07 00:00:00
   last_updated_date: 
   subject_group_common_name: ISO27K
-- document_title: Network security -- Part 1- Overview and concepts
+- document_title: Network Security -- Part 1- Overview and Concepts
   bps_security_classification: 
   access_group: 
   bps_reference: bps79102
@@ -2896,7 +2896,7 @@
   published_date: 2015-08-01 00:00:00
   last_updated_date: 
   subject_group_common_name: ISO27K
-- document_title: Application security -- Part 2- Organization normative framework
+- document_title: Application Security -- Part 2- Organization Normative Framework
   bps_security_classification: 
   access_group: 
   bps_reference: bps06275
@@ -2924,7 +2924,7 @@
   published_date: 2015-08-01 00:00:00
   last_updated_date: 
   subject_group_common_name: ISO27K
-- document_title: Business continuity management systems --- Requirements
+- document_title: Business Continuity Management Systems - Requirements
   bps_security_classification: 
   access_group: 
   bps_reference: bps35780
@@ -2952,7 +2952,7 @@
   published_date: 2017-12-05 00:00:00
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Audit requirements
+- document_title: Audit Requirements
   bps_security_classification: 
   access_group: 
   bps_reference: bps49381
@@ -3019,7 +3019,7 @@
   published_date: 2017-11-04 00:00:00
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Guidelines for information and communications technology disaster recovery services
+- document_title: Guidelines for information and Communications Technology Disaster Recovery Services
   bps_security_classification: 
   access_group: 
   bps_reference: bps84739
@@ -3080,5 +3080,39 @@
     - file:///Users/monkey/Qua Muse/NPTC Standards Delivery Team - Documents/_library/bps30124/bps30124.html
   primary_classification: technical.guidance.ux
   published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: National ICT Strategic Principles
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps28187
+  bps_ref_part: 
+  bps_ref_published_date: 2017-06
+  bps_full_reference: bps28187:2017-06
+  bps_part_reference: bps28187
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: National Police Technology Council
+  sponsor_org_email: 
+  document_abstract: >-
+    Principles are general rules and guidelines, intended to be enduring and seldom amended, that inform and support the way in which an organisation sets about fulfilling its mission.
+    In their turn, principles may be just one element in a structured set of ideas that collectively define and guide the organisation, from values through to actions and results.
+    Depending on the organisation, principles may be established within different domains and at different levels. Two key domains inform the development and utilisation of architecture:
+    • Enterprise principles provide a basis for decision-making throughout an organisation, and inform how the organisation sets about fulfilling its mission. Such principles are commonly found as a means of harmonising decision-making across an organisation. In particular, they are a key element in a successful architecture governance strategy.
+    Within the broad domain of enterprise principles, it is common to have subsidiary principles within a business or organisational unit. Examples include ICT, HR, frontline policing & protective services arenas. These principles provide a basis for decision-making within the subsidiary domain and will inform architecture development within the domain. 
+    • Architecture principles are a set of principles that relate to architecture work. They reflect a level of consensus across the organisation, and embody the spirit and thinking of existing enterprise principles. Architecture principles govern the architecture process, affecting the development, maintenance, and use of the enterprise architecture.
+    Architecture principles may restate other organisational guidance in terms and form that effectively guide architecture development.
+  project_status: n-a
+  content_urls:
+    - localhost/bps28187.html
+  primary_classification: business.guidance.principles
+  published_date: 2016-06-14 00:00:00
   last_updated_date: 
   subject_group_common_name: 
