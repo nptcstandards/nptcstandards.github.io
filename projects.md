@@ -2,7 +2,7 @@
 layout: page
 title: Roadmap
 ---
-The  roadmap section displays a list of standards which are either :
+The  roadmap section shows the list of standards which are either :
 + under development or
 + scheduled for development or
 + due for assessment for inclusion in the Catalogue
