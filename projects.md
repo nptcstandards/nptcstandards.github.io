@@ -29,6 +29,7 @@ The roadmap section shows the list of standards which are either :
       verticalScroll: true,
       zoomable: false
     };
+    
 
   // Create a DataSet (allows two way data-binding)
   var items = new vis.DataSet([
