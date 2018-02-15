@@ -55,6 +55,8 @@ menu:
     url: "/catalogue.html"
   - title: "Roadmap"
     url: "/projects.html"
+  - title: "Forums"
+    url: "/forums.html"
   - title: "Blog"
     url: "/blog"
 # End

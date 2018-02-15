@@ -1,17 +1,3 @@
-- name: Semantic Versioning
-  bps_reference: bps38125
-  std_sponsor: National Police Technology Standards
-  author_org: NPTC Standards
-  project_status: Scheduled
-  document_abstract: Given a version number MAJOR.MINOR.PATCH, increment the-
-    
-        MAJOR version when you make incompatible API changes,
-        MINOR version when you add functionality in a backwards-compatible manner, and
-        PATCH version when you make backwards-compatible bug fixes.
-    
-    Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
-  start_date:
-  estimated_completion_date:
 - name: O365 Desktop Deployment Best Common Practice
   bps_reference: bps16530
   std_sponsor: National Enabling Programmes
@@ -19,6 +5,31 @@
   project_status: In-Progress
   document_abstract: This guide provides the best current practice (BCP) for the preparation, deployment and maintenance of Office Pro Plus 365 applications onto an end user endpoint in a Policing environment.
     It is intended that by providing guidance that policing organisations can converge on a common methodology and configuration that will facilitate integration into the national strategy for Productivity Services as developed by the National Enabling Programmes (NEP).
+  start_date:
+  estimated_completion_date:
+- name: Police User Identity Attributes & Metadata
+  bps_reference: bps28816
+  std_sponsor: National Enabling Programmes
+  author_org: NPTC Standards
+  project_status: In-Progress
+  document_abstract: Definition of a common white pages schema of objects, attributes and their syntax for user identity in the Policing domain.
+  start_date:
+  estimated_completion_date:
+- name: Risk Management & Methodology
+  bps_reference: bps37942
+  std_sponsor: National Enabling Programmes
+  author_org: NPTC Standards
+  project_status: In-Progress
+  document_abstract: This document provides UK Policing with a methodology to security, accreditation and risk management which has been designed as an enabler to The UK Policing Vision 2025.
+    In addition to defining an approved methodology to follow, this document also provides appendices of predefined useable baseline product inputs to be leveraged by other policing projects to reduce the time and effort involved in performing their required risk management and assessment work. The predefined material is based on the actual risk work that was executed on behalf of the National Enabling Programmes (NEP) to allow it to achieve accreditation on its’ projects.
+  start_date:
+  estimated_completion_date:
+- name: Technical Configuration for Windows 10 Fall Creators Update (Build 1709) End User Devices (desktops/laptops)
+  bps_reference: bps20961
+  std_sponsor: National Enabling Programmes
+  author_org: National Enabling Programmes
+  project_status: In-Progress
+  document_abstract: A complete technical configuration for Windows 10 Fall Creators Update (Build 1709) including architecture, device lifecycle, build, configuration and security aligned to [NCSC guidance](./meta/bps15792_meta.html).
   start_date:
   estimated_completion_date:
 - name: POLE Exchange Data Encoding Schema
@@ -45,29 +56,26 @@
   document_abstract: 
   start_date:
   estimated_completion_date:
-- name: Police User Identity Attributes & Metadata
-  bps_reference: bps87543
-  std_sponsor: National Enabling Programmes
+- name: Semantic Versioning
+  bps_reference: bps38125
+  std_sponsor: National Police Technology Standards
   author_org: NPTC Standards
-  project_status: In-Progress
-  document_abstract: Definition of a common white pages schema of objects, attributes and their syntax for user identity in the Policing domain.
+  project_status: Scheduled
+  document_abstract: Given a version number MAJOR.MINOR.PATCH, increment the-
+    
+        MAJOR version when you make incompatible API changes,
+        MINOR version when you add functionality in a backwards-compatible manner, and
+        PATCH version when you make backwards-compatible bug fixes.
+    
+    Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
   start_date:
   estimated_completion_date:
-- name: Risk Management & Methodology
-  bps_reference: bps37942
-  std_sponsor: National Enabling Programmes
-  author_org: NPTC Standards
-  project_status: In-Progress
-  document_abstract: This document provides UK Policing with a methodology to security, accreditation and risk management which has been designed as an enabler to The UK Policing Vision 2025.
-    In addition to defining an approved methodology to follow, this document also provides appendices of predefined useable baseline product inputs to be leveraged by other policing projects to reduce the time and effort involved in performing their required risk management and assessment work. The predefined material is based on the actual risk work that was executed on behalf of the National Enabling Programmes (NEP) to allow it to achieve accreditation on its’ projects.
-  start_date:
-  estimated_completion_date:
-- name: Technical Configuration for Windows 10 Fall Creators Update (Build 1709) End User Devices (desktops/laptops)
-  bps_reference: bps20961
-  std_sponsor: National Enabling Programmes
-  author_org: National Enabling Programmes
-  project_status: In-Progress
-  document_abstract: A complete technical configuration for Windows 10 Fall Creators Update (Build 1709) including architecture, device lifecycle, build, configuration and security aligned to [NCSC guidance](./meta/bps15792_meta.html).
+- name: Information Asset Metadata Tagging
+  bps_reference: bps25147
+  std_sponsor: 
+  author_org: 
+  project_status: Scheduled
+  document_abstract: Definition of a  taxonomy of information asset tags to classify information assets.
   start_date:
   estimated_completion_date:
 - name: Management of Windows 10 End User Devices (desktops/laptops)

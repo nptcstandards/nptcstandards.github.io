@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>
+      Cross platform character encoding profile  - GOV.UK
+  </title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-2775f99eaec64ff8121bfbfb3eb67b0c2b4b7c3fc78d25da30e12db2a09d30d6.css" crossorigin="anonymous" integrity="sha256-J3X5nq7GT/gSG/v7PrZ7DCtLfD/HjSXaMOEtsqCdMNY=">
+<!--<![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie6-5bb08c355a12ac38b0ac9d2446da122ec0f81c78e02dcd2a98766f53c23793c8.css" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie7-be1ea757827710f20eae59ae3ebfd172b7dbeabb171a79945ba610947eebb3cc.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie8-5ab4d0c7b42f2bf10f8c7aadf331a11f7399be832b0ee2c68c94071195a1e36e.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css" crossorigin="anonymous" integrity="sha256-EHZRlSHC//u/das7DTsy7i2WrH6XePHN+sF3Hu/RocA=">
+
+    <!--[if IE 8]><link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-ie8-f5e3c18a96ecb0f37246556a27330202d6e18feffa05a3b67825024609629ac8.css" /><![endif]-->
+    <!--[if gte IE 9]><!--><link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-5ff8c53913434afd0072a480d7cfca67cace4c8d03f6ef96b78a4455728ce745.css" crossorigin="anonymous" integrity="sha256-X/jFORNDSv0AcqSA18/KZ8rOTI0D9u+Wt4pEVXKM50U=">
+<!--<![endif]-->
+    <!--[if lt IE 9]><script src="https://assets.publishing.service.gov.uk/static/ie-de2fea7048f9a4002521ca38bd052e6c1ba07642fc4ea8e25e576fa2a31f6771.js" crossorigin="anonymous" integrity="sha256-3i/qcEj5pAAlIco4vQUubBugdkL8TqjiXldvoqMfZ3E="></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.publishing.service.gov.uk/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-1520731f20feb4af8b2a54a5100e000c16091d763784a8b7ce75d95a9869b682.css" crossorigin="anonymous" integrity="sha256-FSBzHyD+tK+LKlSlEA4ADBYJHXY3hKi3znXZWphptoI=">
+<!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie6-89e4515300d323424e381139137a82cca1b71e1d713d61e1cc98b9862c4ac356.css" /><script>var ieVersion = 6;</script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie7-01539681b6c080c7251f7550b961d94e0e81b89e92b7e1400b3e2c1cfd830011.css" /><script>var ieVersion = 7;</script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie8-95ae60c4c497b18f594a6388b2ee2074676940ef2662f7ab2144191066c10bc9.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/core-layout-print-f855af1921221f4e58635e1434ad276d5d917c8e37f9828dcd3d893f7b707f23.css" crossorigin="anonymous" integrity="sha256-+FWvGSEiH05YY14UNK0nbV2RfI43+YKNzT2JP3twfyM=">
+
+
+  <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-1fb879ad8b25e1021936ac1893f3ca61974c49a1c99d7f3ec73424f0afbb9897.css" crossorigin="anonymous" integrity="sha256-H7h5rYsl4QIZNqwYk/PKYZdMSaHJnX8+xzQk8K+7mJc=">
+<!--<![endif]--><link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/government-frontend/print-4fc3f9ed284ff730df003d3971319ae4f3ca1708476a06c6d6690bdfa626aa64.css" crossorigin="anonymous" integrity="sha256-T8P57ShP9zDfAD05cTGa5PPKFwhHagbG1mkL36YmqmQ=">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="pHdiGeCqc3LY7GY1TEXshxSBXQZ3cwDxvxeZzNY3miDiHWIaZX0RUJ8j5PUOVG+5OnL3cQDegnTUOqgZifaHBQ==">
+<meta name="govuk:format" content="html_publication">
+<meta name="govuk:schema-name" content="html_publication">
+<meta name="govuk:analytics:organisations" content="&lt;D2&gt;&lt;OT1056&gt;">
+<meta name="govuk:user-journey-stage" content="thing">
+<meta name="govuk:navigation-document-type" content="other">
+<meta name="govuk:content-id" content="eec62e9c-dab5-4038-96a5-a7a866a0b7ae">
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-ie6-332ba5a78bd0e2b4d8988731c5f3b88bf3a3c3fa32d6cad39399e461d4ec1517.css" /><script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-ie7-332ba5a78bd0e2b4d8988731c5f3b88bf3a3c3fa32d6cad39399e461d4ec1517.css" /><script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-ie8-12c6fd3d7ff6f855b9003859902f46925f3c8f8b1f23bc634e8bf4e60e34fe57.css" /><script>var ieVersion = 8;</script><![endif]--><meta name="govuk:rendering-application" content="government-frontend">
+</head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+        <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+    </div>
+
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img src="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" width="36" height="32" alt=""> GOV.UK
+            </a>
+          </div>
+            <a href="#search" class="search-toggle js-header-toggle">Search</a>
+
+  <form id="search" class="site-search" action="/search" method="get" role="search">
+    <div class="content">
+      <label for="site-search-text">Search</label>
+      <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus">
+      <input class="submit" type="submit" value="Search">
+    </div>
+  </form>
+
+        </div>
+        
+      </div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      <div id="wrapper" class="direction-ltr">
+    
+          
+<div class="govuk-breadcrumbs " data-module="track-click">
+  <ol>
+
+    <li class="">
+        <a data-track-category="breadcrumbClicked" data-track-action="1" data-track-label="/" data-track-options='{"dimension28":"2","dimension29":"Home"}' class="" aria-current="false" href="/">Home</a>
+    </li>
+
+    <li class="">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/government/publications/open-standards-for-government" data-track-options='{"dimension28":"2","dimension29":"Open standards for government"}' class="" aria-current="false" href="/government/publications/open-standards-for-government">Open standards for government</a>
+    </li>
+  </ol>
+</div>
+
+
+    <main role="main" id="content" class="html-publication" lang="en">
+      
+<div class="publication-external">
+  <ol class="organisation-logos">
+      <li class="organisation-logo">
+        <div class="govuk-organisation-logo cabinet-office">
+    <a href="/government/organisations/cabinet-office" class="logo-container logo-link logo-with-crest crest-single-identity">
+
+    <span>Cabinet Office</span>
+
+    </a>
+</div>
+
+      </li>
+      <li class="organisation-logo">
+        <div class="govuk-organisation-logo cabinet-office">
+    <a href="/government/organisations/government-digital-service" class="logo-container logo-link logo-with-crest crest-single-identity">
+
+    <span>Government Digital Service</span>
+
+    </a>
+</div>
+
+      </li>
+  </ol>
+</div>
+
+<header class="app-c-publication-header">
+  <div class="pub-c-title
+  pub-c-title--inverse
+  ">
+    <p class="pub-c-title__context">
+      Guidance
+    </p>
+  <h1 class="pub-c-title__text ">
+    Cross platform character encoding profile 
+  </h1>
+</div>
+
+  <p class="app-c-publication-header__last-changed">Updated 31 January 2018</p>
+</header>
+
+
+
+
+<div class="grid-row sidebar-with-body" data-module="sticky-element-container" id="contents">
+    <div class="column-quarter-desktop-only">
+        <nav role="navigation" class="app-c-contents-list">
+    <h2>
+      Contents
+    </h2>
+    <ol class="app-c-contents-list__list">
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#challenge">
+            <span class="app-c-contents-list__number">1. </span><span class="app-c-contents-list__numbered-text">Challenge</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#description">
+            <span class="app-c-contents-list__number">2. </span><span class="app-c-contents-list__numbered-text">Description</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#user-needs">
+            <span class="app-c-contents-list__number">3. </span><span class="app-c-contents-list__numbered-text">User needs</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#expected-benefits">
+            <span class="app-c-contents-list__number">4. </span><span class="app-c-contents-list__numbered-text">Expected benefits</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#functional-needs">
+            <span class="app-c-contents-list__number">5. </span><span class="app-c-contents-list__numbered-text">Functional needs</span>
+</a>        </li>
+        <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+          <a class="app-c-contents-list__link" href="#interoperability">
+            <span class="app-c-contents-list__number">6. </span><span class="app-c-contents-list__numbered-text">Interoperability</span>
+</a>        </li>
+    </ol>
+  </nav>
+
+    </div>
+
+  <div class="print-wrapper">
+    <div class="print-meta-data">
+      <p>
+  <img class="print-meta-data-licence" src="https://assets.publishing.service.gov.uk/government-frontend/open-government-licence-min-e98134ae65ff5fe99a524d8c383350b3998f91c298dc24b36126e65f1656c578.png" alt="Open government licence min">
+</p>
+<p>
+  © Crown copyright 2018
+</p>
+<p>
+  This publication is licensed under the terms of the Open Government Licence v3.0 except where otherwise stated. To view this licence, visit <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3">nationalarchives.gov.uk/doc/open-government-licence/version/3</a> or write to the Information Policy Team, The National Archives, Kew, London TW9 4DU, or email: <a href="mailto:psi@nationalarchives.gsi.gov.uk">psi@nationalarchives.gsi.gov.uk</a>.
+</p>
+<p>
+  Where we have identified any third party copyright information you will need to obtain permission from the copyright holders concerned.
+</p>
+<p>
+  This publication is available at https://www.gov.uk/government/publications/open-standards-for-government/cross-platform-character-encoding-profile
+</p>
+
+
+
+    </div>
+  </div>
+
+  <div class="column-three-quarters-desktop-only ">
+    <div class="govuk-govspeak-html-publication">
+  
+<div class="govuk-govspeak direction-ltr">
+  <div class="govspeak">
+<div class="call-to-action">
+<p>Standards to be used: <a rel="external" href="http://www.unicode.org/versions/Unicode6.2.0/">Unicode 6.2</a> and <a rel="external" href="http://www.rfc-base.org/rfc-3629.html">UTF-8</a>.</p>
+</div>
+
+<h2 id="challenge">
+<span class="number">1. </span>Challenge</h2>
+
+<p>When text-based information is exchanged between systems, the character encoding determines how the bytes in the data are converted into characters. If a system sends information using one encoding and a separate system expects information in another encoding, the bytes can be interpreted as the wrong characters, eg people’s names could be misinterpreted.</p>
+
+<p>Read <a rel="external" href="http://standards.data.gov.uk/challenge/cross-platform-character-encoding">more about the original challenge on the Standards Hub.</a></p>
+
+<h2 id="description">
+<span class="number">2. </span>Description</h2>
+
+<p>This standards profile ensures that character encoding is considered in all text-based formats that are standardised by government bodies. Since text-based formats are frequently opened in generic text editors, it is important that they adopt a standard character encoding. This standards profile covers:</p>
+
+<ul>
+  <li>UTF-8 to be used as the default character encoding for text-based formats</li>
+  <li>ASCII text to be used in text-based formats where possible</li>
+  <li>the use of any other character encoding to be indicated explicitly within files, and for text-based formats to provide a mechanism, within the file, to indicate the character encoding used when it is not UTF-8</li>
+</ul>
+
+<h2 id="user-needs">
+<span class="number">3. </span>User needs</h2>
+
+<p>The users in this context are any users or systems that are exchanging text-based information. Users need to be sure that the characters that they use are accurately exchanged.</p>
+
+<p>These needs are met by all text-based formats and applications using a consistent character encoding, namely UTF-8 (of which ASCII is a subset with universal support). Where UTF-8 isn’t used, including an indication of the encoding within the file enables users to identify which encoding they should select when opening the file.</p>
+
+<h2 id="expected-benefits">
+<span class="number">4. </span>Expected benefits</h2>
+
+<p>The benefit of a standard, cross-platform encoding is that it prevents accidental or unanticipated corruption of text that is transferred between systems. This saves operational cost in detecting and fixing errors in the text, and provides more accurate information. UTF-8 is such a standard.</p>
+
+<h2 id="functional-needs">
+<span class="number">5. </span>Functional needs</h2>
+
+<p>As it covers all of Unicode, UTF-8 caters for the vast majority of characters that are used within writing systems used within the UK, including those used in other languages.</p>
+
+<p>UTF-8 is used internationally, which enables easy transfer of text-based information with other countries.</p>
+
+<p>UTF-8 is an efficient encoding for the characters used in English and Welsh, as those characters are encoded as single bytes. This ensures that files using the encoding are not unnecessarily large.</p>
+
+<h2 id="interoperability">
+<span class="number">6. </span>Interoperability</h2>
+
+<p>To achieve interoperability:</p>
+
+<ul>
+  <li>text-based formats that are defined as standard formats for exchanging information need to use UTF-8</li>
+  <li>applications that are used for creating and manipulating data need to default to saving files in UTF-8, and to assume UTF-8 is used when opening files with an unknown character encoding</li>
+  <li>databases need to be able to consume text in UTF-8 and ensure the same UTF-8 characters are output when information is extracted from the database</li>
+</ul>
+
+<p>New IT systems should include these as requirements.</p>
+</div>
+</div>
+
+</div>
+
+  </div>
+
+  <div data-sticky-element class="govuk-sticky-element">
+    <a class="app-c-back-to-top dont-print" href="#contents">
+    <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewbox="0 0 13 17">
+      <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+    </svg>
+    Contents
+</a>
+
+  </div>
+</div>
+
+    </main>
+  <div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2>Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/government/publications/open-standards-for-government/cross-platform-character-encoding-profile">
+        
+          <input id="source" name="source" type="hidden" value="">
+        
+        
+          <input id="page_owner" name="page_owner" type="hidden" value="">
+        
+
+        <p>Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+        <label for="what_doing">What you were doing</label>
+        <input id="what_doing" name="what_doing" type="text">
+
+        <label for="what_wrong">What went wrong</label>
+        <input id="what_wrong" name="what_wrong" type="text">
+
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+            <div class="footer-categories">
+      <div class="footer-explore">
+        <h2>Services and information</h2>
+
+        <ul>
+          <li><a href="/browse/benefits">Benefits</a></li>
+          <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+          <li><a href="/browse/business">Business and self-employed</a></li>
+          <li><a href="/browse/childcare-parenting">Childcare and parenting</a></li>
+          <li><a href="/browse/citizenship">Citizenship and living in the UK</a></li>
+          <li><a href="/browse/justice">Crime, justice and the law</a></li>
+          <li><a href="/browse/disabilities">Disabled people</a></li>
+          <li><a href="/browse/driving">Driving and transport</a></li>
+        </ul>
+        <ul>
+          <li><a href="/browse/education">Education and learning</a></li>
+          <li><a href="/browse/employing-people">Employing people</a></li>
+          <li><a href="/browse/environment-countryside">Environment and countryside</a></li>
+          <li><a href="/browse/housing-local-services">Housing and local services</a></li>
+          <li><a href="/browse/tax">Money and tax</a></li>
+          <li><a href="/browse/abroad">Passports, travel and living abroad</a></li>
+          <li><a href="/browse/visas-immigration">Visas and immigration</a></li>
+          <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-inside-government">
+        <h2>Departments and policy</h2>
+
+        <ul>
+          <li><a href="/government/how-government-works">How government works</a></li>
+          <li><a href="/government/organisations">Departments</a></li>
+          <li><a href="/world">Worldwide</a></li>
+          <li><a href="/government/policies">Policies</a></li>
+          <li><a href="/government/publications">Publications</a></li>
+          <li><a href="/government/announcements">Announcements</a></li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="/help">Help</a></li>
+  <li><a href="/help/cookies">Cookies</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help/terms-conditions">Terms and conditions</a></li>
+  <li><a href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+</li>
+</ul>
+
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="https://assets.publishing.service.gov.uk/static/govuk-template-d4ba5ab8f60c9df5c733e7d3c7c469ff93dc6b64d2b2a8feb94afa8f77c66193.js" crossorigin="anonymous" integrity="sha256-1LpauPYMnfXHM+fTx8Rp/5Pca2TSsqj+uUr6j3fGYZM="></script>
+
+      <script src="https://assets.publishing.service.gov.uk/static/libs/jquery/jquery-1.12.4-c00688067b5a232ef96e5698ffce7b4f6496ebaad1910e7860fc38eff4d6e3fe.js" crossorigin="anonymous" integrity="sha256-wAaIBntaIy75blaY/857T2SW66rRkQ54YPw47/TW4/4="></script>
+<script src="https://assets.publishing.service.gov.uk/static/header-footer-only-fcd03a9dcad5a5a6af6b5906f3ae325f118323658dda9496bc2a5fc5f6240f5a.js" crossorigin="anonymous" integrity="sha256-/NA6ncrVpaava1kG864yXxGDI2WN2pSWvCpfxfYkD1o="></script>
+<script src="https://assets.publishing.service.gov.uk/static/surveys-68defe01881b89e33403d5defc1b8c28e80d1e0576f28ebb2293ec5a056212f4.js" crossorigin="anonymous" integrity="sha256-aN7+AYgbieM0A9Xe/BuMKOgNHgV28o67IpPsWgViEvQ="></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="https://assets.publishing.service.gov.uk/government-frontend/application-d1b8f72a1e8be306a37b174332dc49e0be89d7a83c55b6e2c21349f7eeaee75b.js" crossorigin="anonymous" integrity="sha256-0bj3Kh6L4wajexdDMtxJ4L6J16g8VbbiwhNJ9+6u51s="></script>
+</body>
+</html>

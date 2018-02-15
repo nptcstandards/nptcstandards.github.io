@@ -1,3 +1,59 @@
+- document_title: Body Worn Video
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps94285
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps94285
+  bps_part_reference: bps94285
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: Backlog
+  content_urls:
+    
+  primary_classification: technical.specification.device
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: BWV
+- document_title: OData (Open Data Protocol) JSON Format
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps97283
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps97283
+  bps_part_reference: bps97283
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming RESTful APIs. The OData protocol is comprised of a set of specifications for representing and interacting with structured content. The core specification for the protocol is in [OData-Protocol]; this document is an extension of the core protocol. This document defines representations for the OData requests and responses using the JavaScript Object Notation (JSON), see [RFC4627]. OData RESTful APIs are simple to consume. The OData metadata, a machine-readable description of the data model of the APIs, enables the creation of powerful generic client proxies and tools.
+  project_status: Backlog
+  content_urls:
+    - https://www.oasis-open.org/standards#odatajsonv4.0
+  primary_classification: technical.guidance.architecture
+  published_date: 2014-02-01 00:00:00
+  last_updated_date: 
+  subject_group_common_name: OASIS
 - document_title: B2B Baseline Sharing/Collaboration Questionnaire Template
   bps_security_classification: 
   access_group: 
@@ -127,7 +183,7 @@
   issn_reference: 
   author_org: 
   author_org_email: 
-  std_sponsor: 
+  std_sponsor: National Police technology Standards
   sponsor_org_email: 
   document_abstract: >-
     
@@ -250,34 +306,6 @@
   published_date: 
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Body Worn Video
-  bps_security_classification: 
-  access_group: 
-  bps_reference: bps94285
-  bps_ref_part: 
-  bps_ref_published_date: 
-  bps_full_reference: bps94285
-  bps_part_reference: bps94285
-# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
-  author_org_reference: 
-  maturity_level: 
-    - classification:
-      NPTS: 
-      Other: Another
-  issn_reference: 
-  author_org: 
-  author_org_email: 
-  std_sponsor: 
-  sponsor_org_email: 
-  document_abstract: >-
-    
-  project_status: Backlog
-  content_urls:
-    
-  primary_classification: technical.specification.device
-  published_date: 
-  last_updated_date: 
-  subject_group_common_name: BWV
 - document_title: Business Process Specific Shared Site Templates
   bps_security_classification: 
   access_group: 
@@ -303,34 +331,6 @@
   content_urls:
     
   primary_classification: business.reference.templates
-  published_date: 
-  last_updated_date: 
-  subject_group_common_name: 
-- document_title: Character Encodings
-  bps_security_classification: 
-  access_group: 
-  bps_reference: bps36784
-  bps_ref_part: 
-  bps_ref_published_date: 
-  bps_full_reference: bps36784
-  bps_part_reference: bps36784
-# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
-  author_org_reference: 
-  maturity_level: 
-    - classification:
-      NPTS: 
-      Other: Another
-  issn_reference: 
-  author_org: 
-  author_org_email: 
-  std_sponsor: 
-  sponsor_org_email: 
-  document_abstract: >-
-    
-  project_status: Backlog
-  content_urls:
-    
-  primary_classification: technical.guidance.data
   published_date: 
   last_updated_date: 
   subject_group_common_name: 
@@ -1174,14 +1174,14 @@
   published_date: 
   last_updated_date: 
   subject_group_common_name: 
-- document_title: Information Asset Metadata Tagging
+- document_title: Global Location Number
   bps_security_classification: 
   access_group: 
-  bps_reference: bps25147
+  bps_reference: bps86953
   bps_ref_part: 
   bps_ref_published_date: 
-  bps_full_reference: bps25147
-  bps_part_reference: bps25147
+  bps_full_reference: bps86953
+  bps_part_reference: bps86953
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1194,22 +1194,23 @@
   std_sponsor: 
   sponsor_org_email: 
   document_abstract: >-
-    
+    Global Location Number (GLN) can be used by companies to identify their locations, giving them complete flexibility to identify any type or level of location required. GLN IS FULLY COMPATIBLE WITH ISO STANDARD 
+    6523.
   project_status: Backlog
   content_urls:
-    
-  primary_classification: business.guidance.data
+    - https://www.gs1.org/id-keys/gln
+  primary_classification: 
   published_date: 
   last_updated_date: 
   subject_group_common_name: 
-- document_title: OData (Open Data Protocol) JSON Format
+- document_title: Information technology -- Structure for the identification of organizations and organization parts -- Part 1:Identification of organization identification schemes
   bps_security_classification: 
   access_group: 
-  bps_reference: bps97283
+  bps_reference: bps64908
   bps_ref_part: 
   bps_ref_published_date: 
-  bps_full_reference: bps97283
-  bps_part_reference: bps97283
+  bps_full_reference: bps64908
+  bps_part_reference: bps64908
 # author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
   author_org_reference: 
   maturity_level: 
@@ -1222,11 +1223,39 @@
   std_sponsor: 
   sponsor_org_email: 
   document_abstract: >-
-    OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming RESTful APIs. The OData protocol is comprised of a set of specifications for representing and interacting with structured content. The core specification for the protocol is in [OData-Protocol]; this document is an extension of the core protocol. This document defines representations for the OData requests and responses using the JavaScript Object Notation (JSON), see [RFC4627]. OData RESTful APIs are simple to consume. The OData metadata, a machine-readable description of the data model of the APIs, enables the creation of powerful generic client proxies and tools.
+    SO/IEC 6523 Information technology – Structure for the identification of organizations and organization parts is an international standard that defines a structure for uniquely identifying organizations and parts thereof in computer data interchange and specifies the registration procedure to obtain an International Code Designator (ICD) value for an identification scheme.
   project_status: Backlog
   content_urls:
-    - https://www.oasis-open.org/standards#odatajsonv4.0
-  primary_classification: technical.guidance.architecture
-  published_date: 2014-02-01 00:00:00
+    
+  primary_classification: 
+  published_date: 
   last_updated_date: 
-  subject_group_common_name: OASIS
+  subject_group_common_name: 
+- document_title: Dimensionally Extended nine-Intersection Model (DE-9IM)
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps14273
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps14273
+  bps_part_reference: bps14273
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    The Dimensionally Extended nine-Intersection Model (DE-9IM) is a topological model and a standard used to describe the spatial relations of two regions (two geometries in two-dimensions, R2), in Geometry, Point-set topology, Geospatial topology, and fields related to computer spatial analysis. Since the spatial relations expressed by the model are topological they are invariant to rotation, translation and scaling transformations.
+  project_status: Backlog
+  content_urls:
+    - https://en.wikipedia.org/wiki/DE-9IM
+  primary_classification: 
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
