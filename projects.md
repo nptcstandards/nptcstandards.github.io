@@ -18,10 +18,22 @@ The roadmap section shows the list of standards which are either :
   // DOM element where the Timeline will be attached
   var container = document.getElementById('visualization');
 
+  var options = {
+      width: '100%',
+      height: '100%',
+      margin: {
+        item : {
+            horizontal : -1
+        }
+      },
+      verticalScroll: true,
+      zoomable: false
+    };
+
   // Create a DataSet (allows two way data-binding)
   var items = new vis.DataSet([
 {% for project in site.data.projects %}
-    {id:  '{{ project.bps_reference }}', title: '{{ project.bps_reference }}', content: '<a href="projects.html#{{ project.bps_reference }}--{{ project.name | slugify: 'ascii'}}">{{ project.name }}</a>', start: '2018-02-14'},
+    {id:  '{{ project.bps_reference }}', title: '{{ project.bps_reference }} : {{project.name}}', content: '<a href="projects.html#{{ project.bps_reference }}--{{ project.name | slugify: 'ascii'}}">{{ project.name }}</a>', start: '{{ project.start_date }}', end: '{{ project.due_date }}'},
 {% endfor %}
   ]);
 
@@ -52,16 +64,14 @@ The roadmap section shows the list of standards which are either :
         <td>Abstract:</td>
         <td>{{project.document_abstract}}</td>
     </tr>
-{% if project.start_date %}    
+{% if project.start_date or project.due_date %}    
     <tr>
         <td>Start Date:</td>
         <td>{{project.start_date}}</td>
     </tr>
-{% endif %}
-{% if project.estimated_completion_date %}
     <tr>
         <td>Estimated Completion Date:</td>
-        <td>{{project.estimated_completion_date}}</td>
+        <td>{{project.due_date}}</td>
     </tr>
 {% endif %}
 {% if project.url %}
