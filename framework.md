@@ -11,4 +11,4 @@ layout: page
 
 # [Style Guide](standards/bps00001-4.html)
 
-# [Nomenclature](standards/bps00001-5.html)
+# [Nomenclature](standards/nomenclature.html)

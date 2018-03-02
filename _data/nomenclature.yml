@@ -2,74 +2,248 @@
   definition: Article 29 Working Party
 - term: ANSI
   definition: American National Standards Institute
-- term: antivirus
-  definition: Software that is designed to detect, stop and remove viruses and other kinds of malicious software.
 - term: API
-  definition: An API (Application Programming Interface) is a set of features and rules allowing interaction between the software providing the API and other software components. In Web development, API commonly means a set of standard methods, properties, events, and URLs for interacting with Web content.
-- term: antivirus
-  definition: Software that is designed to detect, stop and remove viruses and other kinds of malicious software.
+  definition: An API (Application Programming Interface) is a set of features and
+    rules allowing interaction between the software providing the API and other software
+    components. In Web development, API commonly means a set of standard methods,
+    properties, events, and URLs for interacting with Web content.
+- term: Application
+  source: TOGAF
+  definition: A deployed and operational IT system that supports business functions
+    and services; for example, a payroll. Applications use data and are supported
+    by multiple technology components but are distinct from the technology components
+    that support the application.
+- term: Application Architecture
+  source: TOGAF
+  definition: A description of the major logical grouping of capabilities that manage
+    the data objects necessary to process the data and support the business.
+- term: Architecture
+  source: TOGAF
+  definition: |
+    1. A formal description of a system, or a detailed plan of the system at component level to guide its implementation.
+    2. The structure of components, their inter-relationships, and the principles and guidelines governing their designand evolution over time.
+- term: Architecture Building Block (ABB)
+  source: TOGAF
+  definition: A constituent of the architecture model that describes a single aspect
+    of the overall model.
+- term: Architecture Continuum
+  source: TOGAF
+  definition: "A part of the Enterprise Continuum. A repository of architectural elements\
+    \ with increasing detail and specialization. This Continuum begins with foundational\
+    \ definitions such as reference models, core strategies, and basic building blocks.\
+    \ From there it spans to Industry Architectures and all the way to an organization\u2019\
+    s specific architecture."
+- term: Architecture Development Method (ADM)
+  source: TOGAF
+  definition: The core of the TOGAF standard. A step-by-step approach to develop and
+    use an enterprise architecture.
+- term: Architecture Domain
+  source: TOGAF
+  definition: The architectural area being considered. There are four architecture
+    domains within the TOGAF standard:Business, Data, Application, and Technology.
+- term: Architecture Framework
+  source: TOGAF
+  definition: A conceptual structure used to develop, implement, and sustain an architecture.
+- term: Architecture Principles
+  source: TOGAF
+  definition: A qualitative statement of intent that should be met by the architecture.
+    Has at least a supporting rationale and a measure of importance.
+- term: Architecture Vision
+  source: TOGAF
+  definition: A succinct description of the Target Architecture that describes its
+    business value and the changes to the enterprise that will result from its successful
+    deployment. It serves as an aspirational vision and a boundary for detailed architecture
+    development.
+- term: "BDAT (Business \u2013 Data \u2013 Application \u2013 Technology)"
+  source: TOGAF
+  definition: A simple mnemonic to aid remembering the four architecture domains.
 - term: BPS
-  definition: British Policing Standards. A Standards marking reference similar to BSI.
-- term: botnet
-  definition: A network of infected devices, connected to the Internet, used to commit coordinated cyber attacks without their owner’s knowledge.
-- term: bring your own device (BYOD)
-  definition: An organisation’s strategy or policy that allows employees to use their own personal devices for work purposes.
+  definition: British Policing Standards. A Standards marking reference similar to
+    BSI.
 - term: BSI
   definition: British Standards Institute.
-- term: cloud
-  definition: Where shared compute and storage resources are accessed as a service (usually online), instead of hosted locally on physical services. Resources can include infrastructure, platform or software services.
+- term: Baseline
+  source: TOGAF
+  definition: A specification that has been formally reviewed and agreed upon, that
+    thereafter serves as the basis for further development or change and that can
+    be changed only through formal change control procedures or a type of procedure
+    such as configuration management.
+- term: Building Block
+  source: TOGAF
+  definition: "Represents a (potentially re-usable) component of business, IT, or\
+    \ architectural capability that can be combined with other building blocks to\
+    \ deliver architectures and solutions. Building blocks can be defined at various\
+    \ levels of detail, depending on what stage of architecture development has been\
+    \ reached. For instance, at an early stage, a building block can simply consist\
+    \ of a name or an outline description. Later on, a building block may be decomposed\
+    \ into multiple supporting building blocks and may be accompanied by a full specification.\
+    \ Building blocks can relate to \u201Carchitectures\u201D or \u201Csolutions\u201D\
+    ."
+- term: Business Architecture
+  source: TOGAF
+  definition: A description of the structure and interaction between the business
+    strategy, organization, functions, business processes, and information needs.
+- term: Business Governance
+  source: TOGAF
+  definition: Concerned with ensuring that the business processes and policies (and
+    their operation) deliver the business outcomes and adhere to relevant business
+    regulation.
 - term: CMS
   definition: Content Management System
+- term: Capability
+  source: TOGAF
+  definition: An ability that an organization, person, or system possesses. Capabilities
+    are typically expressed in general and high-level terms and typically require
+    a combination of organization, people, processes, and technology to achieve; or
+    example, marketing, customer contact, or outbound telemarketing.
 - term: CoP
   definition: College of Policing.
-- term: cyber attack
-  definition: Malicious attempts to damage, disrupt or gain unauthorised access to computer systems, networks or devices, via cyber means.
-- term: cyber security
-  definition: The protection of devices, services and networks — and the information on them — from theft or damage.
+- term: Concerns
+  source: TOGAF
+  definition: "The key interests that are crucially important to the stakeholders\
+    \ in a system, and determine the acceptability of the system. Concerns may pertain\
+    \ to any aspect of the system\u2019s functioning, development, or operation, including\
+    \ considerations such as performance, reliability, security, distribution, and\
+    \ evolvability."
+- term: Constraint
+  source: TOGAF
+  definition: "An external factor that prevents an organization from pursuing particular\
+    \ approaches to meet its goals; for example, customer data is not harmonized within\
+    \ the organization, regionally or nationally, constraining the organization\u2019\
+    s ability to offer effective customer service."
 - term: DCF
   definition: Digital Case File
-- term: denial of service (DoS)
-  definition: When legitimate users are denied access to computer services (or resources), usually by overloading the service with requests.
-- term: digital footprint
-  definition: A ‘footprint’ of digital information that a user’s online activity leaves behind.
 - term: DWS
   definition: Digital Witness Statement
+- term: Data Architecture
+  source: TOGAF
+  definition: "A description of the structure and interaction of the enterprise\u2019\
+    s major types and sources of data, logical data assets, physical data assets,\
+    \ and data management resources."
+- term: Deliverable
+  source: TOGAF
+  definition: An architectural work product that is contractually specified and in
+    turn formally reviewed, agreed, and signed off by the stakeholders. Deliverables
+    represent the output of projects and those deliverables that are in documentation
+    form will typically be archived at completion of a project, or transitioned into
+    an Architecture Repository as a reference model, standard, or snapshot of the
+    Architecture Landscape at a point in time.
 - term: EDAMM
   definition: Electronic Digital Access to Multimedia Material
-- term: encryption
-  definition: A mathematical function that protects information by making it unreadable by everyone except those with the key to decode it.
-- term: end user device (EUD)
-  definition: Collective term to describe modern smartphones, laptops and tablets that connect to an organisation’s network.
-- term: firewall
-  definition: Hardware or software which uses a defined rule set to constrain network traffic to prevent unauthorised access to or from a network.
+- term: Enterprise
+  source: TOGAF
+  definition: The highest level (typically) of description of an organization and
+    typically covers all missions and functions. An enterprise will often span multiple
+    organizations.
+- term: Enterprise Continuum
+  source: TOGAF
+  definition: A categorization mechanism useful for classifying architecture and solution
+    artifacts, both internal and external to the Architecture Repository, as they
+    evolve from generic Foundation Architectures to Organization-Specific Architectures.
 - term: FTP
   definition: File Transfer Protocol
+- term: Foundation Architecture
+  source: TOGAF
+  definition: Generic building blocks, their inter-relationships with other building
+    blocks, combined with the principles and guidelines that provide a foundation
+    on which more specific architectures can be built.
 - term: GDS
   definition: Government Digital Service.
 - term: GIS
   definition: Geographical Information Services
 - term: GIT
-  definition: GIT is a free, open-source, distributed Source Code Management system (SCM). It facilitates handling code bases with distributed development teams.
+  definition: GIT is a free, open-source, distributed Source Code Management system
+    (SCM). It facilitates handling code bases with distributed development teams.
 - term: GPMS
   definition: Government Protective Marking Scheme
 - term: GSC
   definition: Government Security Classifications
+- term: Gap
+  source: TOGAF
+  definition: A statement of difference between two states. Used in the context of
+    gap analysis, where the difference between the Baseline and Target Architecture
+    is identified.
+- term: Governance
+  source: TOGAF
+  definition: The discipline of monitoring, managing, and steering a business (or
+    IS/IT landscape) to deliver the business outcome required.
 - term: ICO
-  definition: Information Commissioner’s Office
+  definition: "Information Commissioner\u2019s Office"
 - term: IEC
   definition: International Electrotechnical Commission
 - term: IMORCC
   definition: Information Management & Operational Requirements Coordinating Committee
-- term: Internet of things (IoT)
-  definition: Refers to the ability of everyday objects (rather than computers and devices) to connect to the Internet. Examples include kettles, fridges and televisions.
 - term: ISO
   definition: International Organisation for Standardisation
+- term: Information
+  source: TOGAF
+  definition: Any communication or representation of facts, data, or opinions, in
+    any medium or form, including textual, numerical, graphic, cartographic, narrative,
+    or audio-visual.
+- term: Information Technology (IT)
+  source: TOGAF
+  definition: |
+    1. The lifecycle management of information and related technology used
+    by an organization.
+    2. An umbrella term that includes all or some of the subject
+    areas relating to the computer industry, such as Business Continuity, Business
+    IT Interface, Business Process Modeling and Management, Communication, Compliance
+    and Legislation, Computers, Content Management, Hardware, Information Management,
+    Internet, Offshoring, Networking, Programming and Software, Professional Issues,
+    Project Management, Security, Standards, Storage, Voice and Data Communications.
+    Various countries and industries employ other umbrella terms to describe this
+    same collection.
+    3. A term commonly assigned to a department within an organization
+    tasked with provisioning some or all of the domains described in (2) above.
+    4. Alternate names commonly adopted include Information Services, Information Management,
+    etc.
+- term: Internet of things (IoT)
+  definition: Refers to the ability of everyday objects (rather than computers and
+    devices) to connect to the Internet. Examples include kettles, fridges and televisions.
 - term: JSON
-  definition: JavaScript Object Notation is a data-interchange format. Although not a strict subset, JSON closely resembles a subset of JavaScript syntax. Though many programming languages support JSON, JSON is especially useful for JavaScript-based apps, including websites and browser extensions.
-- term: macro
-  definition: A small program that can automate tasks in applications (such as Microsoft Office) which attackers can use to gain access to (or harm) a system.
+  definition: JavaScript Object Notation is a data-interchange format. Although not
+    a strict subset, JSON closely resembles a subset of JavaScript syntax. Though
+    many programming languages support JSON, JSON is especially useful for JavaScript-based
+    apps, including websites and browser extensions.
+- term: Logical (Architecture)
+  source: TOGAF
+  definition: An implementation-independent definition of the architecture, often
+    grouping related physical entities according to their purpose and structure; for
+    example, the products from multiple infrastructure software vendors can all be
+    logically grouped as Java application server platforms.
 - term: MAIT
   definition: Multi-Agency Incident Transfer
+- term: Metadata
+  source: TOGAF
+  definition: Data about data, of any sort in any media, that describes the characteristics
+    of an entity.
+- term: Metamodel
+  source: TOGAF
+  definition: A model that describes how and with what the architecture will be described
+    in a structured way.
+- term: Method
+  source: TOGAF
+  definition: A defined, repeatable approach to address a particular type of problem.
+    See also Methodology.
+- term: Methodology
+  source: TOGAF
+  definition: A defined, repeatable series of steps to address a particular type of
+    problem, which typically centers on a defined process, but may also include definition
+    of content. See also Method.
+- term: Model
+  source: TOGAF
+  definition: "A representation of a subject of interest. A model provides a smaller\
+    \ scale, simplified, and/ or abstract representation of the subject matter. A\
+    \ model is constructed as a \u201Cmeans to an end\u201D. In the context of enterprise\
+    \ architecture, the subject matter is a whole or part of the enterprise and the\
+    \ end is the ability to construct \u201Cviews\u201D that address the concerns\
+    \ of particular stakeholders; i.e., their \u201Cviewpoints\u201D in relation to\
+    \ the subject matter. See also Stakeholder, View, and Viewpoint."
+- term: Modeling
+  source: TOGAF
+  definition: A technique through construction of models which enables a subject to
+    be represented in a form that enables reasoning, insight, and clarity concerning
+    the essence of the subject matter.
 - term: NASP
   definition: National ANPR Standards for Policing
 - term: NCSC
@@ -81,235 +255,224 @@
 - term: NPTC
   definition: National Police Technology Council
 - term: NPTS
-  definition: National Police Technology Standards. A working group of the NPTC responsible for BPS Technical Standards development.
+  definition: National Police Technology Standards. A working group of the NPTC responsible
+    for BPS Technical Standards development.
 - term: NSIRO
-  definition: National Senior Information R Officer
-- term: ONAT
-  definition: Overt National Asset Tracking; #standard
+  definition: National Senior Information Risk Owner
 - term: OCIP
   definition: Operational Communications in Policing.
+- term: ONAT
+  definition: Overt National Asset Tracking; #standard
 - term: ORB
   definition: Operational Requirements Board.
+- term: Objective
+  source: TOGAF
+  definition: "A time-bounded milestone for an organization used to demonstrate progress\
+    \ towards a goal; for example, \u201CIncrease Capacity Utilization by 30% by the\
+    \ end of 2009 to support the planned increase in market share\u201D."
 - term: PAG
   definition: Police Activity Glossary
-- term: patching
-  definition: Applying updates to firmware or software to improve security and/or enhance functionality.
 - term: PDF
   definition: Portable Document Format
-- term: phishing
-  definition: Untargeted, mass emails sent to many people asking for sensitive information (such as bank details) or encouraging them to visit a fake website.
 - term: PIAB
   definition: Police Information Assurance Board
 - term: PNC
   definition: Police National Computer, #system
-- term: POLE
-  definition: Person Object Location Event (Conceptual Data Model)
 - term: PND
   definition: Police National Database
+- term: POLE
+  definition: Person Object Location Event (Conceptual Data Model)
+- term: Physical
+  source: TOGAF
+  definition: A description of a real-world entity. Physical elements in an enterprise
+    architecture may still be considerably abstracted from Solution Architecture,
+    design, or implementation views.
 - term: Quorum
-  definition: This pertains to the number of members of a group or organization required to be present at a sitting to transact business.
+  definition: This pertains to the number of members of a group or organization required
+    to be present at a sitting to transact business.
 - term: REST
   definition: Representational State Transfer
+- term: Reference Model (RM)
+  source: TOGAF
+  definition: A reference model is an abstract framework for understanding significant
+    relationships among the entities of [an] environment, and for the development
+    of consistent standards or specifications supporting that environment. A reference
+    model is based on a small number of unifying concepts and may be used as a basis
+    for education and explaining standards to a non-specialist. A reference model
+    is not directly tied to any standards, technologies, or other concrete implementation
+    details, but it does seek to provide common semantics that can be used unambiguously
+    across and between different implementations.
+- term: Repository
+  source: TOGAF
+  definition: A system that manages all of the data of an enterprise, including data
+    and process models and other enterprise information. Hence, the data in a repository
+    is much more extensive than that in a data dictionary, which generally defines
+    only the data making up a database.
+- term: Requirement
+  definition: A statement of need that must be met by a particular architecture or
+    work package.
 - term: Rubric
-  definition: A rubric is defined as “any established mode of conduct or procedure; protocol.”
-- term: software as a service (SaaS)
-  definition: Describes a business model where consumers access centrally-hosted software applications over the Internet.
-- term: social engineering
-  definition: Manipulating people into carrying out specific actions, or divulging information, that’s of use to an attacker.
+  definition: "A rubric is defined as \u201Cany established mode of conduct or procedure;\
+    \ protocol.\u201D"
 - term: SCM
   definition: Source Code Management
 - term: SCP
   definition: Standards Consensus Panel
 - term: SOAP
   definition: Simple Object Access Protocol
-- term: spear-phishing
-  definition: A more targeted form of phishing, where the email is designed to look like it’s from a person the recipient knows and/or trusts.
-- term: trojan
-  definition: A type of malware or virus disguised as legitimate software, that is used to hack into the victim’s computer.
+- term: Segment Architecture
+  source: TOGAF
+  definition: A detailed, formal description of areas within an enterprise, used at
+    the program or portfolio level to organize and align change activity.
+- term: Solution Architecture
+  source: TOGAF
+  definition: A description of a discrete and focused business operation or activity
+    and how IS/IT supports that operation. A Solution Architecture typically applies
+    to a single project or project release, assisting in the translation of requirements
+    into a solution vision, high-level business and/or IT system specifications, and
+    a portfolio of implementation tasks.
+- term: Solution Building Block
+  source: TOGAF
+  definition: A candidate solution which conforms to an Architecture Building Block
+    (ABB).
+- term: Solutions Continuum
+  source: TOGAF
+  definition: A part of the Enterprise Continuum. A repository of re-usable solutions
+    for future implementation efforts. It contains implementations of the corresponding
+    definitions in the Architecture Continuum.
+- term: Stakeholder
+  source: TOGAF
+  definition: An individual, team, or organization (or classes thereof) with interests
+    in, or concerns relative to, the outcome of the architecture. Different stakeholders
+    with different roles will have different concerns.
+- term: Strategic Architecture
+  source: TOGAF
+  definition: A summary formal description of the enterprise, providing an organizing
+    framework for operational and change activity, and an executive-level, long-term
+    view for direction setting.
 - term: TWIF
   definition: Two-way Interface
-- term: two-factor authentication (2FA)
-  definition: The use of two different components to verify a user’s claimed identity. Also known as multi-factor authentication.
-- term: URL
-  definition: Uniform Resource Locator
+- term: Target Architecture
+  source: TOGAF
+  definition: The description of a future state of the architecture being developed
+    for an organization. There may be several future states developed as a roadmap
+    to show the evolution of the architecture to a target state.
+- term: Technical Reference Model (TRM)
+  source: TOGAF
+  definition: A structure which allows the components of an information system to
+    be described in a consistent manner.
+- term: Technology Architecture
+  source: TOGAF
+  definition: A description of the structure and interaction of the platform services,
+    and logical and physical technology components.
+- term: Transition Architecture
+  source: TOGAF
+  definition: A formal description of one state of the architecture at an architecturally
+    significant point in time. One or more Transition Architectures may be used to
+    describe the progression in time from the Baseline to the Target Architecture.
 - term: UI
   definition: User Interface
 - term: UML
   definition: Unified Modelling Language
+- term: URL
+  definition: Uniform Resource Locator
 - term: UX
   definition: User Experience
-- term: vTeam
-  definition: Virtual Teams are the group of individuals, including at least one member from the NPTS core team, who perform the work in drafting a Standard.
-- term: W3C
-  definition: Worldwide Web Consortium
-- term: water-holing (watering hole attack)
-  definition: Setting up a fake website (or compromising a real one) in order to exploit visiting users.
-- term: WCAG
-  definition: Web Content Accessibility Guidelines
-- term: whaling
-  definition: Highly targeted phishing attacks (masquerading as a legitimate emails) that are aimed at senior executives.
-- term: whitelisting
-  definition: Authorising approved applications for use within organisations in order to protect systems from potentially harmful applications.
-- term: XML
-  definition: eXtensible Markup Language 
-- term: zero-day
-  definition: Recently discovered vulnerabilities (or bugs), not yet known to vendors or antivirus companies, that hackers can exploit.
-- term: Application
-  source: TOGAF
-  definition: A deployed and operational IT system that supports business functions and services; for example, a payroll. Applications use data and are supported by multiple technology components but are distinct from the technology components that support the application.
-- term: Application Architecture
-  source: TOGAF
-  definition: A description of the major logical grouping of capabilities that manage the data objects necessary to process the data and support the business.
-- term: Architecture
-  source: TOGAF
-  definition: 1. A formal description of a system, or a detailed plan of the system at component level to guide its implementation
-              2. The structure of components, their inter-relationships, and the principles and guidelines governing their design and evolution over time
-- term: Architecture Continuum
-  source: TOGAF
-  definition: A part of the Enterprise Continuum. A repository of architectural elements with increasing detail and specialization. This Continuum begins with foundational definitions such as reference models, core strategies, and basic building blocks. From there it spans to Industry Architectures and all the way to an organization’s specific architecture.
-- term: Architecture Building Block (ABB)
-  source: TOGAF
-  definition: A constituent of the architecture model that describes a single aspect of the overall model.
-- term: Architecture Development Method (ADM)
-  source: TOGAF
-  definition: The core of the TOGAF standard. A step-by-step approach to develop and use an enterprise architecture.
-- term: Architecture Domain
-  source: TOGAF
-  definition: The architectural area being considered. There are four architecture domains within the TOGAF standard:Business, Data, Application, and Technology.
-- term: BDAT (Business – Data – Application – Technology)
-  source: TOGAF
-  definition: A simple mnemonic to aid remembering the four architecture domains.
-- term: Architecture Framework
-  source: TOGAF
-  definition: A conceptual structure used to develop, implement, and sustain an architecture.
-- term: Architecture Principles
-  source: TOGAF
-  definition: A qualitative statement of intent that should be met by the architecture. Has at least a supporting rationale and a measure of importance.
-- term: Architecture Vision
-  source: TOGAF
-  definition: A succinct description of the Target Architecture that describes its business value and the changes to the enterprise that will result from its successful deployment. It serves as an aspirational vision and a boundary for detailed architecture development.
-- term: Baseline
-  source: TOGAF
-  definition: A specification that has been formally reviewed and agreed upon, that thereafter serves as the basis for further development or change and that can be changed only through formal change control procedures or a type of procedure such as configuration management.
-- term: Building Block
-  source: TOGAF
-  definition: Represents a (potentially re-usable) component of business, IT, or architectural capability that can be combined with other building blocks to deliver architectures and solutions. Building blocks can be defined at various levels of detail, depending on what stage of architecture development has been reached. For instance, at an early stage, a building block can simply consist of a name or an outline description. Later on, a building block may be decomposed into multiple supporting building blocks and may be accompanied by a full specification. Building blocks can relate to “architectures” or “solutions”.
-- term: Business Architecture
-  source: TOGAF
-  definition: A description of the structure and interaction between the business strategy, organization, functions, business processes, and information needs.
-- term: Business Governance
-  source: TOGAF
-  definition: Concerned with ensuring that the business processes and policies (and their operation) deliver the business outcomes and adhere to relevant business regulation.
-- term: Capability
-  source: TOGAF
-  definition: An ability that an organization, person, or system possesses. Capabilities are typically expressed in general and high-level terms and typically require a combination of organization, people, processes, and technology to achieve; or example, marketing, customer contact, or outbound telemarketing.
-- term: Concerns
-  source: TOGAF
-  definition: The key interests that are crucially important to the stakeholders in a system, and determine the acceptability of the system. Concerns may pertain to any aspect of the system’s functioning, development, or operation, including considerations such as performance, reliability, security, distribution, and evolvability.
-- term: Constraint
-  source: TOGAF
-  definition: An external factor that prevents an organization from pursuing particular approaches to meet its goals; for example, customer data is not harmonized within the organization, regionally or nationally, constraining the organization’s ability to offer effective customer service.
-- term: Data Architecture
-  source: TOGAF
-  definition: A description of the structure and interaction of the enterprise’s major types and sources of data, logical data assets, physical data assets, and data management resources.
-- term: Deliverable
-  source: TOGAF
-  definition: An architectural work product that is contractually specified and in turn formally reviewed, agreed, and signed off by the stakeholders. Deliverables represent the output of projects and those deliverables that are in documentation form will typically be archived at completion of a project, or transitioned into an Architecture Repository as a reference model, standard, or snapshot of the Architecture Landscape at a point in time.
-- term: Enterprise
-  source: TOGAF
-  definition: The highest level (typically) of description of an organization and typically covers all missions and functions. An enterprise will often span multiple organizations.
-- term: Enterprise Continuum
-  source: TOGAF
-  definition: A categorization mechanism useful for classifying architecture and solution artifacts, both internal and external to the Architecture Repository, as they evolve from generic Foundation Architectures to Organization-Specific Architectures.
-- term: Foundation Architecture
-  source: TOGAF
-  definition: Generic building blocks, their inter-relationships with other building blocks, combined with the principles and guidelines that provide a foundation on which more specific architectures can be built.
-- term: Gap
-  source: TOGAF
-  definition: A statement of difference between two states. Used in the context of gap analysis, where the difference between the Baseline and Target Architecture is identified.
-- term: Governance
-  source: TOGAF
-  definition: The discipline of monitoring, managing, and steering a business (or IS/IT landscape) to deliver the business outcome required.
-- term: Information
-  source: TOGAF
-  definition: Any communication or representation of facts, data, or opinions, in any medium or form, including textual, numerical, graphic, cartographic, narrative, or audio-visual.
-- term: Information Technology (IT)
-  source: TOGAF
-  definition: 1. The lifecycle management of information and related technology used by an organization.
-              2. An umbrella term that includes all or some of the subject areas relating to the computer industry, such as Business Continuity, Business IT Interface, Business Process Modeling and Management, Communication, Compliance and Legislation, Computers, Content Management, Hardware, Information Management, Internet, Offshoring, Networking, Programming and Software, Professional Issues, Project Management, Security, Standards, Storage, Voice and Data Communications. Various countries and industries employ other umbrella terms to describe this same collection.
-              3. A term commonly assigned to a department within an organization tasked with provisioning some or all of the domains described in (2) above.
-              4. Alternate names commonly adopted include Information Services, Information Management, etc.
-- term: Logical (Architecture)
-  source: TOGAF
-  definition: An implementation-independent definition of the architecture, often grouping related physical entities according to their purpose and structure; for example, the products from multiple infrastructure software vendors can all be logically grouped as Java application server platforms.
-- term: Metadata
-  source: TOGAF
-  definition: Data about data, of any sort in any media, that describes the characteristics of an entity.
-- term: Metamodel
-  source: TOGAF
-  definition: A model that describes how and with what the architecture will be described in a structured way.
-- term: Method
-  source: TOGAF
-  definition: A defined, repeatable approach to address a particular type of problem. See also Methodology.
-- term: Methodology
-  source: TOGAF
-  definition: A defined, repeatable series of steps to address a particular type of problem, which typically centers on a defined process, but may also include definition of content. See also Method.
-- term: Model
-  source: TOGAF
-  definition: A representation of a subject of interest. A model provides a smaller scale, simplified, and/ or abstract representation of the subject matter. A model is constructed as a “means to an end”. In the context of enterprise architecture, the subject matter is a whole or part of the enterprise and the end is the ability to construct “views” that address the concerns of particular stakeholders; i.e., their “viewpoints” in relation to the subject matter. See also Stakeholder, View, and Viewpoint.
-- term: Modeling
-  source: TOGAF
-  definition: A technique through construction of models which enables a subject to be represented in a form that enables reasoning, insight, and clarity concerning the essence of the subject matter.
-- term: Objective
-  source: TOGAF
-  definition: A time-bounded milestone for an organization used to demonstrate progress towards a goal; for example, “Increase Capacity Utilization by 30% by the end of 2009 to support the planned increase in market share”.
-- term: Physical
-  source: TOGAF
-  definition: A description of a real-world entity. Physical elements in an enterprise architecture may still be considerably abstracted from Solution Architecture, design, or implementation views.
-- term: Reference Model (RM)
-  source: TOGAF
-  definition: A reference model is an abstract framework for understanding significant relationships among the entities of [an] environment, and for the development of consistent standards or specifications supporting that environment. A reference model is based on a small number of unifying concepts and may be used as a basis for education and explaining standards to a non-specialist. A reference model is not directly tied to any standards, technologies, or other concrete implementation details, but it does seek to provide common semantics that can be used unambiguously across and between different implementations.
-- term: Repository
-  source: TOGAF
-  definition: A system that manages all of the data of an enterprise, including data and process models and other enterprise information. Hence, the data in a repository is much more extensive than that in a data dictionary, which generally defines only the data making up a database.
-- term: Requirement
-  definition: A statement of need that must be met by a particular architecture or work package.
-- term: Segment Architecture
-  source: TOGAF
-  definition: A detailed, formal description of areas within an enterprise, used at the program or portfolio level to organize and align change activity.
-- term: Solution Architecture
-  source: TOGAF
-  definition: A description of a discrete and focused business operation or activity and how IS/IT supports that operation. A Solution Architecture typically applies to a single project or project release, assisting in the translation of requirements into a solution vision, high-level business and/or IT system specifications, and a portfolio of implementation tasks.
-- term: Solution Building Block
-  source: TOGAF
-  definition: A candidate solution which conforms to an Architecture Building Block (ABB).
-- term: Solutions Continuum
-  source: TOGAF
-  definition: A part of the Enterprise Continuum. A repository of re-usable solutions for future implementation efforts. It contains implementations of the corresponding definitions in the Architecture Continuum.
-- term: Stakeholder
-  source: TOGAF
-  definition: An individual, team, or organization (or classes thereof) with interests in, or concerns relative to, the outcome of the architecture. Different stakeholders with different roles will have different concerns.
-- term: Strategic Architecture
-  source: TOGAF
-  definition: A summary formal description of the enterprise, providing an organizing framework for operational and change activity, and an executive-level, long-term view for direction setting.
-- term: Target Architecture
-  source: TOGAF
-  definition: The description of a future state of the architecture being developed for an organization. There may be several future states developed as a roadmap to show the evolution of the architecture to a target state.
-- term: Technical Reference Model (TRM)
-  source: TOGAF
-  definition: A structure which allows the components of an information system to be described in a consistent manner.
-- term: Technology Architecture
-  source: TOGAF
-  definition: A description of the structure and interaction of the platform services, and logical and physical technology components.
-- term: Transition Architecture
-  source: TOGAF
-  definition: A formal description of one state of the architecture at an architecturally significant point in time. One or more Transition Architectures may be used to describe the progression in time from the Baseline to the Target Architecture.
 - term: View
   source: TOGAF
-  definition: The representation of a related set of concerns. A view is what is seen from a viewpoint. An architecture view may be represented by a model to demonstrate to stakeholders their areas of interest in the architecture. A view does not have to be visual or graphical in nature.
+  definition: The representation of a related set of concerns. A view is what is seen
+    from a viewpoint. An architecture view may be represented by a model to demonstrate
+    to stakeholders their areas of interest in the architecture. A view does not have
+    to be visual or graphical in nature.
 - term: Viewpoint
   source: TOGAF
-  definition: A definition of the perspective from which a view is taken. It is a specification of the conventions for constructing and using a view (often by means of an appropriate schema or template). A view is what you see; a viewpoint is where you are looking from – the vantage point or perspective that determines what you see.
+  definition: "A definition of the perspective from which a view is taken. It is a\
+    \ specification of the conventions for constructing and using a view (often by\
+    \ means of an appropriate schema or template). A view is what you see; a viewpoint\
+    \ is where you are looking from \u2013 the vantage point or perspective that determines\
+    \ what you see."
 
- 
 
+
+- term: W3C
+  definition: Worldwide Web Consortium
+- term: WCAG
+  definition: Web Content Accessibility Guidelines
+- term: XML
+  definition: eXtensible Markup Language
+- term: antivirus
+  definition: Software that is designed to detect, stop and remove viruses and other
+    kinds of malicious software.
+- term: antivirus
+  definition: Software that is designed to detect, stop and remove viruses and other
+    kinds of malicious software.
+- term: botnet
+  definition: "A network of infected devices, connected to the Internet, used to commit\
+    \ coordinated cyber attacks without their owner\u2019s knowledge."
+- term: bring your own device (BYOD)
+  definition: "An organisation\u2019s strategy or policy that allows employees to\
+    \ use their own personal devices for work purposes."
+- term: cloud
+  definition: Where shared compute and storage resources are accessed as a service
+    (usually online), instead of hosted locally on physical services. Resources can
+    include infrastructure, platform or software services.
+- term: cyber attack
+  definition: Malicious attempts to damage, disrupt or gain unauthorised access to
+    computer systems, networks or devices, via cyber means.
+- term: cyber security
+  definition: "The protection of devices, services and networks \u2014 and the information\
+    \ on them \u2014 from theft or damage."
+- term: denial of service (DoS)
+  definition: When legitimate users are denied access to computer services (or resources),
+    usually by overloading the service with requests.
+- term: digital footprint
+  definition: "A \u2018footprint\u2019 of digital information that a user\u2019s online\
+    \ activity leaves behind."
+- term: encryption
+  definition: A mathematical function that protects information by making it unreadable
+    by everyone except those with the key to decode it.
+- term: end user device (EUD)
+  definition: "Collective term to describe modern smartphones, laptops and tablets\
+    \ that connect to an organisation\u2019s network."
+- term: firewall
+  definition: Hardware or software which uses a defined rule set to constrain network
+    traffic to prevent unauthorised access to or from a network.
+- term: macro
+  definition: A small program that can automate tasks in applications (such as Microsoft
+    Office) which attackers can use to gain access to (or harm) a system.
+- term: patching
+  definition: Applying updates to firmware or software to improve security and/or
+    enhance functionality.
+- term: phishing
+  definition: Untargeted, mass emails sent to many people asking for sensitive information
+    (such as bank details) or encouraging them to visit a fake website.
+- term: social engineering
+  definition: "Manipulating people into carrying out specific actions, or divulging\
+    \ information, that\u2019s of use to an attacker."
+- term: software as a service (SaaS)
+  definition: Describes a business model where consumers access centrally-hosted software
+    applications over the Internet.
+- term: spear-phishing
+  definition: "A more targeted form of phishing, where the email is designed to look\
+    \ like it\u2019s from a person the recipient knows and/or trusts."
+- term: trojan
+  definition: "A type of malware or virus disguised as legitimate software, that is\
+    \ used to hack into the victim\u2019s computer."
+- term: two-factor authentication (2FA)
+  definition: "The use of two different components to verify a user\u2019s claimed\
+    \ identity. Also known as multi-factor authentication."
+- term: vTeam
+  definition: Virtual Teams are the group of individuals, including at least one member
+    from the NPTS core team, who perform the work in drafting a Standard.
+- term: water-holing (watering hole attack)
+  definition: Setting up a fake website (or compromising a real one) in order to exploit
+    visiting users.
+- term: whaling
+  definition: Highly targeted phishing attacks (masquerading as a legitimate emails)
+    that are aimed at senior executives.
+- term: whitelisting
+  definition: Authorising approved applications for use within organisations in order
+    to protect systems from potentially harmful applications.
+- term: zero-day
+  definition: Recently discovered vulnerabilities (or bugs), not yet known to vendors
+    or antivirus companies, that hackers can exploit.
