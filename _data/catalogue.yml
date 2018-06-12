@@ -1,4 +1,5 @@
 - document_title: Npts Framework Catalogue
+  permalink: bps00001-6_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
@@ -27,6 +28,7 @@
   last_updated_date: 
   subject_group_common_name: NPTS Framework
 - document_title: Npts Framework Nomenclature
+  permalink: bps00001-5_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
@@ -46,7 +48,7 @@
   std_sponsor: National Police Technology Council
   sponsor_org_email: 
   document_abstract: >-
-    
+    This document is the Normative BPS standards reference for acronyms and definitions used by the National Police Technology Standards (NPTS) working group to develop, communicate and manage Technical standards for use in British Policing.
   project_status: Completed
   content_urls:
     
@@ -55,6 +57,7 @@
   last_updated_date: 
   subject_group_common_name: NPTS Framework
 - document_title: Two Way Interface - Police/Cps Pcd Xml Interface - Business Process Document
+  permalink: bps18651-1_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
@@ -83,6 +86,7 @@
   last_updated_date: 
   subject_group_common_name: TWIF
 - document_title: Two Way Interface - Police/Cps Xml Interface - Business Process Document
+  permalink: bps18651-2_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
@@ -111,6 +115,7 @@
   last_updated_date: 
   subject_group_common_name: TWIF
 - document_title: Open Document Format (Odf) Guidance
+  permalink: bps21094.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps21094
@@ -147,6 +152,7 @@
   last_updated_date: 2017-03-30 00:00:00
   subject_group_common_name: 
 - document_title: Code Of Practice For Protection Of Personally Identifiable Information (Pii) In Public Clouds Acting As Pii Processors
+  permalink: bps07894.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps07894
@@ -175,6 +181,7 @@
   last_updated_date: 
   subject_group_common_name: ISO27K
 - document_title: Acpo-Npia Guidance On The Management Of Police Information Second Edition 2010
+  permalink: bps73624.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps73624
@@ -203,6 +210,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Ico Gdpr Guidance- Contracts And Liabilities Between Controllers And Processors
+  permalink: bps07834.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps07834
@@ -231,6 +239,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Police And Criminal Evidence Act (Pace) 1984
+  permalink: bps10267.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps10267
@@ -259,6 +268,7 @@
   last_updated_date: 
   subject_group_common_name: Legislation
 - document_title: Regulation Of Investigatory Powers Act 2000
+  permalink: bps69853.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps69853
@@ -287,6 +297,7 @@
   last_updated_date: 
   subject_group_common_name: Legislation
 - document_title: Data Protection Act 1998
+  permalink: bps36284.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps36284
@@ -315,6 +326,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: National Ict Strategic Principles
+  permalink: bps28187_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps28187
@@ -349,6 +361,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Criminal Justice System- Data Standards Forum Guidance
+  permalink: bps34576.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps34576
@@ -383,6 +396,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Detention And Custody Authorised Professional Practice
+  permalink: bps20392.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps20392
@@ -411,6 +425,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Prosecution And Case Management Authorised Professional Practice
+  permalink: bps23488.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps23488
@@ -439,6 +454,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Civil Emergencies Authorised Professional Practice
+  permalink: bps22807.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps22807
@@ -467,6 +483,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Operations Authorised Professional Practice
+  permalink: bps20905.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps20905
@@ -495,6 +512,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Digital Investigation And Intelligence Authorised Professional Practice
+  permalink: bps24531.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps24531
@@ -523,6 +541,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Stop And Search Authorised Professional Practice
+  permalink: bps16835.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps16835
@@ -551,6 +570,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Professional Standards Authorised Professional Practice
+  permalink: bps12425.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps12425
@@ -579,6 +599,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Covert Policing Authorised Professional Practice
+  permalink: bps28947.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps28947
@@ -607,6 +628,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Engagement And Communication Authorised Professional Practice
+  permalink: bps20023.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps20023
@@ -635,6 +657,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Public Order Authorised Professional Practice
+  permalink: bps20666.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps20666
@@ -663,6 +686,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Armed Policing Authorised Professional Practice
+  permalink: bps21119.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps21119
@@ -691,6 +715,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Critical Incident Management Authorised Professional Practice
+  permalink: bps26609.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps26609
@@ -719,6 +744,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Road Policing Authorised Professional Practice
+  permalink: bps16260.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps16260
@@ -747,6 +773,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Information Management Authorised Professional Practice
+  permalink: bps21385.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps21385
@@ -775,6 +802,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Policing Elections Authorised Professional Practice
+  permalink: bps26325.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps26325
@@ -803,6 +831,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Mobilisation Authorised Professional Practice
+  permalink: bps16275.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps16275
@@ -831,6 +860,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Intelligence Management Authorised Professional Practice
+  permalink: bps17879.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps17879
@@ -859,6 +889,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Mental Health Authorised Professional Practice
+  permalink: bps17672.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps17672
@@ -887,6 +918,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Major Investigation And Public Protection Authorised Professional Practice
+  permalink: bps16391.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps16391
@@ -915,6 +947,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Risk Authorised Professional Practice
+  permalink: bps14066.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps14066
@@ -943,6 +976,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: National Decision Model Authorised Professional Practice
+  permalink: bps24631.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps24631
@@ -971,6 +1005,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Investigation Authorised Professional Practice
+  permalink: bps31744.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps31744
@@ -999,6 +1034,7 @@
   last_updated_date: 
   subject_group_common_name: APP
 - document_title: Npts Framework Overview
+  permalink: bps00001-1_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
@@ -1027,6 +1063,7 @@
   last_updated_date: 
   subject_group_common_name: NPTS Framework
 - document_title: Best Practice For Biometric Capture
+  permalink: bps71548.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps71548
@@ -1055,6 +1092,7 @@
   last_updated_date: 
   subject_group_common_name: HOB
 - document_title: Information Systems Strategy For The Police Service (Iss4Ps) - Volume One
+  permalink: bps18630-1.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps18630
@@ -1094,6 +1132,7 @@
   last_updated_date: 
   subject_group_common_name: Strategy
 - document_title: Information Systems Strategy For The Police Service (Iss4Ps) - Volume Two
+  permalink: bps18630-2.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps18630
@@ -1133,6 +1172,7 @@
   last_updated_date: 
   subject_group_common_name: Strategy
 - document_title: National Intelligence Model (Nim)
+  permalink: bps79618.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps79618
@@ -1167,6 +1207,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Npts Framework Style Guide
+  permalink: bps00001-4_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
@@ -1195,6 +1236,7 @@
   last_updated_date: 
   subject_group_common_name: NPTS Framework
 - document_title: Technology Code Of Practice
+  permalink: bps36890.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps36890
@@ -1227,6 +1269,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Acro Checks - Basic Standard
+  permalink: bps25439-1.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps25439
@@ -1255,6 +1298,7 @@
   last_updated_date: 
   subject_group_common_name: ACRO
 - document_title: Acro Checks - Immigration Services Use Of Response
+  permalink: bps25439-2.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps25439
@@ -1283,6 +1327,7 @@
   last_updated_date: 
   subject_group_common_name: ACRO
 - document_title: Acro Checks - Police Use Of Response
+  permalink: bps25439-3.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps25439
@@ -1311,6 +1356,7 @@
   last_updated_date: 
   subject_group_common_name: ACRO
 - document_title: Statutory Code Of Practice On The Management Of Police Information (Mopi Code Of Practice)
+  permalink: bps97541.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps97541
@@ -1343,6 +1389,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: National Security Strategy And Strategic Defence And Security Review 2015
+  permalink: bps81524.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps81524
@@ -1371,6 +1418,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Npts Framework Governance
+  permalink: bps00001-2_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
@@ -1399,6 +1447,7 @@
   last_updated_date: 
   subject_group_common_name: NPTS Framework
 - document_title: Digital Witness Statement
+  permalink: bps61027.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps61027
@@ -1427,6 +1476,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Npts Framework Process
+  permalink: bps00001-3_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
@@ -1455,6 +1505,7 @@
   last_updated_date: 
   subject_group_common_name: NPTS Framework
 - document_title: Npts Framework Template
+  permalink: bps00001-7_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps00001
@@ -1483,6 +1534,7 @@
   last_updated_date: 
   subject_group_common_name: NPTS Framework
 - document_title: Cyber Essentials Plus
+  permalink: bps03546.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps03546
@@ -1511,6 +1563,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Cyber Essentials
+  permalink: bps56792.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps56792
@@ -1543,6 +1596,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Steps To Cyber Security
+  permalink: bps59481.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps59481
@@ -1571,6 +1625,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Guidance - Set Up Government Email Services Securely
+  permalink: bps60128.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps60128
@@ -1599,6 +1654,7 @@
   last_updated_date: 2016-08-25 00:00:00
   subject_group_common_name: GDS eMail Guidance
 - document_title: Guidance - Securing Government Email
+  permalink: bps83625.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps83625
@@ -1627,6 +1683,7 @@
   last_updated_date: 2016-08-25 00:00:00
   subject_group_common_name: GDS eMail Guidance
 - document_title: Guidance - Transport Layer Security (Tls) Guidance
+  permalink: bps95410.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps95410
@@ -1655,6 +1712,7 @@
   last_updated_date: 
   subject_group_common_name: GDS eMail Guidance
 - document_title: Guidance - Domain-Based Message Authentication, Reporting And Conformance (Dmarc)
+  permalink: bps67240.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps67240
@@ -1683,6 +1741,7 @@
   last_updated_date: 
   subject_group_common_name: GDS eMail Guidance
 - document_title: Guidance - Sender Policy Framework (Spf)
+  permalink: bps39176.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps39176
@@ -1711,6 +1770,7 @@
   last_updated_date: 
   subject_group_common_name: GDS eMail Guidance
 - document_title: Guidance - Domainkeys Identified Mail (Dkim)
+  permalink: bps93471.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps93471
@@ -1739,6 +1799,7 @@
   last_updated_date: 
   subject_group_common_name: GDS eMail Guidance
 - document_title: Protective Monitoring Gpg13
+  permalink: bps04217.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps04217
@@ -1769,6 +1830,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Guidance - Government Network Policy Changes
+  permalink: bps34152.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps34152
@@ -1797,6 +1859,7 @@
   last_updated_date: 2017-03-13 00:00:00
   subject_group_common_name: 
 - document_title: National Information Risk Appetite Statement
+  permalink: bps68497.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps68497
@@ -1825,6 +1888,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Information Security Management Systems -- Requirements
+  permalink: bps01657.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps01657
@@ -1853,6 +1917,7 @@
   last_updated_date: 
   subject_group_common_name: ISO27K
 - document_title: Security Techniques -- Code Of Practice For Information Security Controls
+  permalink: bps04936.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps04936
@@ -1881,6 +1946,7 @@
   last_updated_date: 
   subject_group_common_name: ISO27K
 - document_title: Guidance On The Integrated Implementation Of Iso/Iec 27001 And Iso/Iec 20000-1
+  permalink: bps64013.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps64013
@@ -1919,6 +1985,7 @@
   last_updated_date: 
   subject_group_common_name: ISO27K
 - document_title: Guidelines For Information And Communication Technology Readiness For Business Continuity
+  permalink: bps90268.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps90268
@@ -1947,6 +2014,7 @@
   last_updated_date: 
   subject_group_common_name: ISO27K
 - document_title: Security Techniques -- Guidelines For Cybersecurity
+  permalink: bps27486.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps27486
@@ -1975,6 +2043,7 @@
   last_updated_date: 
   subject_group_common_name: ISO27K
 - document_title: Network Security -- Part 1- Overview And Concepts
+  permalink: bps79102.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps79102
@@ -2003,6 +2072,7 @@
   last_updated_date: 
   subject_group_common_name: ISO27K
 - document_title: Application Security -- Part 2- Organization Normative Framework
+  permalink: bps06275.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps06275
@@ -2031,6 +2101,7 @@
   last_updated_date: 
   subject_group_common_name: ISO27K
 - document_title: Security Techniques - Guidance For Code Of Practice For Security Controls
+  permalink: bps39576.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps39576
@@ -2066,6 +2137,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Securing Technology At Official
+  permalink: bps91524.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps91524
@@ -2096,6 +2168,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Business Continuity Management Systems - Requirements
+  permalink: bps35780.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps35780
@@ -2124,6 +2197,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Audit Requirements
+  permalink: bps49381.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps49381
@@ -2154,6 +2228,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Hmg Ia Standard Numbers 1 And 2 Information Risk Management
+  permalink: bps68723.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps68723
@@ -2183,6 +2258,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Nist Spf
+  permalink: bps65902.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps65902
@@ -2211,6 +2287,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Security Policy Framework
+  permalink: bps03167.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps03167
@@ -2243,6 +2320,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Industry Security Notices (Isn)
+  permalink: bps32098.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps32098
@@ -2271,6 +2349,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Security Techniques - Guidance For Code Of Practice For Security Controls
+  permalink: bps93074.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps93074
@@ -2299,6 +2378,7 @@
   last_updated_date: 
   subject_group_common_name: ISO27K
 - document_title: Information Security Management -- Monitoring, Measurement, Analysis And Evaluation
+  permalink: bps21953.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps21953
@@ -2335,6 +2415,7 @@
   last_updated_date: 
   subject_group_common_name: ISO27K
 - document_title: Cross Platform Character Encoding
+  permalink: bps36784.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps36784
@@ -2363,6 +2444,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Eud Security Guidance- Windows 10
+  permalink: bps15792.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps15792
@@ -2391,6 +2473,7 @@
   last_updated_date: 2017-06-03 00:00:00
   subject_group_common_name: 
 - document_title: End User Devices- Security Principles
+  permalink: bps90861.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps90861
@@ -2419,6 +2502,7 @@
   last_updated_date: 2016-09-24 00:00:00
   subject_group_common_name: 
 - document_title: Guidelines For Information And Communications Technology Disaster Recovery Services
+  permalink: bps84739.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps84739
@@ -2454,6 +2538,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Service Management - Requirements
+  permalink: bps20763.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps20763
@@ -2491,6 +2576,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: User Experience Guidance
+  permalink: bps30124.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps30124
@@ -2519,6 +2605,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Case File Data Requirements
+  permalink: bps52410.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps52410
@@ -2547,6 +2634,7 @@
   last_updated_date: 
   subject_group_common_name: DCF
 - document_title: Biometric Standards – Requirements And Information For Partners And Their Suppliers
+  permalink: bps18749.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps18749
@@ -2575,6 +2663,7 @@
   last_updated_date: 
   subject_group_common_name: HOB
 - document_title: Data Schema- Police - Cps Messages Version 2
+  permalink: bps18651-4_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
@@ -2603,6 +2692,7 @@
   last_updated_date: 
   subject_group_common_name: TWIF
 - document_title: Police/Cps Xml Interface Version 2 – Physical Specification
+  permalink: bps18651-3_2017-06.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps18651
@@ -2631,6 +2721,7 @@
   last_updated_date: 
   subject_group_common_name: TWIF
 - document_title: Resource Description Framework (Rdf)
+  permalink: bps68059.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps68059
@@ -2663,6 +2754,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Crash V1.1
+  permalink: bps49873.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps49873
@@ -2691,6 +2783,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Cordm V7.3
+  permalink: bps27560.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps27560
@@ -2719,6 +2812,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Mp Custody V1.0
+  permalink: bps62784.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps62784
@@ -2747,6 +2841,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: C And C V0.1
+  permalink: bps82567.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps82567
@@ -2775,6 +2870,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Holmes3 V0.4
+  permalink: bps07234.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps07234
@@ -2803,6 +2899,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Vehicle Makes And Models V2017.8
+  permalink: bps10467.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps10467
@@ -2831,6 +2928,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: European Pool Against Organised Crime (Epoc Iv) V1.0
+  permalink: bps86405.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps86405
@@ -2859,6 +2957,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Ident1 V0.2
+  permalink: bps45236.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps45236
@@ -2887,6 +2986,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Nmis V3.0
+  permalink: bps39714.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps39714
@@ -2915,6 +3015,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Nspis Custody V0.2
+  permalink: bps90462.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps90462
@@ -2943,6 +3044,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Hr V0.1
+  permalink: bps15439.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps15439
@@ -2971,6 +3073,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Criminal Justice System Exchange Data Standards Catalogue
+  permalink: bps24351.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps24351
@@ -2999,6 +3102,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Clms V5.3.1021
+  permalink: bps37650.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps37650
@@ -3027,6 +3131,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Nflms V0.1
+  permalink: bps92154.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps92154
@@ -3055,6 +3160,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Vpfpo V0.1
+  permalink: bps94312.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps94312
@@ -3083,6 +3189,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Dublin Core Metadata Initiative
+  permalink: bps04196.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps04196
@@ -3111,6 +3218,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Multi Agency Incident Transfer
+  permalink: bps46321.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps46321
@@ -3145,6 +3253,7 @@
   last_updated_date: 
   subject_group_common_name: MAIT
 - document_title: Testing For Accessibility
+  permalink: bps10795.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps10795
@@ -3173,6 +3282,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Equality Act 2010
+  permalink: bps65482.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps65482
@@ -3201,6 +3311,7 @@
   last_updated_date: 2015-06-16 00:00:00
   subject_group_common_name: 
 - document_title: How To Publish On Gov.Uk
+  permalink: bps34109.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps34109
@@ -3229,6 +3340,7 @@
   last_updated_date: 2017-12-18 00:00:00
   subject_group_common_name: 
 - document_title: Government Approach To Assisted Digital
+  permalink: bps94820.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps94820
@@ -3257,6 +3369,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Application Programming Interfaces (Apis)
+  permalink: bps40839.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps40839
@@ -3285,6 +3398,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Api Documentation For Registers
+  permalink: bps08647.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps08647
@@ -3313,6 +3427,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Api Documentation For Gov.Uk Pay
+  permalink: bps38569.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps38569
@@ -3341,6 +3456,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Application Development Guidance - Introduction (Ncsc)
+  permalink: bps40179.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps40179
@@ -3369,6 +3485,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Apps You Shouldn’T Build
+  permalink: bps87459.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps87459
@@ -3397,6 +3514,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Android Application Development Guidance (Ncsc)
+  permalink: bps39762.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps39762
@@ -3425,6 +3543,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Apple Ios Application Development Guidance (Ncsc)
+  permalink: bps96143.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps96143
@@ -3453,6 +3572,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Choosing Technology - An Introduction
+  permalink: bps86371.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps86371
@@ -3481,6 +3601,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Buying Technology - How Crown Commercial Service (Ccs) Can Help
+  permalink: bps50324.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps50324
@@ -3509,6 +3630,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Cabinet Office Spend Controls Guidance Version 4.0
+  permalink: bps60528.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps60528
@@ -3537,6 +3659,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Crown Commercial Service (Ccs) Agreements Search
+  permalink: bps20917.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps20917
@@ -3565,6 +3688,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Commercial Operating Standards For Government
+  permalink: bps79540.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps79540
@@ -3593,6 +3717,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Common Areas Of Spend - Data Definitions
+  permalink: bps50328.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps50328
@@ -3621,6 +3746,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Contract Capability Contract Management Standards
+  permalink: bps70561.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps70561
@@ -3649,6 +3775,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Government Supplier Assurance Framework
+  permalink: bps94806.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps94806
@@ -3677,6 +3804,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Buy Digital Marketplace Services Fairly
+  permalink: bps89105.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps89105
@@ -3705,6 +3833,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Set Your Evaluation Criteria When Buying Digital Outcomes And Specialist Services
+  permalink: bps12056.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps12056
@@ -3733,6 +3862,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Lean Sourcing - Guidance For Public Sector Buyers
+  permalink: bps78195.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps78195
@@ -3761,6 +3891,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Public Procurement Policy
+  permalink: bps30826.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps30826
@@ -3789,6 +3920,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Public Sector Discounts For Software
+  permalink: bps90548.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps90548
@@ -3817,6 +3949,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Alking To Suppliers Before You Buy Digital Marketplace Services
+  permalink: bps91823.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps91823
@@ -3845,6 +3978,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Technology Service Principles
+  permalink: bps35708.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps35708
@@ -3873,6 +4007,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Introduction - Understanding Cloud Security (Ncsc)
+  permalink: bps75483.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps75483
@@ -3901,6 +4036,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Securing Your Cloud Environment
+  permalink: bps16042.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps16042
@@ -3929,6 +4065,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Implementing The Cloud Security Principles (Ncsc)
+  permalink: bps01527.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps01527
@@ -3957,6 +4094,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Managing The Risk Of Cloud-Enabled Products (Ncsc)
+  permalink: bps57324.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps57324
@@ -3985,6 +4123,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Cloud First Policy
+  permalink: bps70863.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps70863
@@ -4013,6 +4152,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Government Cloud Strategy
+  permalink: bps49150.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps49150
@@ -4041,6 +4181,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Assess A Hosting Business Case
+  permalink: bps64135.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps64135
@@ -4069,6 +4210,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Iaas - Managing Your Responsibilities (Ncsc)
+  permalink: bps60413.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps60413
@@ -4097,6 +4239,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Tips To Cyber Security (Ncsc)
+  permalink: bps75820.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps75820
@@ -4125,6 +4268,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Steps - Incident Management (Ncsc)
+  permalink: bps58291.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps58291
@@ -4153,6 +4297,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Steps - Malware Prevention (Ncsc)
+  permalink: bps68415.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps68415
@@ -4181,6 +4326,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Steps - Managing User Privileges (Ncsc)
+  permalink: bps64205.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps64205
@@ -4209,6 +4355,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Steps - Monitoring (Ncsc)
+  permalink: bps19278.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps19278
@@ -4237,6 +4384,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Steps - Removable Media Controls (Ncsc)
+  permalink: bps49850.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps49850
@@ -4265,6 +4413,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Steps - Secure Configuration (Ncsc)
+  permalink: bps32798.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps32798
@@ -4293,6 +4442,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Steps - User Education And Awareness (Ncsc)
+  permalink: bps43698.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps43698
@@ -4321,6 +4471,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Cyber Security Guidance For Business
+  permalink: bps48190.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps48190
@@ -4349,6 +4500,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Cyber Security Regulation And Incentives Review
+  permalink: bps61728.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps61728
@@ -4377,6 +4529,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Cyber Security Supplier To Government Scheme
+  permalink: bps81657.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps81657
@@ -4405,6 +4558,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Guiding Principles On Cyber Security
+  permalink: bps45690.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps45690
@@ -4433,6 +4587,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Having Confidence In Cyber Security (Ncsc)
+  permalink: bps19418.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps19418
@@ -4461,6 +4616,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Internet Edge Device Security (Ncsc)
+  permalink: bps09187.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps09187
@@ -4489,6 +4645,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Investigatory Powers Act
+  permalink: bps56178.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps56178
@@ -4517,6 +4674,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Security Governance, Enabling Sensible Risk Management Decisions And Communication (Ncsc)
+  permalink: bps42873.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps42873
@@ -4545,6 +4703,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Transaction Monitoring For Hmg Online Service Providers
+  permalink: bps20547.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps20547
@@ -4573,6 +4732,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Working With Cookies And Similar Technologies
+  permalink: bps57938.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps57938
@@ -4601,6 +4761,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Common Cyber Attacks - Reducing The Impact (Ncsc)
+  permalink: bps14283.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps14283
@@ -4629,6 +4790,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Data Sharing For The Prevention Of Fraud - Code Of Practice
+  permalink: bps39526.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps39526
@@ -4657,6 +4819,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Defence Cyber Protection Partnership - An Overview
+  permalink: bps85264.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps85264
@@ -4685,6 +4848,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Denial Of Service Attacks - What You Need To Know (Ncsc)
+  permalink: bps35698.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps35698
@@ -4713,6 +4877,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Services - Managing Cyber Security Risk In A Digital Service (Ncsc)
+  permalink: bps31578.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps31578
@@ -4741,6 +4906,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: The Phishing Threat Following Data Breaches (Ncsc)
+  permalink: bps38054.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps38054
@@ -4769,6 +4935,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Protecting Your Organisation From Ransomware (Ncsc)
+  permalink: bps97084.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps97084
@@ -4797,6 +4964,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Protecting Your Service Against Fraud
+  permalink: bps25638.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps25638
@@ -4825,6 +4993,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Ransomware - Latest Ncsc Guidance (Ncsc)
+  permalink: bps80523.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps80523
@@ -4853,6 +5022,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Marketplace Buyers And Suppliers Information
+  permalink: bps73482.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps73482
@@ -4881,6 +5051,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Marketplace Buyers’ Guide
+  permalink: bps43279.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps43279
@@ -4909,6 +5080,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Marketplace Suppliers’ Guide
+  permalink: bps26943.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps26943
@@ -4937,6 +5109,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Outcomes And Specialist Buyers’ Guide
+  permalink: bps39021.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps39021
@@ -4965,6 +5138,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Outcomes And Specialists Templates And Legal Documents
+  permalink: bps61082.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps61082
@@ -4993,6 +5167,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Emarketplace - A Guide For Public Sector Buyers
+  permalink: bps16245.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps16245
@@ -5021,6 +5196,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: G7 Fundamental Elements For Cyber Security
+  permalink: bps48367.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps48367
@@ -5049,6 +5225,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How Digital Marketplace Suppliers Have Been Evaluated
+  permalink: bps64938.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps64938
@@ -5077,6 +5254,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Award A Contract When You Buy Services Through The Digital Marketplace
+  permalink: bps57362.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps57362
@@ -5105,6 +5283,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Manage Your Digital Outcomes And Specialists Contract
+  permalink: bps85397.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps85397
@@ -5133,6 +5312,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Shortlist Digital Outcomes And Specialists Suppliers
+  permalink: bps73981.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps73981
@@ -5161,6 +5341,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Talk About Being A Supplier On The Digital Marketplace
+  permalink: bps82751.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps82751
@@ -5189,6 +5370,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Public Sector Organisations Eligible To Use Digital Marketplace
+  permalink: bps72304.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps72304
@@ -5217,6 +5399,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Terms And Conditions Of Digital Marketplace Frameworks
+  permalink: bps59182.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps59182
@@ -5245,6 +5428,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: G-Cloud 9 Alternative Clauses
+  permalink: bps90481.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps90481
@@ -5273,6 +5457,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: G-Cloud 9 Call-Off Contract
+  permalink: bps08762.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps08762
@@ -5301,6 +5486,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: G-Cloud 9 Collaboration Agreement
+  permalink: bps09326.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps09326
@@ -5329,6 +5515,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: G-Cloud 9 Framework Agreement
+  permalink: bps35290.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps35290
@@ -5357,6 +5544,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: G-Cloud 9 Guarantee
+  permalink: bps91278.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps91278
@@ -5385,6 +5573,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: G-Cloud Buyers’ Guide
+  permalink: bps19254.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps19254
@@ -5413,6 +5602,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: G-Cloud Suppliers’ Guide
+  permalink: bps73091.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps73091
@@ -5441,6 +5631,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Dcms Digital Strategy
+  permalink: bps38259.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps38259
@@ -5469,6 +5660,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Outcomes And Specialists 1 Call-Off Contract
+  permalink: bps04512.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps04512
@@ -5497,6 +5689,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Outcomes And Specialists 1 Framework Agreement
+  permalink: bps75348.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps75348
@@ -5525,6 +5718,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Outcomes And Specialists 2 Call-Off Contract
+  permalink: bps28305.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps28305
@@ -5553,6 +5747,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Outcomes And Specialists 2 Framework Agreement
+  permalink: bps29560.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps29560
@@ -5581,6 +5776,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Outcomes And Specialists Audit Trail Guidance
+  permalink: bps03264.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps03264
@@ -5609,6 +5805,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Outcomes And Specialists Suppliers’ Guide
+  permalink: bps42763.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps42763
@@ -5637,6 +5834,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Outcomes And Specialists - Digital Specialist Roles
+  permalink: bps49760.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps49760
@@ -5665,6 +5863,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Answer Supplier Questions About Your Outcomes And Specialist Requirements
+  permalink: bps40832.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps40832
@@ -5693,6 +5892,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Evaluate Digital Outcomes And Specialist Suppliers
+  permalink: bps76349.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps76349
@@ -5721,6 +5921,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Make Changes To Your Published Digital Outcomes And Specialists Requirements
+  permalink: bps38705.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps38705
@@ -5749,6 +5950,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Score Digital Outcomes And Specialist Suppliers
+  permalink: bps96024.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps96024
@@ -5777,6 +5979,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Sell Your Digital Outcomes And Specialist Services
+  permalink: bps59768.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps59768
@@ -5805,6 +6008,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Write Your Requirements For Digital Outcomes And Specialist Services
+  permalink: bps60498.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps60498
@@ -5833,6 +6037,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Ways To Assess Digital Outcomes And Specialists Suppliers
+  permalink: bps12430.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps12430
@@ -5861,6 +6066,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Services - Building A Secure Digital Service (Ncsc)
+  permalink: bps50836.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps50836
@@ -5889,6 +6095,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Services - Designing A Secure Digital Service (Ncsc)
+  permalink: bps89706.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps89706
@@ -5917,6 +6124,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Services - Operating A Secure Digital Service (Ncsc)
+  permalink: bps14298.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps14298
@@ -5945,6 +6153,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Digital Economy Act 2017
+  permalink: bps64502.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps64502
@@ -5973,6 +6182,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Organisational Design For Digital Delivery
+  permalink: bps90583.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps90583
@@ -6001,6 +6211,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Government Transformation Strategy
+  permalink: bps53794.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps53794
@@ -6029,6 +6240,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Uk Digital Strategy
+  permalink: bps17230.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps17230
@@ -6057,6 +6269,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Introducing The Uk Public Sector Dns
+  permalink: bps37916.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps37916
@@ -6085,6 +6298,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Email Security Standards
+  permalink: bps62517.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps62517
@@ -6113,6 +6327,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Ask Users For Their Email Address
+  permalink: bps67315.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps67315
@@ -6141,6 +6356,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: How To Email Your Users
+  permalink: bps39415.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps39415
@@ -6169,6 +6385,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Google Apps For Work Security Guidance - Email (Ncsc)
+  permalink: bps01362.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps01362
@@ -6197,6 +6414,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Microsoft Office 365 Guidance - Email (Ncsc)
+  permalink: bps50743.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps50743
@@ -6225,6 +6443,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: New Computerised Transit System (Ncts) Email - Service Availability And Issues
+  permalink: bps78219.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps78219
@@ -6253,6 +6472,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Set Up Government Email Services Securely
+  permalink: bps59268.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps59268
@@ -6281,6 +6501,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Securing Government Email
+  permalink: bps59274.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps59274
@@ -6309,6 +6530,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Use Of Private Emails
+  permalink: bps19806.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps19806
@@ -6337,6 +6559,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: End User Device Strategy - Design And Implementation
+  permalink: bps32154.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps32154
@@ -6365,6 +6588,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: End User Device Strategy - Interoperability Standards
+  permalink: bps48029.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps48029
@@ -6393,6 +6617,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: End User Device Strategy - Security Framework And Controls
+  permalink: bps27901.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps27901
@@ -6421,6 +6646,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: End User Device - Security Collection (Ncsc)
+  permalink: bps89305.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps89305
@@ -6449,6 +6675,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: End User Device - Security Principles (Ncsc)
+  permalink: bps03698.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps03698
@@ -6477,6 +6704,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Gov.Uk Notify Overview
+  permalink: bps56720.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps56720
@@ -6505,6 +6733,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Gov.Uk Pay Overview
+  permalink: bps17405.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps17405
@@ -6533,6 +6762,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Gov.Uk Proposition Overview
+  permalink: bps18264.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps18264
@@ -6561,6 +6791,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Gov.Uk Registers Overview
+  permalink: bps27180.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps27180
@@ -6589,6 +6820,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Gov.Uk Verify Overview
+  permalink: bps59376.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps59376
@@ -6617,6 +6849,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Authentication Credentials For Online Government Services
+  permalink: bps28916.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps28916
@@ -6645,6 +6878,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Identity Assurance Hub Service Profiles - Saml Attributes
+  permalink: bps93056.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps93056
@@ -6673,6 +6907,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Identity Assurance Hub Service Saml 2.0 Profile
+  permalink: bps24197.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps24197
@@ -6701,6 +6936,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Identity Assurance Hub Services Profile - Authentication Contexts
+  permalink: bps97834.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps97834
@@ -6729,6 +6965,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Identity Assurance - Delivering Trusted Transactions
+  permalink: bps20764.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps20764
@@ -6757,6 +6994,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Identity Assurance - Organisation Identity
+  permalink: bps39041.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps39041
@@ -6785,6 +7023,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Identity Proofing And Verification Of An Individual
+  permalink: bps41589.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps41589
@@ -6813,6 +7052,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Steps - Network Security (Ncsc)
+  permalink: bps52489.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps52489
@@ -6841,6 +7081,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Government Network Policy Changes
+  permalink: bps83567.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps83567
@@ -6869,6 +7110,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Provisioning And Securing Security Certificates (Ncsc)
+  permalink: bps19526.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps19526
@@ -6897,6 +7139,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Sharing Wide Area Network Connections In Shared Buildings
+  permalink: bps52976.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps52976
@@ -6925,6 +7168,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Sharing Workplace Wireless Networks
+  permalink: bps54638.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps54638
@@ -6953,6 +7197,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Open Government
+  permalink: bps03895.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps03895
@@ -6981,6 +7226,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Open Source Initiative
+  permalink: bps95307.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps95307
@@ -7009,6 +7255,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Making New Source Code Open By Default
+  permalink: bps63285.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps63285
@@ -7037,6 +7284,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: When Code Should Be Open Or Closed
+  permalink: bps79306.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps79306
@@ -7065,6 +7313,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Security Considerations When Coding In The Open
+  permalink: bps90862.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps90862
@@ -7093,6 +7342,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: G8 Open Data Charter National Action Plan
+  permalink: bps28437.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps28437
@@ -7121,6 +7371,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Open Data Charter
+  permalink: bps07125.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps07125
@@ -7149,6 +7400,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Open Data Strategy
+  permalink: bps30175.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps30175
@@ -7177,6 +7429,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Open Formats Implementation Plan
+  permalink: bps49826.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps49826
@@ -7205,6 +7458,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Open Standards For Government Data And Technology
+  permalink: bps84501.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps84501
@@ -7233,6 +7487,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Open Standards Principles
+  permalink: bps61580.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps61580
@@ -7261,6 +7516,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Procurement Policy Note 07/15 - Open Standards For Technology
+  permalink: bps98651.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps98651
@@ -7289,6 +7545,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Working With Open Standards
+  permalink: bps67539.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps67539
@@ -7317,6 +7574,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Password Guidance Summary - How To Protect Against Password-Guessing Attacks (Ncsc)
+  permalink: bps54907.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps54907
@@ -7345,6 +7603,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Password Guidance - Simplifying Your Approach (Ncsc)
+  permalink: bps70982.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps70982
@@ -7373,6 +7632,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: The Phishing Threat Following Data Breaches (Ncsc)
+  permalink: bps17069.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps17069
@@ -7401,6 +7661,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Becoming A Custodian
+  permalink: bps62591.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps62591
@@ -7429,6 +7690,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Creating A Register
+  permalink: bps65912.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps65912
@@ -7457,6 +7719,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Introducing Registers
+  permalink: bps87213.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps87213
@@ -7485,6 +7748,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Registers Guidance
+  permalink: bps89520.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps89520
@@ -7513,6 +7777,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Using Registers To Build A Service
+  permalink: bps65928.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps65928
@@ -7541,6 +7806,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Guidance On Departmental Information Risk Policy
+  permalink: bps67215.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps67215
@@ -7569,6 +7835,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Risk Management And Risk Analysis In Practice (Ncsc)
+  permalink: bps04258.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps04258
@@ -7597,6 +7864,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Risk Management Introduction
+  permalink: bps52037.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps52037
@@ -7625,6 +7893,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Risk Management Collection (Ncsc)
+  permalink: bps17258.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps17258
@@ -7653,6 +7922,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: System Administration Architecture (Ncsc)
+  permalink: bps96154.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps96154
@@ -7681,6 +7951,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: 10 Steps - Home And Mobile Working (Ncsc)
+  permalink: bps09356.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps09356
@@ -7709,6 +7980,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: The Way We Work (Tw3) - Best Practice Guidelines For Smarter Working
+  permalink: bps98074.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps98074
@@ -7737,6 +8009,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Understanding User Needs
+  permalink: bps48693.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps48693
@@ -7765,6 +8038,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: User Research For Government Services - An Introduction
+  permalink: bps35896.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps35896
@@ -7793,6 +8067,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Learning About Users And Their Needs
+  permalink: bps72081.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps72081
@@ -7821,6 +8096,7 @@
   last_updated_date: 
   subject_group_common_name: 
 - document_title: Making Your Service Accessible - An Introduction
+  permalink: bps98201.html
   bps_security_classification: 
   access_group: 
   bps_reference: bps98201
@@ -7850,5 +8126,216 @@
     
   primary_classification: uncategorized
   published_date: 2017-10-01 00:00:00
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Ncsc Guidelines On Storage Device Disposal
+  permalink: bps51948.html
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps51948
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps51948
+  bps_part_reference: bps51948
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    https://www.ncsc.gov.uk/guidance/secure-sanitisation-storage-media
+  project_status: 
+  content_urls:
+    - ./request_access.html
+  primary_classification: 
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Ntracted To A Third Party That Meet Ncsc Assured Service Requirements For Sanitisation (Cas-S) Requirements.
+  permalink: bps17945.html
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps17945
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps17945
+  bps_part_reference: bps17945
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: 
+  content_urls:
+    - ./request_access.html
+  primary_classification: 
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Asset Disposal And Information Security Alliance (Adisa)
+  permalink: bps46501.html
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps46501
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps46501
+  bps_part_reference: bps46501
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    certification body using an
+    industry-specific standard to enable companies to demonstrate a level of competence
+    in this discipline.
+  project_status: 
+  content_urls:
+    - ./request_access.html
+  primary_classification: 
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Cpni's Secure Destruction Of Sensitive Items
+  permalink: bps92043.html
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps92043
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps92043
+  bps_part_reference: bps92043
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    A standard which CPNI applies to destruction companies which serve the Critical National Infrastructure (CNI). It majors on procedural and personnel safeguards.
+  project_status: 
+  content_urls:
+    - ./request_access.html
+  primary_classification: 
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Code Of Practice For The Deployment And Use Of Body Worn Video (Bwv)
+  permalink: bps07432.html
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps07432
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps07432
+  bps_part_reference: bps07432
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    The standard aims to help organizations deliver BWV operations that strike a balance between safety and security on the one hand, and the privacy of the people being recorded on the other. It:
+    
+        Covers planning and operational recommendations
+        Explores device recommendations, such as functionality, weight, image quality, encryption and data management
+        Includes data management and security issues, including data integrity, audit trails, storage and sharing, and redaction
+        Addresses the training needs of suppliers’ staff, BWV users, data handlers and operators
+        Supplies good practice principles for the use and auditing of BWV
+  project_status: 
+  content_urls:
+    - ./request_access.html
+  primary_classification: 
+  published_date: 2017-06-01 00:00:00
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Technical Product Documentation And Specification
+  permalink: bps84930.html
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps84930
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps84930
+  bps_part_reference: bps84930
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: 
+  content_urls:
+    - ./request_access.html
+  primary_classification: 
+  published_date: 
+  last_updated_date: 
+  subject_group_common_name: 
+- document_title: Representation Of Dates And Times -- Part 1:Basic Rules
+  permalink: bps10567.html
+  bps_security_classification: 
+  access_group: 
+  bps_reference: bps10567
+  bps_ref_part: 
+  bps_ref_published_date: 
+  bps_full_reference: bps10567
+  bps_part_reference: bps10567
+# author_org_abbr: catalogue_df.ix[i].std_author_org_abbr}}
+  author_org_reference: 
+  maturity_level: 
+    - classification:
+      NPTS: 
+      Other: Another
+  issn_reference: 
+  author_org: 
+  author_org_email: 
+  std_sponsor: 
+  sponsor_org_email: 
+  document_abstract: >-
+    
+  project_status: 
+  content_urls:
+    - ./request_access.html
+  primary_classification: 
+  published_date: 
   last_updated_date: 
   subject_group_common_name: 

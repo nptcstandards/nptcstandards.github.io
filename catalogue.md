@@ -16,7 +16,7 @@ There are two main sources for standards:-
 <table>
 {% for standard in classification.items %}
 <tr>
-<td><a href="standards/{{ standard.bps_part_reference }}.html">{{ standard.bps_full_reference }} {{standard.document_title}}</a></td>
+<td><a href="{{ standard.permalink }}">{{ standard.bps_full_reference }} {{standard.document_title}}</a></td>
 </tr>
 {% endfor %}
 </table>
