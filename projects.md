@@ -54,6 +54,12 @@ The roadmap section shows the list of standards which are either :
     <td>Status</td>
     <td>{{project.status.value}}</td>
   </tr>
+  {% if project.description %}
+    <tr>
+      <td>Description:</td>
+      <td>{{project.description}}</td>
+    </tr>
+  {% endif %}
   {% if project.scheduled_date %}
     <tr>
       <td>Scheduled Date:</td>
