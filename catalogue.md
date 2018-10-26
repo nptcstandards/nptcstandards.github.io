@@ -8,16 +8,18 @@ There are two main sources for standards:-
 + Internally created standards which have been developed by the NPTC Standards Working Group and their content will be embedded within the page and viewable directly
 + External standards which will be shown in terms of their document detail and an abstract with a link to the relevant standard, including Usage scenarios where assessed.
 
-{% assign classification_list = site.data.catalogue | sort: 'bps_full_reference' | group_by : 'primary_classification' %}
-{% assign sorted_classification_list = classification_list | sort: 'name' %}
-{% assign business_list = sorted_classification_list %}
-{% for classification in sorted_classification_list %}
-## {{ classification.name | replace: '.', ' > ' }}
+{% assign sorted_standards = site.data.catalogue.standards | sort: 'ref_full'  %}
 <table>
-{% for standard in classification.items %}
 <tr>
-<td><a href="{{ standard.permalink }}">{{ standard.bps_full_reference }} {{standard.document_title}}</a></td>
+   <th>Reference</th>
+   <th>Title</th>
+   <th>Status</th>
+</tr>
+{% for standard in sorted_standards %}
+<tr>
+<td><a href="{{ standard.permalink }}">{{ standard.ref_full }}</a></td>
+<td>{{standard.title}}</td>
+<td>{{standard.status.value}}</td>
 </tr>
 {% endfor %}
 </table>
-{% endfor %}

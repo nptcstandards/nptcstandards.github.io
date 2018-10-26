@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta property="og:description" content="">
+<meta property="og:title" content="Sender Policy Framework (SPF)">
+<meta property="og:url" content="https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GOV.UK">
+<meta name="twitter:card" content="summary">
+<meta name="govuk:analytics:organisations" content="&lt;OT1056&gt;">
+<meta name="govuk:content-id" content="bcb79a22-8de8-444d-8c6c-be5cc75dbfe4">
+<meta name="govuk:navigation-document-type" content="other">
+<meta name="govuk:user-journey-stage" content="thing">
+<meta name="govuk:schema-name" content="html_publication">
+<meta name="govuk:publishing-application" content="whitehall">
+<meta name="govuk:format" content="html_publication">
+<meta name="csrf-token" content="0XfpfnsO3AnVaHsjB8XKZOz7qyKzDYVaxjyMo2k30cJDHIV2/ZYUGkDGtCeZx9kCq3rN1pYLqruEHsrC+CUcIg==">
+<meta name="csrf-param" content="authenticity_token">
+    <meta charset="utf-8">
+    <title lang="en">
+      Sender Policy Framework (SPF) - GOV.UK
+  </title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-c0b8ba8b1652aacad298d74f24752260187f538b50c40c2484f7f333cbc3cf2b.css" crossorigin="anonymous" integrity="sha256-wLi6ixZSqsrSmNdPJHUiYBh/U4tQxAwkhPfzM8vDzys=">
+<!--<![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie6-2c1bb089ee71d4d70a08ba94e4b363a99542c8feddf3aa979bc4f8962aed5e02.css" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie7-062e553ef49a9f884a3a1f885c8a18e829b6557046b075e1384f6092a60151d1.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie8-11027733d1abeac34c7bf14e37fea30366ad3a87cfd7f7a084de3a3b4b838412.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css" crossorigin="anonymous" integrity="sha256-EHZRlSHC//u/das7DTsy7i2WrH6XePHN+sF3Hu/RocA=">
+
+    <link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-e9ec5a5f82e5c2a17927ce356e5a054cb28025ec1547ec5d00f5c98d2ec5e481.css" crossorigin="anonymous" integrity="sha256-6exaX4LlwqF5J841bloFTLKAJewVR+xdAPXJjS7F5IE=">
+    <!--[if lt IE 9]><script src="https://assets.publishing.service.gov.uk/static/ie-a4524544a53d57a7e259b4bb966b9c32557c98c920b77e52d09304642b68401a.js" crossorigin="anonymous" integrity="sha256-pFJFRKU9V6fiWbS7lmucMlV8mMkgt35S0JMEZCtoQBo="></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.publishing.service.gov.uk/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-5c3d985d43c06c7c5efa157f99dcc22b3b62fcc9944669d4237fc2b78793baf2.css" crossorigin="anonymous" integrity="sha256-XD2YXUPAbHxe+hV/mdzCKzti/MmURmnUI3/Ct4eTuvI=">
+<!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie6-eedd25aaef3dadbb4e173b879f7585bb6a7caa3045b715d98efb33d90b25cf76.css" /><script>var ieVersion = 6;</script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie7-e77ac1463efb750c324309de3d592a240e60b8fbaa7e258f332182244407ffa4.css" /><script>var ieVersion = 7;</script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie8-29ec3d53129f0657e59d7dc2fc9f67e0219c721c4155f09bdeacc21bc3b3c94b.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/core-layout-print-9a2de3ce1590c8ca478a6f7edf5a2e4bad0c6291b1dd4a6e7ca85f653d9591b4.css" crossorigin="anonymous" integrity="sha256-mi3jzhWQyMpHim9+31ouS60MYpGx3UpufKhfZT2VkbQ=">
+
+
+
+    <meta property="og:image" content="https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+  <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-55ad06a9ed7b851464067cc5f74a8f97d138262fbd5f9a2a68dfa8b5570ee19e.css" crossorigin="anonymous" integrity="sha256-Va0Gqe17hRRkBnzF90qPl9E4Ji+9X5oqaN+otVcO4Z4=">
+<!--<![endif]--><link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/government-frontend/print-a9af06f0e0ff57a3916f6700715b87afc2f8c596fc6b03aa7b8ef4cbb8bdbb58.css" crossorigin="anonymous" integrity="sha256-qa8G8OD/V6ORb2cAcVuHr8L4xZb8awOqe470y7i9u1g=">
+<link rel="canonical" href="https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf">
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-ie6-b13e1a8858d678b57f8c94aa20f2760cd19c8b4ced4e0f072e80e83c85fd8337.css" /><script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-ie7-da9c77cf33faa116b2590f4f5d570e8464d72c0b41ce9032ad5db9a63e25cb9f.css" /><script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-ie8-f21295d9fb20336b683b38cfbabbe17064809aa834aa7cb5ff4d4366ee8b528f.css" /><script>var ieVersion = 8;</script><![endif]--><meta name="govuk:rendering-application" content="government-frontend">
+</head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+        <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+    </div>
+
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img src="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" width="36" height="32" alt=""> GOV.UK
+            </a>
+          </div>
+            <a href="#search" class="search-toggle js-header-toggle">Search</a>
+
+  <form id="search" class="site-search" action="/search" method="get" role="search">
+    <div class="content">
+      <label for="site-search-text">Search</label>
+      <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus">
+      <input class="submit" type="submit" value="Search">
+    </div>
+  </form>
+
+        </div>
+        
+      </div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      <div id="wrapper" class="direction-ltr">
+    
+
+      
+<div class="gem-c-contextual-breadcrumbs">
+    <!-- Rendering parent-based breadcrumbs because no browse, no related links, no live taxons -->
+    
+
+
+<div class="gem-c-breadcrumbs " data-module="track-click">
+  <ol>
+
+    <li class="gem-c-breadcrumbs__item ">
+        <a data-track-category="breadcrumbClicked" data-track-action="1" data-track-label="/" data-track-options='{"dimension28":"2","dimension29":"Home"}' class="gem-c-breadcrumbs__link " aria-current="false" href="/">Home</a>
+    </li>
+
+    <li class="gem-c-breadcrumbs__item ">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/government/publications/email-security-standards" data-track-options='{"dimension28":"2","dimension29":"Email security standards"}' class="gem-c-breadcrumbs__link " aria-current="false" href="/government/publications/email-security-standards">Email security standards</a>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+
+    <main role="main" id="content" class="html-publication" lang="en">
+      
+
+  <div class="publication-external">
+    <ol class="organisation-logos">
+        <li class="organisation-logo">
+          <div class="gem-c-organisation-logo brand--cabinet-office">
+    <a class="gem-c-organisation-logo__container gem-c-organisation-logo__link gem-c-organisation-logo__crest gem-c-organisation-logo__crest--single-identity brand__border-color" href="/government/organisations/government-digital-service">
+      <span class="gem-c-organisation-logo__name">Government Digital Service</span>
+</a>
+</div>
+
+        </li>
+    </ol>
+  </div>
+
+  <header class="gem-c-inverse-header  gem-c-inverse-header--padding-top ">
+    
+  <div class="gem-c-title
+  gem-c-title--inverse
+  ">
+    <p class="gem-c-title__context">
+      Guidance
+    </p>
+  <h1 class="gem-c-title__text ">
+    Sender Policy Framework (SPF)
+  </h1>
+</div>
+
+  <p class="publication-header__last-changed">Published 19 February 2016</p>
+
+  </header>
+
+
+
+<div class="grid-row sidebar-with-body" data-module="sticky-element-container" id="contents">
+    <div class="column-quarter-desktop-only">
+        <nav role="navigation" class="gem-c-contents-list gem-c-contents-list--no-underline " data-module="track-click">
+      <h2 class="gem-c-contents-list__title">Contents</h2>
+
+    <ol class="gem-c-contents-list__list">
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--numbered ">
+          <a class="gem-c-contents-list__link " data-track-category="contentsClicked" data-track-action="content_item 1" data-track-label="#what-is-spf" data-track-options='{"dimension29":"What is SPF?"}' href="#what-is-spf">What is SPF?</a>
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--numbered ">
+          <a class="gem-c-contents-list__link " data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="#more-information" data-track-options='{"dimension29":"More information"}' href="#more-information">More information</a>
+        </li>
+    </ol>
+  </nav>
+
+    </div>
+
+  <div class="print-wrapper">
+    <div class="print-meta-data">
+      <p>
+  <img class="print-meta-data-licence" src="https://assets.publishing.service.gov.uk/government-frontend/open-government-licence-min-e98134ae65ff5fe99a524d8c383350b3998f91c298dc24b36126e65f1656c578.png">
+</p>
+<p>
+  © Crown copyright 2016
+</p>
+<p>
+  This publication is licensed under the terms of the Open Government Licence v3.0 except where otherwise stated. To view this licence, visit <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3">nationalarchives.gov.uk/doc/open-government-licence/version/3</a> or write to the Information Policy Team, The National Archives, Kew, London TW9 4DU, or email: <a href="mailto:psi@nationalarchives.gsi.gov.uk">psi@nationalarchives.gsi.gov.uk</a>.
+</p>
+<p>
+  Where we have identified any third party copyright information you will need to obtain permission from the copyright holders concerned.
+</p>
+<p>
+  This publication is available at https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf
+</p>
+
+
+
+    </div>
+  </div>
+
+  <div class="column-three-quarters-desktop-only ">
+    <div class="gem-c-govspeak-html-publication">
+  
+<div class="gem-c-govspeak govuk-govspeak direction-ltr">
+      <div class="govspeak">
+<h2 id="what-is-spf">What is <abbr title="Sender Policy Framework">SPF</abbr>?</h2>
+
+<p>Sender Policy Framework (<abbr title="Sender Policy Framework">SPF</abbr>) validates the email domain a message was sent from by listing valid sending IP addresses or domains in the <abbr title="Domain Name System">DNS</abbr> record.  This lets recipient email services check if an email came from a valid IP or domain and mark it as spam if it didn’t.</p>
+
+<p><abbr title="Sender Policy Framework">SPF</abbr> records must exist on the sender domain’s <abbr title="Domain Name System">DNS</abbr> record which the recipient email service must check on receipt of an email.  The recipient can set rules to process messages accordingly.  An example rule would look for messages that fail the <abbr title="Sender Policy Framework">SPF</abbr> check and mark them as spam, or increase the spam score.</p>
+
+<p>This diagram shows how <abbr title="Sender Policy Framework">SPF</abbr> works:</p>
+
+<figure class="image embedded">
+  <div class="img"><img alt='""' src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/56799/SPF_diagram.png"></div>
+  <figcaption>Sender Policy Framework (<abbr title="Sender Policy Framework">SPF</abbr>)</figcaption>
+</figure>
+
+<h2 id="more-information">More information</h2>
+<p>Find detailed information on the <abbr title="Sender Policy Framework">SPF</abbr> specification at <a rel="external" href="http://www.openspf.org/">openspf.org</a>,   For more on how <abbr title="Sender Policy Framework">SPF</abbr> works there is a <a rel="external" href="https://postmarkapp.com/blog/explaining-spf">simple explanation</a> and <a rel="external" href="https://i.rackaid.com/wp-content/uploads/2014/01/images_spf_flow.jpg">another good diagram</a>.</p>
+
+</div>
+</div>
+</div>
+
+  </div>
+
+  <div data-sticky-element class="govuk-sticky-element">
+    <a class="app-c-back-to-top dont-print" href="#contents">
+    <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewbox="0 0 13 17">
+      <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+    </svg>
+    Contents
+</a>
+
+  </div>
+</div>
+
+    </main>
+    
+<div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
+  <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+    <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
+      <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--useful js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" href="/contact/govuk">
+          Yes <span class="visually-hidden">this page is useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" role="button" href="/contact/govuk">
+          No <span class="visually-hidden">this page is not useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--wrong js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV.UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" role="button" href="/contact/govuk">
+          Is there anything wrong with this page?
+</a>    </div>
+
+    <div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">
+      Thank you for your feedback
+    </div>
+  </div>
+
+  <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post">
+    <a href="#" class="gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf">
+        <input type="hidden" name="user_agent" value="Python-urllib/3.6">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-0c11cd49" class="gem-c-label govuk-label ">
+  What were you doing?
+</label>
+
+
+
+
+  <input name="what_doing" class="gem-c-input govuk-input" id="input-0c11cd49" type="text" aria-describedby="feedback_explanation">
+</div>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-0a001744" class="gem-c-label govuk-label ">
+  What went wrong?
+</label>
+
+
+
+
+  <input name="what_wrong" class="gem-c-input govuk-input" id="input-0a001744" type="text">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+      </div>
+    </div>
+  </form>
+
+  <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post">
+    <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf">
+        <input type="hidden" name="user_agent" value="Python-urllib/3.6">
+
+        <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+        <input name="email_survey_signup[survey_source]" type="hidden" value="https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf">
+        <input name="email_survey_signup[ga_client_id]" type="hidden" value="1627485790.1515403243">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-d5b1acc8" class="gem-c-label govuk-label ">
+  Email address
+</label>
+
+
+
+
+  <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-d5b1acc8" type="email" aria-describedby="survey_explanation">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+        <a href="https://www.smartsurvey.co.uk/s/gov-uk-banner/?c=/government/publications/email-security-standards/sender-policy-framework-spf&amp;gcl=1627485790.1515403243" class="gem-c-feedback__email-link govuk-link" id="take-survey" target="_blank" rel="noopener noreferrer">Don’t have an email address?</a>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+  </div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+            <div class="footer-categories">
+      <div class="footer-explore">
+        <h2>Services and information</h2>
+
+        <ul>
+          <li><a href="/browse/benefits">Benefits</a></li>
+          <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+          <li><a href="/browse/business">Business and self-employed</a></li>
+          <li><a href="/browse/childcare-parenting">Childcare and parenting</a></li>
+          <li><a href="/browse/citizenship">Citizenship and living in the UK</a></li>
+          <li><a href="/browse/justice">Crime, justice and the law</a></li>
+          <li><a href="/browse/disabilities">Disabled people</a></li>
+          <li><a href="/browse/driving">Driving and transport</a></li>
+        </ul>
+        <ul>
+          <li><a href="/browse/education">Education and learning</a></li>
+          <li><a href="/browse/employing-people">Employing people</a></li>
+          <li><a href="/browse/environment-countryside">Environment and countryside</a></li>
+          <li><a href="/browse/housing-local-services">Housing and local services</a></li>
+          <li><a href="/browse/tax">Money and tax</a></li>
+          <li><a href="/browse/abroad">Passports, travel and living abroad</a></li>
+          <li><a href="/browse/visas-immigration">Visas and immigration</a></li>
+          <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-inside-government">
+        <h2>Departments and policy</h2>
+
+        <ul>
+          <li><a href="/government/how-government-works">How government works</a></li>
+          <li><a href="/government/organisations">Departments</a></li>
+          <li><a href="/world">Worldwide</a></li>
+          <li><a href="/government/publications">Publications</a></li>
+          <li><a href="/government/announcements">Announcements</a></li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="/help">Help</a></li>
+  <li><a href="/help/cookies">Cookies</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help/terms-conditions">Terms and conditions</a></li>
+  <li><a href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+</li>
+</ul>
+
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="https://assets.publishing.service.gov.uk/static/govuk-template-ae4c5d21c0a7cb5bc8926a9f491de4e410244403f66c72997210c281efb92d4f.js" crossorigin="anonymous" integrity="sha256-rkxdIcCny1vIkmqfSR3k5BAkRAP2bHKZchDCge+5LU8="></script>
+
+      <script src="https://assets.publishing.service.gov.uk/static/libs/jquery/jquery-1.12.4-313b7a6fafe9cac925824ccb4509a56f70853f175eb8361a4bda4d8669075081.js" crossorigin="anonymous" integrity="sha256-MTt6b6/pysklgkzLRQmlb3CFPxdeuDYaS9pNhmkHUIE="></script>
+<script src="https://assets.publishing.service.gov.uk/static/header-footer-only-e1bd356a90a998a423b2dbd2307a298ce0c8f8dfc3cfd95200baa3a09518bd9a.js" crossorigin="anonymous" integrity="sha256-4b01apCpmKQjstvSMHopjODI+N/Dz9lSALqjoJUYvZo="></script>
+<script src="https://assets.publishing.service.gov.uk/static/surveys-9f5777413deb35cd977d60d92f6c16a5231dc778ac208e11822e40c2c3630e15.js" crossorigin="anonymous" integrity="sha256-n1d3QT3rNc2XfWDZL2wWpSMdx3isII4Rgi5AwsNjDhU="></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="https://assets.publishing.service.gov.uk/government-frontend/application-d5827ce57ac417eaa92329f3a2d785af7db90b648b90ca8a54fe3753f2081dc3.js" crossorigin="anonymous" integrity="sha256-1YJ85XrEF+qpIynzoteFr325C2SLkMqKVP43U/IIHcM="></script><script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf"},"headline":"Sender Policy Framework (SPF)","datePublished":"2016-10-04T14:41:15.000+00:00","dateModified":"2017-01-31T18:42:13.000+00:00","description":null,"publisher":{"@type":"Organization","name":"GOV.UK","url":"https://www.gov.uk","logo":{"@type":"ImageObject","url":"https://assets.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-logo-e5962881254c9adb48f94d2f627d3bb67f258a6cbccc969e80abb7bbe4622976.png"}},"image":["https://assets.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-schema-placeholder-1x1-5ceffac04f7f6d4f421bd1d36dbb723ef48c15426d7f77f90be80a83af3c747e.png","https://assets.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-schema-placeholder-4x3-fcfe16abb1a015848e50d2ea797666a9eaf5158dca38ddfb1e52dc8c0543ab74.png","https://assets.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-schema-placeholder-16x9-fcf616879a7b37970df4d2117de962e08f7d057674ef1af6063dcdd529424eee.png"],"articleBody":"\u003cdiv class=\"govspeak\"\u003e\u003ch2 id=\"what-is-spf\"\u003eWhat is \u003cabbr title=\"Sender Policy Framework\"\u003eSPF\u003c/abbr\u003e?\u003c/h2\u003e\n\n\u003cp\u003eSender Policy Framework (\u003cabbr title=\"Sender Policy Framework\"\u003eSPF\u003c/abbr\u003e) validates the email domain a message was sent from by listing valid sending IP addresses or domains in the \u003cabbr title=\"Domain Name System\"\u003eDNS\u003c/abbr\u003e record.  This lets recipient email services check if an email came from a valid IP or domain and mark it as spam if it didn’t.\u003c/p\u003e\n\n\u003cp\u003e\u003cabbr title=\"Sender Policy Framework\"\u003eSPF\u003c/abbr\u003e records must exist on the sender domain’s \u003cabbr title=\"Domain Name System\"\u003eDNS\u003c/abbr\u003e record which the recipient email service must check on receipt of an email.  The recipient can set rules to process messages accordingly.  An example rule would look for messages that fail the \u003cabbr title=\"Sender Policy Framework\"\u003eSPF\u003c/abbr\u003e check and mark them as spam, or increase the spam score.\u003c/p\u003e\n\n\u003cp\u003eThis diagram shows how \u003cabbr title=\"Sender Policy Framework\"\u003eSPF\u003c/abbr\u003e works:\u003c/p\u003e\n\n\u003cfigure class=\"image embedded\"\u003e\n  \u003cdiv class=\"img\"\u003e\u003cimg alt='\"\"' src=\"https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/56799/SPF_diagram.png\"\u003e\u003c/div\u003e\n  \u003cfigcaption\u003eSender Policy Framework (\u003cabbr title=\"Sender Policy Framework\"\u003eSPF\u003c/abbr\u003e)\u003c/figcaption\u003e\n\u003c/figure\u003e\n\n\u003ch2 id=\"more-information\"\u003eMore information\u003c/h2\u003e\n\u003cp\u003eFind detailed information on the \u003cabbr title=\"Sender Policy Framework\"\u003eSPF\u003c/abbr\u003e specification at \u003ca rel=\"external\" href=\"http://www.openspf.org/\"\u003eopenspf.org\u003c/a\u003e,   For more on how \u003cabbr title=\"Sender Policy Framework\"\u003eSPF\u003c/abbr\u003e works there is a \u003ca rel=\"external\" href=\"https://postmarkapp.com/blog/explaining-spf\"\u003esimple explanation\u003c/a\u003e and \u003ca rel=\"external\" href=\"https://i.rackaid.com/wp-content/uploads/2014/01/images_spf_flow.jpg\"\u003eanother good diagram\u003c/a\u003e.\u003c/p\u003e\n\n\u003c/div\u003e"}
+</script><script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https://www.gov.uk/"}},{"@type":"ListItem","position":2,"item":{"name":"Email security standards","@id":"https://www.gov.uk/government/publications/email-security-standards"}}]}
+</script>
+</body>
+</html>

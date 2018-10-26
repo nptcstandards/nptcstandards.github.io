@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Information on the ODF standard and how to move your organisation to ODF-compliant document solutions.">
+<meta name="govuk:analytics:organisations" content="&lt;D2&gt;">
+<meta name="govuk:content-id" content="fbe8509c-9ac9-4363-a60d-cf2869c945cd">
+<meta name="govuk:navigation-document-type" content="guidance">
+<meta name="govuk:user-journey-stage" content="thing">
+<meta name="govuk:schema-name" content="manual">
+<meta name="govuk:publishing-application" content="manuals-publisher">
+<meta name="govuk:format" content="manual">
+<meta name="csrf-token" content="DRp6IwJHA5pf+Sbl1bwbVNLzf0XtHGvHCohoZRYjh4dRjClnftu264HvI12vd4rL519ovuNQakGwavd9h1js5g==">
+<meta name="csrf-param" content="authenticity_token">
+    <meta charset="utf-8">
+    <title>Open Document Format (ODF): guidance for UK government - Guidance - GOV.UK</title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-c0b8ba8b1652aacad298d74f24752260187f538b50c40c2484f7f333cbc3cf2b.css" crossorigin="anonymous" integrity="sha256-wLi6ixZSqsrSmNdPJHUiYBh/U4tQxAwkhPfzM8vDzys=">
+<!--<![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie6-2c1bb089ee71d4d70a08ba94e4b363a99542c8feddf3aa979bc4f8962aed5e02.css" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie7-062e553ef49a9f884a3a1f885c8a18e829b6557046b075e1384f6092a60151d1.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie8-11027733d1abeac34c7bf14e37fea30366ad3a87cfd7f7a084de3a3b4b838412.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css" crossorigin="anonymous" integrity="sha256-EHZRlSHC//u/das7DTsy7i2WrH6XePHN+sF3Hu/RocA=">
+
+    <link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-e9ec5a5f82e5c2a17927ce356e5a054cb28025ec1547ec5d00f5c98d2ec5e481.css" crossorigin="anonymous" integrity="sha256-6exaX4LlwqF5J841bloFTLKAJewVR+xdAPXJjS7F5IE=">
+    <!--[if lt IE 9]><script src="https://assets.publishing.service.gov.uk/static/ie-a4524544a53d57a7e259b4bb966b9c32557c98c920b77e52d09304642b68401a.js" crossorigin="anonymous" integrity="sha256-pFJFRKU9V6fiWbS7lmucMlV8mMkgt35S0JMEZCtoQBo="></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.publishing.service.gov.uk/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-5c3d985d43c06c7c5efa157f99dcc22b3b62fcc9944669d4237fc2b78793baf2.css" crossorigin="anonymous" integrity="sha256-XD2YXUPAbHxe+hV/mdzCKzti/MmURmnUI3/Ct4eTuvI=">
+<!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie6-eedd25aaef3dadbb4e173b879f7585bb6a7caa3045b715d98efb33d90b25cf76.css" /><script>var ieVersion = 6;</script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie7-e77ac1463efb750c324309de3d592a240e60b8fbaa7e258f332182244407ffa4.css" /><script>var ieVersion = 7;</script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie8-29ec3d53129f0657e59d7dc2fc9f67e0219c721c4155f09bdeacc21bc3b3c94b.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/core-layout-print-9a2de3ce1590c8ca478a6f7edf5a2e4bad0c6291b1dd4a6e7ca85f653d9591b4.css" crossorigin="anonymous" integrity="sha256-mi3jzhWQyMpHim9+31ouS60MYpGx3UpufKhfZT2VkbQ=">
+
+
+
+    <meta property="og:image" content="https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+  <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/manuals-frontend/application-35e59656066e43a620d63f280d8d6d7de1a1e13e703fd0a535c884c23471eaae.css">
+<!--<![endif]--><link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/manuals-frontend/print-38956260f3d32c60820753451d3a884ab15a9a747c0f278ed3e9a6c6d50e08de.css">
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/manuals-frontend/application-ie6-01ffba18c05c872c242984f2b38dfca10b61882d614284b3136c36da9ae99206.css" /><script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/manuals-frontend/application-ie7-8b4ef47742ab9d1c78661eafe654a01bebab7f27990a5f842902ab4c7f498cde.css" /><script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/manuals-frontend/application-ie8-2a7a3d37fdbd7d881496ae922b98d72db15418322b44db3966d77cc1925243d0.css" /><script>var ieVersion = 8;</script><![endif]--><meta name="govuk:rendering-application" content="manuals-frontend">
+</head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+        <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+    </div>
+
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img src="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" width="36" height="32" alt=""> GOV.UK
+            </a>
+          </div>
+            
+
+  
+
+        </div>
+        
+      </div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      <div id="wrapper">
+    <main role="main" class="hmrc-internal-manuals-frontend-content outer-block">
+      <div id="manuals-frontend" class="manuals-frontend-body inner-block">
+        
+
+
+
+
+<div class="gem-c-contextual-breadcrumbs">
+    <!-- Rendering parent-based breadcrumbs because no browse, no related links, no live taxons -->
+    
+
+
+<div class="gem-c-breadcrumbs " data-module="track-click">
+  <ol>
+
+    <li class="gem-c-breadcrumbs__item ">
+        <a data-track-category="breadcrumbClicked" data-track-action="1" data-track-label="/" data-track-options='{"dimension28":"1","dimension29":"Home"}' class="gem-c-breadcrumbs__link " aria-current="false" href="/">Home</a>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+
+<header aria-labelledby="manual-title" class="">
+
+  <div class="primary">
+
+    <h1 id="manual-title">Open Document Format (ODF): guidance for UK government</h1>
+    <div class="gem-c-metadata" data-module="gem-toggle">
+  <dl data-module="track-click">
+      <dt class="gem-c-metadata__term">From:</dt>
+      <dd class="gem-c-metadata__definition">
+          <a href="https://www.gov.uk/government/organisations/cabinet-office">Cabinet Office</a>
+
+      </dd>
+      <dt class="gem-c-metadata__term">Published:</dt>
+      <dd class="gem-c-metadata__definition"><time datetime="2015-09-11">11 September 2015</time></dd>
+          <dt class="gem-c-metadata__term">Updated:</dt>
+          <dd class="gem-c-metadata__definition">
+              <time datetime="2018-05-08"> 8 May 2018</time>, <a href="/guidance/open-document-format-odf-guidance-for-uk-government/updates">see all updates</a>
+
+          </dd>
+  </dl>
+</div>
+
+
+    <div class="in-manual-search">
+      <form action="/search">
+        <label for="search-box">Search this manual</label>
+        <input type="hidden" name="filter_manual[]" value="/guidance/open-document-format-odf-guidance-for-uk-government">
+        <input id="search-box" class="in-manual-search-box" type="text" name="q">
+        <button type="submit">search</button>
+      </form>
+    </div>
+  </div>
+  <div class="secondary">
+    <div class="secondary-inner">
+      <p>
+        <a class="feedback" href="https://www.gov.uk/contact/govuk">Give feedback about this page</a>
+      </p>
+    </div>
+  </div>
+</header>
+
+<ol class="breadcrumb-trail">
+    <li class="no-separator">Contents</li>
+
+</ol>
+
+<article aria-labelledby="manual-title" id="content">
+  <div class="manual-body">
+    <p class="summary">Information on the ODF standard and how to move your organisation to ODF-compliant document solutions.</p>
+      
+<div class="gem-c-govspeak govuk-govspeak ">
+      <p>The UK government has selected <abbr title="Open Document Format">ODF</abbr> 1.2 as the standard for editable office documents to be used across government. ODF1.2 was selected as the standard for government because it:</p>
+
+<ul>
+  <li>allows citizens, businesses and other organisations to share and edit documents with government - and the other way round</li>
+  <li>allows people working in government to share and edit documents with each other</li>
+  <li>is compatible with a wide range of software</li>
+  <li>is a reliable long-term solution for storing and accessing information</li>
+</ul>
+
+<p>This guidance gives general information on the standard, as well as more detailed information for chief technology officers and government procurement officers.</p>
+
+
+</div>
+
+        <ol class="section-list">
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/introduction-to-open-document-format-odf">
+              <span class="subsection-title-text">Introduction to Open Document Format (ODF)</span>
+              <span class="subsection-summary">An overview of ODF, how it works and why your organisation should use it.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/procure-odf-solutions">
+              <span class="subsection-title-text">Procure ODF solutions</span>
+              <span class="subsection-summary">An overview of steps you should take when procuring applications or services dealing with editable documents, to ensure they comply with the ODF standard.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/base-odf-solutions-on-user-needs">
+              <span class="subsection-title-text">Base ODF solutions on user needs</span>
+              <span class="subsection-summary">How to find the best ODF-compliant document solution for your organisation by understanding your users' needs.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/validators-and-compliance-testing">
+              <span class="subsection-title-text">Validators and compliance testing</span>
+              <span class="subsection-summary">An overview of how validators and testing can ensure that applications dealing with editable documents are ODF-compliant.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/platforms-and-devices">
+              <span class="subsection-title-text">Platforms and devices</span>
+              <span class="subsection-summary">An overview of the platforms and devices that work with ODF, as well as security and accessibility considerations.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/accessibility">
+              <span class="subsection-title-text">Accessibility</span>
+              <span class="subsection-summary">How to ensure your ODF document solution is accessible to people with disabilities.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/privacy-and-security">
+              <span class="subsection-title-text">Privacy and security</span>
+              <span class="subsection-summary">How to ensure your organisation's privacy and security when using ODF document solutions.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/avoid-macros-in-documents">
+              <span class="subsection-title-text">Avoid macros in documents</span>
+              <span class="subsection-summary">Why macros shouldn't be used in documents and what alternatives ODF can offer.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/integrate-odf-with-enterprise-tools">
+              <span class="subsection-title-text">Integrate ODF with enterprise tools</span>
+              <span class="subsection-summary">How ODF fits into the way your organisation processes documents.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/extensions-plugins-and-custom-solutions">
+              <span class="subsection-title-text">Extensions, plugins and custom solutions</span>
+              <span class="subsection-summary">How to ensure that software offering added functionality to document solutions meets the ODF standard.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/collaborate-on-documents">
+              <span class="subsection-title-text">Collaborate on documents</span>
+              <span class="subsection-summary">An overview of the different options for collaborating on ODF documents.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/change-tracking-in-odf">
+              <span class="subsection-title-text">Change tracking in ODF</span>
+              <span class="subsection-summary">An overview of the change tracking options in ODF: their benefits, risks and alternatives.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/embed-fonts-in-odf-documents">
+              <span class="subsection-title-text">Embed fonts in ODF documents</span>
+              <span class="subsection-summary">How to embed fonts in ODF documents, and guidance on choosing fonts.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/corporate-styles-and-templates">
+              <span class="subsection-title-text">Corporate styles and templates</span>
+              <span class="subsection-summary">Best practice for working with styles and templates in ODF.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/odf-spreadsheets-and-formulas">
+              <span class="subsection-title-text">ODF spreadsheets and formulas</span>
+              <span class="subsection-summary">Important considerations when working with spreadsheets and formulas in ODF.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/support-and-training">
+              <span class="subsection-title-text">Support and training</span>
+              <span class="subsection-summary">Training and support options for the different users of ODF in your organisation.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/overview-of-productivity-software">
+              <span class="subsection-title-text">Find out which software tools are compatible with ODF</span>
+              <span class="subsection-summary">The software productivity tools in this list are compatible with the Open Document Format (ODF). This is not a full list, and there are other options available. You should assess what your users need from productivity and document handling tools.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/open-document-format-odf-guidance-for-uk-government/costs-and-benefits-of-odf">
+              <span class="subsection-title-text">Costs and benefits of ODF</span>
+              <span class="subsection-summary">Useful information for building a business case for moving your organisation to ODF.</span>
+</a>          </li>
+        </ol>
+  </div>
+</article>
+
+
+        <div class="print-page">
+          <a onclick="window.print();return false;" href="#">Print this page</a>
+        </div>
+      </div>
+    </main>
+    
+<div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
+  <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+    <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
+      <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--useful js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" href="/contact/govuk">
+          Yes <span class="visually-hidden">this page is useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" role="button" href="/contact/govuk">
+          No <span class="visually-hidden">this page is not useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--wrong js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV.UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" role="button" href="/contact/govuk">
+          Is there anything wrong with this page?
+</a>    </div>
+
+    <div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">
+      Thank you for your feedback
+    </div>
+  </div>
+
+  <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post">
+    <a href="#" class="gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/guidance/open-document-format-odf-guidance-for-uk-government">
+        <input type="hidden" name="user_agent" value="Python-urllib/3.6">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-20969965" class="gem-c-label govuk-label ">
+  What were you doing?
+</label>
+
+
+
+
+  <input name="what_doing" class="gem-c-input govuk-input" id="input-20969965" type="text" aria-describedby="feedback_explanation">
+</div>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-62e37c54" class="gem-c-label govuk-label ">
+  What went wrong?
+</label>
+
+
+
+
+  <input name="what_wrong" class="gem-c-input govuk-input" id="input-62e37c54" type="text">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+      </div>
+    </div>
+  </form>
+
+  <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post">
+    <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/guidance/open-document-format-odf-guidance-for-uk-government">
+        <input type="hidden" name="user_agent" value="Python-urllib/3.6">
+
+        <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+        <input name="email_survey_signup[survey_source]" type="hidden" value="https://www.gov.uk/guidance/open-document-format-odf-guidance-for-uk-government">
+        <input name="email_survey_signup[ga_client_id]" type="hidden" value="1627485790.1515403243">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-bcad6f8d" class="gem-c-label govuk-label ">
+  Email address
+</label>
+
+
+
+
+  <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-bcad6f8d" type="email" aria-describedby="survey_explanation">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+        <a href="https://www.smartsurvey.co.uk/s/gov-uk-banner/?c=/guidance/open-document-format-odf-guidance-for-uk-government&amp;gcl=1627485790.1515403243" class="gem-c-feedback__email-link govuk-link" id="take-survey" target="_blank" rel="noopener noreferrer">Don’t have an email address?</a>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+  </div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+            <div class="footer-categories">
+      <div class="footer-explore">
+        <h2>Services and information</h2>
+
+        <ul>
+          <li><a href="/browse/benefits">Benefits</a></li>
+          <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+          <li><a href="/browse/business">Business and self-employed</a></li>
+          <li><a href="/browse/childcare-parenting">Childcare and parenting</a></li>
+          <li><a href="/browse/citizenship">Citizenship and living in the UK</a></li>
+          <li><a href="/browse/justice">Crime, justice and the law</a></li>
+          <li><a href="/browse/disabilities">Disabled people</a></li>
+          <li><a href="/browse/driving">Driving and transport</a></li>
+        </ul>
+        <ul>
+          <li><a href="/browse/education">Education and learning</a></li>
+          <li><a href="/browse/employing-people">Employing people</a></li>
+          <li><a href="/browse/environment-countryside">Environment and countryside</a></li>
+          <li><a href="/browse/housing-local-services">Housing and local services</a></li>
+          <li><a href="/browse/tax">Money and tax</a></li>
+          <li><a href="/browse/abroad">Passports, travel and living abroad</a></li>
+          <li><a href="/browse/visas-immigration">Visas and immigration</a></li>
+          <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-inside-government">
+        <h2>Departments and policy</h2>
+
+        <ul>
+          <li><a href="/government/how-government-works">How government works</a></li>
+          <li><a href="/government/organisations">Departments</a></li>
+          <li><a href="/world">Worldwide</a></li>
+          <li><a href="/government/publications">Publications</a></li>
+          <li><a href="/government/announcements">Announcements</a></li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="/help">Help</a></li>
+  <li><a href="/help/cookies">Cookies</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help/terms-conditions">Terms and conditions</a></li>
+  <li><a href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+</li>
+</ul>
+
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="https://assets.publishing.service.gov.uk/static/govuk-template-ae4c5d21c0a7cb5bc8926a9f491de4e410244403f66c72997210c281efb92d4f.js" crossorigin="anonymous" integrity="sha256-rkxdIcCny1vIkmqfSR3k5BAkRAP2bHKZchDCge+5LU8="></script>
+
+      <script src="https://assets.publishing.service.gov.uk/static/libs/jquery/jquery-1.12.4-313b7a6fafe9cac925824ccb4509a56f70853f175eb8361a4bda4d8669075081.js" crossorigin="anonymous" integrity="sha256-MTt6b6/pysklgkzLRQmlb3CFPxdeuDYaS9pNhmkHUIE="></script>
+<script src="https://assets.publishing.service.gov.uk/static/header-footer-only-e1bd356a90a998a423b2dbd2307a298ce0c8f8dfc3cfd95200baa3a09518bd9a.js" crossorigin="anonymous" integrity="sha256-4b01apCpmKQjstvSMHopjODI+N/Dz9lSALqjoJUYvZo="></script>
+<script src="https://assets.publishing.service.gov.uk/static/surveys-9f5777413deb35cd977d60d92f6c16a5231dc778ac208e11822e40c2c3630e15.js" crossorigin="anonymous" integrity="sha256-n1d3QT3rNc2XfWDZL2wWpSMdx3isII4Rgi5AwsNjDhU="></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="https://assets.publishing.service.gov.uk/manuals-frontend/application-4853fa752911c628c8aaffdf0038b9138fb2cb9ad68c094b8fda19f338fa0e5d.js"></script><script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https://www.gov.uk/"}}]}
+</script>
+</body>
+</html>

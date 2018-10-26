@@ -49,12 +49,12 @@ exclude:
 
 # Site menu settings
 menu:
-  - title: "Backlog"
-    url: "/backlog.html"
-  - title: "Catalogue"
+  - title: "Standards"
     url: "/catalogue.html"
-  - title: "Roadmap"
+  - title: "Projects"
     url: "/projects.html"
+  - title: "Organisations"
+    url: "/organisations.html"
   - title: "Forums"
     url: "/forums.html"
   - title: "Blog"
