@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Roadmap
+title: Projects
 ---
-The roadmap section shows the list of standards which are either :
+The projects section shows the list of standards associated with a project which are either :
 + under development or
 + scheduled for development or
 + due for assessment for inclusion in the Catalogue
