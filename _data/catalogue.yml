@@ -11,14 +11,18 @@ catalogue:
       value: Open
     - &access_group_managed_access
       value: Managed Access
+    security_classification:
+    - &sec_classification_official
+      value: OFFICIAL
+      description:
     document_status:
-    - &doc_status_current
+    - &doc_status_adopted
       value: Current
       description: The standard is the latest approved current version.
-    - &doc_status_draft
+    - &doc_status_pending
       value: Draft
       description:
-    - &doc_status_obsoleted
+    - &doc_status_superseded
       value: Obsoleted
       description: The standard has been replaced by a newer standard.
     - &doc_status_backlog
@@ -30,8 +34,11 @@ catalogue:
       description: The standard subject has been rejected for adoption or further
         development.
     - &doc_status_undefined
-      value: Review
+      value: Review Status
       description: The standard status has not been set.
+    - &doc_status_withdrawn
+      value: Withdrawn
+      description: The standard has been withdrawn.
     org_type:
     - &org-type_portfolio
       value: Portfolio
@@ -61,12 +68,13 @@ catalogue:
 keep_anchors:
 - *access_group_open
 - *access_group_managed_access
-- *doc_status_current
-- *doc_status_draft
-- *doc_status_obsoleted
+- *doc_status_adopted
+- *doc_status_pending
+- *doc_status_superseded
 - *doc_status_backlog
 - *doc_status_rejected
 - *doc_status_undefined
+- *doc_status_withdrawn
 - *proj_status_active
 - *proj_status_done
 - *proj_status_scheduled
@@ -336,7 +344,7 @@ orgs:
   disolved:
   url: https://www.w3.org/
 projects:
-- &DII_standards_project
+- &project_dii-standards
   name: Standards | DII Programme Integration
   status: *proj_status_active
   scheduled_date:
@@ -403,7 +411,7 @@ standards:
   ref_full: bps00001-6-2017-06
   alt_refs:
   permalink: bps00001-6-2017-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org: *org_NPTC
   author_org: *org_NPTS
@@ -414,7 +422,7 @@ standards:
   classification:
   - ontology: bps
     classification: business.catalogue.standards
-  status: *doc_status_obsoleted
+  status: *doc_status_superseded
   subject_group: NPTS Framework
   published_date:
   last_updated:
@@ -461,7 +469,7 @@ standards:
   ref_full: bps00001-5-2017-06
   alt_refs:
   permalink: bps00001-5-2017-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org: *org_NPTC
   author_org: *org_NPTS
@@ -474,7 +482,7 @@ standards:
   classification:
   - ontology: bps
     classification: business.catalogue.terms
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group: NPTS Framework
   published_date:
   last_updated:
@@ -523,7 +531,7 @@ standards:
   - org: *org_CPS
     ref: 50403021
   permalink: bps18651-1-2012-09.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_managed_access
   sponsor_org:
   author_org: *org_CPS
@@ -537,14 +545,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Managed Access/Crown Prosecution Service/bps18651-1-2012-09-two-way-interface-police-cps-pcd-xml-interface-business-process-document.pdf
+    lib_url: file://{{collate_directory}}Managed Access/Crown Prosecution Service/bps18651-1-2012-09-two-way-interface-police-cps-pcd-xml-interface-business-process-document.pdf
     http_response:
     mime_type: .pdf
     publish_url: /request_access.html?standard=bps18651-1-2012-09
   classification:
   - ontology: bps
     classification: business.governance.process
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group: TWIF
   published_date:
   last_updated:
@@ -590,7 +598,7 @@ standards:
   ref_full: bps21094-0000-00
   alt_refs:
   permalink: bps21094-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_Cab-Off
@@ -608,11 +616,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/guidance/open-document-format-odf-guidance-for-uk-government
-    sha1: 807237cc6095876d9755cec34c75211dc609bb92
+    sha1: 6037af2813f4d4b044cf51e1988ff20b163de346
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Cabinet Office/bps21094-0000-00-open-document-format-odf-guidance.html
+    lib_url: file://{{collate_directory}}Open Access/Cabinet Office/bps21094-0000-00-open-document-format-odf-guidance.html
     http_response:
     mime_type: .html
     publish_url: /library/bps21094/bps21094-0000-00.html
@@ -666,7 +674,7 @@ standards:
   ref_full: bps07894-0000-00
   alt_refs:
   permalink: bps07894-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -678,11 +686,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/61498.html
-    sha1: c08bd1e9bc4a162865d61fb786d48a79c05e5b15
+    sha1: 597e549572084f2326c9a0e4a431fb2b0a6249ce
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps07894-0000-00-code-of-practice-for-protection-of-personally-identifiable-information-pii-in-public-clouds-acting-as-pii-processors.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps07894-0000-00-code-of-practice-for-protection-of-personally-identifiable-information-pii-in-public-clouds-acting-as-pii-processors.html
     http_response:
     mime_type: .html
     publish_url: /library/bps07894/bps07894-0000-00.html
@@ -736,7 +744,7 @@ standards:
   ref_full: bps73624-0000-00
   alt_refs:
   permalink: bps73624-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NPIA
@@ -793,7 +801,7 @@ standards:
   ref_full: bps07834-0000-00
   alt_refs:
   permalink: bps07834-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ICO
@@ -814,7 +822,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Information Commissioner's Office/bps07834-0000-00-ico-gdpr-guidance-contracts-and-liabilities-between-controllers-and-processors.pdf
+    lib_url: file://{{collate_directory}}Open Access/Information Commissioner's Office/bps07834-0000-00-ico-gdpr-guidance-contracts-and-liabilities-between-controllers-and-processors.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps07834/bps07834-0000-00.pdf
@@ -867,7 +875,7 @@ standards:
   ref_full: bps10267-0000-00
   alt_refs:
   permalink: bps10267-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HMG
@@ -880,7 +888,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/HM Government/bps10267-0000-00-police-and-criminal-evidence-act-pace-1984.pdf
+    lib_url: file://{{collate_directory}}Open Access/HM Government/bps10267-0000-00-police-and-criminal-evidence-act-pace-1984.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps10267/bps10267-0000-00.pdf
@@ -933,7 +941,7 @@ standards:
   ref_full: bps69853-0000-00
   alt_refs:
   permalink: bps69853-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HMG
@@ -950,11 +958,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.legislation.gov.uk/ukpga/2000/23/contents
-    sha1: 1b1b0029fe7180e2e60904c94deef1daf9ade721
+    sha1: 254ab1812bc8e7ab75a286fa3e234541a22956c2
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/HM Government/bps69853-0000-00-regulation-of-investigatory-powers-act-2000.html
+    lib_url: file://{{collate_directory}}Open Access/HM Government/bps69853-0000-00-regulation-of-investigatory-powers-act-2000.html
     http_response:
     mime_type: .html
     publish_url: /library/bps69853/bps69853-0000-00.html
@@ -1007,7 +1015,7 @@ standards:
   ref_full: bps36284-0000-00
   alt_refs:
   permalink: bps36284-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HMG
@@ -1018,11 +1026,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.legislation.gov.uk/ukpga/1998/29/introduction
-    sha1: 1d4c6f03aa42b477b275c95d13717f9c85512d7c
+    sha1: 98681449cd6925b23f05b941646af900999e509e
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/HM Government/bps36284-0000-00-data-protection-act-1998.html
+    lib_url: file://{{collate_directory}}Open Access/HM Government/bps36284-0000-00-data-protection-act-1998.html
     http_response:
     mime_type: .html
     publish_url: /library/bps36284/bps36284-0000-00.html
@@ -1075,7 +1083,7 @@ standards:
   ref_full: bps28187-2017-06
   alt_refs:
   permalink: bps28187-2017-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org: *org_NPTC
   author_org: *org_NPTC
@@ -1158,7 +1166,7 @@ standards:
   ref_full: bps34576-0000-00
   alt_refs:
   permalink: bps34576-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HMG
@@ -1177,11 +1185,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/guidance/criminal-justice-system-data-standards-forum-guidance
-    sha1: 08b6753d64362bcfb056822683816a475b7bab51
+    sha1: d7cbb7815bdaf90c5ee218cd6feac856239aa6da
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/HM Government/bps34576-0000-00-criminal-justice-system-data-standards-forum-guidance.html
+    lib_url: file://{{collate_directory}}Open Access/HM Government/bps34576-0000-00-criminal-justice-system-data-standards-forum-guidance.html
     http_response:
     mime_type: .html
     publish_url: /library/bps34576/bps34576-0000-00.html
@@ -1234,7 +1242,7 @@ standards:
   ref_full: bps20392-0000-00
   alt_refs:
   permalink: bps20392-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1244,11 +1252,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/detention-and-custody-2/?s=
-    sha1: 41d628cc322140dac9e446504c58d3fb3ffc00a6
+    sha1: a3255548e2c39939ec6fc7be21d6b1d66744e055
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps20392-0000-00-detention-and-custody-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps20392-0000-00-detention-and-custody-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps20392/bps20392-0000-00.html
@@ -1301,7 +1309,7 @@ standards:
   ref_full: bps23488-0000-00
   alt_refs:
   permalink: bps23488-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1311,11 +1319,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/prosecution-and-case-management/?s=
-    sha1: e9f2f02335a7b468efb12ca520f9661ae0ae5808
+    sha1: 56aa5bbf4ace5f0e922d5105d7a80f70144cb1f1
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps23488-0000-00-prosecution-and-case-management-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps23488-0000-00-prosecution-and-case-management-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps23488/bps23488-0000-00.html
@@ -1368,7 +1376,7 @@ standards:
   ref_full: bps22807-0000-00
   alt_refs:
   permalink: bps22807-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1377,11 +1385,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/civil-emergencies/?s=
-    sha1: 8069862dfa3254ba28f52202a42b13f279164b08
+    sha1: 786ccbfecf97eb6ee350f38df1d0fb6bbdbacaf8
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps22807-0000-00-civil-emergencies-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps22807-0000-00-civil-emergencies-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps22807/bps22807-0000-00.html
@@ -1434,7 +1442,7 @@ standards:
   ref_full: bps20905-0000-00
   alt_refs:
   permalink: bps20905-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1443,11 +1451,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/operations/?s=
-    sha1: 01f897555fba335e615ad2c46b88e6d12ba76582
+    sha1: b75e3681f1172fa189dc4d5c81414609727e9d84
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps20905-0000-00-operations-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps20905-0000-00-operations-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps20905/bps20905-0000-00.html
@@ -1500,7 +1508,7 @@ standards:
   ref_full: bps24531-0000-00
   alt_refs:
   permalink: bps24531-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1510,11 +1518,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/digital-investigation-and-intelligence/?s=
-    sha1: ec2d38c86c251c1c0f230c45b6162040db853010
+    sha1: 8e9aefb507357c05e011b189448903e5cf5a31f1
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps24531-0000-00-digital-investigation-and-intelligence-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps24531-0000-00-digital-investigation-and-intelligence-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps24531/bps24531-0000-00.html
@@ -1567,7 +1575,7 @@ standards:
   ref_full: bps16835-0000-00
   alt_refs:
   permalink: bps16835-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1577,11 +1585,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/stop-and-search/
-    sha1: f2df4c8b47ec640722d60ebd72fd7d98e2ce6e3f
+    sha1: dc5767230d59d1844ac01bc478ebbf97b230e6da
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps16835-0000-00-stop-and-search-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps16835-0000-00-stop-and-search-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps16835/bps16835-0000-00.html
@@ -1634,7 +1642,7 @@ standards:
   ref_full: bps12425-0000-00
   alt_refs:
   permalink: bps12425-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1643,11 +1651,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/professional-standards/?s=
-    sha1: 7de017bafdc0b2fa25e352fe131eae1b66d7d070
+    sha1: becc7ff8fc452f226afb39c94e8b9f0b2c22a516
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps12425-0000-00-professional-standards-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps12425-0000-00-professional-standards-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps12425/bps12425-0000-00.html
@@ -1700,7 +1708,7 @@ standards:
   ref_full: bps28947-0000-00
   alt_refs:
   permalink: bps28947-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1709,11 +1717,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/covert-policing/?s=
-    sha1: 2584c2642b5c50f879898954370c881ef5cff269
+    sha1: adc13fd30c1e546589835f71a7a914bd35580337
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps28947-0000-00-covert-policing-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps28947-0000-00-covert-policing-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps28947/bps28947-0000-00.html
@@ -1766,7 +1774,7 @@ standards:
   ref_full: bps20023-0000-00
   alt_refs:
   permalink: bps20023-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1776,11 +1784,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/engagement-and-communication/?s=
-    sha1: 12dd865296ad3ffcec60feb53d37352fceeafeda
+    sha1: 4901ef131dcfe2ae80d51c609ad7e3a596cea9c1
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps20023-0000-00-engagement-and-communication-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps20023-0000-00-engagement-and-communication-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps20023/bps20023-0000-00.html
@@ -1833,7 +1841,7 @@ standards:
   ref_full: bps20666-0000-00
   alt_refs:
   permalink: bps20666-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1842,11 +1850,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/public-order/?s=
-    sha1: b384b31988f784e9148b643fa65426e340f503b4
+    sha1: e271b9f7ecb07db3db2e84bf3f9f33864b092130
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps20666-0000-00-public-order-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps20666-0000-00-public-order-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps20666/bps20666-0000-00.html
@@ -1899,7 +1907,7 @@ standards:
   ref_full: bps21119-0000-00
   alt_refs:
   permalink: bps21119-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1908,11 +1916,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/armed-policing/?s=
-    sha1: a17a73484c6c2406752a718942f3c4d5038c6ba7
+    sha1: f67f0a19da16aad6f015f3ff7b442fb0576d06a7
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps21119-0000-00-armed-policing-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps21119-0000-00-armed-policing-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps21119/bps21119-0000-00.html
@@ -1965,7 +1973,7 @@ standards:
   ref_full: bps26609-0000-00
   alt_refs:
   permalink: bps26609-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -1974,11 +1982,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/critical-incident-management/?s=
-    sha1: 4ea09877661f9a9259125dc7470de698040d64e4
+    sha1: b3af1f350b6d134c1ba9a71c22f08fd2c4bb0f60
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps26609-0000-00-critical-incident-management-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps26609-0000-00-critical-incident-management-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps26609/bps26609-0000-00.html
@@ -2031,7 +2039,7 @@ standards:
   ref_full: bps16260-0000-00
   alt_refs:
   permalink: bps16260-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -2040,11 +2048,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/road-policing-2/?s=
-    sha1: eeda1e1a4cda2bd8563475f684b622a2ed7087b0
+    sha1: 58532afb41872058b048adb76ca347238d8ca7f5
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps16260-0000-00-road-policing-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps16260-0000-00-road-policing-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps16260/bps16260-0000-00.html
@@ -2097,7 +2105,7 @@ standards:
   ref_full: bps21385-0000-00
   alt_refs:
   permalink: bps21385-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -2106,11 +2114,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/information-management/?s=
-    sha1: 8a1a30d0c5d210399c529e3bd36270f739f53641
+    sha1: 0d83fe54bae541237156ab4f215c59a34214e3ee
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps21385-0000-00-information-management-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps21385-0000-00-information-management-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps21385/bps21385-0000-00.html
@@ -2163,7 +2171,7 @@ standards:
   ref_full: bps26325-0000-00
   alt_refs:
   permalink: bps26325-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -2172,11 +2180,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/policing-elections/?s=
-    sha1: a7862a6b0acc5cc3943efa48bf10c8c98b50fa40
+    sha1: 68944026766d1f991363dedfead3f63558a76257
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps26325-0000-00-policing-elections-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps26325-0000-00-policing-elections-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps26325/bps26325-0000-00.html
@@ -2229,7 +2237,7 @@ standards:
   ref_full: bps16275-0000-00
   alt_refs:
   permalink: bps16275-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -2238,11 +2246,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/mobilisation/?s=
-    sha1: 831e71b3c7ce7350ed6db77d6bbb3e9af01ed4ae
+    sha1: 0d1d04b4624d6969fecbb2946d1793e91f1094cb
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps16275-0000-00-mobilisation-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps16275-0000-00-mobilisation-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps16275/bps16275-0000-00.html
@@ -2295,7 +2303,7 @@ standards:
   ref_full: bps17879-0000-00
   alt_refs:
   permalink: bps17879-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -2304,11 +2312,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/intelligence-management/?s=
-    sha1: 2fc10e12a3019696a827e44521c6a7a21623f659
+    sha1: 1f4a3cb7c2dcf54c767b19e7b2183ffcdb66b21f
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps17879-0000-00-intelligence-management-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps17879-0000-00-intelligence-management-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps17879/bps17879-0000-00.html
@@ -2361,7 +2369,7 @@ standards:
   ref_full: bps17672-0000-00
   alt_refs:
   permalink: bps17672-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -2372,11 +2380,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/mental-health/?s=
-    sha1: 8a532f8a7974e5a8404a514092ea83304fd95abf
+    sha1: db0df64d2e80f38e87f13f17e31edf84ff553fc0
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps17672-0000-00-mental-health-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps17672-0000-00-mental-health-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps17672/bps17672-0000-00.html
@@ -2429,7 +2437,7 @@ standards:
   ref_full: bps16391-0000-00
   alt_refs:
   permalink: bps16391-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -2439,11 +2447,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/major-investigation-and-public-protection/?s=
-    sha1: a86808a4ca80b79deef3129a25f94c8f86b6ae91
+    sha1: c2689a0cd941f21ded858ef9ffc2227d15f82f61
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps16391-0000-00-major-investigation-and-public-protection-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps16391-0000-00-major-investigation-and-public-protection-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps16391/bps16391-0000-00.html
@@ -2496,7 +2504,7 @@ standards:
   ref_full: bps14066-0000-00
   alt_refs:
   permalink: bps14066-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -2505,11 +2513,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/risk-2/?s=
-    sha1: 0f74794f57d9ed751ed0b77873c49b48326c9bb3
+    sha1: f5f6fe7814d90383f7f3a0cc1f457d5470d19c94
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps14066-0000-00-risk-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps14066-0000-00-risk-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps14066/bps14066-0000-00.html
@@ -2562,7 +2570,7 @@ standards:
   ref_full: bps24631-0000-00
   alt_refs:
   permalink: bps24631-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -2571,11 +2579,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/national-decision-model/?s=
-    sha1: 612b3782153df3fa0c753fa78f72fe4119796e11
+    sha1: 4522edd53a3a9c33f65da2386786c9b7d43ffd3e
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps24631-0000-00-national-decision-model-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps24631-0000-00-national-decision-model-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps24631/bps24631-0000-00.html
@@ -2628,7 +2636,7 @@ standards:
   ref_full: bps31744-0000-00
   alt_refs:
   permalink: bps31744-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -2637,11 +2645,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/investigations/?s=
-    sha1: ff0f9cdede9126a5cec531367430cb7fc3263211
+    sha1: 3b931b78635417696cff5325fa1cb9a107cf6fdd
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/College of Policing/bps31744-0000-00-investigation-authorised-professional-practice.html
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps31744-0000-00-investigation-authorised-professional-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps31744/bps31744-0000-00.html
@@ -2694,7 +2702,7 @@ standards:
   ref_full: bps00001-1-2017-06
   alt_refs:
   permalink: bps00001-1-2017-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org: *org_NPTC
   author_org: *org_NPTS
@@ -2705,7 +2713,7 @@ standards:
   classification:
   - ontology: bps
     classification: business.guidance.standards
-  status: *doc_status_undefined
+  status: *doc_status_superseded
   subject_group: NPTS Framework
   published_date:
   last_updated:
@@ -2754,7 +2762,7 @@ standards:
   - org: *org_HOB
     ref: S002
   permalink: bps71548-2017-09.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_managed_access
   sponsor_org: *org_HOB
   author_org: *org_HOB
@@ -2770,7 +2778,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Managed Access/Home Office Biometrics/bps71548-2017-09-best-practice-for-biometric-capture.pdf
+    lib_url: file://{{collate_directory}}Managed Access/Home Office Biometrics/bps71548-2017-09-best-practice-for-biometric-capture.pdf
     http_response:
     mime_type: .pdf
     publish_url: /request_access.html?standard=bps71548-2017-09
@@ -2823,7 +2831,7 @@ standards:
   ref_full: bps18630-1-0000-00
   alt_refs:
   permalink: bps18630-1-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NPIA
@@ -2842,14 +2850,15 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Policing Improvement Agency/bps18630-1-0000-00-information-systems-strategy-for-the-police-service-iss4ps-volume-one.pdf
+    lib_url: file://{{collate_directory}}Open Access/National Policing Improvement
+      Agency/bps18630-1-0000-00-information-systems-strategy-for-the-police-service-iss4ps-volume-one.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps18630/bps18630-1-0000-00.pdf
   classification:
   - ontology: bps
     classification: business.guidance.strategy
-  status: *doc_status_undefined
+  status: *doc_status_superseded
   subject_group: Strategy
   published_date: 2016-01-01 00:00:00
   last_updated:
@@ -2895,7 +2904,7 @@ standards:
   ref_full: bps18630-2-0000-00
   alt_refs:
   permalink: bps18630-2-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NPIA
@@ -2914,14 +2923,15 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Policing Improvement Agency/bps18630-2-0000-00-information-systems-strategy-for-the-police-service-iss4ps-volume-two.pdf
+    lib_url: file://{{collate_directory}}Open Access/National Policing Improvement
+      Agency/bps18630-2-0000-00-information-systems-strategy-for-the-police-service-iss4ps-volume-two.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps18630/bps18630-2-0000-00.pdf
   classification:
   - ontology: bps
     classification: business.guidance.strategy
-  status: *doc_status_undefined
+  status: *doc_status_withdrawn
   subject_group: Strategy
   published_date: 2006-01-01 00:00:00
   last_updated:
@@ -2967,7 +2977,7 @@ standards:
   ref_full: bps79618-0000-00
   alt_refs:
   permalink: bps79618-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ACPO
@@ -3034,7 +3044,7 @@ standards:
   ref_full: bps00001-4-2017-06
   alt_refs:
   permalink: bps00001-4-2017-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NPTS
@@ -3045,7 +3055,7 @@ standards:
   classification:
   - ontology: bps
     classification: business.guidance.style
-  status: *doc_status_undefined
+  status: *doc_status_superseded
   subject_group: NPTS Framework
   published_date:
   last_updated:
@@ -3092,7 +3102,7 @@ standards:
   ref_full: bps36890-0000-00
   alt_refs:
   permalink: bps36890-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_GDS
@@ -3105,11 +3115,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#the-purpose-of-the-technology-code-of-practice
-    sha1: 35b7e7e5b62b00932d778a4877e7e84f036f126e
+    sha1: b917c70da191da306f929d02523e0f93777aec08
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Government Digital Service/bps36890-0000-00-technology-code-of-practice.html
+    lib_url: file://{{collate_directory}}Open Access/Government Digital Service/bps36890-0000-00-technology-code-of-practice.html
     http_response:
     mime_type: .html
     publish_url: /library/bps36890/bps36890-0000-00.html
@@ -3162,7 +3172,7 @@ standards:
   ref_full: bps25439-1-0000-00
   alt_refs:
   permalink: bps25439-1-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NPCC
@@ -3219,7 +3229,7 @@ standards:
   ref_full: bps25439-2-0000-00
   alt_refs:
   permalink: bps25439-2-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NPCC
@@ -3276,7 +3286,7 @@ standards:
   ref_full: bps25439-3-0000-00
   alt_refs:
   permalink: bps25439-3-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NPCC
@@ -3334,7 +3344,7 @@ standards:
   ref_full: bps97541-0000-00
   alt_refs:
   permalink: bps97541-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCPE
@@ -3350,7 +3360,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Crime Prevention/bps97541-0000-00-statutory-code-of-practice-on-the-management-of-police-information-mopi-code-of-practice.pdf
+    lib_url: file://{{collate_directory}}Open Access/National Crime Prevention/bps97541-0000-00-statutory-code-of-practice-on-the-management-of-police-information-mopi-code-of-practice.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps97541/bps97541-0000-00.pdf
@@ -3403,7 +3413,7 @@ standards:
   ref_full: bps81524-0000-00
   alt_refs:
   permalink: bps81524-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HMG
@@ -3417,7 +3427,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/HM Government/bps81524-0000-00-national-security-strategy-and-strategic-defence-and-security-review-2015.pdf
+    lib_url: file://{{collate_directory}}Open Access/HM Government/bps81524-0000-00-national-security-strategy-and-strategic-defence-and-security-review-2015.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps81524/bps81524-0000-00.pdf
@@ -3470,7 +3480,7 @@ standards:
   ref_full: bps00001-2-2017-06
   alt_refs:
   permalink: bps00001-2-2017-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org: *org_NPTC
   author_org: *org_NPTS
@@ -3481,7 +3491,7 @@ standards:
   classification:
   - ontology: bps
     classification: business.process.governance
-  status: *doc_status_undefined
+  status: *doc_status_superseded
   subject_group: NPTS Framework
   published_date:
   last_updated:
@@ -3528,7 +3538,7 @@ standards:
   ref_full: bps61027-0000-00
   alt_refs:
   permalink: bps61027-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HMG
@@ -3592,7 +3602,7 @@ standards:
   ref_full: bps00001-3-2017-06
   alt_refs:
   permalink: bps00001-3-2017-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org: *org_NPTC
   author_org: *org_NPTS
@@ -3603,7 +3613,7 @@ standards:
   classification:
   - ontology: bps
     classification: business.process.standards
-  status: *doc_status_undefined
+  status: *doc_status_superseded
   subject_group: NPTS Framework
   published_date:
   last_updated:
@@ -3650,7 +3660,7 @@ standards:
   ref_full: bps00001-7-2017-06
   alt_refs:
   permalink: bps00001-7-2017-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NPTS
@@ -3661,7 +3671,7 @@ standards:
   classification:
   - ontology: bps
     classification: business.templates.standards
-  status: *doc_status_undefined
+  status: *doc_status_superseded
   subject_group: NPTS Framework
   published_date:
   last_updated:
@@ -3708,7 +3718,7 @@ standards:
   ref_full: bps03546-0000-00
   alt_refs:
   permalink: bps03546-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -3720,11 +3730,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.cyberessentials.ncsc.gov.uk/getting-certified/
-    sha1: c0c2d25822dbc043c7cd1f7f9aa418ca18a019cc
+    sha1: f97d4c10eed382658b29435d49fc484cf8fecedf
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Cyber Security Centre/bps03546-0000-00-cyber-essentials-plus.html
+    lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps03546-0000-00-cyber-essentials-plus.html
     http_response:
     mime_type: .html
     publish_url: /library/bps03546/bps03546-0000-00.html
@@ -3777,7 +3787,7 @@ standards:
   ref_full: bps56792-0000-00
   alt_refs:
   permalink: bps56792-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -3793,11 +3803,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.cyberessentials.ncsc.gov.uk/advice/
-    sha1: f1a674f2c1cb9042d66e4b3a92fc6f91df38a8ea
+    sha1: 689356e0b80a992e5e8876a65ee731f4e9fbddf6
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Cyber Security Centre/bps56792-0000-00-cyber-essentials.html
+    lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps56792-0000-00-cyber-essentials.html
     http_response:
     mime_type: .html
     publish_url: /library/bps56792/bps56792-0000-00.html
@@ -3850,7 +3860,7 @@ standards:
   ref_full: bps59481-0000-00
   alt_refs:
   permalink: bps59481-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -3860,11 +3870,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/10-steps-cyber-security
-    sha1: 8c69a981b1a5bcd371f04ec975aec073bd29da5a
+    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Cyber Security Centre/bps59481-0000-00-10-steps-to-cyber-security.html
+    lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps59481-0000-00-10-steps-to-cyber-security.html
     http_response:
     mime_type: .html
     publish_url: /library/bps59481/bps59481-0000-00.html
@@ -3917,7 +3927,7 @@ standards:
   ref_full: bps60128-0000-00
   alt_refs:
   permalink: bps60128-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_GDS
@@ -3931,11 +3941,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/guidance/set-up-government-email-services-securely#configure-cloud-or-internet-based-email-services
-    sha1: a64f59a127a6da63df5e4f4f9e13d3b80c27a1f0
+    sha1: 4cd411060c9c801f8eb4a7700f7821ec441aac5a
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Government Digital Service/bps60128-0000-00-guidance-set-up-government-email-services-securely.html
+    lib_url: file://{{collate_directory}}Open Access/Government Digital Service/bps60128-0000-00-guidance-set-up-government-email-services-securely.html
     http_response:
     mime_type: .html
     publish_url: /library/bps60128/bps60128-0000-00.html
@@ -3988,7 +3998,7 @@ standards:
   ref_full: bps83625-0000-00
   alt_refs:
   permalink: bps83625-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_GDS
@@ -3998,11 +4008,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/guidance/securing-government-email
-    sha1: 9d1b2030f337625fe440982a9bc53c5a3d70deee
+    sha1: c8d89d6bf80a0cc39c03b6154e38af1dfa8ebc7c
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Government Digital Service/bps83625-0000-00-guidance-securing-government-email.html
+    lib_url: file://{{collate_directory}}Open Access/Government Digital Service/bps83625-0000-00-guidance-securing-government-email.html
     http_response:
     mime_type: .html
     publish_url: /library/bps83625/bps83625-0000-00.html
@@ -4055,7 +4065,7 @@ standards:
   ref_full: bps95410-0000-00
   alt_refs:
   permalink: bps95410-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_GDS
@@ -4114,7 +4124,7 @@ standards:
   ref_full: bps67240-0000-00
   alt_refs:
   permalink: bps67240-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_GDS
@@ -4124,11 +4134,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/email-security-standards/domain-based-message-authentication-reporting-and-conformance-dmarc
-    sha1: ed79661cba6b21f29cb520dc61204983ee1a9f40
+    sha1: 1f9099458a9f3bc0adff432097b830799f9782b9
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Government Digital Service/bps67240-0000-00-guidance-domain-based-message-authentication-reporting-and-conformance-dmarc.html
+    lib_url: file://{{collate_directory}}Open Access/Government Digital Service/bps67240-0000-00-guidance-domain-based-message-authentication-reporting-and-conformance-dmarc.html
     http_response:
     mime_type: .html
     publish_url: /library/bps67240/bps67240-0000-00.html
@@ -4181,7 +4191,7 @@ standards:
   ref_full: bps39176-0000-00
   alt_refs:
   permalink: bps39176-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_GDS
@@ -4191,11 +4201,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf
-    sha1: 42dc5003328c7cb29b9f05bc8781b70647dba1ae
+    sha1: b51ff4a7d1ca371f657738ffa5fc1a7f5a61f7bc
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Government Digital Service/bps39176-0000-00-guidance-sender-policy-framework-spf.html
+    lib_url: file://{{collate_directory}}Open Access/Government Digital Service/bps39176-0000-00-guidance-sender-policy-framework-spf.html
     http_response:
     mime_type: .html
     publish_url: /library/bps39176/bps39176-0000-00.html
@@ -4248,7 +4258,7 @@ standards:
   ref_full: bps93471-0000-00
   alt_refs:
   permalink: bps93471-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_GDS
@@ -4258,11 +4268,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/email-security-standards/domainkeys-identified-mail-dkim
-    sha1: 02d0ca4600c350700a608f614f11e5c82c7b06d5
+    sha1: d9123a7e54079cdbbe6ad33a563dbafc586fc761
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Government Digital Service/bps93471-0000-00-guidance-domainkeys-identified-mail-dkim.html
+    lib_url: file://{{collate_directory}}Open Access/Government Digital Service/bps93471-0000-00-guidance-domainkeys-identified-mail-dkim.html
     http_response:
     mime_type: .html
     publish_url: /library/bps93471/bps93471-0000-00.html
@@ -4315,7 +4325,7 @@ standards:
   ref_full: bps04217-0000-00
   alt_refs:
   permalink: bps04217-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CESG
@@ -4329,11 +4339,11 @@ standards:
   usage:
   links:
   - collate_url: http://protectivemonitoring.com/category/protective-monitoring-controls/
-    sha1: 4d11fc98e8853ab54c66c758f25643397764acfa
+    sha1: c6cd5821c024899b1978d0f9c42e1e5eda7be4af
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/CESG/bps04217-0000-00-protective-monitoring-gpg13.html
+    lib_url: file://{{collate_directory}}Open Access/CESG/bps04217-0000-00-protective-monitoring-gpg13.html
     http_response:
     mime_type: .html
     publish_url: /library/bps04217/bps04217-0000-00.html
@@ -4386,7 +4396,7 @@ standards:
   ref_full: bps34152-0000-00
   alt_refs:
   permalink: bps34152-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_Cab-Off
@@ -4398,11 +4408,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/government-network-policy-changes/government-network-policy-changes
-    sha1: ae50160061ad543316bd1d84965b9a1ef96cc2d1
+    sha1: b5a579d3812362af3d692ed113efa6df4cab796f
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Cabinet Office/bps34152-0000-00-guidance-government-network-policy-changes.html
+    lib_url: file://{{collate_directory}}Open Access/Cabinet Office/bps34152-0000-00-guidance-government-network-policy-changes.html
     http_response:
     mime_type: .html
     publish_url: /library/bps34152/bps34152-0000-00.html
@@ -4455,7 +4465,7 @@ standards:
   ref_full: bps68497-0000-00
   alt_refs:
   permalink: bps68497-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ACPO
@@ -4470,7 +4480,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Association of Chief Police Officers/bps68497-0000-00-national-information-risk-appetite-statement.pdf
+    lib_url: file://{{collate_directory}}Open Access/Association of Chief Police Officers/bps68497-0000-00-national-information-risk-appetite-statement.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps68497/bps68497-0000-00.pdf
@@ -4523,7 +4533,7 @@ standards:
   ref_full: bps01657-0000-00
   alt_refs:
   permalink: bps01657-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -4537,11 +4547,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/54534.html
-    sha1: 057da1b385d33d50a1f7726c77c3537fd3112c1d
+    sha1: 066c283e3f628289c81473f759eb77f48d82aa04
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps01657-0000-00-information-security-management-systems-requirements.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps01657-0000-00-information-security-management-systems-requirements.html
     http_response:
     mime_type: .html
     publish_url: /library/bps01657/bps01657-0000-00.html
@@ -4594,7 +4604,7 @@ standards:
   ref_full: bps04936-0000-00
   alt_refs:
   permalink: bps04936-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -4606,11 +4616,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/54533.html
-    sha1: 22e3dec9dc8ef0b639b50abb7cc520d0fb8b3e85
+    sha1: 61c3f115c0536ddac2a88a1da5de46444c0cbcd0
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps04936-0000-00-security-techniques-code-of-practice-for-information-security-controls.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps04936-0000-00-security-techniques-code-of-practice-for-information-security-controls.html
     http_response:
     mime_type: .html
     publish_url: /library/bps04936/bps04936-0000-00.html
@@ -4663,7 +4673,7 @@ standards:
   ref_full: bps64013-0000-00
   alt_refs:
   permalink: bps64013-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -4681,11 +4691,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/64138.html
-    sha1: 937af6fc84b3282311486de6c707719702a86186
+    sha1: 5e187e5c3a3d602b0424ef25bfa265e169d1c529
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps64013-0000-00-guidance-on-the-integrated-implementation-of-iso-iec-27001-and-iso-iec-20000-1.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps64013-0000-00-guidance-on-the-integrated-implementation-of-iso-iec-27001-and-iso-iec-20000-1.html
     http_response:
     mime_type: .html
     publish_url: /library/bps64013/bps64013-0000-00.html
@@ -4739,7 +4749,7 @@ standards:
   ref_full: bps90268-0000-00
   alt_refs:
   permalink: bps90268-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -4758,11 +4768,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/44374.html
-    sha1: 1e334c0621b10bd2e8746af7dd45a4b6f76a2690
+    sha1: a21d69262d8931dd9a237b9b857735e5bd29f647
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps90268-0000-00-guidelines-for-information-and-communication-technology-readiness-for-business-continuity.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps90268-0000-00-guidelines-for-information-and-communication-technology-readiness-for-business-continuity.html
     http_response:
     mime_type: .html
     publish_url: /library/bps90268/bps90268-0000-00.html
@@ -4815,7 +4825,7 @@ standards:
   ref_full: bps27486-0000-00
   alt_refs:
   permalink: bps27486-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -4826,11 +4836,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/44375.html
-    sha1: 9e1a22632df200d4af05cecd7364947a7176bb93
+    sha1: 4eb6428ef4604bff75e728688dad68700e133fc0
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps27486-0000-00-security-techniques-guidelines-for-cybersecurity.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps27486-0000-00-security-techniques-guidelines-for-cybersecurity.html
     http_response:
     mime_type: .html
     publish_url: /library/bps27486/bps27486-0000-00.html
@@ -4883,7 +4893,7 @@ standards:
   ref_full: bps79102-0000-00
   alt_refs:
   permalink: bps79102-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -4897,11 +4907,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/63461.html
-    sha1: 67deab98f65b9e584d5a32a31573d6217d7c4780
+    sha1: b4da34c0a4d5b27138a002a33d7fd429eec86601
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps79102-0000-00-network-security-part-1-overview-and-concepts.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps79102-0000-00-network-security-part-1-overview-and-concepts.html
     http_response:
     mime_type: .html
     publish_url: /library/bps79102/bps79102-0000-00.html
@@ -4954,7 +4964,7 @@ standards:
   ref_full: bps06275-0000-00
   alt_refs:
   permalink: bps06275-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -4964,11 +4974,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/55582.html
-    sha1: ea160fb6c87e8632905fcea12dccb6a8690ee410
+    sha1: 1b726b6714cdee63d088896393b673c3e4ff3f96
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps06275-0000-00-application-security-part-2-organization-normative-framework.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps06275-0000-00-application-security-part-2-organization-normative-framework.html
     http_response:
     mime_type: .html
     publish_url: /library/bps06275/bps06275-0000-00.html
@@ -5021,7 +5031,7 @@ standards:
   ref_full: bps39576-0000-00
   alt_refs:
   permalink: bps39576-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HMG
@@ -5039,7 +5049,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/HM Government/bps39576-0000-00-security-techniques-guidance-for-code-of-practice-for-security-controls.pdf
+    lib_url: file://{{collate_directory}}Open Access/HM Government/bps39576-0000-00-security-techniques-guidance-for-code-of-practice-for-security-controls.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps39576/bps39576-0000-00.pdf
@@ -5085,32 +5095,32 @@ standards:
     - org:
       contact_email:
     projects:
-- title: Securing Technology at OFFICIAL
+- title: Securing Technology at *sec_classification_official
   ref_base: bps91524
   ref_part:
   ref_pub_date: 2015-11
   ref_full: bps91524-2015-11
   alt_refs:
   permalink: bps91524-2015-11.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CESG
   owner_org: *org_CESG
-  abstract: "The vast majority of UK government business is conducted at the OFFICIAL\
+  abstract: "The vast majority of UK government business is conducted at the *sec_classification_official\
     \ classification. This includes routine information supporting business operations\
     \ and services, much of which would have damaging consequences if lost or stolen.\n\
-    Security at OFFICIAL is achieved through following good commercial practices,\
-    \ using well configured commodity technologies and by people taking personal responsibility\
-    \ and using their judgement more actively."
+    Security at *sec_classification_official is achieved through following good commercial\
+    \ practices, using well configured commodity technologies and by people taking\
+    \ personal responsibility and using their judgement more actively."
   usage:
   links:
-  - collate_url: https://www.gov.uk/government/collections/securing-technology-at-official
-    sha1: a45e52c4cb0be2aabff8e81fc847b9834efb0988
+  - collate_url: https://www.gov.uk/government/collections/securing-technology-at-*sec_classification_official
+    sha1: 2986b7b9f5c16ad4c90fac8e0b280e244751ddcc
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/CESG/bps91524-2015-11-securing-technology-at-official.html
+    lib_url: file://{{collate_directory}}Open Access/CESG/bps91524-2015-11-securing-technology-at-*sec_classification_official.html
     http_response:
     mime_type: .html
     publish_url: /library/bps91524/bps91524-2015-11.html
@@ -5163,7 +5173,7 @@ standards:
   ref_full: bps35780-0000-00
   alt_refs:
   permalink: bps35780-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -5175,11 +5185,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/50038.html
-    sha1: 6d82d295ff790721070b4c532d2b5a48020b2e9c
+    sha1: 32cfd5ed4d0bf7918f02024e3691a8ac51bd9d91
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps35780-0000-00-business-continuity-management-systems-requirements.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps35780-0000-00-business-continuity-management-systems-requirements.html
     http_response:
     mime_type: .html
     publish_url: /library/bps35780/bps35780-0000-00.html
@@ -5232,7 +5242,7 @@ standards:
   ref_full: bps49381-0000-00
   alt_refs:
   permalink: bps49381-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_BSI
@@ -5249,11 +5259,11 @@ standards:
   usage:
   links:
   - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030257143
-    sha1: b561eba90c40164bb94f1c2965524929cf168ce4
+    sha1: 6414e05ecdbab3842943ea278d2f6b30f5596ed1
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/British Standards Institute/bps49381-0000-00-audit-requirements.html
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps49381-0000-00-audit-requirements.html
     http_response:
     mime_type: .html
     publish_url: /library/bps49381/bps49381-0000-00.html
@@ -5306,7 +5316,7 @@ standards:
   ref_full: bps68723-0000-00
   alt_refs:
   permalink: bps68723-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CESG
@@ -5318,14 +5328,14 @@ standards:
   usage:
   links:
   - collate_url: https://www.ncsc.gov.uk/content/files/guidance_files/IS1%20%26%202%20-%20Information%20Risk%20Management%20-%20issue%204.0%20April%202012%20-%20NCSC%20Web.pdf
-    sha1: 15a80800ffe8fb998e5b43cac522fa24210eb137
+    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/CESG/bps68723-0000-00-hmg-ia-standard-numbers-1-and-2-information-risk-management.pdf
+    lib_url: file://{{collate_directory}}Open Access/CESG/bps68723-0000-00-hmg-ia-standard-numbers-1-and-2-information-risk-management.html
     http_response:
-    mime_type: .pdf
-    publish_url: /library/bps68723/bps68723-0000-00.pdf
+    mime_type: .html
+    publish_url: /library/bps68723/bps68723-0000-00.html
   classification:
   - ontology: bps
     classification: security.policy.framework
@@ -5375,7 +5385,7 @@ standards:
   ref_full: bps65902-0000-00
   alt_refs:
   permalink: bps65902-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NIST
@@ -5384,11 +5394,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.nist.gov/cyberframework
-    sha1: fafa647fb75f9ec403f6f64915e68e46d996396e
+    sha1: 60159139d34166b03ee4d2ded5feaaa3a9e2220b
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Institute of Standards
+    lib_url: file://{{collate_directory}}Open Access/National Institute of Standards
       and Technology/bps65902-0000-00-nist-spf.html
     http_response:
     mime_type: .html
@@ -5398,7 +5408,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Institute of Standards
+    lib_url: file://{{collate_directory}}Open Access/National Institute of Standards
       and Technology/bps65902-0000-00-nist-spf.pdf
     http_response:
     mime_type: .pdf
@@ -5452,7 +5462,7 @@ standards:
   ref_full: bps03167-0000-00
   alt_refs:
   permalink: bps03167-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HMG
@@ -5462,7 +5472,7 @@ standards:
     \ effectively.  They need the support and cooperation of the public in doing so.\
     \ The purpose of this Code and associated guidance is  to assist the police to\
     \ carry out that.  The Prime Minister is ultimately responsible for the overall\
-    \ security of HMG. He is supported by the Cabinet Secretary, who chairs the Official\
+    \ security of HMG. He is supported by the Cabinet Secretary, who chairs the *sec_classification_official\
     \ Committee on Security (SO). Across HMG responsibility for the security of organisations\
     \ lies with the respective Ministers, Permanent Secretaries and Management Boards.\n\
     This Framework describes the Cabinet Secretary and SO’s expectations of how HMG\
@@ -5472,11 +5482,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/security-policy-framework/hmg-security-policy-framework
-    sha1: 70984a7270fd272abd8eff2ee6fa4ac6d7123fc5
+    sha1: f88307990cd99ba60afcf9e612384d74725b0091
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/HM Government/bps03167-0000-00-security-policy-framework.html
+    lib_url: file://{{collate_directory}}Open Access/HM Government/bps03167-0000-00-security-policy-framework.html
     http_response:
     mime_type: .html
     publish_url: /library/bps03167/bps03167-0000-00.html
@@ -5537,7 +5547,7 @@ standards:
   ref_full: bps32098-0000-00
   alt_refs:
   permalink: bps32098-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_MoD
@@ -5547,11 +5557,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/industry-security-notices-isns
-    sha1: d168b027832f37498dee683962574a031473f7b9
+    sha1: e5196016fb5c11513d19a63306ef38178543af6d
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Ministry of Defence/bps32098-0000-00-industry-security-notices-isn.html
+    lib_url: file://{{collate_directory}}Open Access/Ministry of Defence/bps32098-0000-00-industry-security-notices-isn.html
     http_response:
     mime_type: .html
     publish_url: /library/bps32098/bps32098-0000-00.html
@@ -5604,7 +5614,7 @@ standards:
   ref_full: bps93074-0000-00
   alt_refs:
   permalink: bps93074-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -5613,11 +5623,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/63417.html
-    sha1: ec7dfd3a9a066ec91c003ea346b8243d41771b9c
+    sha1: 48ec519e305c00b50543fe023ac3f373a8a45518
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps93074-0000-00-security-techniques-guidance-for-code-of-practice-for-security-controls.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps93074-0000-00-security-techniques-guidance-for-code-of-practice-for-security-controls.html
     http_response:
     mime_type: .html
     publish_url: /library/bps93074/bps93074-0000-00.html
@@ -5671,7 +5681,7 @@ standards:
   ref_full: bps21953-0000-00
   alt_refs:
   permalink: bps21953-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -5687,11 +5697,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/64120.html
-    sha1: 07944e0c9f91bcf1a23f804891098e0859231a30
+    sha1: 066a5bf506a801762660282eab103d869ded3ada
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps21953-0000-00-information-security-management-monitoring-measurement-analysis-and-evaluation.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps21953-0000-00-information-security-management-monitoring-measurement-analysis-and-evaluation.html
     http_response:
     mime_type: .html
     publish_url: /library/bps21953/bps21953-0000-00.html
@@ -5744,7 +5754,7 @@ standards:
   ref_full: bps36784-0000-00
   alt_refs:
   permalink: bps36784-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_GDS
@@ -5753,11 +5763,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/open-standards-for-government/cross-platform-character-encoding-profile
-    sha1: 73fd7bc157473f8f01468047733cec26f62d52a9
+    sha1: d70d9ad6316cba23ac9e349e836d7a23e7dc8b72
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Government Digital Service/bps36784-0000-00-cross-platform-character-encoding.html
+    lib_url: file://{{collate_directory}}Open Access/Government Digital Service/bps36784-0000-00-cross-platform-character-encoding.html
     http_response:
     mime_type: .html
     publish_url: /library/bps36784/bps36784-0000-00.html
@@ -5810,7 +5820,7 @@ standards:
   ref_full: bps15792-0000-00
   alt_refs:
   permalink: bps15792-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -5820,11 +5830,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/eud-security-guidance-windows-10-1703
-    sha1: 8cf2671d942e7713c189c68c1c361df0fe0545e4
+    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Cyber Security Centre/bps15792-0000-00-eud-security-guidance-windows-10.html
+    lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps15792-0000-00-eud-security-guidance-windows-10.html
     http_response:
     mime_type: .html
     publish_url: /library/bps15792/bps15792-0000-00.html
@@ -5877,7 +5887,7 @@ standards:
   ref_full: bps90861-0000-00
   alt_refs:
   permalink: bps90861-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -5887,11 +5897,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/end-user-devices-security-principles
-    sha1: 68892f6b5a15d788edcf1e18c90685f41559c3b8
+    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Cyber Security Centre/bps90861-0000-00-end-user-devices-security-principles.html
+    lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps90861-0000-00-end-user-devices-security-principles.html
     http_response:
     mime_type: .html
     publish_url: /library/bps90861/bps90861-0000-00.html
@@ -5945,7 +5955,7 @@ standards:
   ref_full: bps84739-0000-00
   alt_refs:
   permalink: bps84739-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -5963,11 +5973,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/41532.html
-    sha1: 6b9d505944f319b27894ce40261c946473dbc68e
+    sha1: 131abca9e206886f1a92abde75a52efb7d0e8601
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps84739-0000-00-guidelines-for-information-and-communications-technology-disaster-recovery-services.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps84739-0000-00-guidelines-for-information-and-communications-technology-disaster-recovery-services.html
     http_response:
     mime_type: .html
     publish_url: /library/bps84739/bps84739-0000-00.html
@@ -6020,7 +6030,7 @@ standards:
   ref_full: bps20763-0000-00
   alt_refs:
   permalink: bps20763-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -6043,11 +6053,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/51986.html
-    sha1: c03c22d491dafe7d73d1d95604a9a43c3c0dbfd4
+    sha1: df0e58e33c290bc6fd7a2331e401fb8ad7669553
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps20763-0000-00-service-management-requirements.html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps20763-0000-00-service-management-requirements.html
     http_response:
     mime_type: .html
     publish_url: /library/bps20763/bps20763-0000-00.html
@@ -6100,7 +6110,7 @@ standards:
   ref_full: bps30124-0000-00
   alt_refs:
   permalink: bps30124-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org: *org_NPTS
   author_org: *org_NPTS
@@ -6167,7 +6177,7 @@ standards:
   ref_full: bps52410-2015-03
   alt_refs:
   permalink: bps52410-2015-03.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org: *org_CJSEP
   author_org: *org_CJSEP
@@ -6188,7 +6198,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Criminal Justice System Efficiency
+    lib_url: file://{{collate_directory}}Open Access/Criminal Justice System Efficiency
       Programme/bps52410-2015-03-digital-case-file-data-requirements.docx
     http_response:
     mime_type: .docx
@@ -6245,7 +6255,7 @@ standards:
   - org: *org_HOB
     ref: S001
   permalink: bps18749-2017-07.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_managed_access
   sponsor_org: *org_HOB
   author_org: *org_HOB
@@ -6265,7 +6275,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Managed Access/Home Office Biometrics/bps18749-2017-07-biometric-standards-requirements-and-information-for-partners-and-their-suppliers.pdf
+    lib_url: file://{{collate_directory}}Managed Access/Home Office Biometrics/bps18749-2017-07-biometric-standards-requirements-and-information-for-partners-and-their-suppliers.pdf
     http_response:
     mime_type: .pdf
     publish_url: /request_access.html?standard=bps18749-2017-07
@@ -6318,7 +6328,7 @@ standards:
   ref_full: bps18651-4-2017-06
   alt_refs:
   permalink: bps18651-4-2017-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CPS
@@ -6375,7 +6385,7 @@ standards:
   ref_full: bps18651-3-2017-06
   alt_refs:
   permalink: bps18651-3-2017-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CPS
@@ -6438,7 +6448,7 @@ standards:
   ref_full: bps68059-0000-00
   alt_refs:
   permalink: bps68059-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_W3C
@@ -6457,18 +6467,18 @@ standards:
   usage:
   links:
   - collate_url: https://www.w3.org/standards/techs/rdf#w3c_all
-    sha1: 31cbbb78a1ff6255d26c986c5e36c06ef6e15e4e
+    sha1: a243156139866b2171c60bc6e6dc8fe68c7b2e04
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/World Wide Web Consortium/bps68059-0000-00-resource-description-framework-rdf.html
+    lib_url: file://{{collate_directory}}Open Access/World Wide Web Consortium/bps68059-0000-00-resource-description-framework-rdf.html
     http_response:
     mime_type: .html
     publish_url: /library/bps68059/bps68059-0000-00.html
   classification:
   - ontology: bps
     classification: technical.specification.data
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -6514,7 +6524,7 @@ standards:
   ref_full: bps49873-0000-00
   alt_refs:
   permalink: bps49873-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -6523,11 +6533,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/CRASH/1.1
-    sha1: ea2c5b65a3ee5700cb7830c1df9e9e5ab1e2f81d
+    sha1: a810bae0bea5893a6ea771bf3c1535ba584942e0
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps49873-0000-00-crash-v1-1.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps49873-0000-00-crash-v1-1.html
     http_response:
     mime_type: .html
     publish_url: /library/bps49873/bps49873-0000-00.html
@@ -6580,7 +6590,7 @@ standards:
   ref_full: bps27560-0000-00
   alt_refs:
   permalink: bps27560-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -6593,11 +6603,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/CorDM/7.3
-    sha1: 27ffc5b83f96947d88fb247ac02970a9913d1d73
+    sha1: 2eab565dc823733a9b7b3a75fbb5e6cd379b234b
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps27560-0000-00-cordm-v7-3.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps27560-0000-00-cordm-v7-3.html
     http_response:
     mime_type: .html
     publish_url: /library/bps27560/bps27560-0000-00.html
@@ -6650,7 +6660,7 @@ standards:
   ref_full: bps62784-0000-00
   alt_refs:
   permalink: bps62784-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -6714,7 +6724,7 @@ standards:
   ref_full: bps82567-0000-00
   alt_refs:
   permalink: bps82567-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -6723,11 +6733,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/C%20and%20C/0.1
-    sha1: ac52d697c879ba2d9babc920a08af13e06072331
+    sha1: 8d7063948b33cb3482edbf04e3c6567bfb145eb7
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps82567-0000-00-c-and-c-v0-1.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps82567-0000-00-c-and-c-v0-1.html
     http_response:
     mime_type: .html
     publish_url: /library/bps82567/bps82567-0000-00.html
@@ -6780,7 +6790,7 @@ standards:
   ref_full: bps07234-0000-00
   alt_refs:
   permalink: bps07234-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -6789,11 +6799,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/HOLMES3/0.4
-    sha1: 32fb05ad8932692c9ae575a4b56ffdf585f8255a
+    sha1: 5bc50031c467e24b17d3701e998998e48670bd65
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps07234-0000-00-holmes3-v0-4.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps07234-0000-00-holmes3-v0-4.html
     http_response:
     mime_type: .html
     publish_url: /library/bps07234/bps07234-0000-00.html
@@ -6846,7 +6856,7 @@ standards:
   ref_full: bps10467-0000-00
   alt_refs:
   permalink: bps10467-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -6855,11 +6865,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/Vehicle%20Makes%20and%20Models/2017.8
-    sha1: abc7082f9e1412ab0cd6e55eb090183fd740a454
+    sha1: 05cb17f208fdca0836665bbf37c6d3e44d63b74c
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps10467-0000-00-vehicle-makes-and-models-v2017-8.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps10467-0000-00-vehicle-makes-and-models-v2017-8.html
     http_response:
     mime_type: .html
     publish_url: /library/bps10467/bps10467-0000-00.html
@@ -6912,7 +6922,7 @@ standards:
   ref_full: bps86405-0000-00
   alt_refs:
   permalink: bps86405-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -6922,11 +6932,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/European%20Pool%20against%20Organised%20Crime%20(EPOC%20IV)/1.0
-    sha1: db0488f4ef4157515ad57779decb8189c3714e4c
+    sha1: 52ccbbd43a38de5408d9964a8816bcd7d5a0d62f
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps86405-0000-00-european-pool-against-organised-crime-epoc-iv-v1-0.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps86405-0000-00-european-pool-against-organised-crime-epoc-iv-v1-0.html
     http_response:
     mime_type: .html
     publish_url: /library/bps86405/bps86405-0000-00.html
@@ -6979,7 +6989,7 @@ standards:
   ref_full: bps45236-0000-00
   alt_refs:
   permalink: bps45236-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -6988,11 +6998,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/IDENT1/0.2
-    sha1: c63e50c841147f29751e510c6931e9956782ba42
+    sha1: 5483d47726f3e14fe62146ca3d47905b6d0e7908
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps45236-0000-00-ident1-v0-2.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps45236-0000-00-ident1-v0-2.html
     http_response:
     mime_type: .html
     publish_url: /library/bps45236/bps45236-0000-00.html
@@ -7045,7 +7055,7 @@ standards:
   ref_full: bps39714-0000-00
   alt_refs:
   permalink: bps39714-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -7054,11 +7064,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/NMIS/3.0
-    sha1: 016746845f73719dfd5a2191a28213e7b85bcc74
+    sha1: dc55d9f5de559be0958261477e5638ae5e817bfb
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps39714-0000-00-nmis-v3-0.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps39714-0000-00-nmis-v3-0.html
     http_response:
     mime_type: .html
     publish_url: /library/bps39714/bps39714-0000-00.html
@@ -7111,7 +7121,7 @@ standards:
   ref_full: bps90462-0000-00
   alt_refs:
   permalink: bps90462-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -7120,11 +7130,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/NSPIS%20Custody/0.2
-    sha1: 25f4a234cac3630658ba865d5a3f37f04a2956db
+    sha1: 6d2ff03a9bdfe3da44b99cc95f7c3331194d3110
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps90462-0000-00-nspis-custody-v0-2.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps90462-0000-00-nspis-custody-v0-2.html
     http_response:
     mime_type: .html
     publish_url: /library/bps90462/bps90462-0000-00.html
@@ -7177,7 +7187,7 @@ standards:
   ref_full: bps15439-0000-00
   alt_refs:
   permalink: bps15439-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -7186,11 +7196,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/HR/0.1
-    sha1: d70a919bfdf641ef26bfbda3013dcd719e6954b7
+    sha1: 98ac0a01fb77d68d72719910ecbdf450e7a32bfb
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps15439-0000-00-hr-v0-1.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps15439-0000-00-hr-v0-1.html
     http_response:
     mime_type: .html
     publish_url: /library/bps15439/bps15439-0000-00.html
@@ -7243,7 +7253,7 @@ standards:
   ref_full: bps24351-0000-00
   alt_refs:
   permalink: bps24351-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HMG
@@ -7258,7 +7268,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/HM Government/bps24351-0000-00-criminal-justice-system-exchange-data-standards-catalogue.pdf
+    lib_url: file://{{collate_directory}}Open Access/HM Government/bps24351-0000-00-criminal-justice-system-exchange-data-standards-catalogue.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps24351/bps24351-0000-00.pdf
@@ -7311,7 +7321,7 @@ standards:
   ref_full: bps37650-0000-00
   alt_refs:
   permalink: bps37650-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -7320,11 +7330,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/CLMS/5.3.1021
-    sha1: 77813309d2e66cb54fec8d3138dabd9842b283c1
+    sha1: 1e8618096a8ff9dc9a40647094410bae8ac87aec
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps37650-0000-00-clms-v5-3-1021.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps37650-0000-00-clms-v5-3-1021.html
     http_response:
     mime_type: .html
     publish_url: /library/bps37650/bps37650-0000-00.html
@@ -7377,7 +7387,7 @@ standards:
   ref_full: bps92154-0000-00
   alt_refs:
   permalink: bps92154-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -7390,11 +7400,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/NFLMS/0.1
-    sha1: fca2466435ae2f18b55c233ce3d28bac25245be3
+    sha1: 93956c1aef05453fa321a6da39b8dcc2a9ec9ca6
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps92154-0000-00-nflms-v0-1.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps92154-0000-00-nflms-v0-1.html
     http_response:
     mime_type: .html
     publish_url: /library/bps92154/bps92154-0000-00.html
@@ -7447,7 +7457,7 @@ standards:
   ref_full: bps94312-0000-00
   alt_refs:
   permalink: bps94312-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ListPoint
@@ -7456,11 +7466,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/VPFPO/0.1
-    sha1: 05fa2c2a846e6ee0a85857fc8820bca2523b08dd
+    sha1: c8549f80aa800a35f4573e40eadb99c29d6e455b
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Listpoint/bps94312-0000-00-vpfpo-v0-1.html
+    lib_url: file://{{collate_directory}}Open Access/Listpoint/bps94312-0000-00-vpfpo-v0-1.html
     http_response:
     mime_type: .html
     publish_url: /library/bps94312/bps94312-0000-00.html
@@ -7513,7 +7523,7 @@ standards:
   ref_full: bps04196-0000-00
   alt_refs:
   permalink: bps04196-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_DublinCore
@@ -7523,11 +7533,11 @@ standards:
   usage:
   links:
   - collate_url: http://dublincore.org/specifications/
-    sha1: 1d3d273ebf76544c4ef281d252c9dfcf674068d6
+    sha1: ebe4616fc2ec9061569835d28540a8fd1260b3a8
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Dublin Core Metadata Initiative/bps04196-0000-00-dublin-core-metadata-initiative.html
+    lib_url: file://{{collate_directory}}Open Access/Dublin Core Metadata Initiative/bps04196-0000-00-dublin-core-metadata-initiative.html
     http_response:
     mime_type: .html
     publish_url: /library/bps04196/bps04196-0000-00.html
@@ -7580,7 +7590,7 @@ standards:
   ref_full: bps46321-0000-00
   alt_refs:
   permalink: bps46321-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_BAPCO
@@ -7600,11 +7610,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.bapco.org.uk/what-we-do/mait/
-    sha1: 8336e1688bdd1ea2117df6b87559519b2b524d51
+    sha1: 4d0b20d1075fa4b3558cd02f403b269d1b88a6d8
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/British APCO/bps46321-0000-00-multi-agency-incident-transfer.html
+    lib_url: file://{{collate_directory}}Open Access/British APCO/bps46321-0000-00-multi-agency-incident-transfer.html
     http_response:
     mime_type: .html
     publish_url: /library/bps46321/bps46321-0000-00.html
@@ -7613,7 +7623,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/British APCO/bps46321-0000-00-multi-agency-incident-transfer.pdf
+    lib_url: file://{{collate_directory}}Open Access/British APCO/bps46321-0000-00-multi-agency-incident-transfer.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps46321/bps46321-0000-00.pdf
@@ -7666,7 +7676,7 @@ standards:
   ref_full: bps10795-2018-08
   alt_refs:
   permalink: bps10795-2018-08.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -7677,11 +7687,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/service-manual/technology/testing-for-accessibility
-    sha1: 6588cf5d3e0c3c8fda376a6430817afa1a625dd6
+    sha1: 5fa0edfe5dc58104687b448ee603f871d61d02f2
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Misc/bps10795-2018-08-testing-for-accessibility.html
+    lib_url: file://{{collate_directory}}Open Access/Misc/bps10795-2018-08-testing-for-accessibility.html
     http_response:
     mime_type: .html
     publish_url: /library/bps10795/bps10795-2018-08.html
@@ -7734,7 +7744,7 @@ standards:
   ref_full: bps65482-2015-06
   alt_refs:
   permalink: bps65482-2015-06.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_GovEqOff
@@ -7744,11 +7754,11 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/guidance/equality-act-2010-guidance
-    sha1: 937199d0dc564799739db37985d26c35e574172f
+    sha1: 2f0e348609bffed58f699730176d95dc79c2bde9
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/Government Equalities Office/bps65482-2015-06-equality-act-2010.html
+    lib_url: file://{{collate_directory}}Open Access/Government Equalities Office/bps65482-2015-06-equality-act-2010.html
     http_response:
     mime_type: .html
     publish_url: /library/bps65482/bps65482-2015-06.html
@@ -7801,7 +7811,7 @@ standards:
   ref_full: bps34109-0000-00
   alt_refs:
   permalink: bps34109-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -7858,7 +7868,7 @@ standards:
   ref_full: bps94820-0000-00
   alt_refs:
   permalink: bps94820-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -7915,7 +7925,7 @@ standards:
   ref_full: bps40839-0000-00
   alt_refs:
   permalink: bps40839-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -7972,7 +7982,7 @@ standards:
   ref_full: bps08647-0000-00
   alt_refs:
   permalink: bps08647-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8029,7 +8039,7 @@ standards:
   ref_full: bps38569-0000-00
   alt_refs:
   permalink: bps38569-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8086,7 +8096,7 @@ standards:
   ref_full: bps40179-2018-05
   alt_refs:
   permalink: bps40179-2018-05.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -8099,11 +8109,11 @@ standards:
     procurement and deployment of generic applications.
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/generic-application-development-guidance
-    sha1: 8ef96601cbea91e7121c1bce0efb717e8075819b
+    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Cyber Security Centre/bps40179-2018-05-generic-application-development-guidance.html
+    lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps40179-2018-05-generic-application-development-guidance.html
     http_response:
     mime_type: .html
     publish_url: /library/bps40179/bps40179-2018-05.html
@@ -8156,7 +8166,7 @@ standards:
   ref_full: bps87459-0000-00
   alt_refs:
   permalink: bps87459-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8213,7 +8223,7 @@ standards:
   ref_full: bps39762-0000-00
   alt_refs:
   permalink: bps39762-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -8270,7 +8280,7 @@ standards:
   ref_full: bps96143-0000-00
   alt_refs:
   permalink: bps96143-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -8327,7 +8337,7 @@ standards:
   ref_full: bps86371-0000-00
   alt_refs:
   permalink: bps86371-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8384,7 +8394,7 @@ standards:
   ref_full: bps50324-0000-00
   alt_refs:
   permalink: bps50324-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8441,7 +8451,7 @@ standards:
   ref_full: bps60528-0000-00
   alt_refs:
   permalink: bps60528-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8498,7 +8508,7 @@ standards:
   ref_full: bps20917-0000-00
   alt_refs:
   permalink: bps20917-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8555,7 +8565,7 @@ standards:
   ref_full: bps79540-0000-00
   alt_refs:
   permalink: bps79540-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8612,7 +8622,7 @@ standards:
   ref_full: bps50328-0000-00
   alt_refs:
   permalink: bps50328-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8669,7 +8679,7 @@ standards:
   ref_full: bps70561-0000-00
   alt_refs:
   permalink: bps70561-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8726,7 +8736,7 @@ standards:
   ref_full: bps94806-0000-00
   alt_refs:
   permalink: bps94806-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8783,7 +8793,7 @@ standards:
   ref_full: bps89105-0000-00
   alt_refs:
   permalink: bps89105-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8841,7 +8851,7 @@ standards:
   ref_full: bps12056-0000-00
   alt_refs:
   permalink: bps12056-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8898,7 +8908,7 @@ standards:
   ref_full: bps78195-0000-00
   alt_refs:
   permalink: bps78195-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -8955,7 +8965,7 @@ standards:
   ref_full: bps30826-0000-00
   alt_refs:
   permalink: bps30826-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -9012,7 +9022,7 @@ standards:
   ref_full: bps90548-0000-00
   alt_refs:
   permalink: bps90548-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -9069,7 +9079,7 @@ standards:
   ref_full: bps91823-0000-00
   alt_refs:
   permalink: bps91823-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -9126,7 +9136,7 @@ standards:
   ref_full: bps35708-0000-00
   alt_refs:
   permalink: bps35708-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -9183,7 +9193,7 @@ standards:
   ref_full: bps75483-0000-00
   alt_refs:
   permalink: bps75483-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -9240,7 +9250,7 @@ standards:
   ref_full: bps16042-0000-00
   alt_refs:
   permalink: bps16042-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -9297,7 +9307,7 @@ standards:
   ref_full: bps01527-0000-00
   alt_refs:
   permalink: bps01527-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -9354,7 +9364,7 @@ standards:
   ref_full: bps57324-0000-00
   alt_refs:
   permalink: bps57324-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -9411,7 +9421,7 @@ standards:
   ref_full: bps70863-0000-00
   alt_refs:
   permalink: bps70863-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -9468,7 +9478,7 @@ standards:
   ref_full: bps49150-0000-00
   alt_refs:
   permalink: bps49150-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -9525,7 +9535,7 @@ standards:
   ref_full: bps64135-0000-00
   alt_refs:
   permalink: bps64135-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -9582,7 +9592,7 @@ standards:
   ref_full: bps60413-0000-00
   alt_refs:
   permalink: bps60413-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -9639,7 +9649,7 @@ standards:
   ref_full: bps75820-0000-00
   alt_refs:
   permalink: bps75820-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -9696,7 +9706,7 @@ standards:
   ref_full: bps58291-0000-00
   alt_refs:
   permalink: bps58291-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -9753,7 +9763,7 @@ standards:
   ref_full: bps68415-0000-00
   alt_refs:
   permalink: bps68415-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -9810,7 +9820,7 @@ standards:
   ref_full: bps64205-0000-00
   alt_refs:
   permalink: bps64205-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -9867,7 +9877,7 @@ standards:
   ref_full: bps19278-0000-00
   alt_refs:
   permalink: bps19278-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -9924,7 +9934,7 @@ standards:
   ref_full: bps49850-0000-00
   alt_refs:
   permalink: bps49850-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -9981,7 +9991,7 @@ standards:
   ref_full: bps32798-0000-00
   alt_refs:
   permalink: bps32798-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -10038,7 +10048,7 @@ standards:
   ref_full: bps43698-0000-00
   alt_refs:
   permalink: bps43698-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -10095,7 +10105,7 @@ standards:
   ref_full: bps48190-0000-00
   alt_refs:
   permalink: bps48190-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -10152,7 +10162,7 @@ standards:
   ref_full: bps61728-0000-00
   alt_refs:
   permalink: bps61728-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -10209,7 +10219,7 @@ standards:
   ref_full: bps81657-0000-00
   alt_refs:
   permalink: bps81657-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -10266,7 +10276,7 @@ standards:
   ref_full: bps45690-0000-00
   alt_refs:
   permalink: bps45690-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -10323,7 +10333,7 @@ standards:
   ref_full: bps19418-0000-00
   alt_refs:
   permalink: bps19418-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -10380,7 +10390,7 @@ standards:
   ref_full: bps09187-0000-00
   alt_refs:
   permalink: bps09187-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -10437,7 +10447,7 @@ standards:
   ref_full: bps56178-0000-00
   alt_refs:
   permalink: bps56178-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -10495,7 +10505,7 @@ standards:
   ref_full: bps42873-0000-00
   alt_refs:
   permalink: bps42873-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -10552,7 +10562,7 @@ standards:
   ref_full: bps20547-0000-00
   alt_refs:
   permalink: bps20547-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -10609,7 +10619,7 @@ standards:
   ref_full: bps57938-0000-00
   alt_refs:
   permalink: bps57938-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -10666,7 +10676,7 @@ standards:
   ref_full: bps14283-0000-00
   alt_refs:
   permalink: bps14283-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -10723,7 +10733,7 @@ standards:
   ref_full: bps39526-0000-00
   alt_refs:
   permalink: bps39526-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -10780,7 +10790,7 @@ standards:
   ref_full: bps85264-0000-00
   alt_refs:
   permalink: bps85264-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -10837,7 +10847,7 @@ standards:
   ref_full: bps35698-0000-00
   alt_refs:
   permalink: bps35698-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -10894,7 +10904,7 @@ standards:
   ref_full: bps31578-0000-00
   alt_refs:
   permalink: bps31578-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -10951,7 +10961,7 @@ standards:
   ref_full: bps38054-0000-00
   alt_refs:
   permalink: bps38054-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -11008,7 +11018,7 @@ standards:
   ref_full: bps97084-0000-00
   alt_refs:
   permalink: bps97084-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -11065,7 +11075,7 @@ standards:
   ref_full: bps25638-0000-00
   alt_refs:
   permalink: bps25638-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11122,7 +11132,7 @@ standards:
   ref_full: bps80523-0000-00
   alt_refs:
   permalink: bps80523-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -11179,7 +11189,7 @@ standards:
   ref_full: bps73482-0000-00
   alt_refs:
   permalink: bps73482-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11236,7 +11246,7 @@ standards:
   ref_full: bps43279-0000-00
   alt_refs:
   permalink: bps43279-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11293,7 +11303,7 @@ standards:
   ref_full: bps26943-0000-00
   alt_refs:
   permalink: bps26943-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11350,7 +11360,7 @@ standards:
   ref_full: bps39021-0000-00
   alt_refs:
   permalink: bps39021-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11407,7 +11417,7 @@ standards:
   ref_full: bps61082-0000-00
   alt_refs:
   permalink: bps61082-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11464,7 +11474,7 @@ standards:
   ref_full: bps16245-0000-00
   alt_refs:
   permalink: bps16245-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11521,7 +11531,7 @@ standards:
   ref_full: bps48367-0000-00
   alt_refs:
   permalink: bps48367-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11578,7 +11588,7 @@ standards:
   ref_full: bps64938-0000-00
   alt_refs:
   permalink: bps64938-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11635,7 +11645,7 @@ standards:
   ref_full: bps57362-0000-00
   alt_refs:
   permalink: bps57362-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11692,7 +11702,7 @@ standards:
   ref_full: bps85397-0000-00
   alt_refs:
   permalink: bps85397-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11749,7 +11759,7 @@ standards:
   ref_full: bps73981-0000-00
   alt_refs:
   permalink: bps73981-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11806,7 +11816,7 @@ standards:
   ref_full: bps82751-0000-00
   alt_refs:
   permalink: bps82751-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11863,7 +11873,7 @@ standards:
   ref_full: bps72304-0000-00
   alt_refs:
   permalink: bps72304-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11920,7 +11930,7 @@ standards:
   ref_full: bps59182-0000-00
   alt_refs:
   permalink: bps59182-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -11977,7 +11987,7 @@ standards:
   ref_full: bps90481-0000-00
   alt_refs:
   permalink: bps90481-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12034,7 +12044,7 @@ standards:
   ref_full: bps08762-0000-00
   alt_refs:
   permalink: bps08762-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12091,7 +12101,7 @@ standards:
   ref_full: bps09326-0000-00
   alt_refs:
   permalink: bps09326-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12148,7 +12158,7 @@ standards:
   ref_full: bps35290-0000-00
   alt_refs:
   permalink: bps35290-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12205,7 +12215,7 @@ standards:
   ref_full: bps91278-0000-00
   alt_refs:
   permalink: bps91278-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12262,7 +12272,7 @@ standards:
   ref_full: bps19254-0000-00
   alt_refs:
   permalink: bps19254-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12319,7 +12329,7 @@ standards:
   ref_full: bps73091-0000-00
   alt_refs:
   permalink: bps73091-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12376,7 +12386,7 @@ standards:
   ref_full: bps38259-0000-00
   alt_refs:
   permalink: bps38259-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12433,7 +12443,7 @@ standards:
   ref_full: bps04512-0000-00
   alt_refs:
   permalink: bps04512-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12490,7 +12500,7 @@ standards:
   ref_full: bps75348-0000-00
   alt_refs:
   permalink: bps75348-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12547,7 +12557,7 @@ standards:
   ref_full: bps28305-0000-00
   alt_refs:
   permalink: bps28305-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12604,7 +12614,7 @@ standards:
   ref_full: bps29560-0000-00
   alt_refs:
   permalink: bps29560-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12661,7 +12671,7 @@ standards:
   ref_full: bps03264-0000-00
   alt_refs:
   permalink: bps03264-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12718,7 +12728,7 @@ standards:
   ref_full: bps42763-0000-00
   alt_refs:
   permalink: bps42763-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12775,7 +12785,7 @@ standards:
   ref_full: bps49760-0000-00
   alt_refs:
   permalink: bps49760-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12832,7 +12842,7 @@ standards:
   ref_full: bps40832-0000-00
   alt_refs:
   permalink: bps40832-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12889,7 +12899,7 @@ standards:
   ref_full: bps76349-0000-00
   alt_refs:
   permalink: bps76349-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -12946,7 +12956,7 @@ standards:
   ref_full: bps38705-0000-00
   alt_refs:
   permalink: bps38705-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13003,7 +13013,7 @@ standards:
   ref_full: bps96024-0000-00
   alt_refs:
   permalink: bps96024-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13060,7 +13070,7 @@ standards:
   ref_full: bps59768-0000-00
   alt_refs:
   permalink: bps59768-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13117,7 +13127,7 @@ standards:
   ref_full: bps60498-0000-00
   alt_refs:
   permalink: bps60498-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13174,7 +13184,7 @@ standards:
   ref_full: bps12430-0000-00
   alt_refs:
   permalink: bps12430-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13231,7 +13241,7 @@ standards:
   ref_full: bps50836-0000-00
   alt_refs:
   permalink: bps50836-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -13288,7 +13298,7 @@ standards:
   ref_full: bps89706-0000-00
   alt_refs:
   permalink: bps89706-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -13345,7 +13355,7 @@ standards:
   ref_full: bps14298-0000-00
   alt_refs:
   permalink: bps14298-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -13402,7 +13412,7 @@ standards:
   ref_full: bps64502-0000-00
   alt_refs:
   permalink: bps64502-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13459,7 +13469,7 @@ standards:
   ref_full: bps90583-0000-00
   alt_refs:
   permalink: bps90583-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13516,7 +13526,7 @@ standards:
   ref_full: bps53794-0000-00
   alt_refs:
   permalink: bps53794-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13573,7 +13583,7 @@ standards:
   ref_full: bps17230-0000-00
   alt_refs:
   permalink: bps17230-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13630,7 +13640,7 @@ standards:
   ref_full: bps37916-0000-00
   alt_refs:
   permalink: bps37916-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13687,7 +13697,7 @@ standards:
   ref_full: bps62517-0000-00
   alt_refs:
   permalink: bps62517-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13744,7 +13754,7 @@ standards:
   ref_full: bps67315-0000-00
   alt_refs:
   permalink: bps67315-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13801,7 +13811,7 @@ standards:
   ref_full: bps39415-0000-00
   alt_refs:
   permalink: bps39415-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -13858,7 +13868,7 @@ standards:
   ref_full: bps01362-0000-00
   alt_refs:
   permalink: bps01362-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -13915,7 +13925,7 @@ standards:
   ref_full: bps50743-0000-00
   alt_refs:
   permalink: bps50743-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -13972,7 +13982,7 @@ standards:
   ref_full: bps78219-0000-00
   alt_refs:
   permalink: bps78219-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14029,7 +14039,7 @@ standards:
   ref_full: bps59268-0000-00
   alt_refs:
   permalink: bps59268-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14086,7 +14096,7 @@ standards:
   ref_full: bps59274-0000-00
   alt_refs:
   permalink: bps59274-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14143,7 +14153,7 @@ standards:
   ref_full: bps19806-0000-00
   alt_refs:
   permalink: bps19806-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14200,7 +14210,7 @@ standards:
   ref_full: bps32154-0000-00
   alt_refs:
   permalink: bps32154-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14257,7 +14267,7 @@ standards:
   ref_full: bps48029-0000-00
   alt_refs:
   permalink: bps48029-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14314,7 +14324,7 @@ standards:
   ref_full: bps27901-0000-00
   alt_refs:
   permalink: bps27901-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14327,7 +14337,7 @@ standards:
     http_response:
     mime_type: .pdf
     sha1: c33621611e859cdbcbe1590548286449b4531cc2
-    lib_url: file://{library_location}/Open Access/Misc/bps27901-0000-00-end-user-device-strategy-security-framework-and-controls.pdf
+    lib_url: file://{{collate_directory}}Open Access/Misc/bps27901-0000-00-end-user-device-strategy-security-framework-and-controls.pdf
     publish_url: /library/bps27901/bps27901-0000-00.pdf
   classification:
   - ontology: bps
@@ -14378,7 +14388,7 @@ standards:
   ref_full: bps89305-0000-00
   alt_refs:
   permalink: bps89305-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -14390,13 +14400,13 @@ standards:
     link_or_collect: c
     http_response:
     mime_type: .html
-    sha1: aeffb1bb54073d6fe0b6793a1b45c7271798a012
-    lib_url: file://{library_location}/Open Access/National Cyber Security Centre/bps89305-0000-00-end-user-device-security-collection-ncsc.html
+    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps89305-0000-00-end-user-device-security-collection-ncsc.html
     publish_url: /library/bps89305/bps89305-0000-00.html
   classification:
   - ontology: bps
     classification: uncategorized
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -14442,7 +14452,7 @@ standards:
   ref_full: bps03698-0000-00
   alt_refs:
   permalink: bps03698-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -14454,13 +14464,13 @@ standards:
     link_or_collect: c
     http_response:
     mime_type: .html
-    sha1: 68892f6b5a15d788edcf1e18c90685f41559c3b8
-    lib_url: file://{library_location}/Open Access/National Cyber Security Centre/bps03698-0000-00-end-user-device-security-principles-ncsc.html
+    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps03698-0000-00-end-user-device-security-principles-ncsc.html
     publish_url: /library/bps03698/bps03698-0000-00.html
   classification:
   - ontology: bps
     classification: uncategorized
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -14506,7 +14516,7 @@ standards:
   ref_full: bps56720-0000-00
   alt_refs:
   permalink: bps56720-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14563,7 +14573,7 @@ standards:
   ref_full: bps17405-0000-00
   alt_refs:
   permalink: bps17405-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14620,7 +14630,7 @@ standards:
   ref_full: bps18264-0000-00
   alt_refs:
   permalink: bps18264-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14677,7 +14687,7 @@ standards:
   ref_full: bps27180-0000-00
   alt_refs:
   permalink: bps27180-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14734,7 +14744,7 @@ standards:
   ref_full: bps59376-0000-00
   alt_refs:
   permalink: bps59376-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14792,8 +14802,8 @@ standards:
   alt_refs:
   - org: *org_HMG
     ref: GPG 44
-  permalink: bps28916-0000-00.html
-  security_classification: OFFICIAL
+  permalink: bps28916-2014-10.html
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CESG
@@ -14807,7 +14817,7 @@ standards:
     mime_type: .pdf
     link_or_collect: c
     sha1: fabaf6ba1e13f79bcff80c0bf82571b5b66c637b
-    lib_url: file://{library_location}/Open Access/CESG/bps28916-2014-10-authentication-credentials-for-online-government-services.pdf
+    lib_url: file://{{collate_directory}}Open Access/CESG/bps28916-2014-10-authentication-credentials-for-online-government-services.pdf
     publish_url: /library/bps28916/bps28916-2014-10.pdf
   classification:
   - ontology: bps
@@ -14858,7 +14868,7 @@ standards:
   ref_full: bps93056-0000-00
   alt_refs:
   permalink: bps93056-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14915,7 +14925,7 @@ standards:
   ref_full: bps24197-0000-00
   alt_refs:
   permalink: bps24197-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -14972,7 +14982,7 @@ standards:
   ref_full: bps97834-0000-00
   alt_refs:
   permalink: bps97834-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15029,7 +15039,7 @@ standards:
   ref_full: bps20764-0000-00
   alt_refs:
   permalink: bps20764-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15086,7 +15096,7 @@ standards:
   ref_full: bps39041-0000-00
   alt_refs:
   permalink: bps39041-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15143,7 +15153,7 @@ standards:
   ref_full: bps41589-0000-00
   alt_refs:
   permalink: bps41589-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15200,7 +15210,7 @@ standards:
   ref_full: bps52489-0000-00
   alt_refs:
   permalink: bps52489-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -15257,7 +15267,7 @@ standards:
   ref_full: bps83567-0000-00
   alt_refs:
   permalink: bps83567-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15314,7 +15324,7 @@ standards:
   ref_full: bps19526-0000-00
   alt_refs:
   permalink: bps19526-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -15371,7 +15381,7 @@ standards:
   ref_full: bps52976-0000-00
   alt_refs:
   permalink: bps52976-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15428,7 +15438,7 @@ standards:
   ref_full: bps54638-0000-00
   alt_refs:
   permalink: bps54638-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15485,7 +15495,7 @@ standards:
   ref_full: bps03895-0000-00
   alt_refs:
   permalink: bps03895-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15542,7 +15552,7 @@ standards:
   ref_full: bps95307-0000-00
   alt_refs:
   permalink: bps95307-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15599,7 +15609,7 @@ standards:
   ref_full: bps63285-0000-00
   alt_refs:
   permalink: bps63285-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15656,7 +15666,7 @@ standards:
   ref_full: bps79306-0000-00
   alt_refs:
   permalink: bps79306-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15713,7 +15723,7 @@ standards:
   ref_full: bps90862-0000-00
   alt_refs:
   permalink: bps90862-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15770,7 +15780,7 @@ standards:
   ref_full: bps28437-0000-00
   alt_refs:
   permalink: bps28437-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15827,7 +15837,7 @@ standards:
   ref_full: bps07125-0000-00
   alt_refs:
   permalink: bps07125-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15884,7 +15894,7 @@ standards:
   ref_full: bps30175-0000-00
   alt_refs:
   permalink: bps30175-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15941,7 +15951,7 @@ standards:
   ref_full: bps49826-0000-00
   alt_refs:
   permalink: bps49826-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -15998,7 +16008,7 @@ standards:
   ref_full: bps84501-0000-00
   alt_refs:
   permalink: bps84501-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16055,7 +16065,7 @@ standards:
   ref_full: bps61580-0000-00
   alt_refs:
   permalink: bps61580-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16112,7 +16122,7 @@ standards:
   ref_full: bps98651-0000-00
   alt_refs:
   permalink: bps98651-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16169,7 +16179,7 @@ standards:
   ref_full: bps67539-0000-00
   alt_refs:
   permalink: bps67539-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16227,7 +16237,7 @@ standards:
   ref_full: bps54907-0000-00
   alt_refs:
   permalink: bps54907-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -16284,7 +16294,7 @@ standards:
   ref_full: bps70982-0000-00
   alt_refs:
   permalink: bps70982-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -16341,7 +16351,7 @@ standards:
   ref_full: bps17069-0000-00
   alt_refs:
   permalink: bps17069-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -16398,7 +16408,7 @@ standards:
   ref_full: bps62591-0000-00
   alt_refs:
   permalink: bps62591-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16455,7 +16465,7 @@ standards:
   ref_full: bps65912-0000-00
   alt_refs:
   permalink: bps65912-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16512,7 +16522,7 @@ standards:
   ref_full: bps87213-0000-00
   alt_refs:
   permalink: bps87213-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16569,7 +16579,7 @@ standards:
   ref_full: bps89520-0000-00
   alt_refs:
   permalink: bps89520-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16626,7 +16636,7 @@ standards:
   ref_full: bps65928-0000-00
   alt_refs:
   permalink: bps65928-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16683,7 +16693,7 @@ standards:
   ref_full: bps67215-0000-00
   alt_refs:
   permalink: bps67215-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16740,7 +16750,7 @@ standards:
   ref_full: bps04258-0000-00
   alt_refs:
   permalink: bps04258-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -16797,7 +16807,7 @@ standards:
   ref_full: bps52037-0000-00
   alt_refs:
   permalink: bps52037-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -16854,7 +16864,7 @@ standards:
   ref_full: bps17258-0000-00
   alt_refs:
   permalink: bps17258-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -16911,7 +16921,7 @@ standards:
   ref_full: bps96154-0000-00
   alt_refs:
   permalink: bps96154-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -16968,7 +16978,7 @@ standards:
   ref_full: bps09356-0000-00
   alt_refs:
   permalink: bps09356-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NCSC
@@ -17025,7 +17035,7 @@ standards:
   ref_full: bps98074-0000-00
   alt_refs:
   permalink: bps98074-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -17082,7 +17092,7 @@ standards:
   ref_full: bps48693-0000-00
   alt_refs:
   permalink: bps48693-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -17139,7 +17149,7 @@ standards:
   ref_full: bps35896-0000-00
   alt_refs:
   permalink: bps35896-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -17196,7 +17206,7 @@ standards:
   ref_full: bps72081-0000-00
   alt_refs:
   permalink: bps72081-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -17253,7 +17263,7 @@ standards:
   ref_full: bps98201-0000-00
   alt_refs:
   permalink: bps98201-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org:
@@ -17326,11 +17336,11 @@ standards:
     left organisational control.
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/secure-sanitisation-storage-media
-    sha1: 87b5b46068387f9082d144949c65fe2f789c8757
+    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Cyber Security Centre/bps45897-2016-09-ncsc-guidelines-on-storage-device-disposal.html
+    lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps45897-2016-09-ncsc-guidelines-on-storage-device-disposal.html
     http_response:
     mime_type: .html
     publish_url: /library/bps45897/bps45897-2016-09.html
@@ -17395,11 +17405,11 @@ standards:
     left organisational control.
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/secure-sanitisation-storage-media
-    sha1: 87b5b46068387f9082d144949c65fe2f789c8757
+    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/National Cyber Security Centre/bps78231-0000-00-secure-sanitisation-of-storage-media.html
+    lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps78231-0000-00-secure-sanitisation-of-storage-media.html
     http_response:
     mime_type: .html
     publish_url: /library/bps78231/bps78231-0000-00.html
@@ -17602,18 +17612,18 @@ standards:
   usage:
   links:
   - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030345718
-    sha1: 5a9564ae88db9c04aaed43ba89ed438f436642f4
+    sha1: 926eb5a98026e5c3ce64958fa3c0c2f4a872555e
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{library_location}/Open Access/British Standards Institute/bps93680-2017-06-code-of-practice-for-the-deployment-and-use-of-body-worn-video-bwv.html
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps93680-2017-06-code-of-practice-for-the-deployment-and-use-of-body-worn-video-bwv.html
     http_response:
     mime_type: .html
     publish_url: /library/bps93680/bps93680-2017-06.html
   classification:
   - ontology: bps
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date: 2017-06-01 00:00:00
   last_updated:
@@ -17787,7 +17797,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 001
   permalink: bps12964-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -17804,14 +17814,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/College of Policing/bps12964-0000-00-app-on-information-management.pdf
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps12964-0000-00-app-on-information-management.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps12964/bps12964-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -17850,7 +17860,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: APP on Intelligence Management - Analysis
   ref_base: bps98012
   ref_part:
@@ -17860,7 +17870,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 002
   permalink: bps98012-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -17876,14 +17886,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/College of Policing/bps98012-0000-00-app-on-intelligence-management-analysis.pdf
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps98012-0000-00-app-on-intelligence-management-analysis.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps98012/bps98012-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -17922,7 +17932,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Body Worn Video Guidance
   ref_base: bps72385
   ref_part:
@@ -17932,7 +17942,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 003
   permalink: bps72385-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_CoP
@@ -17948,14 +17958,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/College of Policing/bps72385-0000-00-body-worn-video-guidance.pdf
+    lib_url: file://{{collate_directory}}Open Access/College of Policing/bps72385-0000-00-body-worn-video-guidance.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps72385/bps72385-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -17994,7 +18004,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Code of Practice on the Management of Police Information
   ref_base: bps59240
   ref_part:
@@ -18004,7 +18014,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 004
   permalink: bps59240-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HO
@@ -18018,14 +18028,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/Home Office/bps59240-0000-00-code-of-practice-on-the-management-of-police-information.pdf
+    lib_url: file://{{collate_directory}}Open Access/Home Office/bps59240-0000-00-code-of-practice-on-the-management-of-police-information.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps59240/bps59240-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18064,7 +18074,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Information Systems Community Security Policy
   ref_base: bps87905
   ref_part:
@@ -18074,7 +18084,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 005
   permalink: bps87905-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ACPO
@@ -18097,14 +18107,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/Association of Chief Police Officers/bps87905-0000-00-information-systems-community-security-policy.pdf
+    lib_url: file://{{collate_directory}}Open Access/Association of Chief Police Officers/bps87905-0000-00-information-systems-community-security-policy.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps87905/bps87905-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18143,7 +18153,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: 'Manual of Guidance: The Freedom of Information Act v6'
   ref_base: bps65270
   ref_part:
@@ -18153,7 +18163,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 006
   permalink: bps65270-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ACPO
@@ -18170,14 +18180,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/Association of Chief Police Officers/bps65270-0000-00-manual-of-guidance-the-freedom-of-information-act-v6.pdf
+    lib_url: file://{{collate_directory}}Open Access/Association of Chief Police Officers/bps65270-0000-00-manual-of-guidance-the-freedom-of-information-act-v6.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps65270/bps65270-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18216,7 +18226,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Retrieval of Video Evidence and Production of Working Copies from Digital
     CCTV Systems v2.0
   ref_base: bps56389
@@ -18227,7 +18237,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 007
   permalink: bps56389-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HO
@@ -18243,14 +18253,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/Home Office/bps56389-0000-00-retrieval-of-video-evidence-and-production-of-working-copies-from-digital-cctv-systems-v2-0.pdf
+    lib_url: file://{{collate_directory}}Open Access/Home Office/bps56389-0000-00-retrieval-of-video-evidence-and-production-of-working-copies-from-digital-cctv-systems-v2-0.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps56389/bps56389-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18289,7 +18299,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Police Use of Digital Images
   ref_base: bps97450
   ref_part:
@@ -18299,7 +18309,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 008
   permalink: bps97450-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ACPO
@@ -18318,14 +18328,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/Association of Chief Police Officers/bps97450-0000-00-police-use-of-digital-images.pdf
+    lib_url: file://{{collate_directory}}Open Access/Association of Chief Police Officers/bps97450-0000-00-police-use-of-digital-images.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps97450/bps97450-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18374,7 +18384,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 009
   permalink: bps96352-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HO
@@ -18391,14 +18401,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/Home Office/bps96352-0000-00-surveillance-camera-code-of-practice.pdf
+    lib_url: file://{{collate_directory}}Open Access/Home Office/bps96352-0000-00-surveillance-camera-code-of-practice.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps96352/bps96352-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18437,7 +18447,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Vulnerable Localities Index
   ref_base: bps80416
   ref_part:
@@ -18447,7 +18457,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 010
   permalink: bps80416-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_JDI
@@ -18471,7 +18481,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/Jill Dando Institute of Security
+    lib_url: file://{{collate_directory}}Open Access/Jill Dando Institute of Security
       and Crime Science/bps80416-0000-00-vulnerable-localities-index.pdf
     http_response:
     mime_type: .pdf
@@ -18479,7 +18489,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18518,7 +18528,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Geographic information. Preservation of digital data and metadata. Fundamentals
   ref_base: bps45362
   ref_part:
@@ -18530,7 +18540,7 @@ standards:
   - org: *org_ISO
     ref: 19165
   permalink: bps45362-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -18541,18 +18551,19 @@ standards:
   usage: This gives guidance on how to appropriately store and index any geographic
     based data.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030317147#tabs-2
+    sha1: cd12f7e939efb2e3bb0fec98e157753d47cb7645
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+      lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps45362-0000-00-geographic-information-preservation-of-digital-data-and-metadata-fundamentals.html
     http_response:
-    mime_type:
+      mime_type: .html
+      publish_url: /library/bps45362/bps45362-0000-00.html
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18591,7 +18602,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Standard guide for Forensic Digital Image Processing
   ref_base: bps64907
   ref_part:
@@ -18603,7 +18614,7 @@ standards:
   - org: *org_BSI
     ref: ASTM E2825 - 18 (British Standard)
   permalink: bps64907-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_BSI
@@ -18625,7 +18636,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18664,7 +18675,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Statistical interpretation of data. Determination of statistical tolerance
     intervals
   ref_base: bps80219
@@ -18677,7 +18688,7 @@ standards:
   - org: *org_ISO
     ref: 16269
   permalink: bps80219-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -18699,7 +18710,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18738,7 +18749,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Statistics - Vocabulary and symbols - General statistical terms and terms
     used in probability
   ref_base: bps03148
@@ -18751,7 +18762,7 @@ standards:
   - org: *org_ISO
     ref: 3534
   permalink: bps03148-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -18773,7 +18784,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18812,7 +18823,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Evidential Weight and Legal Admissibility of Electronic Information
   ref_base: bps47095
   ref_part:
@@ -18824,7 +18835,7 @@ standards:
   - org: *org_BSI
     ref: BS 10008
   permalink: bps47095-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_BSI
@@ -18850,7 +18861,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18889,7 +18900,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Data protection - Specification for a personal information management system
   ref_base: bps80736
   ref_part:
@@ -18901,7 +18912,7 @@ standards:
   - org: *org_BSI
     ref: BS 10012
   permalink: bps80736-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_BSI
@@ -18930,7 +18941,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -18969,7 +18980,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Guide to Statistical Interpretation of Data. Routine Analysis of Quantitative
     Data
   ref_base: bps80127
@@ -18982,7 +18993,7 @@ standards:
   - org: *org_BSI
     ref: BS 2846
   permalink: bps80127-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_BSI
@@ -19007,7 +19018,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19046,7 +19057,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Guide to quality control and performance improvement using qualitative (attribute)
     data.
   ref_base: bps90764
@@ -19059,7 +19070,7 @@ standards:
   - org: *org_BSI
     ref: '5701 : 01'
   permalink: bps90764-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_BSI
@@ -19081,7 +19092,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19120,7 +19131,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Guide to Data Analysis and Quality Control Using Custom Techniques.
   ref_base: bps23701
   ref_part:
@@ -19132,7 +19143,7 @@ standards:
   - org: *org_BSI
     ref: BS 5703
   permalink: bps23701-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_BSI
@@ -19155,7 +19166,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19194,7 +19205,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Statistical methods for use in proficiency testing by interlaboratory comparisons
   ref_base: bps09856
   ref_part:
@@ -19206,7 +19217,7 @@ standards:
   - org: *org_ISO
     ref: 13528
   permalink: bps09856-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -19231,7 +19242,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19270,7 +19281,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: 'Statistical methods in process management - Capability and performance.
     Part 1: General principles and concepts'
   ref_base: bps71938
@@ -19283,7 +19294,7 @@ standards:
   - org: *org_ISO
     ref: 22514
   permalink: bps71938-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -19306,7 +19317,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19345,7 +19356,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: 'Control charts Part 1: General guidelines'
   ref_base: bps83126
   ref_part:
@@ -19357,7 +19368,7 @@ standards:
   - org: *org_ISO
     ref: 7870
   permalink: bps83126-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -19384,7 +19395,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19423,7 +19434,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Information technology. Biometric data interchange formats.
   ref_base: bps45368
   ref_part:
@@ -19435,7 +19446,7 @@ standards:
   - org: *org_ISO
     ref: 19794
   permalink: bps45368-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -19459,7 +19470,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19498,7 +19509,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Statutory Audits of Annual and Consolidated Accounts
   ref_base: bps13067
   ref_part:
@@ -19510,7 +19521,7 @@ standards:
   - org: *org_EU
     ref: Directive 2006/43/EC
   permalink: bps13067-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_EU
@@ -19530,14 +19541,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/European Union/bps13067-0000-00-statutory-audits-of-annual-and-consolidated-accounts.pdf
+    lib_url: file://{{collate_directory}}Open Access/European Union/bps13067-0000-00-statutory-audits-of-annual-and-consolidated-accounts.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps13067/bps13067-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19576,7 +19587,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Analytical Procedures used in auditing
   ref_base: bps60142
   ref_part:
@@ -19588,7 +19599,7 @@ standards:
   - org: *org_IAASB
     ref: ISA (UK) 520
   permalink: bps60142-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_IAASB
@@ -19605,7 +19616,7 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/International Auditing and Assurance
+    lib_url: file://{{collate_directory}}Open Access/International Auditing and Assurance
       Standards Board/bps60142-0000-00-analytical-procedures-used-in-auditing.pdf
     http_response:
     mime_type: .pdf
@@ -19613,7 +19624,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19652,7 +19663,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Records Management Standard
   ref_base: bps09524
   ref_part:
@@ -19664,7 +19675,7 @@ standards:
   - org: *org_ISO
     ref: 15489:01
   permalink: bps09524-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -19690,7 +19701,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19729,7 +19740,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Framework for developing long-term preservation strategy for digital material
   ref_base: bps57342
   ref_part:
@@ -19741,7 +19752,7 @@ standards:
   - org: *org_ISO
     ref: 18492
   permalink: bps57342-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -19765,7 +19776,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19804,7 +19815,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Information and documentation – Records management processes – Metadata for
     records
   ref_base: bps86709
@@ -19817,7 +19828,7 @@ standards:
   - org: *org_ISO
     ref: 23081
   permalink: bps86709-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -19856,7 +19867,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19895,7 +19906,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Information Security Management Standard
   ref_base: bps94781
   ref_part:
@@ -19907,7 +19918,7 @@ standards:
   - org: *org_ISO
     ref: 27001
   permalink: bps94781-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -19939,7 +19950,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -19978,7 +19989,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Information security risk management
   ref_base: bps27136
   ref_part:
@@ -19990,7 +20001,7 @@ standards:
   - org: *org_ISO
     ref: 27005
   permalink: bps27136-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -20013,7 +20024,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20052,7 +20063,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Data elements and interchange formats - Information interchange - Representation
     of dates and times
   ref_base: bps82569
@@ -20065,7 +20076,7 @@ standards:
   - org: *org_ISO
     ref: 8601
   permalink: bps82569-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -20089,7 +20100,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20128,7 +20139,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Quality Management Systems
   ref_base: bps14836
   ref_part:
@@ -20140,7 +20151,7 @@ standards:
   - org: *org_ISO
     ref: 9001
   permalink: bps14836-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -20171,7 +20182,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20210,7 +20221,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Quality Management Systems - Guidelines for performance improvement
   ref_base: bps16397
   ref_part:
@@ -20222,7 +20233,7 @@ standards:
   - org: *org_ISO
     ref: 9004
   permalink: bps16397-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -20245,7 +20256,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20284,7 +20295,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: 'Information Technology - Digital compression and coding of continuous tone
     still images: Requirements and guidelines (JPEG)'
   ref_base: bps87235
@@ -20297,7 +20308,7 @@ standards:
   - org: *org_ISO
     ref: 10918
   permalink: bps87235-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -20317,7 +20328,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20356,7 +20367,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Multimedia framework (MPEG-21)
   ref_base: bps24576
   ref_part:
@@ -20368,7 +20379,7 @@ standards:
   - org: *org_ISO
     ref: 21000
   permalink: bps24576-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -20395,7 +20406,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20434,7 +20445,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Criminal Intelligence Analysis manual for analysts
   ref_base: bps36125
   ref_part:
@@ -20444,7 +20455,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 036
   permalink: bps36125-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_UNODC
@@ -20464,14 +20475,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/UN Office on Drugs and Crime/bps36125-0000-00-criminal-intelligence-analysis-manual-for-analysts.pdf
+    lib_url: file://{{collate_directory}}Open Access/UN Office on Drugs and Crime/bps36125-0000-00-criminal-intelligence-analysis-manual-for-analysts.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps36125/bps36125-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20510,7 +20521,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Criminal Procedure and Investigations Act 1996 - Section 23 Code of Practice
   ref_base: bps19506
   ref_part:
@@ -20520,7 +20531,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 037
   permalink: bps19506-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HMG
@@ -20536,14 +20547,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/HM Government/bps19506-0000-00-criminal-procedure-and-investigations-act-1996-section-23-code-of-practice.pdf
+    lib_url: file://{{collate_directory}}Open Access/HM Government/bps19506-0000-00-criminal-procedure-and-investigations-act-1996-section-23-code-of-practice.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps19506/bps19506-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20582,7 +20593,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Digital Imaging Procedure V2.1 Publication No. 58/07
   ref_base: bps54680
   ref_part:
@@ -20594,7 +20605,7 @@ standards:
   - org: *org_HO
     ref: Publication 58/07 V2.1
   permalink: bps54680-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_HO
@@ -20609,14 +20620,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/Home Office/bps54680-0000-00-digital-imaging-procedure-v2-1-publication-no-58-07.pdf
+    lib_url: file://{{collate_directory}}Open Access/Home Office/bps54680-0000-00-digital-imaging-procedure-v2-1-publication-no-58-07.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps54680/bps54680-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20655,7 +20666,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: General requirements for the competence of testing and calibration in laboratories
   ref_base: bps42756
   ref_part:
@@ -20667,7 +20678,7 @@ standards:
   - org: *org_ISO
     ref: 17025
   permalink: bps42756-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -20689,14 +20700,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps42756-0000-00-general-requirements-for-the-competence-of-testing-and-calibration-in-laboratories.pdf
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps42756-0000-00-general-requirements-for-the-competence-of-testing-and-calibration-in-laboratories.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps42756/bps42756-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20735,7 +20746,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: FSR Code of Practice and Conduct
   ref_base: bps81425
   ref_part:
@@ -20747,7 +20758,7 @@ standards:
   - org: *org_FSREG
     ref: '-'
   permalink: bps81425-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_FSREG
@@ -20771,14 +20782,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/Forensic Science Regulator/bps81425-0000-00-fsr-code-of-practice-and-conduct.pdf
+    lib_url: file://{{collate_directory}}Open Access/Forensic Science Regulator/bps81425-0000-00-fsr-code-of-practice-and-conduct.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps81425/bps81425-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20817,7 +20828,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Legal Obligations (Issue 5)
   ref_base: bps95706
   ref_part:
@@ -20829,7 +20840,7 @@ standards:
   - org: *org_FSREG
     ref: FSR-I-400
   permalink: bps95706-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_FSREG
@@ -20850,14 +20861,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/Forensic Science Regulator/bps95706-0000-00-legal-obligations-issue-5.pdf
+    lib_url: file://{{collate_directory}}Open Access/Forensic Science Regulator/bps95706-0000-00-legal-obligations-issue-5.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps95706/bps95706-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20896,7 +20907,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Information technology -- Security techniques -- Guidelines for identification,
     collection, acquisition and preservation of digital evidence
   ref_base: bps16894
@@ -20909,7 +20920,7 @@ standards:
   - org: *org_ISO
     ref: 27037
   permalink: bps16894-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -20935,14 +20946,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/International Standards Organisation/bps16894-0000-00-information-technology-security-techniques-guidelines-for-identification-collection-acquisition-and-preservation-of-digital-evidence.docx
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps16894-0000-00-information-technology-security-techniques-guidelines-for-identification-collection-acquisition-and-preservation-of-digital-evidence.docx
     http_response:
     mime_type: .docx
     publish_url: /library/bps16894/bps16894-0000-00.docx
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -20981,7 +20992,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Societal security -- Business continuity management systems -- Guidance.
   ref_base: bps59478
   ref_part:
@@ -20993,7 +21004,7 @@ standards:
   - org: *org_ISO
     ref: 22313
   permalink: bps59478-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -21019,7 +21030,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -21058,7 +21069,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Specification for consumables used in the collection, preservation and processing
     of material for forensic analysis - Requirements for product, manufacturing and
     forensic kit assembly.
@@ -21072,7 +21083,7 @@ standards:
   - org: *org_BSI
     ref: PAS 377:2012
   permalink: bps19730-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_BSI
@@ -21101,7 +21112,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -21140,7 +21151,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: National Occupation Standards (For Justice)
   ref_base: bps01586
   ref_part:
@@ -21152,7 +21163,7 @@ standards:
   - org: *org_JSSC
     ref: '-'
   permalink: bps01586-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_JSSC
@@ -21178,7 +21189,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -21217,7 +21228,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Electronic Imaging - Test Target for the black-and-white scanning of office
     documents
   ref_base: bps26043
@@ -21230,7 +21241,7 @@ standards:
   - org: *org_ISO
     ref: 12653
   permalink: bps26043-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -21256,7 +21267,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -21295,7 +21306,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Information technology – Security techniques – Code of practice for information
     security management.
   ref_base: bps53076
@@ -21308,7 +21319,7 @@ standards:
   - org: *org_ISO
     ref: 27002
   permalink: bps53076-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_ISO
@@ -21339,7 +21350,7 @@ standards:
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -21378,7 +21389,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: Guidance on the application of ISO 17025 - Dealing with expressions of opinions
     and interpretations
   ref_base: bps96514
@@ -21391,7 +21402,7 @@ standards:
   - org: *org_UKAS
     ref: LAB 13:2001
   permalink: bps96514-0000-00.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_UKAS
@@ -21409,14 +21420,15 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/United Kingdom Accreditation Service/bps96514-0000-00-guidance-on-the-application-of-iso-17025-dealing-with-expressions-of-opinions-and-interpretations.pdf
+    lib_url: file://{{collate_directory}}Open Access/United Kingdom Accreditation
+      Service/bps96514-0000-00-guidance-on-the-application-of-iso-17025-dealing-with-expressions-of-opinions-and-interpretations.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps96514/bps96514-0000-00.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -21455,7 +21467,7 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 - title: 078 17 CCC April 2017 24 Better Understanding Demand Policing the Future
   ref_base: bps51960
   ref_part:
@@ -21465,7 +21477,7 @@ standards:
   - org: *org_DII
     ref: DII S&R 049
   permalink: bps51960-2017-04.html
-  security_classification: OFFICIAL
+  security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
   author_org: *org_NPCC
@@ -21482,14 +21494,14 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{library_location}/Open Access/National Police Chiefs Council/bps51960-2017-04-078-17-ccc-april-2017-24-better-understanding-demand-policing-the-future.pdf
+    lib_url: file://{{collate_directory}}Open Access/National Police Chiefs Council/bps51960-2017-04-078-17-ccc-april-2017-24-better-understanding-demand-policing-the-future.pdf
     http_response:
     mime_type: .pdf
     publish_url: /library/bps51960/bps51960-2017-04.pdf
   classification:
   - ontology:
     classification:
-  status: *doc_status_current
+  status: *doc_status_adopted
   subject_group:
   published_date:
   last_updated:
@@ -21528,5 +21540,5 @@ standards:
     harvested_from:
     - *org_DII
     projects:
-    - *DII_standards_project
+    - *project_dii-standards
 
