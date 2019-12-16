@@ -16,10 +16,12 @@ There are two main sources for standards:-
    <th>Status</th>
 </tr>
 {% for standard in sorted_standards %}
+{% if standard.status.value == 'Current' %}
 <tr>
 <td><a href="{{ standard.permalink }}">{{ standard.ref_full }}</a></td>
 <td>{{standard.title}}</td>
 <td>{{standard.status.value}}</td>
 </tr>
+{% endif %}
 {% endfor %}
 </table>
