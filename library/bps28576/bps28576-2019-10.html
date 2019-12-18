@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:description" content="">
+<meta property="og:title" content="Date-times and time-stamps">
+<meta property="og:url" content="https://www.gov.uk/government/publications/open-standards-for-government/date-times-and-time-stamps-standard">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GOV.UK">
+<meta name="twitter:card" content="summary">
+<meta name="govuk:analytics:organisations" content="&lt;D2&gt;&lt;OT1056&gt;">
+<meta name="govuk:content-id" content="541f459b-f3e8-412a-8f32-a405b094c15d">
+<meta name="govuk:schema-name" content="html_publication">
+<meta name="govuk:publishing-application" content="whitehall">
+<meta name="govuk:format" content="html_publication">
+<meta name="csrf-token" content="ugVK3paR3YnScx1tc+NuiUBu8g6fOlsOJiZ2NBnHG0cRR5jJZiz4KMXLnbWXi8ZVkR0zqPrTqyyCr6VNAOeAmg==">
+<meta name="csrf-param" content="authenticity_token">
+    <meta charset="utf-8">
+    <title lang="en">
+      Date-times and time-stamps - GOV.UK
+  </title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-c0b8ba8b1652aacad298d74f24752260187f538b50c40c2484f7f333cbc3cf2b.css" crossorigin="anonymous" integrity="sha256-wLi6ixZSqsrSmNdPJHUiYBh/U4tQxAwkhPfzM8vDzys=">
+<!--<![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie6-2c1bb089ee71d4d70a08ba94e4b363a99542c8feddf3aa979bc4f8962aed5e02.css" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie7-062e553ef49a9f884a3a1f885c8a18e829b6557046b075e1384f6092a60151d1.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie8-11027733d1abeac34c7bf14e37fea30366ad3a87cfd7f7a084de3a3b4b838412.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css" crossorigin="anonymous" integrity="sha256-EHZRlSHC//u/das7DTsy7i2WrH6XePHN+sF3Hu/RocA=">
+
+    <link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-e9ec5a5f82e5c2a17927ce356e5a054cb28025ec1547ec5d00f5c98d2ec5e481.css" crossorigin="anonymous" integrity="sha256-6exaX4LlwqF5J841bloFTLKAJewVR+xdAPXJjS7F5IE=">
+    <!--[if lt IE 9]><script src="https://assets.publishing.service.gov.uk/static/ie-a4524544a53d57a7e259b4bb966b9c32557c98c920b77e52d09304642b68401a.js" crossorigin="anonymous" integrity="sha256-pFJFRKU9V6fiWbS7lmucMlV8mMkgt35S0JMEZCtoQBo="></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.publishing.service.gov.uk/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-535eb07d05bcae550061481a9cbefad8c4807bf8da32da77312cf8ef2ab616c0.css" crossorigin="anonymous" integrity="sha256-U16wfQW8rlUAYUganL762MSAe/jaMtp3MSz47yq2FsA=">
+<!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie6-5c47753cc200d8db446c21875553b24ff48b0a44811ef6d40fe376308965772c.css" /><script>var ieVersion = 6;</script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie7-1ca70b36d2fc2678fa382efe5f5f9750efd57cf8e6145b50e8e95ea65eb1b5a5.css" /><script>var ieVersion = 7;</script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie8-d5687d414822631f2e10ebc23279df488e1b0aa1ecaf130cd57234621b0d6084.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/core-layout-print-9a2de3ce1590c8ca478a6f7edf5a2e4bad0c6291b1dd4a6e7ca85f653d9591b4.css" crossorigin="anonymous" integrity="sha256-mi3jzhWQyMpHim9+31ouS60MYpGx3UpufKhfZT2VkbQ=">
+
+
+
+    <meta property="og:image" content="https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+  <link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/government-frontend/application-c3f08ba2bc32b02b2f4fd2ebc9510a484b1c76de5ab3177f364a396bf040a6b0.css" crossorigin="anonymous" integrity="sha256-w/CLorwysCsvT9LryVEKSEscdt5asxd/Nko5a/BAprA=">
+<link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/government-frontend/print-75909aa8c79ec8aa897d6e3bd44031259a95acfefd954436144a38f750771ffc.css" crossorigin="anonymous" integrity="sha256-dZCaqMeeyKqJfW471EAxJZqVrP79lUQ2FEo491B3H/w=">
+<link rel="canonical" href="https://www.gov.uk/government/publications/open-standards-for-government/date-times-and-time-stamps-standard">
+<meta name="govuk:rendering-application" content="government-frontend">
+</head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    
+<div id="global-cookie-message" class="gem-c-cookie-banner" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet>
+  <div class="gem-c-cookie-banner__wrapper govuk-width-container">
+    <p class="gem-c-cookie-banner__message">GOV.UK uses cookies which are essential for the site to work. We also use non-essential cookies to help us improve government digital services. Any data collected is anonymised. By continuing to use this site, you agree to our use of cookies.</p>
+    <div class="gem-c-cookie-banner__buttons">
+      <div class="gem-c-cookie-banner__button gem-c-cookie-banner__button-accept">
+        
+
+
+  <button class="gem-c-button govuk-button gem-c-button--secondary gem-c-button--inline" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted">Accept cookies</button>
+
+
+      </div>
+      <div class="gem-c-cookie-banner__button gem-c-cookie-banner__button-settings">
+        
+
+
+  <a class="gem-c-button govuk-button gem-c-button--secondary gem-c-button--inline" role="button" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked" href="/help/cookies">Cookie settings</a>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="gem-c-cookie-banner__confirmation govuk-width-container" tabindex="-1">
+    <p class="gem-c-cookie-banner__confirmation-message">
+      You’ve accepted all cookies. You can <a class="govuk-link" href="/help/cookies" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation">change your cookie settings</a> at any time.
+    </p>
+    <button class="gem-c-cookie-banner__hide-button" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide</button>
+  </div>
+</div>
+
+
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content" data-module="track-click" data-track-category="homeLinkClicked" data-track-action="homeHeader">
+              <img src="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" width="36" height="32" alt=""> GOV.UK
+            </a>
+          </div>
+            <a href="#search" class="search-toggle js-header-toggle">Search</a>
+  <form id="search" class="site-search" action="/search" method="get" role="search">
+    <div class="content">
+      <label for="site-search-text">Search</label>
+      <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus">
+      <input class="submit" type="submit" value="Search">
+    </div>
+  </form>
+
+        </div>
+        
+      </div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      
+
+
+  <div id="wrapper" class="direction-ltr">
+    
+
+      
+<div class="gem-c-contextual-breadcrumbs">
+    
+
+
+<div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+  <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+          <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+          <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/government/publications/open-standards-for-government" data-track-options='{"dimension28":"2","dimension29":"Open standards for government"}' class="govuk-breadcrumbs__link" aria-current="false" href="/government/publications/open-standards-for-government">Open standards for government</a>
+      </li>
+  </ol>
+</div>
+
+
+</div>
+
+
+    <main role="main" id="content" class="html-publication" lang="en">
+      
+
+  <div class="publication-external">
+    <ol class="organisation-logos">
+        <li class="organisation-logos__logo">
+          <div class="organisation-logo__inner">
+            <div class="gem-c-organisation-logo brand--cabinet-office">
+    <a class="gem-c-organisation-logo__container gem-c-organisation-logo__link gem-c-organisation-logo__crest gem-c-organisation-logo__crest--single-identity brand__border-color" href="/government/organisations/cabinet-office">
+      <span class="gem-c-organisation-logo__name">Cabinet Office</span>
+</a>
+</div>
+
+          </div>
+        </li>
+        <li class="organisation-logos__logo">
+          <div class="organisation-logo__inner">
+            <div class="gem-c-organisation-logo brand--cabinet-office">
+    <a class="gem-c-organisation-logo__container gem-c-organisation-logo__link gem-c-organisation-logo__crest gem-c-organisation-logo__crest--single-identity brand__border-color" href="/government/organisations/government-digital-service">
+      <span class="gem-c-organisation-logo__name">Government Digital Service</span>
+</a>
+</div>
+
+          </div>
+        </li>
+    </ol>
+  </div>
+
+  <header class="gem-c-inverse-header  gem-c-inverse-header--padding-top ">
+    
+  <div class="gem-c-title govuk-!-margin-top-8 gem-c-title--inverse govuk-!-margin-bottom-0">
+    <p class="gem-c-title__context">
+      Guidance
+    </p>
+  <h1 class="gem-c-title__text ">
+    Date-times and time-stamps
+  </h1>
+</div>
+  <p class="publication-header__last-changed">Updated 18 October 2019</p>
+
+  </header>
+
+
+
+<div class="govuk-grid-row sidebar-with-body" data-module="sticky-element-container" id="contents">
+    <div class="govuk-grid-column-one-quarter-from-desktop contents-list-container">
+        <nav class="gem-c-contents-list  gem-c-contents-list--no-underline " role="navigation" data-module="track-click">
+      <h2 class="gem-c-contents-list__title">Contents</h2>
+
+    <ol class="gem-c-contents-list__list">
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--numbered">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 1" data-track-label="#summary-of-the-standards-use-for-government" data-track-options='{"dimension29":"\n1. Summary of the standard’s use for government"}' href="#summary-of-the-standards-use-for-government"><span class="gem-c-contents-list__number">1. </span><span class="gem-c-contents-list__numbered-text">Summary of the standard’s use for government</span></a>
+
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--numbered">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="#how-this-standard-meets-user-needs" data-track-options='{"dimension29":"\n2. How this standard meets user needs"}' href="#how-this-standard-meets-user-needs"><span class="gem-c-contents-list__number">2. </span><span class="gem-c-contents-list__numbered-text">How this standard meets user needs</span></a>
+
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--numbered">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#benefits-of-using-this-standard" data-track-options='{"dimension29":"\n3. Benefits of using this standard"}' href="#benefits-of-using-this-standard"><span class="gem-c-contents-list__number">3. </span><span class="gem-c-contents-list__numbered-text">Benefits of using this standard</span></a>
+
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--numbered">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 4" data-track-label="#how-to-implement-the-standard" data-track-options='{"dimension29":"\n4. How to implement the standard"}' href="#how-to-implement-the-standard"><span class="gem-c-contents-list__number">4. </span><span class="gem-c-contents-list__numbered-text">How to implement the standard</span></a>
+
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--numbered">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 5" data-track-label="#how-to-integrate-the-standard" data-track-options='{"dimension29":"\n5. How to integrate the standard"}' href="#how-to-integrate-the-standard"><span class="gem-c-contents-list__number">5. </span><span class="gem-c-contents-list__numbered-text">How to integrate the standard</span></a>
+
+        </li>
+    </ol>
+</nav>
+    </div>
+
+  <div class="print-wrapper">
+    <div class="print-meta-data">
+      <p>
+  <img class="print-meta-data-licence" src="https://assets.publishing.service.gov.uk/government-frontend/open-government-licence-min-e98134ae65ff5fe99a524d8c383350b3998f91c298dc24b36126e65f1656c578.png">
+</p>
+<p>
+  © Crown copyright 2019
+</p>
+<p>
+  This publication is licensed under the terms of the Open Government Licence v3.0 except where otherwise stated. To view this licence, visit <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3">nationalarchives.gov.uk/doc/open-government-licence/version/3</a> or write to the Information Policy Team, The National Archives, Kew, London TW9 4DU, or email: <a href="mailto:psi@nationalarchives.gsi.gov.uk">psi@nationalarchives.gsi.gov.uk</a>.
+</p>
+<p>
+  Where we have identified any third party copyright information you will need to obtain permission from the copyright holders concerned.
+</p>
+<p>
+  This publication is available at https://www.gov.uk/government/publications/open-standards-for-government/date-times-and-time-stamps-standard
+</p>
+
+
+
+    </div>
+  </div>
+
+  <div class="main-content-container">
+    <div class="gem-c-govspeak-html-publication">
+  
+<div class="gem-c-govspeak govuk-govspeak direction-ltr" data-module="govspeak">
+      <div class="govspeak">
+<p>The ISO 8601 standard is an internationally accepted way to represent dates and times using numbers.
+The <a href="https://www.gov.uk/government/groups/open-standards-board">Open Standards Board</a> has selected this standard for the exchange of date and time in government systems.</p>
+
+<div class="call-to-action">
+<p>New systems and services must use the date and time-stamp standard <a rel="external" href="https://www.iso.org/standard/40874.html">ISO 8601:2004</a></p>
+</div>
+
+<h2 id="summary-of-the-standards-use-for-government">
+<span class="number">1. </span>Summary of the standard’s use for government</h2>
+
+<p>Use ISO 8601 for dates and times where machine readability is the main concern. This includes use in:</p>
+
+<ul>
+  <li>APIs</li>
+  <li>data exchanges such as metadata in documents and websites</li>
+  <li>date sorting, for example, at the start of some filenames</li>
+</ul>
+
+<p>ISO 8601 does not apply when human readability is the main concern. For example, dates and times added within the text of a document.</p>
+
+<p>Read more about the <a rel="external" href="https://github.com/alphagov/open-standards/issues/37">original Challenge</a>.</p>
+
+<h2 id="how-this-standard-meets-user-needs">
+<span class="number">2. </span>How this standard meets user needs</h2>
+
+<p>The <a rel="external" href="https://github.com/alphagov/open-standards/issues/37">Challenge</a> identifies the need to avoid inconsistency in the exchange and recording of date and time information. By adopting the standard ISO 8601, systems have a reduced inconsistency of how they format data.</p>
+
+<p>ISO 8601 gives the user the flexibility to choose the level of date and time precision required.</p>
+
+<p>Please note that the <a rel="external" href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO standard</a> documentation and its BSI equivalent <a rel="external" href="https://shop.bsigroup.com/ProductDetail/?pid=000000000030078726">BS ISO 8601:2004</a> are not free of charge for users.</p>
+
+<p>Profiles are available for this standard including the <a rel="external" href="https://tools.ietf.org/html/rfc3339">IETF RFC 3339</a>, and the W3C <a rel="external" href="https://www.w3.org/TR/NOTE-datetime">date and time format note</a>. These and other <a rel="external" href="https://www.cl.cam.ac.uk/~mgk25/iso-time.html">published guidance</a> on the standard are free of charge for users.</p>
+
+<h2 id="benefits-of-using-this-standard">
+<span class="number">3. </span>Benefits of using this standard</h2>
+<p>By using ISO 8601 as the standard form for the representation of dates and time there is:</p>
+
+<ul>
+  <li>greater consistency</li>
+  <li>less confusion about which format to use</li>
+  <li>an easier way to sort documents by date and filename</li>
+  <li>improved international interoperability by reducing the ambiguity around time zones and date formats</li>
+</ul>
+
+<h2 id="how-to-implement-the-standard">
+<span class="number">4. </span>How to implement the standard</h2>
+
+<p>Use ISO 8601 to the level of accuracy you require when a date or date and time is being recorded or exchanged in an IT system.</p>
+
+<p>List date and time elements in descending order of size (years, months, days, hours, minutes, seconds, milliseconds, and microseconds).</p>
+
+<p>This profile is based on the assumption that you’re using local time. A Coordinated Universal Time (<a rel="external" href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>) offset may be added. For example, 2017-05-16T10:30:56+01:00 shows the instant of the 16 May 2017 at 30 minutes and 56 seconds past 10am. The offset in this example is British summer time (BST), one hour ahead of UTC.</p>
+
+<p>The standard’s format has a fixed number of digits padded with leading zeros to support different levels of accuracy. The lowest level is four digits to represent a year, and as you increase accuracy by adding the month, week or day the digits replace the zero padding. When using a less accurate date, include hyphen separators to avoid user confusion, for example, separate the digits for the year and the month - YYYY-MM.</p>
+
+<p>If required, separate time from the date by a ‘T’ character and record in a 24-hour format with 2 digits per element. The time format uses a ‘:’ separator between hours and minutes.</p>
+
+<h2 id="how-to-integrate-the-standard">
+<span class="number">5. </span>How to integrate the standard</h2>
+
+<p>ISO 8601 has broad compatibility with other date standards:</p>
+
+<ul>
+  <li>
+<a rel="external" href="https://tools.ietf.org/html/rfc3339">RFC 3339</a> simplifies ISO 8601 for use in Internet protocols by omitting infrequently used options - most fields are mandatory, the exception being fractions of a second, the use of which is optional</li>
+  <li>
+<a rel="external" href="https://www.w3.org/TR/NOTE-datetime">W3C date and time format</a> is an ISO 8601 profile written to simplify its use in WWW standards</li>
+</ul>
+
+<p>Standards already accepted by the Open Standards Board cite ISO 8601.
+These standards are the:</p>
+
+<ul>
+  <li><a href="https://www.gov.uk/government/publications/open-standards-for-government/exchange-of-calendar-events">Exchange of calendar events - iCAL</a></li>
+  <li><a href="https://www.gov.uk/government/publications/open-standards-for-government/exchange-of-contact-information">Exchange of contact information - vCard</a></li>
+  <li><a href="https://www.gov.uk/government/publications/open-standards-for-government/sharing-or-collaborating-with-government-documents">Sharing or collaborating with government documents - ODF 1.2</a></li>
+  <li><a href="https://www.gov.uk/government/publications/open-standards-for-government/open-contracting-data-standard-profile">Open contracting data - OCDS</a></li>
+  <li><a href="https://www.gov.uk/government/publications/open-standards-for-government/open-standard-for-international-development-data">International development data - IATI</a></li>
+  <li><a href="https://www.gov.uk/government/publications/open-standards-for-government/publishing-vacancies-online-standards-profile--2">Publishing vacancies - JobPosting</a></li>
+  <li><a href="https://www.gov.uk/government/publications/open-standards-for-government/multi-agency-incident-transfer">Multi-agency incident transfer - MAIT</a></li>
+  <li><a href="https://www.gov.uk/government/publications/open-standards-for-government/viewing-government-documents">Viewing government documents - HTML5</a></li>
+</ul>
+
+<p>This standard is not suitable where the use of date and time is primarily for human readers. The <a href="https://www.gov.uk/service-manual/design/dates">GOV.UK Service Manual</a> has guidance on the use of dates in digital services for consistent user experience.</p>
+</div>
+</div>
+</div>
+
+  </div>
+
+  <div data-sticky-element class="govuk-sticky-element">
+    <a class="govuk-link app-c-back-to-top dont-print" href="#contents">
+    <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewbox="0 0 13 17">
+      <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+    </svg>
+    Contents
+</a>
+
+  </div>
+</div>
+
+    </main>
+    
+<div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
+  
+<div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+  <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
+    <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+    <a class="gem-c-feedback__prompt-link" data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" aria-expanded="false" role="button" style="display: none;" hidden="hidden" aria-hidden="true" href="/contact/govuk">
+        Maybe
+</a>    <ul class="gem-c-feedback__option-list">
+      <li class="gem-c-feedback__option-list-item gem-c-feedback__option-list-item--useful">
+        <a class="gem-c-feedback__prompt-link js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" aria-expanded="false" role="button" href="/contact/govuk">
+          Yes <span class="visually-hidden">this page is useful</span>
+</a>      </li>
+      <li class="gem-c-feedback__option-list-item gem-c-feedback__option-list-item--not-useful">
+        <a class="gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" role="button" href="/contact/govuk">
+          No <span class="visually-hidden">this page is not useful</span>
+</a>      </li>
+      <li class="gem-c-feedback__option-list-item gem-c-feedback__option-list-item--wrong">
+        <a class="gem-c-feedback__prompt-link js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV.UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" role="button" href="/contact/govuk">
+          Is there anything wrong with this page?
+</a>      </li>
+    </ul>
+  </div>
+
+  <div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">
+    Thank you for your feedback
+  </div>
+</div>
+
+  <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post">
+  <a href="#" class="gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true" role="button">Close</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+      <input type="hidden" name="url" value="https://www.gov.uk/government/publications/open-standards-for-government/date-times-and-time-stamps-standard">
+
+      <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+      <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+      
+<div class="govuk-form-group">
+    
+<label for="input-9d2b5013" class="gem-c-label govuk-label">
+  What were you doing?
+</label>
+
+
+
+
+  <input name="what_doing" class="gem-c-input govuk-input" id="input-9d2b5013" type="text" aria-describedby="feedback_explanation">
+</div>
+
+      
+<div class="govuk-form-group">
+    
+<label for="input-dc38ddca" class="gem-c-label govuk-label">
+  What went wrong?
+</label>
+
+
+
+
+  <input name="what_wrong" class="gem-c-input govuk-input" id="input-dc38ddca" type="text">
+</div>
+
+      
+
+
+  <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+    </div>
+  </div>
+</form>
+
+  <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post">
+  <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds" id="survey-wrapper">
+      <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+      <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+      <input name="email_survey_signup[survey_source]" type="hidden" value="/government/publications/open-standards-for-government/date-times-and-time-stamps-standard">
+
+      <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+      <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+      
+<div class="govuk-form-group">
+    
+<label for="input-0c06c4de" class="gem-c-label govuk-label">
+  Email address
+</label>
+
+
+
+
+  <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-0c06c4de" type="email" autocomplete="email" aria-describedby="survey_explanation">
+</div>
+
+      
+
+
+  <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+    </div>
+  </div>
+</form>
+
+</div>
+
+  </div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+            <div class="footer-categories" data-module="track-click">
+      <div class="footer-explore">
+        <h2>Brexit</h2>
+        <ul>
+          <li><a data-track-category="footerClicked" data-track-action="brexitLinks" data-track-label="Find out more about Brexit" href="/brexit">Find out more about Brexit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-categories" data-module="track-click">
+      <div class="footer-explore">
+        <h2>Services and information</h2>
+
+        <ul>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Benefits" href="/browse/benefits">Benefits</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Births, deaths, marriages and care" href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Business and self-employed" href="/browse/business">Business and self-employed</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="" href="/browse/childcare-parenting">Childcare and parenting</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Citizenship and living in the UK" href="/browse/citizenship">Citizenship and living in the UK</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Crime, justice and the law" href="/browse/justice">Crime, justice and the law</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Disabled people" href="/browse/disabilities">Disabled people</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Driving and transport" href="/browse/driving">Driving and transport</a></li>
+        </ul>
+        <ul>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Education and learning" href="/browse/education">Education and learning</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Employing people" href="/browse/employing-people">Employing people</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Environment and countryside" href="/browse/environment-countryside">Environment and countryside</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Housing and local services" href="/browse/housing-local-services">Housing and local services</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Money and tax" href="/browse/tax">Money and tax</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Passports, travel and living abroad" href="/browse/abroad">Passports, travel and living abroad</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Visas and immigration" href="/browse/visas-immigration">Visas and immigration</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Working, jobs and pensions" href="/browse/working">Working, jobs and pensions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-inside-government">
+        <h2>Departments and policy</h2>
+
+        <ul>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="How government works" href="/government/how-government-works">How government works</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Departments" href="/government/organisations">Departments</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Worldwide" href="/world">Worldwide</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Services" href="/search/services">Services</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Guidance and regulation" href="/search/guidance-and-regulation">Guidance and regulation</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="News and communications" href="/search/news-and-communications">News and communications</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Research and statistics" href="/search/research-and-statistics">Research and statistics</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Policy papers and consultations" href="/search/policy-papers-and-consultations">Policy papers and consultations</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Transparency and freedom of information releases" href="/search/transparency-and-freedom-of-information-releases">Transparency and freedom of information releases</a></li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="/help">Help</a></li>
+  <li><a href="/help/privacy-notice">Privacy</a></li>
+  <li><a href="/help/cookies">Cookies</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help/accessibility-statement">Accessibility statement</a></li>
+  <li><a href="/help/terms-conditions">Terms and conditions</a></li>
+  <li><a href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+</li>
+</ul>
+
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+      <script src="https://assets.publishing.service.gov.uk/static/libs/jquery/jquery-1.12.4-c731c20e2995c576b0509d3bd776f7ab64a66b95363a3b5fae9864299ee594ed.js" crossorigin="anonymous" integrity="sha256-xzHCDimVxXawUJ0713b3q2Sma5U2OjtfrphkKZ7llO0="></script>
+<script src="https://assets.publishing.service.gov.uk/static/header-footer-only-3b4d6cf44ced5936466aef6ff024b3372f2b6b6c274cef3c463fea0f48e65461.js" crossorigin="anonymous" integrity="sha256-O01s9EztWTZGau9v8CSzNy8ra2wnTO88Rj/qD0jmVGE="></script>
+<script src="https://assets.publishing.service.gov.uk/static/surveys-6df4fe897f65c56e609545dc02ce2124940f2af4e0010012a50b05ac1be65368.js" crossorigin="anonymous" integrity="sha256-bfT+iX9lxW5glUXcAs4hJJQPKvTgAQASpQsFrBvmU2g="></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="https://assets.publishing.service.gov.uk/government-frontend/application-35649b97f4d24c75c6a76f85a83d29ba4994d4c07e5bb7c0c69442af4fb75d95.js" crossorigin="anonymous" integrity="sha256-NWSbl/TSTHXGp2+FqD0pukmU1MB+W7fAxpRCr0+3XZU="></script><script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.gov.uk/government/publications/open-standards-for-government/date-times-and-time-stamps-standard"},"headline":"Date-times and time-stamps","datePublished":"2018-01-31T10:18:44.000+00:00","dateModified":"2019-10-18T12:37:59.000+00:00","description":null,"publisher":{"@type":"Organization","name":"GOV.UK","url":"https://www.gov.uk","logo":{"@type":"ImageObject","url":"https://assets.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-logo-e5962881254c9adb48f94d2f627d3bb67f258a6cbccc969e80abb7bbe4622976.png"}},"image":["https://assets.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-schema-placeholder-1x1-5ceffac04f7f6d4f421bd1d36dbb723ef48c15426d7f77f90be80a83af3c747e.png","https://assets.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-schema-placeholder-4x3-fcfe16abb1a015848e50d2ea797666a9eaf5158dca38ddfb1e52dc8c0543ab74.png","https://assets.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-schema-placeholder-16x9-fcf616879a7b37970df4d2117de962e08f7d057674ef1af6063dcdd529424eee.png"],"author":{"@type":"Organization","name":"Cabinet Office","url":"https://www.gov.uk/government/organisations/cabinet-office"},"articleBody":"\u003cdiv class=\"govspeak\"\u003e\u003cp\u003eThe ISO 8601 standard is an internationally accepted way to represent dates and times using numbers.\nThe \u003ca href=\"https://www.gov.uk/government/groups/open-standards-board\"\u003eOpen Standards Board\u003c/a\u003e has selected this standard for the exchange of date and time in government systems.\u003c/p\u003e\n\n\u003cdiv class=\"call-to-action\"\u003e\n\u003cp\u003eNew systems and services must use the date and time-stamp standard \u003ca rel=\"external\" href=\"https://www.iso.org/standard/40874.html\"\u003eISO 8601:2004\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e\n\n\u003ch2 id=\"summary-of-the-standards-use-for-government\"\u003e\n\u003cspan class=\"number\"\u003e1. \u003c/span\u003eSummary of the standard’s use for government\u003c/h2\u003e\n\n\u003cp\u003eUse ISO 8601 for dates and times where machine readability is the main concern. This includes use in:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eAPIs\u003c/li\u003e\n  \u003cli\u003edata exchanges such as metadata in documents and websites\u003c/li\u003e\n  \u003cli\u003edate sorting, for example, at the start of some filenames\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eISO 8601 does not apply when human readability is the main concern. For example, dates and times added within the text of a document.\u003c/p\u003e\n\n\u003cp\u003eRead more about the \u003ca rel=\"external\" href=\"https://github.com/alphagov/open-standards/issues/37\"\u003eoriginal Challenge\u003c/a\u003e.\u003c/p\u003e\n\n\u003ch2 id=\"how-this-standard-meets-user-needs\"\u003e\n\u003cspan class=\"number\"\u003e2. \u003c/span\u003eHow this standard meets user needs\u003c/h2\u003e\n\n\u003cp\u003eThe \u003ca rel=\"external\" href=\"https://github.com/alphagov/open-standards/issues/37\"\u003eChallenge\u003c/a\u003e identifies the need to avoid inconsistency in the exchange and recording of date and time information. By adopting the standard ISO 8601, systems have a reduced inconsistency of how they format data.\u003c/p\u003e\n\n\u003cp\u003eISO 8601 gives the user the flexibility to choose the level of date and time precision required.\u003c/p\u003e\n\n\u003cp\u003ePlease note that the \u003ca rel=\"external\" href=\"https://www.iso.org/iso-8601-date-and-time-format.html\"\u003eISO standard\u003c/a\u003e documentation and its BSI equivalent \u003ca rel=\"external\" href=\"https://shop.bsigroup.com/ProductDetail/?pid=000000000030078726\"\u003eBS ISO 8601:2004\u003c/a\u003e are not free of charge for users.\u003c/p\u003e\n\n\u003cp\u003eProfiles are available for this standard including the \u003ca rel=\"external\" href=\"https://tools.ietf.org/html/rfc3339\"\u003eIETF RFC 3339\u003c/a\u003e, and the W3C \u003ca rel=\"external\" href=\"https://www.w3.org/TR/NOTE-datetime\"\u003edate and time format note\u003c/a\u003e. These and other \u003ca rel=\"external\" href=\"https://www.cl.cam.ac.uk/~mgk25/iso-time.html\"\u003epublished guidance\u003c/a\u003e on the standard are free of charge for users.\u003c/p\u003e\n\n\u003ch2 id=\"benefits-of-using-this-standard\"\u003e\n\u003cspan class=\"number\"\u003e3. \u003c/span\u003eBenefits of using this standard\u003c/h2\u003e\n\u003cp\u003eBy using ISO 8601 as the standard form for the representation of dates and time there is:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003egreater consistency\u003c/li\u003e\n  \u003cli\u003eless confusion about which format to use\u003c/li\u003e\n  \u003cli\u003ean easier way to sort documents by date and filename\u003c/li\u003e\n  \u003cli\u003eimproved international interoperability by reducing the ambiguity around time zones and date formats\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2 id=\"how-to-implement-the-standard\"\u003e\n\u003cspan class=\"number\"\u003e4. \u003c/span\u003eHow to implement the standard\u003c/h2\u003e\n\n\u003cp\u003eUse ISO 8601 to the level of accuracy you require when a date or date and time is being recorded or exchanged in an IT system.\u003c/p\u003e\n\n\u003cp\u003eList date and time elements in descending order of size (years, months, days, hours, minutes, seconds, milliseconds, and microseconds).\u003c/p\u003e\n\n\u003cp\u003eThis profile is based on the assumption that you’re using local time. A Coordinated Universal Time (\u003ca rel=\"external\" href=\"https://en.wikipedia.org/wiki/Coordinated_Universal_Time\"\u003eUTC\u003c/a\u003e) offset may be added. For example, 2017-05-16T10:30:56+01:00 shows the instant of the 16 May 2017 at 30 minutes and 56 seconds past 10am. The offset in this example is British summer time (BST), one hour ahead of UTC.\u003c/p\u003e\n\n\u003cp\u003eThe standard’s format has a fixed number of digits padded with leading zeros to support different levels of accuracy. The lowest level is four digits to represent a year, and as you increase accuracy by adding the month, week or day the digits replace the zero padding. When using a less accurate date, include hyphen separators to avoid user confusion, for example, separate the digits for the year and the month - YYYY-MM.\u003c/p\u003e\n\n\u003cp\u003eIf required, separate time from the date by a ‘T’ character and record in a 24-hour format with 2 digits per element. The time format uses a ‘:’ separator between hours and minutes.\u003c/p\u003e\n\n\u003ch2 id=\"how-to-integrate-the-standard\"\u003e\n\u003cspan class=\"number\"\u003e5. \u003c/span\u003eHow to integrate the standard\u003c/h2\u003e\n\n\u003cp\u003eISO 8601 has broad compatibility with other date standards:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\n\u003ca rel=\"external\" href=\"https://tools.ietf.org/html/rfc3339\"\u003eRFC 3339\u003c/a\u003e simplifies ISO 8601 for use in Internet protocols by omitting infrequently used options - most fields are mandatory, the exception being fractions of a second, the use of which is optional\u003c/li\u003e\n  \u003cli\u003e\n\u003ca rel=\"external\" href=\"https://www.w3.org/TR/NOTE-datetime\"\u003eW3C date and time format\u003c/a\u003e is an ISO 8601 profile written to simplify its use in WWW standards\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eStandards already accepted by the Open Standards Board cite ISO 8601.\nThese standards are the:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca href=\"https://www.gov.uk/government/publications/open-standards-for-government/exchange-of-calendar-events\"\u003eExchange of calendar events - iCAL\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://www.gov.uk/government/publications/open-standards-for-government/exchange-of-contact-information\"\u003eExchange of contact information - vCard\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://www.gov.uk/government/publications/open-standards-for-government/sharing-or-collaborating-with-government-documents\"\u003eSharing or collaborating with government documents - ODF 1.2\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://www.gov.uk/government/publications/open-standards-for-government/open-contracting-data-standard-profile\"\u003eOpen contracting data - OCDS\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://www.gov.uk/government/publications/open-standards-for-government/open-standard-for-international-development-data\"\u003eInternational development data - IATI\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://www.gov.uk/government/publications/open-standards-for-government/publishing-vacancies-online-standards-profile--2\"\u003ePublishing vacancies - JobPosting\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://www.gov.uk/government/publications/open-standards-for-government/multi-agency-incident-transfer\"\u003eMulti-agency incident transfer - MAIT\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://www.gov.uk/government/publications/open-standards-for-government/viewing-government-documents\"\u003eViewing government documents - HTML5\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eThis standard is not suitable where the use of date and time is primarily for human readers. The \u003ca href=\"https://www.gov.uk/service-manual/design/dates\"\u003eGOV.UK Service Manual\u003c/a\u003e has guidance on the use of dates in digital services for consistent user experience.\u003c/p\u003e\n\u003c/div\u003e"}
+</script><script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https://www.gov.uk/"}},{"@type":"ListItem","position":2,"item":{"name":"Open standards for government","@id":"https://www.gov.uk/government/publications/open-standards-for-government"}}]}
+</script>
+</body>
+</html>

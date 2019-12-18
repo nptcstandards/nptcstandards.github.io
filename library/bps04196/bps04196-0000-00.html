@@ -5,200 +5,325 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>DCMI: DCMI Specifications</title>
-  <meta name="generator" content="Hugo 0.49.2" />
-  <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/js/datatables.min.js"></script>
-  <script type="text/javascript" src="/js/dataTables.fixedHeader.min.js"></script>
-  <script type="text/javascript" src="/js/dcmi.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
-  <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
-  <link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/dcmi.css" type="text/css" />
-  <link rel="stylesheet" href="/css/dcmi_tables.css" type="text/css" />
-  <link rel="stylesheet" href="/css/datatables.min.css"/>
-  <link rel="stylesheet" href="/css/fixedHeader.dataTables.min.css"/>
-  <link rel="stylesheet" href="/css/fixedHeader.bootstrap4.min.css"/>
-  <link rel="stylesheet" href="/css/fixes_to_old_embedded_css.css" type="text/css" />
-  <link rel="stylesheet" href="/css/conference_programme.css" type="text/css" />
-  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="DCMI RSS" />
-  <link href="/index.xml" rel="feed" type="application/rss+xml" title="DCMI RSS" />
-  <meta name="google-site-verification" content="gC-CBWWuKRpe-1q8OfQfyG_CYkOk_Du8sMdVpWkNVT8" />
+  <title>DCMI: Specifications</title>
+  <meta name="generator" content="Hugo 0.55.6" />
+  
+  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="DCMI RSS" />
+  <link rel="feed" type="application/rss+xml" type="application/rss+xml" href="/index.xml" title="DCMI RSS" />
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <link rel="stylesheet" href="https://www.dublincore.org/css/bootstrap-grid.min.css">
+
+  
+  <link rel="application/json" href="https://www.dublincore.org/css/bootstrap-grid.min.css.map">
+
+  
+  <link rel="stylesheet" href="https://www.dublincore.org/css/bootstrap-reboot.min.css">
+
+  
+  <link rel="application/json" href="https://www.dublincore.org/css/bootstrap-reboot.min.css.map">
+
+  
+  <link rel="stylesheet" href="https://www.dublincore.org/css/bootstrap.min.css">
+
+  
+  <link rel="application/json" href="https://www.dublincore.org/css/bootstrap.min.css.map">
+
+  
+  <link rel="stylesheet" href="https://www.dublincore.org/css/datatables.min.css">
+
+  
+  <link rel="stylesheet" href="https://www.dublincore.org/css/fixedHeader.dataTables.min.css">
+
+  
+  <link rel="stylesheet" href="https://www.dublincore.org/css/fixedHeader.bootstrap4.min.css">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  <link rel="stylesheet" href="https://www.dublincore.org/css/dcmi/_bundle.min.d3a7e31188105278c6e0bd45dac86ecf53f56ad94b5ab8af6b8603608eb3a327.css">
+
+  
+  <script type="text/javascript" src="https://www.dublincore.org/js/jquery-3.2.1.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://www.dublincore.org/js/bootstrap.bundle.min.js"></script>
+
+  
+  <link rel="application/json" href="https://www.dublincore.org/js/bootstrap.bundle.min.js.map">
+
+  
+  <script type="text/javascript" src="https://www.dublincore.org/js/datatables.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://www.dublincore.org/js/dataTables.fixedHeader.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://www.dublincore.org/js/dcmi.js"></script>
+
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-1053639-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+  
+  
 </head>
   <body>
   	<div class="container-fluid">
-	  	<div class="row justify-content-between">
-  <div class="col-xs-7">
-    &nbsp;<i>innovation in metadata design, implementation &amp; best practices</i>
-  </div>
-  <div class="col-xs-5 float-right">
+	  	<div class="row">
+  <div class="col" style="font-size: 1.5rem;">
     
-    <a href="https://www.youtube.com/channel/UCp0ZH-3CX91eROy0J3AY3Og/videos?sort=dd&view=0&shelf_id=1" title="Youtube" name="Youtube">
-      <img class="header-icon" src="/theme_images/icons/youtube.png"/>
-    </a>
-    <a href="https://twitter.com/dublincore" title="Twitter" name="Twitter">
-      <img class="header-icon" src="/theme_images/icons/twitter.png"/>
-    </a>
-    <a href="https://github.com/dcmi" title="Github" name="Github">
-      <img class="header-icon" src="/theme_images/icons/github.png"/>
-    </a>
-    <a type="application/rss+xml" href="/index.xml" title="RSS" name="RSS">
-      <img class="header-icon" src="/theme_images/icons/rss.png"/>
-    </a>
+
+    
   </div>
-</div>
-<div class="row justify-content-start">
-  <div class="col-xs-12">
-    <a href="/">
-      <img class="home-page-logo" src="/images/_site_images/header.png"/>
-    </a>
-  </div>
-</div>
-	  	<div id="navbar" class="row justify-content-between">
-  <div class="col-xs-8">
-    <nav class="nav nav-fill">
-      <a class="nav-link" href="/">Home</a>
-      <a class="nav-link" href="/news/">News</a>
-      <a class="nav-link" href="/specifications/">DCMI Specifications</a>
-      <a class="nav-link" href="http://lrmi.dublincore.org">LRMI</a>
-      <a class="nav-link" href="/community-and-events/">Community and Events</a>
-      <a class="nav-link" href="/support/">Join / Support</a>
-      <a class="nav-link" href="/about/">About</a>
-    </nav>
-  </div>
-  <form action="/search" method="get">
-    <input class="form-control-sm" type="text" name="q" placeholder="quick search...."/>
-  </form>
 </div>
 
+
+<div class="row">
+  <div class="col">
+    
+    <a href="/membership/"><button class="btn btn-sm header-button-join active" aria-pressed="true">Join DCMI!</button></a>
+    <div id="site-strapline" class="d-none d-md-block">innovation in metadata design, implementation &amp; best practice</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <a href="/"><img id="header-logo" src="/images/dcmi_header.png"/></a>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div id="navbar-dcmi">
+      <div id="navbar-system-icons">
+        <a type="application/rss+xml" href="/index.xml" title="RSS" name="RSS">
+          <img class="header-icon" src="/images/icons/rss.png"/>
+        </a>
+        <a href="https://github.com/dcmi" title="Github" name="Github">
+          <img class="header-icon" src="/images/icons/github.png"/>
+        </a>
+        <a href="https://www.youtube.com/channel/UCp0ZH-3CX91eROy0J3AY3Og/videos?sort=dd&view=0&shelf_id=1" title="Youtube" name="Youtube">
+          <img class="header-icon" src="/images/icons/youtube.png"/>
+        </a>
+        <a href="https://twitter.com/dublincore" title="Twitter" name="Twitter">
+          <img class="header-icon" src="/images/icons/twitter.png"/>
+        </a>
+      </div>
+      <div id="navbar-menus">
+        <nav id="top-nav-bar" class="navbar navbar-expand-lg navbar-light navbar-dcmi" >
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+
+      <li class="nav-item nav-item-selected dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Specifications
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/specifications/dublin-core/">Dublin Core Specifications</a>
+          <a class="dropdown-item" href="/schemas/">Dublin Core Schemas</a>
+          <a class="dropdown-item" href="/specifications/lrmi/">LRMI</a>
+          <a class="dropdown-item" href="/specifications/bibo/">BIBO</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/news/">News</a>
+      </li>
+
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Community
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/themes/community/">Community</a>
+          <a class="dropdown-item" href="/conferences/2019/">Conference 2019</a>
+          <a class="dropdown-item" href="/conferences/">Past Conferences</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Learning
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/webinars/">Webinars</a>
+          <a class="dropdown-item" href="/resources/metadata-basics/">Metadata Basics</a>
+          <a class="dropdown-item" href="/resources/userguide/">Dublin Core User Guide</a>
+          <a class="dropdown-item" href="/resources/glossary/">Glossary</a>
+          <a class="dropdown-item" href="/resources/lrmi/">LRMI Resources</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/about/">About DCMI</a>
+          <a class="dropdown-item" href="/members/">Members</a>
+          <a class="dropdown-item" href="/groups/governing-board/">Governance</a>
+          <a class="dropdown-item" href="/about/executive/">Executive</a>
+          <a class="dropdown-item" href="/groups/usage-board/">Usage Board</a>
+          <a class="dropdown-item" href="/collaborations/">Collaborations</a>
+          <a class="dropdown-item" href="/about/lrmi/">About LRMI</a>
+          <a class="dropdown-item" href="/about/history/">DCMI History</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/about/contact/">Contact</a>
+      </li>
+
+    </ul>
+
+    <form action="/search" method="get">
+      <input class="form-control-sm" type="text" name="q" placeholder="quick search...."/>
+    </form>
+  </div>
+</nav>
+
+      </div>
+    </div>
+    <div id="navbar-dcmi-breadcrumbs-container">
+      <nav id="navbar-dcmi-breadcrumbs" class="" aria-label="breadcrumb">
+  <ol class="breadcrumb ml-auto breadcrumb-dcmi">
+		
+			
+			
+			  
+			  
+			
+			
+        
+        
+          <li class="breadcrumb-item"><a href="https://www.dublincore.org/">Home</a></li>
+        
+      
+        
+        
+          <li class="breadcrumb-item">Specifications</li>
+        
+      
+    
+	</ol>
+</nav>
+
+    </div>
+    
+  
+
+  </div>
+</div>
 
 	  	
-  <div class="row justify-content-start">
+  <div class="row">
     <div class="col">
-    	<h1>DCMI Specifications</h1>
-    	
-
-<ul>
-<li><a href="/documents/#recommendations">Recommendations</a></li>
-<li><a href="/documents/#proposedrecommendations">Proposed</a></li>
-<li><a href="/documents/#workingdrafts">Working Drafts</a></li>
-<li><a href="/documents/#supersededrecommendations">Superseded</a></li>
-<li><a href="/documents/#communityspecifications">Community Specifications</a></li>
-<li><a href="/documents/#recommendedresources">Recommended Resources</a></li>
-<li><a href="/documents/approval/">Approval Processes</a></li>
-<li><a href="/resources/translations/">Translations</a></li>
-</ul>
-
-<p>As part of its mission, the Dublin Core Metadata Initiative develops and maintains specifications in support of resource description. Specifications developed and reviewed in the context of DCMI's <a href="/documents/approval/">formal approval process</a> are assigned a status (in ascending order of maturity and stability) of &quot;DCMI Working Draft&quot;, &quot;DCMI Proposed Recommendation&quot;, or &quot;DCMI Recommendation&quot;. DCMI also provides pointers to guidelines and services developed outside of this formal review context (&quot;Recommended Resources&quot;).</p>
-
-<p>This selection highlights the specifications that currently attract the most attention in the Dublin Core community. Links to additional specifications (including superseded specifications) may be found at <a href="/documents/">http://dublincore.org/documents/</a>. Some of the specifications have been <a href="/resources/translations/">translated</a> into one of twenty-five languages.</p>
-
-<p>You can learn more about metadata and DCMI by exploring the pages listed in the menu bar above: <a href="/metadata-basics/">Metadata Basics</a>, <a href="/specifications/">Specifications</a> (this page), <a href="/community-and-events/">Community and Events</a>, and <a href="/about-us/">About Us</a>.</p>
-
-<h1 id="semantic-recommendations">Semantic Recommendations</h1>
-
-<p><strong><a href="/documents/dcmi-terms/">DCMI Metadata Terms</a></strong> [DCMI Recommendation]. This periodically updated document provides a one-stop source of up-to-date information on DCMI metadata terms, including the classic Dublin Core Metadata Element Set, the DCMI Type Vocabulary, and resource classes used as formal domains and ranges. Supporting documents includes</p>
-
-<ul>
-<li><a href="/documents/dcmi-namespace/">DCMI Namespace Policy</a> [DCMI Recommendation]. This document describes how metadata terms are assigned URIs by DCMI and the policies governing changes to the documented meanings associated with those URIs.</li>
-<li><a href="/schemas/rdfs/">DCMI term declarations represented in RDF schema language</a>. Since 2001, DCMI term declarations have been published as Web documents (with the status DCMI Recommendation) and, in parallel, as machine-processable RDF/XML documents.</li>
-<li><a href="http://purl.org/dcregistry/">The Dublin Core Metadata Registry</a> [DCMI Recommended Resource]. This application, hosted at the University of Tsukuba as a service for the DCMI community, provides a <a href="http://dcmi.kc.tsukuba.ac.jp/dcregistry/navigateServlet">navigational interface</a> to DCMI's machine-processable RDF term declarations. The registry is under development as an open-source software project.</li>
-<li><a href="/documents/dces/">Dublin Core Metadata Element Set</a> [DCMI Recommendation]. This document excerpts from DCMI Metadata Terms the fifteen elements of the classic &quot;Dublin Core&quot;, which has been standardized as:
-
-<ul>
-<li><a href="http://www.iso.org/iso/search.htm?qt=15836&amp;published=on&amp;active_tab=standards">ISO Standard 15836:2009</a></li>
-<li><a href="http://www.niso.org/apps/group_public/download.php/10216/Z39-85-2012_dublin_core.pdf">ANSI/NISO Standard Z39.85-2012</a></li>
-</ul></li>
-</ul>
-
-<h1 id="user-guidelines">User guidelines</h1>
-
-<p><strong><a href="/documents/interoperability-levels/">Interoperability Levels for Dublin Core Metadata</a></strong> [DCMI Recommended Resource]. This document articulates current thinking in the Dublin Core community about the nature of metadata interoperability. <a href="/metadata-basics">Read more...</a></p>
-
-<p><strong><a href="/documents/profile-guidelines/">Guidelines for Dublin Core Application Profiles</a></strong> [DCMI Recommended Resource]. This document provides guidelines for the creation of Dublin Core Application Profiles. The document explains the key components of a Dublin Core Application Profile and walks through the process of developing a profile. The document is aimed at designers of application profiles -- people who will bring together metadata terms for use in a specific context.</p>
-
-<p><strong><a href="/documents/singapore-framework/">Singapore Framework for Dublin Core Application Profiles</a></strong> [DCMI Recommended Resource]. The Singapore Framework for Dublin Core Application Profiles is a framework for designing metadata applications for maximum interoperability and for documenting such applications for maximum reusability. The framework defines a set of descriptive components that are necessary or useful for documenting an Application Profile and describes how these documentary standards relate to standard domain models and Semantic Web foundation standards. The framework forms a basis for reviewing Application Profiles for documentary completeness and for conformance with Web-architectural principles.</p>
-
-<p><strong><a href="/documents/usageguide/">Using Dublin Core</a></strong> [DCMI Recommended Resource]. From January 1998 through the latest version in November 2005, this document was maintained as the main entry point for new users of Dublin Core metadata. While this document is accessibly written, with useful concrete examples, readers should be aware that the document is by now somewhat out of date and is best used in conjunction with <a href="/documents/profile-guidelines/">Guidelines for Dublin Core Application Profiles</a>.</p>
-
-<h1 id="model-related-specifications">Model-related specifications</h1>
-
-<p><strong><a href="/documents/abstract-model/">DCMI Abstract Model</a></strong> [DCMI Recommendation]. This document specifies an abstract syntax for &quot;description sets&quot; (metadata records). Finalized as a DCMI Recommendation in March 2005, the DCMI Abstract Model (DC-AM) expressed the style of metadata that had emerged in the Dublin Core community over the previous decade as formal constructs based on the W3C Resource Description Framework (for example, by giving a formal definition to the DC-specific notion of a &quot;vocabulary encoding scheme&quot; and providing for the use of parallel labels in multiple languages). The Abstract Model was designed to bridge the modern paradigm of the unbounded, linked data graph and the more familiar paradigm of the validatable metadata record, providing a foundation for the development of application-independent syntax specifications and constraint languages.</p>
-
-<p><strong><a href="/documents/dc-dsp/">Description Set Profiles: A constraint language for Dublin Core Application Profiles</a></strong> [DCMI Working Draft]. This document specifies an application-independent language for the constraints used in defining &quot;templates&quot; for metadata records -- for example, to specify a template for records which describe exactly &quot;one book&quot;, with &quot;up to ten authors&quot;, using &quot;subject headings from the Library of Congress&quot;. This specification represents work in progress and is likely to evolve in response to implementation experience.</p>
-
-<p><strong><a href="/documents/profile-review-criteria/">Criteria for the Review of Application Profiles</a></strong> [DCMI Recommended Resource]. This document was developed by the DCMI Usage Board to evaluate Application Profiles for documentary completeness and for conformance with linked-data principles. The criteria are based on the DCMI Abstract Model, Description Set Profile (DSP) language, and Singapore Framework. Even when conformance with these specifications is not a requirement, implementers may find these review criteria useful for uncovering flaws or weaknesses in the logic of an application profile.</p>
-
-<p><strong><a href="/documents/dsp-wiki-syntax/">A MoinMoin Wiki Syntax for Description Set Profiles</a></strong> [DCMI Working Draft]. Using this draft syntax, editors can embed formal constraint information about application profiles into normal Wiki documents and extract this information using an <a href="/documents/2008/10/06/dsp-wiki-syntax/DescriptionSetProfile-dist.zip">Open Source MoinMoin Wiki tool</a> into an XML representation. This functionality is illustrated by the <a href="/architecturewiki/EprintsApplicationProfile?action=DSP2XML">MoinMoin Wiki document for the Scholarly Works Application Profile</a>.</p>
-
-<h1 id="syntax-guidelines">Syntax guidelines</h1>
-
-<p><strong><a href="/documents/dc-text/">DC-TEXT</a></strong> [DCMI Recommended Resource]. &quot;Expressing Dublin Core metadata using the DC-Text format&quot; is a syntax for representing a DC-AM Description Set in plain text. Its primary use is in presenting metadata constructs for human consumption.</p>
-
-<p><strong><a href="/documents/dc-html/">DC-HTML</a></strong> [DCMI Recommendation]. &quot;Expressing Dublin Core metadata using HTML/XHTML meta and link elements&quot; describes how a Dublin Core metadata description set can be encoded using the HTML/XHTML <meta> and <link> elements. This specification is also an HTML &quot;meta data profile&quot; as defined by the HTML specification. See also:</p>
-
-<ul>
-<li><a href="http://rdfa.info/">RDFa</a>, another syntax for embedding Dublin Core descriptions in Web pages, which became a <a href="http://www.w3.org/TR/rdfa-syntax/">W3C Recommendation</a> in October 2008 and has strong tool support in platforms such as <a href="http://drupal.org/">Drupal</a> and Yahoo's <a href="http://developer.yahoo.com/searchmonkey/">Search Monkey</a>.</li>
-<li>The predecessor specification for DC-HTML, <a href="/documents/dcq-html/">DCQ-HTML</a> (last updated in 2003), consistently remains one of the most-accessed documents on the DCMI Web site despite its clearly marked status as a &quot;Superseded Recommendation&quot;. Early versions of this specifications used the so-called &quot;dotty&quot; syntax for appending an additional &quot;qualifier&quot; to an element name. as with &quot;DC.Coverage.temporal&quot; -- an encoding style that is now discouraged. This and other related issues are discussed in <a href="/documents/dc-html-notes/">&quot;Notes on DCMI specifications for Dublin Core metadata in HTML/XHTML meta and link elements&quot;</a>.</li>
-</ul>
-
-<p><strong><a href="/documents/dc-ds-xml/">DC-DS-XML</a></strong> [Proposed Recommendation]. &quot;Expressing Dublin Core Description Sets using XML (DC-DS-XML)&quot; specifies an XML format for representing a Dublin Core metadata description set. The specification supports all of the features of a Description Set as described by the DCMI Abstract Model. Related resources include:</p>
-
-<ul>
-<li><a href="/documents/dc-ds-xml-notes/">Notes on DC-DS-XML XML Format</a>, which describes the development of the format and its relationship to the 2003 specification, DC-XML-GUIDELINES.</li>
-<li><a href="/documents/dc-xml-guidelines/">DC-XML-GUIDELINES</a> [DCMI Recommendation]. The specification &quot;Guidelines for implementing Dublin Core in XML&quot; of April 2003 has been used in numerous implementations and remains popular despite its well-described limitations (see above). <a href="/schemas/">XMLS schemas</a> implementing the 2003 encoding conventions are available in several variants.</li>
-</ul>
-
-<p><strong><a href="/documents/dc-rdf/">DC-RDF</a></strong> [DCMI Recommendation]. &quot;Expressing Dublin Core metadata using the Resource Description Framework (RDF)&quot; describes how constructs of the DCMI Abstract Model may be expressed in RDF graphs. How this document relates to earlier styles for expressing Dublin Core metadata in RDF is discussed in <a href="/documents/dc-rdf-notes/">&quot;Notes on DCMI specifications for Dublin Core metadata in RDF&quot;</a>.</p>
+      <h1 class="page-title">Specifications</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>The <a href="/groups/usage-board">DCMI Usage Board</a> has served as the maintenance committee for <a href="/specifications/dublin-core/dcmi-terms">DCMI Metadata Terms</a> since 2001.  The scope of the Usage Board was broadened in 2018 to include <a href="/specifications/bibo/">BIBO</a> and <a href="/specifications/lrmi/">LRMI</a> specifications.  Since 2011, DCMI has maintained a <a href="/collaborations/foaf/good_neighbour_agreement/">&quot;good neighbour&quot; agreement</a> with the FOAF Project to ensure the long-term availability of the <a href="http://xmlns.com/foaf/0.1/spec">FOAF Vocabulary Specification</a>.</p>
 
     </div>
   </div>
+  <div class="row">
+  
+    <div class="col-12 col-sm-6 col-xl-4">
+      <div class="card">
+        <div class="card-header item-title-card-header">
+          <a class="title-link" href="https://www.dublincore.org/specifications/dublin-core/">Dublin Core</a>
+        </div>
+        <div class="card-body">
+          DCMI has been publishing specifications, mostly related to the &quot;Dublin Core&quot; vocabularies, for more than twenty years. The full range of recommendations is collected here.
+        </div>
+      </div>
+      <br/>
+    </div>
+  
+    <div class="col-12 col-sm-6 col-xl-4">
+      <div class="card">
+        <div class="card-header item-title-card-header">
+          <a class="title-link" href="https://www.dublincore.org/specifications/lrmi/">LRMI</a>
+        </div>
+        <div class="card-body">
+          LRMI™ is a collection of classes and properties for markup and description of educational resources, together with some concept schemes for use with the LRMI properties in learning resource description and Web markup.<br/><a href="/specifications/lrmi">more info...</a>
+        </div>
+      </div>
+      <br/>
+    </div>
+  
+    <div class="col-12 col-sm-6 col-xl-4">
+      <div class="card">
+        <div class="card-header item-title-card-header">
+          <a class="title-link" href="https://www.dublincore.org/specifications/bibo/">BIBO</a>
+        </div>
+        <div class="card-body">
+          The Bibliographic Ontology Specification provides main concepts and properties for describing citations and bibliographic references (i.e. quotes, books, articles, etc) on the Semantic Web.<br/><a href="/specifications/bibo/">more info...</a>
+        </div>
+      </div>
+      <br/>
+    </div>
+  
+  </div>
 
 
-			<div id="footer" class="row justify-content-left">
+			<div class="row">
   <div class="col">
-
-    <p>
-
-
-      Unless indicated otherwise, DCMI documents are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. Please see the <a href="/about/copyright/#documentnotice">DCMI Document Notice</a> for further instructions.
-    </p>
-
-
-
-    <p>
-      <a href="/about/copyright/#copyright">Copyright</a> &#169; 1995-2018 <acronym title="Dublin Core Metadata Initiative"><a href="/">DCMI</a></acronym>. All Rights Reserved. DCMI <a href="/about/copyright/#liability">liability</a>, <a href="/about/copyright/#trademark">trademark/service mark</a>, <a href="/about/copyright/#documentnotice">document use</a> and <a href="/about/software/">software licensing</a> rules apply. Your interactions with this site are in accordance with our <a href="/about/privacy/">privacy</a> statements.
-    </p>
-    <p>
-      The Dublin Core Metadata Initiative (DCMI) is a project of ASIS&amp;T&mdash;a U.S. 501(c)(3) nonprofit under the U.S. Internal Revenue Code.  Contributions to DCMI through ASIS&amp;T are tax-deductible to the full extent of the law in the United States.
-      <br />
-      The <a href="http://purl.org/dcregistry" target="_blank">Dublin Core Metadata Registry</a> is hosted by the <a href="http://www.kc.tsukuba.ac.jp/index_en.html" target="_blank">Research Center for Knowledge Communities</a> at the University Of Tsukuba, Japan.
-    </p>
-    <p>Deployed with Hugo v. 0.49.2</p>
+    <div id="footer">
+      <p>
+        Unless indicated otherwise, DCMI documents are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. Please see the <a href="/about/copyright/#documentnotice">DCMI Document Notice</a> for further instructions.
+      </p>
+      <p>
+        <a href="/about/copyright/#copyright">Copyright</a> &#169; 1995-2019 <acronym title="Dublin Core Metadata Initiative"><a href="/">DCMI</a></acronym>. All Rights Reserved. DCMI <a href="/about/copyright/#liability">liability</a>, <a href="/about/copyright/#trademark">trademark/service mark</a>, <a href="/about/copyright/#documentnotice">document use rules apply. Your interactions with this site are in accordance with our <a href="/about/privacy/">privacy</a> statements.
+      </p>
+      <p>
+        The Dublin Core Metadata Initiative (DCMI) is a project of ASIS&amp;T&mdash;a U.S. 501(c)(3) nonprofit under the U.S. Internal Revenue Code.  Contributions to DCMI through ASIS&amp;T are tax-deductible to the full extent of the law in the United States.
+  
+      </p>
+      <p>Deployed with Hugo v. 0.55.6 on Tue, 17 Dec 2019 11:06:08 UTC</p>
+    </div>
   </div>
 </div>
-
-
-
-
-<script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-  try {
-    var pageTracker = _gat._getTracker("UA-24510931-1");
-    pageTracker._trackPageview();
-  }
-  catch(err) {
-
-  }
-</script>
 
 
 

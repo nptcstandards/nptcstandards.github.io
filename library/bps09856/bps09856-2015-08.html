@@ -1,0 +1,902 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <script language="javascript" type="text/javascript" src="/Resources/Shop/jscript/OptiMostGlobal-header.js?live=true"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="Locale" content="en-GB" />
+<meta name="CountrySite" content="Shop" />
+<meta name="Language" content="en" />
+<meta name="SiteVersion" content="1.0.7275" />
+<meta name="Machine" content="BSI10WEB04PUB" />
+<meta name="Template" content="[Shop] Item Details" />
+<meta name="PageTypeId" content="266" />
+<meta name="PageId" content="161025" />
+
+<link rel="Stylesheet" type="text/css" href="/Resources/Shop/css/03prodstyles1.css" /><link rel="Stylesheet" type="text/css" href="/Resources/Shop/css/01landingStyles3.css" />
+     
+    <script type="text/javascript" src="/Resources/Shop/jscript/jqueryui/ui/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/Resources/Shop/jscript/jqueryui/ui/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/Resources/jscript/jqueryui/ui/css/smoothness/jquery-ui-1.11.0.custom.css" type="text/css" />
+
+    <script type="text/javascript" src="/Resources/Shop/jscript/jqueryui/jquery.cookie.js"></script>
+       
+    <script language="javascript">
+
+        if (jQuery.cookie('selectedTab') == null) {
+            document.cookie = "selectedTab=2";
+        }
+    </script>
+  
+ 
+    <script type="text/javascript"><!--
+        function divOnOff(id) {
+            var e = document.getElementById(id);
+            if (e.style.display == 'block')
+                e.style.display = 'none';
+            else
+                e.style.display = 'block';
+        }
+
+
+//--></script>
+    <script type="text/javascript"><!--
+        jQuery(function () {
+            jQuery(".tabs").tabs();
+        });
+	//--></script>
+    <script type="text/javascript"><!--
+        //jQuery.noConflict();
+	        //--></script>
+    <!-- <script type="text/javascript" src="/resources/shop/jscript/mootools.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="/Resources/css/sitemessage.css" />
+    
+    <script type="text/javascript" src="/Resources/Shop/jscript/navacc.js"></script>
+    
+    <link href="/Resources/Shop/css/01landingStyles3.css" rel="stylesheet" type="text/css" />
+    <link href="/Resources/Shop/css/03prodstyles1.css" rel="stylesheet" type="text/css" />
+    <link href="/Resources/css/atooltip.css" rel="stylesheet" type="text/css" />
+    		<meta name="DefinitionName" content="Document" />
+		<meta name="ProductId" content="000000000030237515" />
+		<meta name="DisplayName" content="BS ISO 13528:2015" />
+		<meta name="EndecaTitle" content="BS ISO 13528:2015. Statistical methods for use in proficiency testing by interlaboratory comparison" />
+		<meta name="StandardNumberSearch" content="BS ISO 13528:2015" />
+		<meta name="cy_list_price" content="282.00" />
+		<meta name="MemberPrice" content="141.00" />
+		<meta name="ICS" content="03.120.30" />
+		<meta name="SubscriptionModules" content="GBM04" />
+		<meta name="Description" content="Purchase your copy of BS ISO 13528:2015 as a PDF download or hard copy directly from the official BSI Shop. All BSI British Standards available online in electronic and print formats." />
+		<meta name="Keywords" content="Test laboratories, Testing organizations, Laboratory accreditation, Measurement characteristics, Laboratory testing, Statistical quality control, Statistical methods of analysis, Performance testing " />
+		<meta name="Descriptors" content="Test laboratories, Testing organizations, Laboratory accreditation, Measurement characteristics, Laboratory testing, Statistical quality control, Statistical methods of analysis, Performance testing " />
+		<meta name="Availability" content="Electronic Download (when in subscription) and Hardcopy" />
+		<meta name="Status" content="Current, Under review" />
+		<meta name="Format" content="A4" />
+		<meta name="Commitee" content="SS/6" />
+		<meta name="InternationalRelationships" content="ISO 13528:2015" />
+		<meta name="DisplayBSOL" content="Yes" />
+		<meta name="DisplayShop" content="Yes" />
+		<meta name="PublishDate" content="635765760" />
+		<meta name="ConfirmedDate" content="" />
+		<meta name="AmendedDate" content="635765760" />
+		<meta name="WithdrawnDate" content="" />
+		<meta name="ReinstatedDate" content="" />
+		<meta name="DraftExpiryDate" content="" />
+		<meta name="MadeHistoricalDate" content="" />
+		<meta name="CreatedDate" content="635765760" />
+		<meta name="PublicDownload" content="YES" />
+		<meta name="CompanyCode" content="2000" />
+		<meta name="MaterialGroupId" content="BSI with Discount" />
+		<meta name="Publisher" content="BSI" />
+		<meta name="ISBN" content="978 0 580 73566 0" />
+		<meta name="OtherDate" content="635744160" />
+
+    <style>
+    .ui-tabs .ui-state-disabled { 
+    display: none; /* disabled tabs don't show up */ 
+    
+    }   
+    </style>
+<script type="text/javascript">
+//	//<!--
+    jQuery(function () {
+
+        // alert(jQuery("#tabs-1").children().length);
+        if (jQuery("#tabs-1").children().length > 2) {
+            jQuery(".tabs").tabs();
+        }
+        else {
+            /* Jquery hack to remove first tab in current version*/
+            var tab = jQuery(".tabs");
+            tab.tabs({ disabled: [0] });
+            tab.tabs({ active: 1 });
+        }
+
+    });
+
+    //-->
+
+
+    function setstyle(sourceid, img_src) {
+        try {
+            if (img_src == '/resources/shop/img/pageImg/ATCbuttonBG_over.jpg')
+                document.getElementById(sourceid).style.backgroundImage = "url(" + document.getElementById("prdactive").src + ")";
+            else
+                document.getElementById(sourceid).style.backgroundImage = "url(" + img_src + ")";
+        }
+        catch(e){ }
+        return false      
+        }
+	</script>
+    <script type="text/javascript">
+        function showmodalpopup(message) {
+            $("#popupdiv").html(message);
+            $("#popupdiv").dialog({
+                title: "Basket Items Information",
+                width: 430,
+                height: 250,
+                modal: true,
+                buttons: {
+                    YES: function () {
+                        $(this).dialog('close');
+
+                    },
+                    NO: function () {
+                        $("[id*=Remove]").click();
+
+                    }
+                }
+            });
+        };
+</script>
+
+     </head><div id="popupdiv" title="Basic modal dialog" style="display: none"></div>
+    
+
+    <script src="/Resources/jscript/atooltip.jquery.js" type="text/javascript"></script>
+    <script src="/Resources/jscript/ContextAds.js" type="text/javascript"></script>
+	<div style="display:none">
+	    <img id="prdactive" alt="" name="prdactive" src="/resources/shop/img/pageImg/ATCbuttonBG_over.jpg" />
+	</div>
+
+    <!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" media="all" href="/Resources/css/global/ie6.css" />
+	<![endif]-->
+    <link rel="stylesheet" type="text/css" href="/Resources/cookie/css/cookie-box.css" /> 
+    <script src="/Resources/cookie/jscript/is-cookie-set.js"></script>
+     
+        <input type="hidden" name="IsUserAMember" value="no" />
+    <title>
+	BS ISO 13528:2015 - Statistical methods for use in proficiency testing by interlaboratory comparison
+</title>
+<body>
+    <!-- Google Tag Manager Start -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WX52CM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WX52CM');</script> <!--Google Tag Manager End-->
+
+    <form name="aspnetForm" method="post" action="/ProductDetail/?pid=000000000030237515" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE2MDgwMDg5NjEPFgQeA3BpZAUSMDAwMDAwMDAwMDMwMjM3NTE1HhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYGAgEQZGQWBmYPFgIeBFRleHQFjwENCiAgICAgICAgPHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCIgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii9SZXNvdXJjZXMvU2hvcC9qc2NyaXB0L09wdGlNb3N0R2xvYmFsLWhlYWRlci5qcz9saXZlPXRydWUiPjwvc2NyaXB0Pg0KICAgIGQCAQ8WAh8CZWQCFA8WAh8CBUcNCiAgICAgICAgPGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0iSXNVc2VyQU1lbWJlciIgdmFsdWU9Im5vIiAvPg0KICAgIGQCAw8WAh8CBcAEPCEtLSBHb29nbGUgVGFnIE1hbmFnZXIgU3RhcnQgLS0+DQo8bm9zY3JpcHQ+PGlmcmFtZSBzcmM9Ii8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL25zLmh0bWw/aWQ9R1RNLVdYNTJDTSINCmhlaWdodD0iMCIgd2lkdGg9IjAiIHN0eWxlPSJkaXNwbGF5Om5vbmU7dmlzaWJpbGl0eTpoaWRkZW4iPjwvaWZyYW1lPjwvbm9zY3JpcHQ+DQo8c2NyaXB0PihmdW5jdGlvbih3LGQscyxsLGkpe3dbbF09d1tsXXx8W107d1tsXS5wdXNoKHsnZ3RtLnN0YXJ0JzoNCm5ldyBEYXRlKCkuZ2V0VGltZSgpLGV2ZW50OidndG0uanMnfSk7dmFyIGY9ZC5nZXRFbGVtZW50c0J5VGFnTmFtZShzKVswXSwNCmo9ZC5jcmVhdGVFbGVtZW50KHMpLGRsPWwhPSdkYXRhTGF5ZXInPycmbD0nK2w6Jyc7ai5hc3luYz10cnVlO2ouc3JjPQ0KJy8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0bS5qcz9pZD0nK2krZGw7Zi5wYXJlbnROb2RlLmluc2VydEJlZm9yZShqLGYpOw0KfSkod2luZG93LGRvY3VtZW50LCdzY3JpcHQnLCdkYXRhTGF5ZXInLCdHVE0tV1g1MkNNJyk7PC9zY3JpcHQ+IDwhLS1Hb29nbGUgVGFnIE1hbmFnZXIgRW5kLS0+ZAIFEGRkFgpmD2QWAmYPFgIeB1Zpc2libGVoZAICD2QWBgIBDw8WAh4LTmF2aWdhdGVVcmwFGmh0dHBzOi8vc2hvcC5ic2lncm91cC5jb20vZGQCAw8WAh4LXyFJdGVtQ291bnQCBRYKZg9kFgJmDxUEBl9ibGFuawAYaHR0cDovL3d3dy5ic2lncm91cC5jb20vDUJTSSBDb3Jwb3JhdGVkAgIPZBYCZg8VBAVfc2VsZgAML0NvbnRhY3QtVXMvCkNvbnRhY3QgVXNkAgQPZBYCZg8VBAVfc2VsZgAML2VuL1NpdGVtYXAvCFNpdGUgTWFwZAIGD2QWAmYPFQQGX2JsYW5rAAkvZW4vSGVscC8ESGVscGQCCA9kFgJmDxUEBV9zZWxmAAcvTXktQlNpBk15IEJTSWQCBQ8PFgQfAgUQTG9naW4gLyBSZWdpc3Rlch8EBQcvTG9naW4vZGQCBw9kFgQCAQ9kFgICAw8PFgIfAgUNRmluZCBTaW1pbGFyIGRkAgMPDxYCHwNoZGQCCA9kFgICAw9kFgwCAQ8WAh8CBRFCUyBJU08gMTM1Mjg6MjAxNWQCCA8WAh8DZ2QCCg8WBh4Lb25tb3VzZW92ZXIFeXNldHN0eWxlKCdjdGwwMF9DZW50ZXJDb250ZW50UGxhY2Vob2xkZXJfcHJvZHVjdFN1bW1hcnlfYnRuQWRkVG9Tb2Z0JywnL3Jlc291cmNlcy9zaG9wL2ltZy9wYWdlSW1nL0FUQ2J1dHRvbkJHX292ZXIuanBnJykeCm9ubW91c2VvdXQFfHNldHN0eWxlKCdjdGwwMF9DZW50ZXJDb250ZW50UGxhY2Vob2xkZXJfcHJvZHVjdFN1bW1hcnlfYnRuQWRkVG9Tb2Z0JywnL3Jlc291cmNlcy9zaG9wL2ltZy9wYWdlSW1nL0FUQ2J1dHRvbkJHX2RlZmF1bHQuanBnJykfA2cWAgIDDw8WAh8DZ2RkAgsPFgYfBgV5c2V0c3R5bGUoJ2N0bDAwX0NlbnRlckNvbnRlbnRQbGFjZWhvbGRlcl9wcm9kdWN0U3VtbWFyeV9idG5BZGRUb0hhcmQnLCcvcmVzb3VyY2VzL3Nob3AvaW1nL3BhZ2VJbWcvQVRDYnV0dG9uQkdfb3Zlci5qcGcnKR8HBXxzZXRzdHlsZSgnY3RsMDBfQ2VudGVyQ29udGVudFBsYWNlaG9sZGVyX3Byb2R1Y3RTdW1tYXJ5X2J0bkFkZFRvSGFyZCcsJy9yZXNvdXJjZXMvc2hvcC9pbWcvcGFnZUltZy9BVENidXR0b25CR19kZWZhdWx0LmpwZycpHwNnFgICAw8PFgIfA2dkZAIQDxYCHwIFiwI8aW1nIGlkPSdpbWdQcm9kdWN0SW1hZ2UnIHNyYz0nL1Jlc291cmNlcy9pbWcvTm9JbWFnZS5naWYnIHdpZHRoPScxMzBweCcgaGVpZ2h0PScxNzBweCcgYm9yZGVyPScwJyBuYW1lPSdpbWdQcm9kdWN0SW1hZ2UnPgo8c2NyaXB0IGxhbmd1YWdlPSdqYXZhc2NyaXB0Jz4KIHZhciBnVXBpPSAnMDAwMDAwMDAwMDMwMjM3NTE1JzsKIHZhciBnVG90YWxQcmV2aWV3Q291bnQ9ICc4JzsKY2hlY2tJbWFnZUV4aXN0cygnMDAwMDAwMDAwMDMwMjM3NTE1Jyk7IAo8L3NjcmlwdD5kAhEPFgIfA2dkAgkPZBYCAgEPZBYEAgEPFgIfAgUUWW91ciBiYXNrZXQgaXMgZW1wdHlkAgUPDxYCHwQFES9lbi9CYXNrZXREZXRhaWxzZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFNWN0bDAwJENlbnRlckNvbnRlbnRQbGFjZWhvbGRlciRwcm9kdWN0U3VtbWFyeSRpYnRudG9wBThjdGwwMCRDZW50ZXJDb250ZW50UGxhY2Vob2xkZXIkcHJvZHVjdFN1bW1hcnkkaWJ0bmJvdHRvbcbGSsakhGgxD5xoVX625/pn0Udf" />
+</div>
+
+    
+
+    <!--LandingPage Shop Master page-->
+    
+    <div id="MainFrame" class="ContentFrame">
+        <div id="hb" class="headerBox">
+            
+    <div id="absTop">
+    <div id="lg" class="logoHead">
+        <a id="ctl00_HeaderControl_lnkLogo" href="https://shop.bsigroup.com/">
+            <img src="/Resources/Shop/img/pageImg/BSIshoplogo.gif" border="0" alt="Welcome to the BSI Standards Shop" width="149" height="34" /></a></div>
+    <div id="mininav" class="miniNavHead linksBlue">      
+        
+                <a target='_blank' title='' href='http://www.bsigroup.com/'>BSI Corporate</a>
+            |
+                <a target='_self' title='' href='/Contact-Us/'>Contact Us</a>
+            |
+                <a target='_self' title='' href='/en/Sitemap/'>Site Map</a>
+            |
+                <a target='_blank' title='' href='/en/Help/'>Help</a>
+            |
+                <a target='_self' title='' href='/My-BSi'>My BSI</a>
+            
+        | <a id="ctl00_HeaderControl_lnkLogin" title="Login or Register" href="/Login/">Login / Register</a>
+        <br />
+        
+    </div>    
+</div>
+<div id="spclr" class="spacer"> </div>
+
+
+
+    
+
+            
+<div id="gn" class="globalNav">
+    
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/'>
+                    Home</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Standards/'>
+                    Standards</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Membership/'>
+                    Membership</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Conferences/'>
+                    Conferences</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Training-Courses/'>
+                    Training</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Books/'>
+                    Books & CDs</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Assessment-Tools/'>
+                    Online Tools</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='PAS' href='/Navigate-by/PAS/'>
+                    PAS</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='Affiliates' href='/Navigate-by/Affiliates/'>
+                    Affiliates</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='Distributors' href='/Navigate-by/Distributors'>
+                    Distributors</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='Licensing' href='/Navigate-by/Licensing'>
+                    Licensing</a>
+            </div>
+        
+</div>
+
+            
+
+<div id="sb" class="searchBar" style="clear: both;">
+    <div class="searchText">
+        Search all products by</div>
+    <div class="searchKeywords">
+        <input name="ctl00$SearchBarControl$txtSearchBox" type="text" value="Keyword, standard number or ICS code" id="ctl00_SearchBarControl_txtSearchBox" size="35" onfocus="javascript:searchSelected(this);" onblur="javascript:searchDeSelected(this);" />
+    </div>
+    <div class="searchIn">
+        </div>
+    <div class="searchDD">
+        <label for="search">
+        </label>
+        <input type="submit" name="ctl00$SearchBarControl$search" value="Search" id="ctl00_SearchBarControl_search" title="Search" />      
+    </div>
+    <div class="searchDD" style="float:right; margin:0 10px 0 0; padding:0;"><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style" style="height:24px;vertical-align : middle; display : table-cell;font-size:12px;background-color:White;padding: 0 4px;">
+<a href="https://www.addthis.com/bookmark.php?v=250&amp;username=Sixpeo" class="addthis_button_compact">Share</a>
+<span class="addthis_separator" style="line-height:12px">|</span>
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+</div>
+<script type="text/javascript">var addthis_config = {data_track_clickback:true,services_exclude:'print' };</script>
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#username=Sixpeo"></script>
+<!-- AddThis Button END -->
+</div>
+    <div style="float:right; margin:0; padding:0;"><a href="javascript:window.print()"><img src="/Resources/img/printthis.gif" alt="Print this page" /></a></div>
+    
+    <div class="searchADV linksGrey" style="display: none">
+        <a href="#">Advanced Search</a></div>
+</div>
+<div id="sbb" class="searchBottom" style="clear: both">
+    <img src="/Resources/Shop/img/pageImg/searchbar_bottom.gif" alt=" " width="899" height="12" /></div>
+
+<script type="text/javascript" language="javascript">
+var defaultText = "Keyword, standard number or ICS code";
+
+function searchSelected(searchBox)
+{
+    if(searchBox.value == defaultText)
+    searchBox.value = "";
+}
+
+function searchDeSelected(searchBox)
+{
+    if(searchBox.value.length==0)
+    searchBox.value =defaultText;
+     
+}
+
+</script>
+
+            
+            
+        </div>
+        <!-- END HEADER -->
+        
+    <div id="BreadCrumbs">
+<div id="ctl00_BreadcrumbPlaceholder_icsBreadcrumbs_BreadCrumbs" class="breadcrumb linksGrey">
+    
+        
+            
+                    <span class="level"></span>&nbsp; <strong>
+                        <a id="ctl00_BreadcrumbPlaceholder_icsBreadcrumbs_BreadCrumbsRepeater_ctl01_rptCrumb_ctl00_hlLink" href="/SearchResults?fct=IcsCodes&amp;filterBy=03&amp;q=&amp;filter=&amp;ps=">Services. Company organization, management and quality. Administration. Transport. Sociology</a>
+                        &gt;</strong>
+                
+                    <span class="level"></span>&nbsp; <strong>
+                        <a id="ctl00_BreadcrumbPlaceholder_icsBreadcrumbs_BreadCrumbsRepeater_ctl01_rptCrumb_ctl01_hlLink" href="/SearchResults?fct=IcsCodes&amp;filterBy=03.120&amp;q=&amp;filter=&amp;ps=">Quality</a>
+                        &gt;</strong>
+                
+            <a id="ctl00_BreadcrumbPlaceholder_icsBreadcrumbs_BreadCrumbsRepeater_ctl01_hlRoot" href="/SearchResults?fct=IcsCodes&amp;filterBy=03.120.30&amp;q=&amp;filter=&amp;ps=">Application of statistical methods</a>
+            <b>
+                <a id="ctl00_BreadcrumbPlaceholder_icsBreadcrumbs_BreadCrumbsRepeater_ctl01_hlMore"></a></b>
+            <br />
+        
+        
+</div>
+</div>
+
+
+        
+    <div id="LeftSide" class="LeftSide">
+        
+
+<div class="sideSubBox linksBlue">
+    <h3>
+        Find Similar Items</h3>
+    <div class="pad5">
+        This product falls into the following categories.<br />
+        <br />
+        You may find similar items within these categories by selecting from the choices
+        below:</div>
+</div>
+<div id="accordion">
+    
+    <div class="pad5">
+        <input type="submit" name="ctl00$LeftSideContentPlaceholder$searchNewSearch$btnFindSimilar" value="Find Similar " id="ctl00_LeftSideContentPlaceholder_searchNewSearch_btnFindSimilar" class="pointer" />
+    </div>
+</div>
+
+        
+    </div>
+
+        <!-- END LEFT SIDE -->
+        <div id="MainContentArea">
+            <!--PAGEWATCH CODE=""-->
+            
+    <input type="submit" name="ctl00$CenterContentPlaceholder$Remove" value="Button" id="ctl00_CenterContentPlaceholder_Remove" style="display: none" />
+    <div id="Div1" class="CenterContent">
+        <div class="centerBorder">
+            
+<div id="title" class="titleSection" style="position:relative;" plBS2599message="">
+    <h1>BS ISO 13528:2015</h1>
+    <h2>
+         Statistical methods for use in proficiency testing by interlaboratory comparison
+    </h2>
+    <p class="pad5 bbD">
+                       
+                     <em>
+                        Status
+                        : </em>
+                    <strong class="textBrightBlue">
+                        Current, Under review</strong> &nbsp;
+            
+    
+                <em>
+                        Published</em>
+                        :
+                           <strong>August 2015   </strong>
+            
+       
+        
+
+     </p>
+     
+    <div class="linksBlue margin10bottom topInfoBox pad5">
+        <div class="leftCol floatLeft" style="width:110px;">
+            <div class=" text11 margin15right pad5">
+                <em>Price</em><br />
+                <span class="textMedGrey textLarger">
+                 &#163;282.00<br />
+            
+                </span>
+            </div>
+            <div class=" text11 margin15right pad5">
+            
+             <em></em>Member Price<br />
+                <span class="textLarger textOrange">
+                &#163;141.00<br />
+            
+                </span>
+        
+                </div>
+                <div class="text11" style="width:100px;">
+                 <a id="ctl00_CenterContentPlaceholder_productSummary_hlMembership" class="arrow" href="/en/Navigate-by/Membership/" target="_blank">Become a member and SAVE 50%<br /> on British Standards. Click to learn more<span></span></a>
+                </div>
+            <div class="margin10top">
+                
+            </div>
+            
+        </div>
+        
+        <div class="titleLeft" style="width:100px;">
+             <div id="ctl00_CenterContentPlaceholder_productSummary_divtop" class="floatLeft formatBorder" onmouseover="setstyle(&#39;ctl00_CenterContentPlaceholder_productSummary_btnAddToSoft&#39;,&#39;/resources/shop/img/pageImg/ATCbuttonBG_over.jpg&#39;)" onmouseout="setstyle(&#39;ctl00_CenterContentPlaceholder_productSummary_btnAddToSoft&#39;,&#39;/resources/shop/img/pageImg/ATCbuttonBG_default.jpg&#39;)">
+                <div id="ctl00_CenterContentPlaceholder_productSummary_divtopIcon" class="formatIcon">
+                   <input type="image" name="ctl00$CenterContentPlaceholder$productSummary$ibtntop" id="ctl00_CenterContentPlaceholder_productSummary_ibtntop" src="/resources/shop/img/pageImg/pdf75.gif" style="height:29px;width:30px;border-width:0px;" />
+                  </div>
+                <div class="formatText">Format<br /><b>PDF</b></div>                               
+                 <div class="floatLeft" style="margin-left:10px;width:200px;border:0"><br />
+                 <input type="submit" name="ctl00$CenterContentPlaceholder$productSummary$btnAddToSoft" value="Add to Basket" onclick="gaTrack(&#39;PDF&#39;);" id="ctl00_CenterContentPlaceholder_productSummary_btnAddToSoft" title="add this standard to your basket" border="0" class="atbBtn" style="height:29px;width:180px;font-family:Arial;font-size:14px; color:White;background-position:50% 50%;background-image:url(/Resources/Shop/img/pageImg/ATCbuttonBG_default.jpg);" />
+                  </div>
+                  <div class="spacer"></div>                                 
+            </div>
+            <div id="ctl00_CenterContentPlaceholder_productSummary_divbottom" class="floatLeft formatBorder " onmouseover="setstyle(&#39;ctl00_CenterContentPlaceholder_productSummary_btnAddToHard&#39;,&#39;/resources/shop/img/pageImg/ATCbuttonBG_over.jpg&#39;)" onmouseout="setstyle(&#39;ctl00_CenterContentPlaceholder_productSummary_btnAddToHard&#39;,&#39;/resources/shop/img/pageImg/ATCbuttonBG_default.jpg&#39;)">
+                <div id="ctl00_CenterContentPlaceholder_productSummary_divbottomIcon" class="formatIcon ">
+                 <input type="image" name="ctl00$CenterContentPlaceholder$productSummary$ibtnbottom" id="ctl00_CenterContentPlaceholder_productSummary_ibtnbottom" src="/resources/shop/img/pageImg/icon-hc-color.jpg" style="height:29px;width:30px;border-width:0px;" />
+                 </div>
+                <div class="formatText">               
+                 Format<br /><b>HARDCOPY</b>
+                </div>
+                  <div class="floatLeft" style="margin-left:10px;width:200px;border:0"><br />
+                  <input type="submit" name="ctl00$CenterContentPlaceholder$productSummary$btnAddToHard" value="Add to Basket" onclick="gaTrack(&#39;Hardcopy&#39;);" id="ctl00_CenterContentPlaceholder_productSummary_btnAddToHard" title="add this standard to your basket" border="0" class="atbBtn" style="height:29px;width:180px;font-family:Arial;font-size:14px;color:White;background-position:50% 50%;background-image:url(/Resources/Shop/img/pageImg/ATCbuttonBG_default.jpg);" /> 
+                  </div>
+                     <div class="spacer"></div>              
+            </div>  
+                     
+           <script>
+               function gaTrack(label) {
+                   var gaId = 'UA-7970902-2'
+                 ga('create', gaId, 'auto', 'myTracker');
+                 ga('myTracker.send', 'event', 'Click', 'Add to Basket', label);
+             }
+         </script>  
+        </div>
+
+        <div class="linksBlue margin10bottom pad5" style="position: absolute;width: 300px;left: 130px;">            
+                <div class="header">
+                    <strong class="textBrightBlue" style="color:#E31D1B;">
+                    
+                    </strong>
+                </div>
+                <div class="body">
+                    
+                </div>
+            
+        </div>
+         
+    </div>
+    <div class="margin10bottom">
+        
+            
+            <script>
+                var gUrl;
+                
+                function checkImageExists(productId) {
+                    var url = document.location.host + "/PreviewHandler.ashx?upi=" + productId;
+                    var checkImage = new Image();
+                    gUrl = url;
+                    checkImage.onload = imageExists;
+                    checkImage.onerror = imageDoesntExist;
+                    checkImage.src = url;
+                }
+
+                function imageExists() {
+                    document.getElementById("imgProductImage").src = gUrl;
+                }
+
+                function imageDoesntExist() {
+                    document.getElementById("imgProductImage").src = "/Resources/img/NoImage.gif";
+                }
+
+
+                
+                 </script>       
+
+        
+        <img id='imgProductImage' src='/Resources/img/NoImage.gif' width='130px' height='170px' border='0' name='imgProductImage' />
+<script language='javascript'>
+ var gUpi= '000000000030237515';
+ var gTotalPreviewCount= '8';
+checkImageExists('000000000030237515'); 
+</script>        
+         <input name="ctl00$CenterContentPlaceholder$productSummary$btnPreview" type="button" id="ctl00_CenterContentPlaceholder_productSummary_btnPreview" value=" Click to Preview " class="atbBtn" style="height: 29px;  font-family: Arial; font-size: 14px; color: white; background-image: url(&#39;/resources/shop/img/pageImg/ATCbuttonBG_default.jpg&#39;); background-position: 50% 50%;" /> <br />
+              
+    </div>
+   
+       <br />
+       
+    <div class="clearLine">
+    </div>
+</div>
+
+<div id="ctl00_CenterContentPlaceholder_productSummary_pnlPreview">
+	
+    <script type="text/javascript" src="/Resources/jscript/lookinside.js"></script>    
+    <div id="previewPanel" style="display:none" oncontextmenu="return false;">
+        
+        <div id="displayPanelPreview">
+            <img id="ctl00_CenterContentPlaceholder_productSummary_imgPreview" src="" style="border-width:0px;" />
+            <script>
+                previewImage = document.getElementById("ctl00_CenterContentPlaceholder_productSummary_imgPreview");
+            </script>
+        </div>
+        <div id="previewWrap" class="previewWrap">
+                <div class="previewLeft"></div>
+                <div class="previewCenter">
+                 <a href="javascript:movePrevious()"><img id="imgPreviewprevious" src="/Resources/Shop/img/PreviousIcon.png" /></a>
+                  <span id="previewNavDetails"></span>
+                 <a href="javascript:moveNext()"><img id="imgPreviewnext" src="/Resources/Shop/img/NextIcon.png" /></a>            
+                </div>
+                <div class="previewRight"></div>
+                
+        </div>
+        
+    </div>
+    <iframe id="frmPrint" width="1px" height="1px" src="/frame.html"></iframe>         
+
+</div>
+       
+        
+
+
+            <!--ROHIT-->
+            <div class="tabs ui-tabs ui-widget ui-widget-content ui-corner-all">
+        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active" id='OverViewTab'><a href="#tabs-1">Overview</a></li>
+<li class="ui-state-default ui-corner-top"><a href="#tabs-2">Product Details</a></li>
+</ul>
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-1" style="overflow-x: auto;">
+ <br /><br />
+</div>
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="tabs-2">
+<br class="clearLine" />
+                    
+
+					<table cellpadding="0" cellspacing="0" class="bibliography linksBlue">
+						<colgroup span="2">
+							<col width="33%" />
+							<col width="67%" />
+						</colgroup>
+						
+						<tr class="trow2"><th scope='row'>Standard Number</th><td>BS ISO 13528:2015</td></tr>
+						
+						<tr><th scope='row'>Title</th><td>Statistical methods for use in proficiency testing by interlaboratory comparison</td></tr>
+						
+						<tr class="trow2"><th scope='row'>Status</th><td>Current, Under review</td></tr>
+						
+						<tr><th scope='row'>Publication Date</th><td>31 August 2015</td></tr>
+						
+						<tr class="trow2"><th scope='row'>Cross References</th><td><a href="/SearchResults/?q=ISO+Guide+30">ISO Guide 30</a>, <a href="/SearchResults/?q=ISO+3534-1">ISO 3534-1</a>, <a href="/SearchResults/?q=ISO+3534-2">ISO 3534-2</a>, <a href="/SearchResults/?q=ISO+5725-1">ISO 5725-1</a>, <a href="/SearchResults/?q=ISO%2fIEC+17043">ISO/IEC 17043</a>, <a href="/SearchResults/?q=ISO%2fIEC+Guide+99">ISO/IEC Guide 99</a>, <a href="/SearchResults/?q=ISO+5725-2">ISO 5725-2</a>, <a href="/SearchResults/?q=ISO+5725-3">ISO 5725-3</a>, <a href="/SearchResults/?q=ISO+5725-4">ISO 5725-4</a>, <a href="/SearchResults/?q=ISO+5725-5">ISO 5725-5</a>, <a href="/SearchResults/?q=ISO+5725-6">ISO 5725-6</a>, <a href="/SearchResults/?q=ISO+7870-2%3a2013">ISO 7870-2:2013</a>, <a href="/SearchResults/?q=ISO+11352">ISO 11352</a>, <a href="/SearchResults/?q=ISO+11843-1">ISO 11843-1</a>, <a href="/SearchResults/?q=ISO+11843-2">ISO 11843-2</a>, <a href="/SearchResults/?q=ISO+16269-4">ISO 16269-4</a>, <a href="/SearchResults/?q=ISO%2fIEC+17011">ISO/IEC 17011</a>, <a href="/SearchResults/?q=ISO%2fIEC+17025">ISO/IEC 17025</a>, <a href="/SearchResults/?q=ISO+Guide+35">ISO Guide 35</a>, <a href="/SearchResults/?q=ISO%2fIEC+Guide+98-3">ISO/IEC Guide 98-3</a></td></tr>
+						
+						<tr class="trow2"><th scope='row'>Replaces</th><td><a href="https://shop.bsigroup.com/ProductDetail/?pid=000000000030057947">BS ISO 13528:2005</a></td></tr>
+						
+						<tr><th scope='row'>International Relationships</th><td>ISO 13528:2015</td></tr>
+						
+						<tr><th scope='row'>Draft Superseded By</th><td>12/30237514 DC</td></tr>
+						
+						<tr><th scope='row'>Descriptors</th><td>Test laboratories, Testing organizations, Laboratory accreditation, Measurement characteristics, Laboratory testing, Statistical quality control, Statistical methods of analysis, Performance testing </td></tr>
+						
+						<tr class="trow2"><th scope='row'>ICS</th><td>03.120.30<br /></td></tr>
+						
+						<tr><th scope='row'>Title in French</th><td>M&#233;thodes statistiques utilis&#233;es dans les essais d’aptitude par comparaison interlaboratoires</td></tr>
+						
+						<tr class="trow2"><th scope='row'>Committee</th><td>SS/6</td></tr>
+						
+						<tr><th scope='row'>ISBN</th><td>978 0 580 73566 0</td></tr>
+						
+						<tr class="trow2"><th scope='row'>Publisher</th><td>BSI</td></tr>
+						
+						<tr><th scope='row'>Format</th><td>A4</td></tr>
+						
+						<tr class="trow2"><th scope='row'>Delivery</th><td>Yes</td></tr>
+						
+						<tr><th scope='row'>Pages</th><td>104</td></tr>
+						
+						<tr class="trow2"><th scope='row'>File Size</th><td>1.849 MB</td></tr>
+						
+						<tr><th scope='row'>Price</th><td>&#163;282.00</td></tr>
+						
+	
+					</table>
+
+                    <br clear="all" class="clearLine" />
+</div>
+
+
+</div>
+            <!-- END ROHIT-->
+            
+            
+            <br clear="all" class="clearLine" />
+        </div>
+        <div class="linksBlue margin10bottom pad5">
+            <div class="header">
+            <strong class="textBrightBlue" style="color:#f8981d;">
+                
+            </strong>
+            </div>
+            <div class="body">
+                 
+            </div>
+            
+        </div>  
+        <!-- end border -->
+        
+    </div>
+   
+
+            <!--/PAGEWATCH-->
+        </div>
+        <!-- END CENTER CONTENT -->
+        
+    <div id="zRightSide" class="RightSide">
+        
+<div id="zb1" class="basketBox">
+    <div id="zb2" class="basketTitle">
+        <img src="/Resources/Shop/img/pageImg/basketIcon.gif" alt=" " width="11" height="11" />
+        Your basket 
+    </div>
+    <div id="zb3a" class="basketContents basketSummary text11" style="text-align:right">
+        Your basket is empty
+    </div>
+    <div id="zb3" class="basketContents linksGrey">
+        
+    </div>
+    <div id="zb4" class="basketButtons" style="clear: both">
+        <a id="ctl00_RightSideContentPlaceholder_ucBasket_lnkViewBasket" title="View Basket" href="/en/BasketDetails">
+            <img src="/Resources/Shop/img/pageImg/basket_vbco.gif" alt="viewbasket" border="0" />
+        </a>
+    </div>
+</div>
+
+        
+          <div title=' ' id="y1rtPromoArea" class="rtPromoBox">
+            
+            
+            <div id="ctl00_RightSideContentPlaceholder_SmallFeatureList_PromotionRepeater1_ctl00_pnlWithBackgroundImage">
+	
+                  <div id="y1rtPromoArea" class="rtPromoHeader" style='background-image:url(/upload/274899/Compliance%20navigator-line1.png);'>
+                    <div id="y1rtpromoheadline">
+                      <h4 class="bottomaligned"> </h4>
+                    </div>
+                  </div>
+                  <div id="y1rtPromoContent" class="rtPromoContent" style='background-color:#fcfcfc'>
+                    <div id="y2Message" class="rtPromoText"> <p>Multi-user access to over 3,500 medical device standards, regulations, expert commentaries and other documents</p>
+                    </div>
+                    <div id="y1rtLink" class="rtPromoLink linksWhite"><a title="Find out more" href='https://compliancenavigator.bsigroup.com/ ' target=''>Find out more <img src="/Resources/Shop/img/pageImg/arrow_white.gif" alt="arrow" width="7" height="10" border="0" /></a></div>
+                  </div>
+            
+            
+</div>
+          </div>            
+            <br class="spacer" />
+        
+          <div title='  ' id="y1rtPromoArea" class="rtPromoBox">
+            
+            
+            <div id="ctl00_RightSideContentPlaceholder_SmallFeatureList_PromotionRepeater1_ctl01_pnlWithBackgroundImage">
+	
+                  <div id="y1rtPromoArea" class="rtPromoHeader" style='background-image:url(/upload/Banners/worldwidestandards-%20red%20line.jpg);'>
+                    <div id="y1rtpromoheadline">
+                      <h4 class="bottomaligned">  </h4>
+                    </div>
+                  </div>
+                  <div id="y1rtPromoContent" class="rtPromoContent" style='background-color:#fcfcfc'>
+                    <div id="y2Message" class="rtPromoText"> <p><span style="color: #000000;"><strong>Worldwide Standards</strong><br />We can source any standard from anywhere in the world</span></p>
+                    </div>
+                    <div id="y1rtLink" class="rtPromoLink linksWhite"><a title="Find out more" href='/Navigate-by/Standards/Worldwide-Standards/' target=''>Find out more <img src="/Resources/Shop/img/pageImg/arrow_white.gif" alt="arrow" width="7" height="10" border="0" /></a></div>
+                  </div>
+            
+            
+</div>
+          </div>            
+            <br class="spacer" />
+        
+          <div title=' ' id="y1rtPromoArea" class="rtPromoBox">
+            
+            
+            <div id="ctl00_RightSideContentPlaceholder_SmallFeatureList_PromotionRepeater1_ctl02_pnlWithBackgroundImage">
+	
+                  <div id="y1rtPromoArea" class="rtPromoHeader" style='background-image:url(/upload/275600/PAStinyimage4.jpg);'>
+                    <div id="y1rtpromoheadline">
+                      <h4 class="bottomaligned"> </h4>
+                    </div>
+                  </div>
+                  <div id="y1rtPromoContent" class="rtPromoContent" style='background-color:#FCFCFC'>
+                    <div id="y2Message" class="rtPromoText"> <p>Collaborate, Innovate, Accelerate.</p>
+                    </div>
+                    <div id="y1rtLink" class="rtPromoLink linksWhite"><a title="Find out more" href='https://www.bsigroup.com/en-GB/our-services/developing-new-standards/Develop-a-PAS/' target=''>Find out more <img src="/Resources/Shop/img/pageImg/arrow_white.gif" alt="arrow" width="7" height="10" border="0" /></a></div>
+                  </div>
+            
+            
+</div>
+          </div>            
+            <br class="spacer" />
+        
+          <div title='27 November' id="y1rtPromoArea" class="rtPromoBox">
+            
+            
+            <div id="ctl00_RightSideContentPlaceholder_SmallFeatureList_PromotionRepeater1_ctl03_pnlWithBackgroundImage">
+	
+                  <div id="y1rtPromoArea" class="rtPromoHeader" style='background-image:url(/upload/281898/150%20x%2060.png);'>
+                    <div id="y1rtpromoheadline">
+                      <h4 class="bottomaligned">27 November</h4>
+                    </div>
+                  </div>
+                  <div id="y1rtPromoContent" class="rtPromoContent" style='background-color:#fcfcfc'>
+                    <div id="y2Message" class="rtPromoText"> <p>Organizational Resilience&nbsp;Annual Conference 2019</p>
+                    </div>
+                    <div id="y1rtLink" class="rtPromoLink linksWhite"><a title="Book your place" href='https://www.bsigroup.com/en-GB/our-services/Organizational-Resilience/resilience-series/annual-conference-2019/' target=''>Book your place <img src="/Resources/Shop/img/pageImg/arrow_white.gif" alt="arrow" width="7" height="10" border="0" /></a></div>
+                  </div>
+            
+            
+</div>
+          </div>            
+            <br class="spacer" />
+        
+        
+        
+    </div>
+   
+
+        <!-- END RIGHT SIDE CONTENT -->
+        <div style="clear: both; height: 2px;" />
+        <div id="f" class="footer" style="height:12px;" width="100%">
+            
+<div id="fh" class="footerHead"><span id="ctl00_footerControl_lblCopyright">&copy; British Standards Institution 2019</span></div>
+<div id="fnav" class="footerNav linksBlue"> 
+  <a title="Accessibility" href="/Legal/Accessibility-Statement/">Accessibility</a> |  
+     <a href="/Legal/Copyright/" title="Intellectual Property">Intellectual Property</a> | 
+     <a title="Privacy" href="https://www.bsigroup.com/en-GB/about-bsi/legal/privacy-notice/" target="_blank">BSI Privacy Notice</a> | 
+     <a title="Terms and Conditions" href="/Legal/Terms-and-conditions/">Terms & Conditions</a> | 
+     <a title="Cookies" href="https://www.bsigroup.com/en-GB/about-bsi/legal/cookie-policy/" target="_blank">Cookies</a> </div>
+     
+<div style="text-align:center;width:90%" class="footerNav">
+<br />
+Please note: You may experience issues viewing this site in Internet Explorer 9, 10 or 11. Please download Chrome or Firefox or view our <a href="http://shop.bsigroup.com/Help/Step-by-step-guide-on-how-to-use-the-BSI-Shop/Browser-recommendations/">browser tips</a>. 
+<br />This website is best viewed with browser version of up to Microsoft Internet Explorer 8 or Firefox 3.5.
+</div>
+<!--</div>-->
+
+
+
+        </div>
+    </div>
+    <!-- END CONTENT BOX -->
+    <div style=" " class="cookie-alert-box" id="cookieAlert">
+		        <p>We use cookies to make our website easier to use and to better understand your needs.</p>
+		        <a id="cookie-accept" class="button">Accept and continue</a>
+		        <p><a id="cookie-registered" href="https://www.bsigroup.com/en-GB/about-bsi/legal/cookie-policy/" target="_blank">Learn more about the cookies we use and how to change your settings.</a></p>
+</div>
+
+<script src="/Resources/cookie/jscript/set-cookie.js"></script>
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var gaCommonCode;
+try {
+gaCommonCode = _gat._getTracker("UA-7972162-1");
+gaCommonCode._setDomainName("none");
+gaCommonCode._trackPageview();
+} catch(err) {}
+
+function gaCommonCodeLookInside(pageId)
+{
+	gaCommonCode = _gat._getTracker("UA-7972162-1");
+	gaCommonCode._setDomainName("none");
+	gaCommonCode._trackPageview("lookinside?upi=" + pageId);
+}
+
+function delayTrigger()
+{
+	
+}
+
+function gaCommonCodeTriggerPageView(pageName)
+{
+	setTimeout(delayTrigger, 1000);
+	gaCommonCode = _gat._getTracker("UA-7972162-1");
+	gaCommonCode._setDomainName("none");
+	gaCommonCode._trackPageview(pageName);
+}
+</script>
+<script type="text/javascript">
+var gaShopCode;
+try {
+gaShopCode = _gat._getTracker("UA-7970902-2");
+gaShopCode._setDomainName("none");
+gaShopCode._trackPageview();
+} catch(err) {}
+
+function gaShopCodeLookInside(pageId)
+{
+	gaShopCode = _gat._getTracker("UA-7970902-2");
+	gaShopCode._setDomainName("none");
+	gaShopCode._trackPageview("lookinside?upi=" + pageId);
+}
+
+function delayTrigger()
+{
+	
+}
+
+function gaShopCodeTriggerPageView(pageName)
+{
+	setTimeout(delayTrigger, 1000);
+	gaShopCode = _gat._getTracker("UA-7970902-2");
+	gaShopCode._setDomainName("none");
+	gaShopCode._trackPageview(pageName);
+}
+</script>
+<script language="javascript">
+var pageTracker = 'gaCommonCode,gaShopCode';
+</script>
+<script src='/Resources/jscript/gaAddons.js' type='text/javascript'></script>
+ 
+<script type="text/javascript">    
+    var instrumentationkey = "3c2725b7-1b21-4f5e-abdc-5c4e559e1b5e";
+    var appInsights = window.appInsights || function (config) {
+        function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+    }({
+        instrumentationKey: instrumentationkey
+    });
+
+    window.appInsights = appInsights;
+    appInsights.trackPageView();
+</script>
+
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5E3115A9" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+jQuery('#ctl00_SearchBarControl_txtSearchBox').keypress(function (e) {if(e.which==13){jQuery('#ctl00_SearchBarControl_search').click();return false;}});//]]>
+</script>
+</form>
+<script language="javascript" type="text/javascript" src="/Resources/Shop/jscript/optimost_global_body1.js"></script>
+<script language="javascript" type="text/javascript" src="/Resources/Shop/jscript/optimost_global_body2.js"></script>
+            <script type="text/javascript">
+                var piProtocol = (("https:" == document.location.protocol) ? "https://pi." : "http://cdn.");
+                document.write(unescape("%3Cscript src='" + piProtocol + "pardot.com/pi.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    piAId = '44652';
+    piCId = '1154';
+    piTracker();
+    piAId = '74472';
+    piCId = '1462';
+    piTracker();
+    piAId = '36972';
+    piCId = '2434';
+    piTracker();
+</script>
+</body>
+
+
+</html>

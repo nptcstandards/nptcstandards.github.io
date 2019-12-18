@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Projects
+title: Collections
 ---
-The projects section shows the list of standards associated with a project which are either :
+The collections section shows the list of standards associated with a project/grouping which are either :
 + under development or
 + scheduled for development or
 + due for assessment for inclusion in the Catalogue
++ collated by particular Organisation
 
 <script src="assets/vis/dist/vis.js"></script>
 <link href="assets/vis/dist/vis.css" rel="stylesheet" type="text/css" />

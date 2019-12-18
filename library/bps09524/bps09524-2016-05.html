@@ -1,0 +1,963 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <script language="javascript" type="text/javascript" src="/Resources/Shop/jscript/OptiMostGlobal-header.js?live=true"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="Locale" content="en-GB" />
+<meta name="CountrySite" content="Shop" />
+<meta name="Language" content="en" />
+<meta name="SiteVersion" content="1.0.7275" />
+<meta name="Machine" content="BSI10WEB04PUB" />
+<meta name="Template" content="[Shop] Item Details" />
+<meta name="PageTypeId" content="266" />
+<meta name="PageId" content="161025" />
+
+<link rel="Stylesheet" type="text/css" href="/Resources/Shop/css/03prodstyles1.css" /><link rel="Stylesheet" type="text/css" href="/Resources/Shop/css/01landingStyles3.css" />
+     
+    <script type="text/javascript" src="/Resources/Shop/jscript/jqueryui/ui/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/Resources/Shop/jscript/jqueryui/ui/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/Resources/jscript/jqueryui/ui/css/smoothness/jquery-ui-1.11.0.custom.css" type="text/css" />
+
+    <script type="text/javascript" src="/Resources/Shop/jscript/jqueryui/jquery.cookie.js"></script>
+       
+    <script language="javascript">
+
+        if (jQuery.cookie('selectedTab') == null) {
+            document.cookie = "selectedTab=2";
+        }
+    </script>
+  
+ 
+    <script type="text/javascript"><!--
+        function divOnOff(id) {
+            var e = document.getElementById(id);
+            if (e.style.display == 'block')
+                e.style.display = 'none';
+            else
+                e.style.display = 'block';
+        }
+
+
+//--></script>
+    <script type="text/javascript"><!--
+        jQuery(function () {
+            jQuery(".tabs").tabs();
+        });
+	//--></script>
+    <script type="text/javascript"><!--
+        //jQuery.noConflict();
+	        //--></script>
+    <!-- <script type="text/javascript" src="/resources/shop/jscript/mootools.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="/Resources/css/sitemessage.css" />
+    
+    <script type="text/javascript" src="/Resources/Shop/jscript/navacc.js"></script>
+    
+    <link href="/Resources/Shop/css/01landingStyles3.css" rel="stylesheet" type="text/css" />
+    <link href="/Resources/Shop/css/03prodstyles1.css" rel="stylesheet" type="text/css" />
+    <link href="/Resources/css/atooltip.css" rel="stylesheet" type="text/css" />
+    		<meta name="DefinitionName" content="Document" />
+		<meta name="ProductId" content="000000000030298891" />
+		<meta name="DisplayName" content="BS ISO 15489-1:2016" />
+		<meta name="EndecaTitle" content="BS ISO 15489-1:2016. Information and documentation. Records management. Concepts and principles" />
+		<meta name="StandardNumberSearch" content="BS ISO 15489-1:2016" />
+		<meta name="cy_list_price" content="206.00" />
+		<meta name="MemberPrice" content="103.00" />
+		<meta name="ICS" content="01.140.20" />
+		<meta name="SubscriptionModules" content="GBM02" />
+		<meta name="Description" content="BS ISO 15489-1 establishes the core concepts and principles for the creation, capture and management of records. It provides guidance on managing records of originating organizations, public or private, for internal and external clients." />
+		<meta name="Keywords" content="records management, documents management, records, data management" />
+		<meta name="Descriptors" content="Data management, Information handling, Library and information science, Documents, Records (documents), Records management, Document maintenance, Filing systems, Information operations, Management techniques, Management operations, Organizations, Planning, Document storage, Paper, Microforms, Maps, Books, Training, Quality assurance systems " />
+		<meta name="Availability" content="Electronic Download (when in subscription) and Hardcopy" />
+		<meta name="Status" content="Current" />
+		<meta name="Format" content="A4" />
+		<meta name="Commitee" content="IDT/2/17" />
+		<meta name="InternationalRelationships" content="ISO 15489-1:2016" />
+		<meta name="DisplayBSOL" content="Yes" />
+		<meta name="DisplayShop" content="Yes" />
+		<meta name="PublishDate" content="636002496" />
+		<meta name="ConfirmedDate" content="" />
+		<meta name="AmendedDate" content="636002496" />
+		<meta name="WithdrawnDate" content="" />
+		<meta name="ReinstatedDate" content="" />
+		<meta name="DraftExpiryDate" content="" />
+		<meta name="MadeHistoricalDate" content="" />
+		<meta name="CreatedDate" content="636002496" />
+		<meta name="PublicDownload" content="YES" />
+		<meta name="CompanyCode" content="2000" />
+		<meta name="MaterialGroupId" content="BSI with Discount" />
+		<meta name="Publisher" content="BSI" />
+		<meta name="ISBN" content="978 0 580 86181 9" />
+		<meta name="OtherDate" content="636002496" />
+
+    <style>
+    .ui-tabs .ui-state-disabled { 
+    display: none; /* disabled tabs don't show up */ 
+    
+    }   
+    </style>
+<script type="text/javascript">
+//	//<!--
+    jQuery(function () {
+
+        // alert(jQuery("#tabs-1").children().length);
+        if (jQuery("#tabs-1").children().length > 2) {
+            jQuery(".tabs").tabs();
+        }
+        else {
+            /* Jquery hack to remove first tab in current version*/
+            var tab = jQuery(".tabs");
+            tab.tabs({ disabled: [0] });
+            tab.tabs({ active: 1 });
+        }
+
+    });
+
+    //-->
+
+
+    function setstyle(sourceid, img_src) {
+        try {
+            if (img_src == '/resources/shop/img/pageImg/ATCbuttonBG_over.jpg')
+                document.getElementById(sourceid).style.backgroundImage = "url(" + document.getElementById("prdactive").src + ")";
+            else
+                document.getElementById(sourceid).style.backgroundImage = "url(" + img_src + ")";
+        }
+        catch(e){ }
+        return false      
+        }
+	</script>
+    <script type="text/javascript">
+        function showmodalpopup(message) {
+            $("#popupdiv").html(message);
+            $("#popupdiv").dialog({
+                title: "Basket Items Information",
+                width: 430,
+                height: 250,
+                modal: true,
+                buttons: {
+                    YES: function () {
+                        $(this).dialog('close');
+
+                    },
+                    NO: function () {
+                        $("[id*=Remove]").click();
+
+                    }
+                }
+            });
+        };
+</script>
+
+     </head><div id="popupdiv" title="Basic modal dialog" style="display: none"></div>
+    
+
+    <script src="/Resources/jscript/atooltip.jquery.js" type="text/javascript"></script>
+    <script src="/Resources/jscript/ContextAds.js" type="text/javascript"></script>
+	<div style="display:none">
+	    <img id="prdactive" alt="" name="prdactive" src="/resources/shop/img/pageImg/ATCbuttonBG_over.jpg" />
+	</div>
+
+    <!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" media="all" href="/Resources/css/global/ie6.css" />
+	<![endif]-->
+    <link rel="stylesheet" type="text/css" href="/Resources/cookie/css/cookie-box.css" /> 
+    <script src="/Resources/cookie/jscript/is-cookie-set.js"></script>
+     
+        <input type="hidden" name="IsUserAMember" value="no" />
+    <title>
+	BS ISO 15489-1:2016 Information and documentation. Records management. Concepts and principles
+</title>
+<body>
+    <!-- Google Tag Manager Start -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WX52CM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WX52CM');</script> <!--Google Tag Manager End-->
+
+    <form name="aspnetForm" method="post" action="/ProductDetail/?pid=000000000030298891" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE2MDgwMDg5NjEPFgQeA3BpZAUSMDAwMDAwMDAwMDMwMjk4ODkxHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYGAgEQZGQWBmYPFgIeBFRleHQFjwENCiAgICAgICAgPHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCIgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii9SZXNvdXJjZXMvU2hvcC9qc2NyaXB0L09wdGlNb3N0R2xvYmFsLWhlYWRlci5qcz9saXZlPXRydWUiPjwvc2NyaXB0Pg0KICAgIGQCAQ8WAh8CZWQCFA8WAh8CBUcNCiAgICAgICAgPGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0iSXNVc2VyQU1lbWJlciIgdmFsdWU9Im5vIiAvPg0KICAgIGQCAw8WAh8CBcAEPCEtLSBHb29nbGUgVGFnIE1hbmFnZXIgU3RhcnQgLS0+DQo8bm9zY3JpcHQ+PGlmcmFtZSBzcmM9Ii8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL25zLmh0bWw/aWQ9R1RNLVdYNTJDTSINCmhlaWdodD0iMCIgd2lkdGg9IjAiIHN0eWxlPSJkaXNwbGF5Om5vbmU7dmlzaWJpbGl0eTpoaWRkZW4iPjwvaWZyYW1lPjwvbm9zY3JpcHQ+DQo8c2NyaXB0PihmdW5jdGlvbih3LGQscyxsLGkpe3dbbF09d1tsXXx8W107d1tsXS5wdXNoKHsnZ3RtLnN0YXJ0JzoNCm5ldyBEYXRlKCkuZ2V0VGltZSgpLGV2ZW50OidndG0uanMnfSk7dmFyIGY9ZC5nZXRFbGVtZW50c0J5VGFnTmFtZShzKVswXSwNCmo9ZC5jcmVhdGVFbGVtZW50KHMpLGRsPWwhPSdkYXRhTGF5ZXInPycmbD0nK2w6Jyc7ai5hc3luYz10cnVlO2ouc3JjPQ0KJy8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0bS5qcz9pZD0nK2krZGw7Zi5wYXJlbnROb2RlLmluc2VydEJlZm9yZShqLGYpOw0KfSkod2luZG93LGRvY3VtZW50LCdzY3JpcHQnLCdkYXRhTGF5ZXInLCdHVE0tV1g1MkNNJyk7PC9zY3JpcHQ+IDwhLS1Hb29nbGUgVGFnIE1hbmFnZXIgRW5kLS0+ZAIFEGRkFgpmD2QWAmYPFgIeB1Zpc2libGVoZAICD2QWBgIBDw8WAh4LTmF2aWdhdGVVcmwFGmh0dHBzOi8vc2hvcC5ic2lncm91cC5jb20vZGQCAw8WAh4LXyFJdGVtQ291bnQCBRYKZg9kFgJmDxUEBl9ibGFuawAYaHR0cDovL3d3dy5ic2lncm91cC5jb20vDUJTSSBDb3Jwb3JhdGVkAgIPZBYCZg8VBAVfc2VsZgAML0NvbnRhY3QtVXMvCkNvbnRhY3QgVXNkAgQPZBYCZg8VBAVfc2VsZgAML2VuL1NpdGVtYXAvCFNpdGUgTWFwZAIGD2QWAmYPFQQGX2JsYW5rAAkvZW4vSGVscC8ESGVscGQCCA9kFgJmDxUEBV9zZWxmAAcvTXktQlNpBk15IEJTSWQCBQ8PFgQfAgUQTG9naW4gLyBSZWdpc3Rlch8EBQcvTG9naW4vZGQCBw9kFgQCAQ9kFgICAw8PFgIfAgUNRmluZCBTaW1pbGFyIGRkAgMPDxYCHwNoZGQCCA9kFgYCAw9kFgwCAQ8WAh8CBRNCUyBJU08gMTU0ODktMToyMDE2ZAIIDxYCHwNnZAIKDxYGHgtvbm1vdXNlb3ZlcgV5c2V0c3R5bGUoJ2N0bDAwX0NlbnRlckNvbnRlbnRQbGFjZWhvbGRlcl9wcm9kdWN0U3VtbWFyeV9idG5BZGRUb1NvZnQnLCcvcmVzb3VyY2VzL3Nob3AvaW1nL3BhZ2VJbWcvQVRDYnV0dG9uQkdfb3Zlci5qcGcnKR4Kb25tb3VzZW91dAV8c2V0c3R5bGUoJ2N0bDAwX0NlbnRlckNvbnRlbnRQbGFjZWhvbGRlcl9wcm9kdWN0U3VtbWFyeV9idG5BZGRUb1NvZnQnLCcvcmVzb3VyY2VzL3Nob3AvaW1nL3BhZ2VJbWcvQVRDYnV0dG9uQkdfZGVmYXVsdC5qcGcnKR8DZxYCAgMPDxYCHwNnZGQCCw8WBh8GBXlzZXRzdHlsZSgnY3RsMDBfQ2VudGVyQ29udGVudFBsYWNlaG9sZGVyX3Byb2R1Y3RTdW1tYXJ5X2J0bkFkZFRvSGFyZCcsJy9yZXNvdXJjZXMvc2hvcC9pbWcvcGFnZUltZy9BVENidXR0b25CR19vdmVyLmpwZycpHwcFfHNldHN0eWxlKCdjdGwwMF9DZW50ZXJDb250ZW50UGxhY2Vob2xkZXJfcHJvZHVjdFN1bW1hcnlfYnRuQWRkVG9IYXJkJywnL3Jlc291cmNlcy9zaG9wL2ltZy9wYWdlSW1nL0FUQ2J1dHRvbkJHX2RlZmF1bHQuanBnJykfA2cWAgIDDw8WAh8DZ2RkAhAPFgIfAgWLAjxpbWcgaWQ9J2ltZ1Byb2R1Y3RJbWFnZScgc3JjPScvUmVzb3VyY2VzL2ltZy9Ob0ltYWdlLmdpZicgd2lkdGg9JzEzMHB4JyBoZWlnaHQ9JzE3MHB4JyBib3JkZXI9JzAnIG5hbWU9J2ltZ1Byb2R1Y3RJbWFnZSc+CjxzY3JpcHQgbGFuZ3VhZ2U9J2phdmFzY3JpcHQnPgogdmFyIGdVcGk9ICcwMDAwMDAwMDAwMzAyOTg4OTEnOwogdmFyIGdUb3RhbFByZXZpZXdDb3VudD0gJzUnOwpjaGVja0ltYWdlRXhpc3RzKCcwMDAwMDAwMDAwMzAyOTg4OTEnKTsgCjwvc2NyaXB0PmQCEQ8WAh8DZ2QCBQ8WAh8CBdIbPHA+PHN0cm9uZz5XaGF0IGlzIHRoaXMgc3RhbmRhcmQgYWJvdXQ/PC9zdHJvbmc+PC9wPg0KPHA+PHN0cm9uZz48L3N0cm9uZz5NYW55IG9yZ2FuaXphdGlvbnMgYXJlIGN1cnJlbnRseSB1bmRlcnRha2luZyBpbml0aWF0aXZlcyB0byBpbXByb3ZlIGluZm9ybWF0aW9uIGdvdmVybmFuY2Ugc3lzdGVtcyBhbmQgcHJhY3RpY2UgYWNyb3NzIHRoZSBidXNpbmVzcy4gR29vZCByZWNvcmRzIG1hbmFnZW1lbnQgaXMgYSBmdW5kYW1lbnRhbCBlbGVtZW50IG9mIGdvb2QgaW5mb3JtYXRpb24gZ292ZXJuYW5jZSBhbmQgZ29vZCBidXNpbmVzcy4gQlMgSVNPIDE1NDg5LTE6MjAxNiBzZXRzIGJlc3QgcHJhY3RpY2UgZm9yIHJlY29yZHMgbWFuYWdlbWVudC4gQWxsIG9yZ2FuaXphdGlvbnMgd2lsbCBiZW5lZml0IGZyb20gcmV2aWV3aW5nIHRoZWlyIHJlY29yZCBtYW5hZ2VtZW50IGFjdGl2aXRpZXMgYWdhaW5zdCB0aGlzIHN0YW5kYXJkLiZuYnNwOzwvcD4NCjxwPjxzdHJvbmc+V2hvIGlzIHRoaXMgc3RhbmRhcmQgZm9yPzwvc3Ryb25nPjwvcD4NCjx1bD4NCjxsaT5JbmZvcm1hdGlvbiByaXNrIGFuZCBnb3Zlcm5hbmNlIG9mZmljZXJzPC9saT4NCjxsaT5SZWNvcmRzIG1hbmFnZXJzPC9saT4NCjxsaT5JbmZvcm1hdGlvbiBtYW5hZ2VyczwvbGk+DQo8bGk+SVQgbWFuYWdlcnM8L2xpPg0KPGxpPkluZm9ybWF0aW9uIHNlY3VyaXR5IG1hbmFnZXJzPC9saT4NCjxsaT5FbnRlcnByaXNlIGFyY2hpdGVjdHM8L2xpPg0KPGxpPkNoaWVmIGluZm9ybWF0aW9uIG9mZmljZXJzPC9saT4NCjxsaT5BcmNoaXZpc3RzLCBzcGVjaWFsIGxpYnJhcmlhbnM8L2xpPg0KPGxpPktub3dsZWRnZSBtYW5hZ2VtZW50IHByb2Zlc3Npb25hbHM8L2xpPg0KPGxpPkJ1c2luZXNzIGFkbWluaXN0cmF0b3JzPC9saT4NCjxsaT5MZWdhbCBhZHZpc29yczwvbGk+DQo8bGk+QWxsIGluZGl2aWR1YWxzIHdpdGhpbiBvcmdhbml6YXRpb25zIHdobyBhcmUgcmVzcG9uc2libGUgZm9yIHRoZSBvdmVyc2lnaHQgb2YgcmVjb3JkIG1hbmFnZW1lbnQgYW5kIGluZm9ybWF0aW9uIGdvdmVybmFuY2UgcHJhY3RpY2VzPC9saT4NCjwvdWw+DQo8cD48c3Ryb25nPldoeSBzaG91bGQgeW91IHVzZSB0aGlzIHN0YW5kYXJkPzwvc3Ryb25nPiZuYnNwOzwvcD4NCjxwPkJTIElTTyAxNTQ4OS0xOjIwMTYgd2lsbCBoZWxwIGNyb3NzLXNlY3RvciBvcmdhbml6YXRpb25zIHRvIGNvbXBseSB3aXRoIGRhdGEgcHJvdGVjdGlvbiBsZWdpc2xhdGlvbiBhbmQgaW4gcGFydGljdWxhciB3aWxsIGhlbHAgdGhlbSBtZWV0IHRoZSBlbmhhbmNlZCBpbmZvcm1hdGlvbiBnb3Zlcm5hbmNlIG9ibGlnYXRpb25zIGFyaXNpbmcgZnJvbSB0aGUgbmV3IEdlbmVyYWwgRGF0YSBQcm90ZWN0aW9uIFJlZ3VsYXRpb24uJm5ic3A7VGhlIHN0YW5kYXJkIGVzdGFibGlzaGVzIGNvcmUgY29uY2VwdHMgYW5kIHByaW5jaXBsZXMgZm9yIHRoZSBjcmVhdGlvbiwgY2FwdHVyZSBhbmQgbWFuYWdlbWVudCBvZiByZWNvcmRzLiBJdCBwcm92aWRlcyBndWlkYW5jZSBvbiBtYW5hZ2luZyByZWNvcmRzIG9mIG9yaWdpbmF0aW5nIG9yZ2FuaXphdGlvbnMsIHB1YmxpYyBvciBwcml2YXRlLCBmb3IgaW50ZXJuYWwgYW5kIGV4dGVybmFsIGNsaWVudHMuIEl0IGRlZmluZXMgdGhlIGNvbmNlcHRzIGFuZCBwcmluY2lwbGVzIHJlbGF0aW5nIHRvOjwvcD4NCjx1bD4NCjxsaT5SZWNvcmRzLCBtZXRhZGF0YSBmb3IgcmVjb3JkcyBhbmQgcmVjb3JkcyBzeXN0ZW1zPC9saT4NCjxsaT5Qb2xpY2llcywgYXNzaWduZWQgcmVzcG9uc2liaWxpdGllcywgbW9uaXRvcmluZyBhbmQgdHJhaW5pbmcgaW4gc3VwcG9ydCBvZiB0aGUgZWZmZWN0aXZlIG1hbmFnZW1lbnQgb2YgcmVjb3JkczwvbGk+DQo8bGk+UmVjdXJyZW50IGFuYWx5c2lzIG9mIGJ1c2luZXNzIGNvbnRleHQgYW5kIHRoZSBpZGVudGlmaWNhdGlvbiBvZiByZWNvcmRzIHJlcXVpcmVtZW50czwvbGk+DQo8bGk+UmVjb3JkcyBjb250cm9sczwvbGk+DQo8bGk+UHJvY2Vzc2VzIGZvciBjcmVhdGluZywgY2FwdHVyaW5nIGFuZCBtYW5hZ2luZyByZWNvcmRzPC9saT4NCjwvdWw+DQo8cD48c3Ryb25nPldoYXTigJlzIGNoYW5nZWQgc2luY2UgdGhlIGxhc3QgdXBkYXRlPzwvc3Ryb25nPjwvcD4NCjxwPjxzdHJvbmc+PC9zdHJvbmc+VGhlIHN0YW5kYXJkIHdhcyByZXZpc2VkIHRvIGVuc3VyZSB0aGF0IGl0IG1lZXRzIG1hcmtldCByZXF1aXJlbWVudHMsIGtlZXBzIHBhY2Ugd2l0aCB0aGUgaW5jcmVhc2luZ2x5IGNvbXBsZXggcmVjb3JkcyBtYW5hZ2VtZW50IHJlcXVpcmVtZW50cyBkZW1hbmRlZCBieSBldm9sdmluZyBkaWdpdGFsIGVudmlyb25tZW50cyBhbmQgdGFrZXMgYWNjb3VudCBvZiB0aGUgd2lkZSByYW5nZSBvZiByZWxhdGVkIHN0YW5kYXJkcyB0aGF0IGhhdmUgYmVlbiBpc3N1ZWQgc2luY2UgaXQgd2FzIGZpcnN0IHB1Ymxpc2hlZCBpbiAyMDAxLiBJdCBpbmNsdWRlcyB0aGUgZm9sbG93aW5nIHByaW5jaXBhbCBjaGFuZ2VzOjwvcD4NCjx1bD4NCjxsaT5Gb2N1c3NlcyBvbmx5IG9uIHByaW5jaXBsZXMgYW5kIGNvbmNlcHRzIGFuZCBubyBsb25nZXIgcHJvdmlkZXMgYSBwcmVzY3JpYmVkIGltcGxlbWVudGF0aW9uIG1ldGhvZG9sb2d5PC9saT4NCjxsaT5SZS1pbnRlcnByZXRzIHRoZSB0cmFkaXRpb25hbCB0ZXJtIOKAnGFwcHJhaXNhbOKAnSBhcyBhIGNvcmUgYWN0aXZpdHkgZm9yIGRldGVybWluaW5nIHJlY29yZHMgcmVxdWlyZW1lbnRzPC9saT4NCjxsaT5HcmVhdGVyIGVtcGhhc2lzIG9uIHRoZSBpbXBvcnRhbmNlIG9mIG1ldGFkYXRhIGFzIGFuIGVzc2VudGlhbCBwYXJ0IG9mIG1hbmFnaW5nIHJlY29yZHMgYW5kIG9uIHRoZSBuZWVkIGZvciBpbmRlcGVuZGVuY2Ugb2YgcmVjb3JkcyBtZXRhZGF0YSBmcm9tIHNwZWNpZmljIHN5c3RlbXMgYW5kIGVudmlyb25tZW50czwvbGk+DQo8bGk+QnJvYWRlbmVkIGRlZmluaXRpb24gb2YgdGhlIHJvbGUgb2YgcmVjb3JkcyBhcyBib3RoIGVuYWJsZXJzIG9mIGJ1c2luZXNzIGFjdGl2aXR5IGFuZCBpbmZvcm1hdGlvbiBhc3NldHM8L2xpPg0KPGxpPkhpZ2hsaWdodHMgaW5jcmVhc2VkIG9wcG9ydHVuaXRpZXMgZm9yIHJlY29yZHMgdXNlIGFuZCByZXVzZSBpbiB0aGUgZGlnaXRhbCBlbnZpcm9ubWVudDwvbGk+DQo8bGk+R3JlYXRlciBmb2N1cyBvbiB0aGUgbmVlZCB0byBleHRlbmQgc3lzdGVtcyBhbmQgcnVsZXMgZm9yIHRoZSBjcmVhdGlvbiwgY2FwdHVyZSBhbmQgbWFuYWdlbWVudCBvZiByZWNvcmRzIGJleW9uZCB0cmFkaXRpb25hbCBvcmdhbml6YXRpb25hbCBib3VuZGFyaWVzLCBzdWNoIGFzIGNvbGxhYm9yYXRpdmUgYW5kIG11bHRpLWp1cmlzZGljdGlvbmFsIHdvcms8L2xpPg0KPGxpPkdyZWF0ZXIgZW1waGFzaXMgb24gdGhlIGltcG9ydGFuY2Ugb2YgcmlzayBtYW5hZ2VtZW50IGluIGRldmlzaW5nIHN0cmF0ZWdpZXMgZm9yIG1hbmFnaW5nIHJlY29yZHMsIGFuZCB0aGUgbWFuYWdlbWVudCBvZiByZWNvcmRzIGFzIGEgcmlzayBtYW5hZ2VtZW50IHN0cmF0ZWd5IGluIGl0c2VsZjwvbGk+DQo8L3VsPmQCCw9kFgICBQ8WAh8DZ2QCCQ9kFgICAQ9kFgQCAQ8WAh8CBRRZb3VyIGJhc2tldCBpcyBlbXB0eWQCBQ8PFgIfBAURL2VuL0Jhc2tldERldGFpbHNkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgU1Y3RsMDAkQ2VudGVyQ29udGVudFBsYWNlaG9sZGVyJHByb2R1Y3RTdW1tYXJ5JGlidG50b3AFOGN0bDAwJENlbnRlckNvbnRlbnRQbGFjZWhvbGRlciRwcm9kdWN0U3VtbWFyeSRpYnRuYm90dG9ttGnTH1GyWKRDe51sWpVqZw+YbNc=" />
+</div>
+
+    
+
+    <!--LandingPage Shop Master page-->
+    
+    <div id="MainFrame" class="ContentFrame">
+        <div id="hb" class="headerBox">
+            
+    <div id="absTop">
+    <div id="lg" class="logoHead">
+        <a id="ctl00_HeaderControl_lnkLogo" href="https://shop.bsigroup.com/">
+            <img src="/Resources/Shop/img/pageImg/BSIshoplogo.gif" border="0" alt="Welcome to the BSI Standards Shop" width="149" height="34" /></a></div>
+    <div id="mininav" class="miniNavHead linksBlue">      
+        
+                <a target='_blank' title='' href='http://www.bsigroup.com/'>BSI Corporate</a>
+            |
+                <a target='_self' title='' href='/Contact-Us/'>Contact Us</a>
+            |
+                <a target='_self' title='' href='/en/Sitemap/'>Site Map</a>
+            |
+                <a target='_blank' title='' href='/en/Help/'>Help</a>
+            |
+                <a target='_self' title='' href='/My-BSi'>My BSI</a>
+            
+        | <a id="ctl00_HeaderControl_lnkLogin" title="Login or Register" href="/Login/">Login / Register</a>
+        <br />
+        
+    </div>    
+</div>
+<div id="spclr" class="spacer"> </div>
+
+
+
+    
+
+            
+<div id="gn" class="globalNav">
+    
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/'>
+                    Home</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Standards/'>
+                    Standards</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Membership/'>
+                    Membership</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Conferences/'>
+                    Conferences</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Training-Courses/'>
+                    Training</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Books/'>
+                    Books & CDs</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='' href='/Navigate-by/Assessment-Tools/'>
+                    Online Tools</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='PAS' href='/Navigate-by/PAS/'>
+                    PAS</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='Affiliates' href='/Navigate-by/Affiliates/'>
+                    Affiliates</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='Distributors' href='/Navigate-by/Distributors'>
+                    Distributors</a>
+            </div>
+        
+            <div class="navItem linksWhite" id="navDiv">
+               <a title='Licensing' href='/Navigate-by/Licensing'>
+                    Licensing</a>
+            </div>
+        
+</div>
+
+            
+
+<div id="sb" class="searchBar" style="clear: both;">
+    <div class="searchText">
+        Search all products by</div>
+    <div class="searchKeywords">
+        <input name="ctl00$SearchBarControl$txtSearchBox" type="text" value="Keyword, standard number or ICS code" id="ctl00_SearchBarControl_txtSearchBox" size="35" onfocus="javascript:searchSelected(this);" onblur="javascript:searchDeSelected(this);" />
+    </div>
+    <div class="searchIn">
+        </div>
+    <div class="searchDD">
+        <label for="search">
+        </label>
+        <input type="submit" name="ctl00$SearchBarControl$search" value="Search" id="ctl00_SearchBarControl_search" title="Search" />      
+    </div>
+    <div class="searchDD" style="float:right; margin:0 10px 0 0; padding:0;"><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style" style="height:24px;vertical-align : middle; display : table-cell;font-size:12px;background-color:White;padding: 0 4px;">
+<a href="https://www.addthis.com/bookmark.php?v=250&amp;username=Sixpeo" class="addthis_button_compact">Share</a>
+<span class="addthis_separator" style="line-height:12px">|</span>
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+</div>
+<script type="text/javascript">var addthis_config = {data_track_clickback:true,services_exclude:'print' };</script>
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#username=Sixpeo"></script>
+<!-- AddThis Button END -->
+</div>
+    <div style="float:right; margin:0; padding:0;"><a href="javascript:window.print()"><img src="/Resources/img/printthis.gif" alt="Print this page" /></a></div>
+    
+    <div class="searchADV linksGrey" style="display: none">
+        <a href="#">Advanced Search</a></div>
+</div>
+<div id="sbb" class="searchBottom" style="clear: both">
+    <img src="/Resources/Shop/img/pageImg/searchbar_bottom.gif" alt=" " width="899" height="12" /></div>
+
+<script type="text/javascript" language="javascript">
+var defaultText = "Keyword, standard number or ICS code";
+
+function searchSelected(searchBox)
+{
+    if(searchBox.value == defaultText)
+    searchBox.value = "";
+}
+
+function searchDeSelected(searchBox)
+{
+    if(searchBox.value.length==0)
+    searchBox.value =defaultText;
+     
+}
+
+</script>
+
+            
+            
+        </div>
+        <!-- END HEADER -->
+        
+    <div id="BreadCrumbs">
+<div id="ctl00_BreadcrumbPlaceholder_icsBreadcrumbs_BreadCrumbs" class="breadcrumb linksGrey">
+    
+        
+            
+                    <span class="level"></span>&nbsp; <strong>
+                        <a id="ctl00_BreadcrumbPlaceholder_icsBreadcrumbs_BreadCrumbsRepeater_ctl01_rptCrumb_ctl00_hlLink" href="/SearchResults?fct=IcsCodes&amp;filterBy=01&amp;q=&amp;filter=&amp;ps=">Generalities. Terminology. Standardization. Documentation</a>
+                        &gt;</strong>
+                
+                    <span class="level"></span>&nbsp; <strong>
+                        <a id="ctl00_BreadcrumbPlaceholder_icsBreadcrumbs_BreadCrumbsRepeater_ctl01_rptCrumb_ctl01_hlLink" href="/SearchResults?fct=IcsCodes&amp;filterBy=01.140&amp;q=&amp;filter=&amp;ps=">Information sciences. Publishing</a>
+                        &gt;</strong>
+                
+            <a id="ctl00_BreadcrumbPlaceholder_icsBreadcrumbs_BreadCrumbsRepeater_ctl01_hlRoot" href="/SearchResults?fct=IcsCodes&amp;filterBy=01.140.20&amp;q=&amp;filter=&amp;ps=">Information sciences</a>
+            <b>
+                <a id="ctl00_BreadcrumbPlaceholder_icsBreadcrumbs_BreadCrumbsRepeater_ctl01_hlMore"></a></b>
+            <br />
+        
+        
+</div>
+</div>
+
+
+        
+    <div id="LeftSide" class="LeftSide">
+        
+
+<div class="sideSubBox linksBlue">
+    <h3>
+        Find Similar Items</h3>
+    <div class="pad5">
+        This product falls into the following categories.<br />
+        <br />
+        You may find similar items within these categories by selecting from the choices
+        below:</div>
+</div>
+<div id="accordion">
+    
+    <div class="pad5">
+        <input type="submit" name="ctl00$LeftSideContentPlaceholder$searchNewSearch$btnFindSimilar" value="Find Similar " id="ctl00_LeftSideContentPlaceholder_searchNewSearch_btnFindSimilar" class="pointer" />
+    </div>
+</div>
+
+        
+    </div>
+
+        <!-- END LEFT SIDE -->
+        <div id="MainContentArea">
+            <!--PAGEWATCH CODE=""-->
+            
+    <input type="submit" name="ctl00$CenterContentPlaceholder$Remove" value="Button" id="ctl00_CenterContentPlaceholder_Remove" style="display: none" />
+    <div id="Div1" class="CenterContent">
+        <div class="centerBorder">
+            
+<div id="title" class="titleSection" style="position:relative;" plBS2599message="">
+    <h1>BS ISO 15489-1:2016</h1>
+    <h2>
+         Information and documentation. Records management. Concepts and principles
+    </h2>
+    <p class="pad5 bbD">
+                       
+                     <em>
+                        Status
+                        : </em>
+                    <strong class="textBrightBlue">
+                        Current</strong> &nbsp;
+            
+    
+                <em>
+                        Published</em>
+                        :
+                           <strong>May 2016   </strong>
+            
+       
+        
+
+     </p>
+     
+    <div class="linksBlue margin10bottom topInfoBox pad5">
+        <div class="leftCol floatLeft" style="width:110px;">
+            <div class=" text11 margin15right pad5">
+                <em>Price</em><br />
+                <span class="textMedGrey textLarger">
+                 &#163;206.00<br />
+            
+                </span>
+            </div>
+            <div class=" text11 margin15right pad5">
+            
+             <em></em>Member Price<br />
+                <span class="textLarger textOrange">
+                &#163;103.00<br />
+            
+                </span>
+        
+                </div>
+                <div class="text11" style="width:100px;">
+                 <a id="ctl00_CenterContentPlaceholder_productSummary_hlMembership" class="arrow" href="/en/Navigate-by/Membership/" target="_blank">Become a member and SAVE 50%<br /> on British Standards. Click to learn more<span></span></a>
+                </div>
+            <div class="margin10top">
+                
+            </div>
+            
+        </div>
+        
+        <div class="titleLeft" style="width:100px;">
+             <div id="ctl00_CenterContentPlaceholder_productSummary_divtop" class="floatLeft formatBorder" onmouseover="setstyle(&#39;ctl00_CenterContentPlaceholder_productSummary_btnAddToSoft&#39;,&#39;/resources/shop/img/pageImg/ATCbuttonBG_over.jpg&#39;)" onmouseout="setstyle(&#39;ctl00_CenterContentPlaceholder_productSummary_btnAddToSoft&#39;,&#39;/resources/shop/img/pageImg/ATCbuttonBG_default.jpg&#39;)">
+                <div id="ctl00_CenterContentPlaceholder_productSummary_divtopIcon" class="formatIcon">
+                   <input type="image" name="ctl00$CenterContentPlaceholder$productSummary$ibtntop" id="ctl00_CenterContentPlaceholder_productSummary_ibtntop" src="/resources/shop/img/pageImg/pdf75.gif" style="height:29px;width:30px;border-width:0px;" />
+                  </div>
+                <div class="formatText">Format<br /><b>PDF</b></div>                               
+                 <div class="floatLeft" style="margin-left:10px;width:200px;border:0"><br />
+                 <input type="submit" name="ctl00$CenterContentPlaceholder$productSummary$btnAddToSoft" value="Add to Basket" onclick="gaTrack(&#39;PDF&#39;);" id="ctl00_CenterContentPlaceholder_productSummary_btnAddToSoft" title="add this standard to your basket" border="0" class="atbBtn" style="height:29px;width:180px;font-family:Arial;font-size:14px; color:White;background-position:50% 50%;background-image:url(/Resources/Shop/img/pageImg/ATCbuttonBG_default.jpg);" />
+                  </div>
+                  <div class="spacer"></div>                                 
+            </div>
+            <div id="ctl00_CenterContentPlaceholder_productSummary_divbottom" class="floatLeft formatBorder " onmouseover="setstyle(&#39;ctl00_CenterContentPlaceholder_productSummary_btnAddToHard&#39;,&#39;/resources/shop/img/pageImg/ATCbuttonBG_over.jpg&#39;)" onmouseout="setstyle(&#39;ctl00_CenterContentPlaceholder_productSummary_btnAddToHard&#39;,&#39;/resources/shop/img/pageImg/ATCbuttonBG_default.jpg&#39;)">
+                <div id="ctl00_CenterContentPlaceholder_productSummary_divbottomIcon" class="formatIcon ">
+                 <input type="image" name="ctl00$CenterContentPlaceholder$productSummary$ibtnbottom" id="ctl00_CenterContentPlaceholder_productSummary_ibtnbottom" src="/resources/shop/img/pageImg/icon-hc-color.jpg" style="height:29px;width:30px;border-width:0px;" />
+                 </div>
+                <div class="formatText">               
+                 Format<br /><b>HARDCOPY</b>
+                </div>
+                  <div class="floatLeft" style="margin-left:10px;width:200px;border:0"><br />
+                  <input type="submit" name="ctl00$CenterContentPlaceholder$productSummary$btnAddToHard" value="Add to Basket" onclick="gaTrack(&#39;Hardcopy&#39;);" id="ctl00_CenterContentPlaceholder_productSummary_btnAddToHard" title="add this standard to your basket" border="0" class="atbBtn" style="height:29px;width:180px;font-family:Arial;font-size:14px;color:White;background-position:50% 50%;background-image:url(/Resources/Shop/img/pageImg/ATCbuttonBG_default.jpg);" /> 
+                  </div>
+                     <div class="spacer"></div>              
+            </div>  
+                     
+           <script>
+               function gaTrack(label) {
+                   var gaId = 'UA-7970902-2'
+                 ga('create', gaId, 'auto', 'myTracker');
+                 ga('myTracker.send', 'event', 'Click', 'Add to Basket', label);
+             }
+         </script>  
+        </div>
+
+        <div class="linksBlue margin10bottom pad5" style="position: absolute;width: 300px;left: 130px;">            
+                <div class="header">
+                    <strong class="textBrightBlue" style="color:#E31D1B;">
+                    
+                    </strong>
+                </div>
+                <div class="body">
+                    
+                </div>
+            
+        </div>
+         
+    </div>
+    <div class="margin10bottom">
+        
+            
+            <script>
+                var gUrl;
+                
+                function checkImageExists(productId) {
+                    var url = document.location.host + "/PreviewHandler.ashx?upi=" + productId;
+                    var checkImage = new Image();
+                    gUrl = url;
+                    checkImage.onload = imageExists;
+                    checkImage.onerror = imageDoesntExist;
+                    checkImage.src = url;
+                }
+
+                function imageExists() {
+                    document.getElementById("imgProductImage").src = gUrl;
+                }
+
+                function imageDoesntExist() {
+                    document.getElementById("imgProductImage").src = "/Resources/img/NoImage.gif";
+                }
+
+
+                
+                 </script>       
+
+        
+        <img id='imgProductImage' src='/Resources/img/NoImage.gif' width='130px' height='170px' border='0' name='imgProductImage' />
+<script language='javascript'>
+ var gUpi= '000000000030298891';
+ var gTotalPreviewCount= '5';
+checkImageExists('000000000030298891'); 
+</script>        
+         <input name="ctl00$CenterContentPlaceholder$productSummary$btnPreview" type="button" id="ctl00_CenterContentPlaceholder_productSummary_btnPreview" value=" Click to Preview " class="atbBtn" style="height: 29px;  font-family: Arial; font-size: 14px; color: white; background-image: url(&#39;/resources/shop/img/pageImg/ATCbuttonBG_default.jpg&#39;); background-position: 50% 50%;" /> <br />
+              
+    </div>
+   
+       <br />
+       
+    <div class="clearLine">
+    </div>
+</div>
+
+<div id="ctl00_CenterContentPlaceholder_productSummary_pnlPreview">
+	
+    <script type="text/javascript" src="/Resources/jscript/lookinside.js"></script>    
+    <div id="previewPanel" style="display:none" oncontextmenu="return false;">
+        
+        <div id="displayPanelPreview">
+            <img id="ctl00_CenterContentPlaceholder_productSummary_imgPreview" src="" style="border-width:0px;" />
+            <script>
+                previewImage = document.getElementById("ctl00_CenterContentPlaceholder_productSummary_imgPreview");
+            </script>
+        </div>
+        <div id="previewWrap" class="previewWrap">
+                <div class="previewLeft"></div>
+                <div class="previewCenter">
+                 <a href="javascript:movePrevious()"><img id="imgPreviewprevious" src="/Resources/Shop/img/PreviousIcon.png" /></a>
+                  <span id="previewNavDetails"></span>
+                 <a href="javascript:moveNext()"><img id="imgPreviewnext" src="/Resources/Shop/img/NextIcon.png" /></a>            
+                </div>
+                <div class="previewRight"></div>
+                
+        </div>
+        
+    </div>
+    <iframe id="frmPrint" width="1px" height="1px" src="/frame.html"></iframe>         
+
+</div>
+       
+        
+
+
+            <!--ROHIT-->
+            <div class="tabs ui-tabs ui-widget ui-widget-content ui-corner-all">
+        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active" id='OverViewTab'><a href="#tabs-1">Overview</a></li>
+<li class="ui-state-default ui-corner-top"><a href="#tabs-2">Product Details</a></li>
+</ul>
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-1" style="overflow-x: auto;">
+ <p><strong>What is this standard about?</strong></p>
+<p><strong></strong>Many organizations are currently undertaking initiatives to improve information governance systems and practice across the business. Good records management is a fundamental element of good information governance and good business. BS ISO 15489-1:2016 sets best practice for records management. All organizations will benefit from reviewing their record management activities against this standard.&nbsp;</p>
+<p><strong>Who is this standard for?</strong></p>
+<ul>
+<li>Information risk and governance officers</li>
+<li>Records managers</li>
+<li>Information managers</li>
+<li>IT managers</li>
+<li>Information security managers</li>
+<li>Enterprise architects</li>
+<li>Chief information officers</li>
+<li>Archivists, special librarians</li>
+<li>Knowledge management professionals</li>
+<li>Business administrators</li>
+<li>Legal advisors</li>
+<li>All individuals within organizations who are responsible for the oversight of record management and information governance practices</li>
+</ul>
+<p><strong>Why should you use this standard?</strong>&nbsp;</p>
+<p>BS ISO 15489-1:2016 will help cross-sector organizations to comply with data protection legislation and in particular will help them meet the enhanced information governance obligations arising from the new General Data Protection Regulation.&nbsp;The standard establishes core concepts and principles for the creation, capture and management of records. It provides guidance on managing records of originating organizations, public or private, for internal and external clients. It defines the concepts and principles relating to:</p>
+<ul>
+<li>Records, metadata for records and records systems</li>
+<li>Policies, assigned responsibilities, monitoring and training in support of the effective management of records</li>
+<li>Recurrent analysis of business context and the identification of records requirements</li>
+<li>Records controls</li>
+<li>Processes for creating, capturing and managing records</li>
+</ul>
+<p><strong>What’s changed since the last update?</strong></p>
+<p><strong></strong>The standard was revised to ensure that it meets market requirements, keeps pace with the increasingly complex records management requirements demanded by evolving digital environments and takes account of the wide range of related standards that have been issued since it was first published in 2001. It includes the following principal changes:</p>
+<ul>
+<li>Focusses only on principles and concepts and no longer provides a prescribed implementation methodology</li>
+<li>Re-interprets the traditional term “appraisal” as a core activity for determining records requirements</li>
+<li>Greater emphasis on the importance of metadata as an essential part of managing records and on the need for independence of records metadata from specific systems and environments</li>
+<li>Broadened definition of the role of records as both enablers of business activity and information assets</li>
+<li>Highlights increased opportunities for records use and reuse in the digital environment</li>
+<li>Greater focus on the need to extend systems and rules for the creation, capture and management of records beyond traditional organizational boundaries, such as collaborative and multi-jurisdictional work</li>
+<li>Greater emphasis on the importance of risk management in devising strategies for managing records, and the management of records as a risk management strategy in itself</li>
+</ul><br /><br />
+</div>
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="tabs-2">
+<br class="clearLine" />
+                    
+
+					<table cellpadding="0" cellspacing="0" class="bibliography linksBlue">
+						<colgroup span="2">
+							<col width="33%" />
+							<col width="67%" />
+						</colgroup>
+						
+						<tr class="trow2"><th scope='row'>Standard Number</th><td>BS ISO 15489-1:2016</td></tr>
+						
+						<tr><th scope='row'>Title</th><td>Information and documentation. Records management. Concepts and principles</td></tr>
+						
+						<tr class="trow2"><th scope='row'>Status</th><td>Current</td></tr>
+						
+						<tr><th scope='row'>Publication Date</th><td>31 May 2016</td></tr>
+						
+						<tr class="trow2"><th scope='row'>Cross References</th><td><a href="/SearchResults/?q=ISO+13008">ISO 13008</a>, <a href="/SearchResults/?q=ISO+16175">ISO 16175</a>, <a href="/SearchResults/?q=ISO+23081-1%3a2006">ISO 23081-1:2006</a>, <a href="/SearchResults/?q=ISO+23081-2%3a2009">ISO 23081-2:2009</a>, <a href="/SearchResults/?q=ISO+30300%3a2011">ISO 30300:2011</a>, <a href="/SearchResults/?q=ISO+30301">ISO 30301</a>, <a href="/SearchResults/?q=ISO%2fIEC+27001">ISO/IEC 27001</a>, <a href="/SearchResults/?q=ISO%2fTR+18128">ISO/TR 18128</a>, <a href="/SearchResults/?q=ISO%2fTR+26122%3a2012">ISO/TR 26122:2012</a></td></tr>
+						
+						<tr class="trow2"><th scope='row'>Replaces</th><td><a href="https://shop.bsigroup.com/ProductDetail/?pid=000000000030055690">BS ISO 15489-1:2001</a></td></tr>
+						
+						<tr><th scope='row'>International Relationships</th><td>ISO 15489-1:2016</td></tr>
+						
+						<tr><th scope='row'>Draft Superseded By</th><td>15/30298890 DC</td></tr>
+						
+						<tr><th scope='row'>Descriptors</th><td>Data management, Information handling, Library and information science, Documents, Records (documents), Records management, Document maintenance, Filing systems, Information operations, Management techniques, Management operations, Organizations, Planning, Document storage, Paper, Microforms, Maps, Books, Training, Quality assurance systems </td></tr>
+						
+						<tr class="trow2"><th scope='row'>ICS</th><td>01.140.20<br /></td></tr>
+						
+						<tr><th scope='row'>Title in French</th><td>Information et documentation. Gestion des documents d’activit&#233;. Concepts et principes</td></tr>
+						
+						<tr class="trow2"><th scope='row'>Committee</th><td>IDT/2/17</td></tr>
+						
+						<tr><th scope='row'>ISBN</th><td>978 0 580 86181 9</td></tr>
+						
+						<tr class="trow2"><th scope='row'>Publisher</th><td>BSI</td></tr>
+						
+						<tr><th scope='row'>Format</th><td>A4</td></tr>
+						
+						<tr class="trow2"><th scope='row'>Delivery</th><td>Yes</td></tr>
+						
+						<tr><th scope='row'>Pages</th><td>34</td></tr>
+						
+						<tr class="trow2"><th scope='row'>File Size</th><td>1.8 MB</td></tr>
+						
+						<tr><th scope='row'>Price</th><td>&#163;206.00</td></tr>
+						
+	
+					</table>
+
+                    <br clear="all" class="clearLine" />
+</div>
+
+
+</div>
+            <!-- END ROHIT-->
+            
+            
+            <br clear="all" class="clearLine" />
+        </div>
+        <div class="linksBlue margin10bottom pad5">
+            <div class="header">
+            <strong class="textBrightBlue" style="color:#f8981d;">
+                
+            </strong>
+            </div>
+            <div class="body">
+                 
+            </div>
+            
+        </div>  
+        <!-- end border -->
+        
+    </div>
+   
+
+            <!--/PAGEWATCH-->
+        </div>
+        <!-- END CENTER CONTENT -->
+        
+    <div id="zRightSide" class="RightSide">
+        
+<div id="zb1" class="basketBox">
+    <div id="zb2" class="basketTitle">
+        <img src="/Resources/Shop/img/pageImg/basketIcon.gif" alt=" " width="11" height="11" />
+        Your basket 
+    </div>
+    <div id="zb3a" class="basketContents basketSummary text11" style="text-align:right">
+        Your basket is empty
+    </div>
+    <div id="zb3" class="basketContents linksGrey">
+        
+    </div>
+    <div id="zb4" class="basketButtons" style="clear: both">
+        <a id="ctl00_RightSideContentPlaceholder_ucBasket_lnkViewBasket" title="View Basket" href="/en/BasketDetails">
+            <img src="/Resources/Shop/img/pageImg/basket_vbco.gif" alt="viewbasket" border="0" />
+        </a>
+    </div>
+</div>
+
+        
+          <div title=' ' id="y1rtPromoArea" class="rtPromoBox">
+            
+            
+            <div id="ctl00_RightSideContentPlaceholder_SmallFeatureList_PromotionRepeater1_ctl00_pnlWithBackgroundImage">
+	
+                  <div id="y1rtPromoArea" class="rtPromoHeader" style='background-image:url(/upload/274899/Compliance%20navigator-line1.png);'>
+                    <div id="y1rtpromoheadline">
+                      <h4 class="bottomaligned"> </h4>
+                    </div>
+                  </div>
+                  <div id="y1rtPromoContent" class="rtPromoContent" style='background-color:#fcfcfc'>
+                    <div id="y2Message" class="rtPromoText"> <p>Multi-user access to over 3,500 medical device standards, regulations, expert commentaries and other documents</p>
+                    </div>
+                    <div id="y1rtLink" class="rtPromoLink linksWhite"><a title="Find out more" href='https://compliancenavigator.bsigroup.com/ ' target=''>Find out more <img src="/Resources/Shop/img/pageImg/arrow_white.gif" alt="arrow" width="7" height="10" border="0" /></a></div>
+                  </div>
+            
+            
+</div>
+          </div>            
+            <br class="spacer" />
+        
+          <div title='27 November' id="y1rtPromoArea" class="rtPromoBox">
+            
+            
+            <div id="ctl00_RightSideContentPlaceholder_SmallFeatureList_PromotionRepeater1_ctl01_pnlWithBackgroundImage">
+	
+                  <div id="y1rtPromoArea" class="rtPromoHeader" style='background-image:url(/upload/281898/150%20x%2060.png);'>
+                    <div id="y1rtpromoheadline">
+                      <h4 class="bottomaligned">27 November</h4>
+                    </div>
+                  </div>
+                  <div id="y1rtPromoContent" class="rtPromoContent" style='background-color:#fcfcfc'>
+                    <div id="y2Message" class="rtPromoText"> <p>Organizational Resilience&nbsp;Annual Conference 2019</p>
+                    </div>
+                    <div id="y1rtLink" class="rtPromoLink linksWhite"><a title="Book your place" href='https://www.bsigroup.com/en-GB/our-services/Organizational-Resilience/resilience-series/annual-conference-2019/' target=''>Book your place <img src="/Resources/Shop/img/pageImg/arrow_white.gif" alt="arrow" width="7" height="10" border="0" /></a></div>
+                  </div>
+            
+            
+</div>
+          </div>            
+            <br class="spacer" />
+        
+          <div title='BSOL' id="y1rtPromoArea" class="rtPromoBox">
+            
+            
+            <div id="ctl00_RightSideContentPlaceholder_SmallFeatureList_PromotionRepeater1_ctl02_pnlWithBackgroundImage">
+	
+                  <div id="y1rtPromoArea" class="rtPromoHeader" style='background-image:url(/upload/BSOL/BSOLBanner.png);'>
+                    <div id="y1rtpromoheadline">
+                      <h4 class="bottomaligned">BSOL</h4>
+                    </div>
+                  </div>
+                  <div id="y1rtPromoContent" class="rtPromoContent" style='background-color:#fcfcfc'>
+                    <div id="y2Message" class="rtPromoText"> <p>The faster, easier way to work with standards</p>
+                    </div>
+                    <div id="y1rtLink" class="rtPromoLink linksWhite"><a title="Learn how" href='http://www.bsigroup.com/en-GB/standards/british-standards-online-database/' target=''>Learn how <img src="/Resources/Shop/img/pageImg/arrow_white.gif" alt="arrow" width="7" height="10" border="0" /></a></div>
+                  </div>
+            
+            
+</div>
+          </div>            
+            <br class="spacer" />
+        
+          <div title='  ' id="y1rtPromoArea" class="rtPromoBox">
+            
+            
+            <div id="ctl00_RightSideContentPlaceholder_SmallFeatureList_PromotionRepeater1_ctl03_pnlWithBackgroundImage">
+	
+                  <div id="y1rtPromoArea" class="rtPromoHeader" style='background-image:url(/upload/Banners/worldwidestandards-%20red%20line.jpg);'>
+                    <div id="y1rtpromoheadline">
+                      <h4 class="bottomaligned">  </h4>
+                    </div>
+                  </div>
+                  <div id="y1rtPromoContent" class="rtPromoContent" style='background-color:#fcfcfc'>
+                    <div id="y2Message" class="rtPromoText"> <p><span style="color: #000000;"><strong>Worldwide Standards</strong><br />We can source any standard from anywhere in the world</span></p>
+                    </div>
+                    <div id="y1rtLink" class="rtPromoLink linksWhite"><a title="Find out more" href='/Navigate-by/Standards/Worldwide-Standards/' target=''>Find out more <img src="/Resources/Shop/img/pageImg/arrow_white.gif" alt="arrow" width="7" height="10" border="0" /></a></div>
+                  </div>
+            
+            
+</div>
+          </div>            
+            <br class="spacer" />
+        
+        
+        <div class="sideSubBox linksBlue">
+            <h3>
+                Customers who bought this product also bought</h3>
+            <ul class="borderMedBlue">
+    
+        <li><a href='/ProductDetail/?pid=000000000030356276'>
+            BS ISO 23081-1:2017</a><br />
+            Information and documentation. Records management processes. Metadata for records Principles</li>
+    
+        <li><a href='/ProductDetail/?pid=000000000030205371'>
+            BS ISO 30300:2011</a><br />
+            Information and documentation. Management systems for records. Fundamentals and vocabulary </li>
+    
+        <li><a href='/ProductDetail/?pid=000000000030347472'>
+            BS EN ISO/IEC 27001:2017</a><br />
+            Information technology. Security techniques. Information security management systems. Requirements </li>
+    
+        <li><a href='/ProductDetail/?pid=000000000030347481'>
+            BS EN ISO/IEC 27002:2017</a><br />
+            Information technology. Security techniques. Code of practice for information security controls </li>
+    
+        </ul> </div>
+    
+<br class="spacer" />
+
+        
+    </div>
+   
+
+        <!-- END RIGHT SIDE CONTENT -->
+        <div style="clear: both; height: 2px;" />
+        <div id="f" class="footer" style="height:12px;" width="100%">
+            
+<div id="fh" class="footerHead"><span id="ctl00_footerControl_lblCopyright">&copy; British Standards Institution 2019</span></div>
+<div id="fnav" class="footerNav linksBlue"> 
+  <a title="Accessibility" href="/Legal/Accessibility-Statement/">Accessibility</a> |  
+     <a href="/Legal/Copyright/" title="Intellectual Property">Intellectual Property</a> | 
+     <a title="Privacy" href="https://www.bsigroup.com/en-GB/about-bsi/legal/privacy-notice/" target="_blank">BSI Privacy Notice</a> | 
+     <a title="Terms and Conditions" href="/Legal/Terms-and-conditions/">Terms & Conditions</a> | 
+     <a title="Cookies" href="https://www.bsigroup.com/en-GB/about-bsi/legal/cookie-policy/" target="_blank">Cookies</a> </div>
+     
+<div style="text-align:center;width:90%" class="footerNav">
+<br />
+Please note: You may experience issues viewing this site in Internet Explorer 9, 10 or 11. Please download Chrome or Firefox or view our <a href="http://shop.bsigroup.com/Help/Step-by-step-guide-on-how-to-use-the-BSI-Shop/Browser-recommendations/">browser tips</a>. 
+<br />This website is best viewed with browser version of up to Microsoft Internet Explorer 8 or Firefox 3.5.
+</div>
+<!--</div>-->
+
+
+
+        </div>
+    </div>
+    <!-- END CONTENT BOX -->
+    <div style=" " class="cookie-alert-box" id="cookieAlert">
+		        <p>We use cookies to make our website easier to use and to better understand your needs.</p>
+		        <a id="cookie-accept" class="button">Accept and continue</a>
+		        <p><a id="cookie-registered" href="https://www.bsigroup.com/en-GB/about-bsi/legal/cookie-policy/" target="_blank">Learn more about the cookies we use and how to change your settings.</a></p>
+</div>
+
+<script src="/Resources/cookie/jscript/set-cookie.js"></script>
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var gaCommonCode;
+try {
+gaCommonCode = _gat._getTracker("UA-7972162-1");
+gaCommonCode._setDomainName("none");
+gaCommonCode._trackPageview();
+} catch(err) {}
+
+function gaCommonCodeLookInside(pageId)
+{
+	gaCommonCode = _gat._getTracker("UA-7972162-1");
+	gaCommonCode._setDomainName("none");
+	gaCommonCode._trackPageview("lookinside?upi=" + pageId);
+}
+
+function delayTrigger()
+{
+	
+}
+
+function gaCommonCodeTriggerPageView(pageName)
+{
+	setTimeout(delayTrigger, 1000);
+	gaCommonCode = _gat._getTracker("UA-7972162-1");
+	gaCommonCode._setDomainName("none");
+	gaCommonCode._trackPageview(pageName);
+}
+</script>
+<script type="text/javascript">
+var gaShopCode;
+try {
+gaShopCode = _gat._getTracker("UA-7970902-2");
+gaShopCode._setDomainName("none");
+gaShopCode._trackPageview();
+} catch(err) {}
+
+function gaShopCodeLookInside(pageId)
+{
+	gaShopCode = _gat._getTracker("UA-7970902-2");
+	gaShopCode._setDomainName("none");
+	gaShopCode._trackPageview("lookinside?upi=" + pageId);
+}
+
+function delayTrigger()
+{
+	
+}
+
+function gaShopCodeTriggerPageView(pageName)
+{
+	setTimeout(delayTrigger, 1000);
+	gaShopCode = _gat._getTracker("UA-7970902-2");
+	gaShopCode._setDomainName("none");
+	gaShopCode._trackPageview(pageName);
+}
+</script>
+<script language="javascript">
+var pageTracker = 'gaCommonCode,gaShopCode';
+</script>
+<script src='/Resources/jscript/gaAddons.js' type='text/javascript'></script>
+ 
+<script type="text/javascript">    
+    var instrumentationkey = "3c2725b7-1b21-4f5e-abdc-5c4e559e1b5e";
+    var appInsights = window.appInsights || function (config) {
+        function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+    }({
+        instrumentationKey: instrumentationkey
+    });
+
+    window.appInsights = appInsights;
+    appInsights.trackPageView();
+</script>
+
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5E3115A9" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+jQuery('#ctl00_SearchBarControl_txtSearchBox').keypress(function (e) {if(e.which==13){jQuery('#ctl00_SearchBarControl_search').click();return false;}});//]]>
+</script>
+</form>
+<script language="javascript" type="text/javascript" src="/Resources/Shop/jscript/optimost_global_body1.js"></script>
+<script language="javascript" type="text/javascript" src="/Resources/Shop/jscript/optimost_global_body2.js"></script>
+            <script type="text/javascript">
+                var piProtocol = (("https:" == document.location.protocol) ? "https://pi." : "http://cdn.");
+                document.write(unescape("%3Cscript src='" + piProtocol + "pardot.com/pi.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    piAId = '44652';
+    piCId = '1154';
+    piTracker();
+    piAId = '74472';
+    piCId = '1462';
+    piTracker();
+    piAId = '36972';
+    piCId = '2434';
+    piTracker();
+</script>
+</body>
+
+
+</html>

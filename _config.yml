@@ -51,7 +51,7 @@ exclude:
 menu:
   - title: "Standards"
     url: "/catalogue.html"
-  - title: "Projects"
+  - title: "Collections"
     url: "/projects.html"
   - title: "Organisations"
     url: "/organisations.html"

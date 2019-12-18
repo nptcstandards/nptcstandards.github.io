@@ -322,6 +322,13 @@ orgs:
   created:
   disolved:
   url: https://www.sfjuk.com/
+- &org_OSB
+  name: Open Standards Board
+  org_type:
+  parent_org:
+  created:
+  disolved:
+  url: https://www.sfjuk.com/
 - &org_UKAS
   name: United Kingdom Accreditation Service
   org_type:
@@ -388,21 +395,21 @@ projects:
   description: NPTC Standards Woring Group 'business as usual'.
   project_notes:
   last_updated: 2018-10-24
-- name: POLE Data Exchange (POLEDeX)
+- &project_gds-standards
+  name: Standards | GDS Integration
   status: *proj_status_active
   scheduled_date:
   start_date:
   due_date:
   completed_date:
   percentage_complete:
-  project_lead: Peter Colebourne
+  project_lead: N/A
   project_org: *org_NPTS
   project_org_email: trustee@standards.police.uk
   project_url: https://knowledgehub.group/group/standards-working-group-nptc
-  description: Develop a standard protocol and data format for the exchange of POLE
-    data between applications.
+  description: Harvested standards from GDS.
   project_notes:
-  last_updated: 2018-10-24
+  last_updated: 2019-12-06
 standards:
 - title: NPTS Framework Catalogue
   ref_base: bps00001
@@ -482,7 +489,7 @@ standards:
   classification:
   - ontology: bps
     classification: business.catalogue.terms
-  status: *doc_status_adopted
+  status: *doc_status_withdrawn
   subject_group: NPTS Framework
   published_date:
   last_updated:
@@ -616,7 +623,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/guidance/open-document-format-odf-guidance-for-uk-government
-    sha1: 6037af2813f4d4b044cf51e1988ff20b163de346
+    sha1: fa1b9355822d933708f1cbf2e764bd09ba1d17e4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -627,7 +634,7 @@ standards:
   classification:
   - ontology: bps
     classification: business.guidance.collaboration-sharing
-  status: *doc_status_undefined
+  status: *doc_status_adopted
   subject_group:
   published_date: 2016-02-01 00:00:00
   last_updated: 2017-03-30 00:00:00
@@ -686,7 +693,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/61498.html
-    sha1: 597e549572084f2326c9a0e4a431fb2b0a6249ce
+    sha1: 1df49934cdfa12cd2e1a9513a7524ba9bff09e43
     mime:
     link_or_collect: c
     requires_logon: n
@@ -958,7 +965,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.legislation.gov.uk/ukpga/2000/23/contents
-    sha1: 254ab1812bc8e7ab75a286fa3e234541a22956c2
+    sha1: db692d955291884bfb24502c7b07ad8afa41ecb4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1026,7 +1033,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.legislation.gov.uk/ukpga/1998/29/introduction
-    sha1: 98681449cd6925b23f05b941646af900999e509e
+    sha1: 0419d4de87246a7d139e9e8b875c8b9af11ef5ee
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1185,7 +1192,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/guidance/criminal-justice-system-data-standards-forum-guidance
-    sha1: d7cbb7815bdaf90c5ee218cd6feac856239aa6da
+    sha1: 8c9a166de31368a676a07fb7f3cd93b29cb7faf6
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1252,7 +1259,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/detention-and-custody-2/?s=
-    sha1: a3255548e2c39939ec6fc7be21d6b1d66744e055
+    sha1: 6d03d4eca828efb47c30576794b0c841a717fd82
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1319,7 +1326,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/prosecution-and-case-management/?s=
-    sha1: 56aa5bbf4ace5f0e922d5105d7a80f70144cb1f1
+    sha1: ebd8f330138a2f23de7f05a8955a2f8d9763a056
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1385,7 +1392,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/civil-emergencies/?s=
-    sha1: 786ccbfecf97eb6ee350f38df1d0fb6bbdbacaf8
+    sha1: ac791f556284e5fd7cc4563624a2d60faf7c0fdb
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1451,7 +1458,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/operations/?s=
-    sha1: b75e3681f1172fa189dc4d5c81414609727e9d84
+    sha1: 5aaa3823958aed82f1013d73212ee1a9e9364fd7
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1518,7 +1525,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/digital-investigation-and-intelligence/?s=
-    sha1: 8e9aefb507357c05e011b189448903e5cf5a31f1
+    sha1: 5b6f04439455aa1d5b6742c286415b210ead2d73
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1585,7 +1592,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/stop-and-search/
-    sha1: dc5767230d59d1844ac01bc478ebbf97b230e6da
+    sha1: 2c66006482703d8bcbb1471245ca398fe1a2c1cf
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1651,7 +1658,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/professional-standards/?s=
-    sha1: becc7ff8fc452f226afb39c94e8b9f0b2c22a516
+    sha1: 331eea0a8ad664f600dd89c6f5c86f3b807cbc91
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1717,7 +1724,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/covert-policing/?s=
-    sha1: adc13fd30c1e546589835f71a7a914bd35580337
+    sha1: b9ff099cf10e65d307b0a806eaf48a4369e91af3
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1784,7 +1791,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/engagement-and-communication/?s=
-    sha1: 4901ef131dcfe2ae80d51c609ad7e3a596cea9c1
+    sha1: 9a185b099a1e387ad64b3e1d132ed856872c676c
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1850,7 +1857,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/public-order/?s=
-    sha1: e271b9f7ecb07db3db2e84bf3f9f33864b092130
+    sha1: 110ed0b7cdae40d5df967e68684d6d7c39ebaebf
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1916,7 +1923,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/armed-policing/?s=
-    sha1: f67f0a19da16aad6f015f3ff7b442fb0576d06a7
+    sha1: 706ce582838d6f88e6246763cf631e385e586d7b
     mime:
     link_or_collect: c
     requires_logon: n
@@ -1982,7 +1989,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/critical-incident-management/?s=
-    sha1: b3af1f350b6d134c1ba9a71c22f08fd2c4bb0f60
+    sha1: 3ec5d2f293f93c1d5bd989c8cb5a01eed82511bd
     mime:
     link_or_collect: c
     requires_logon: n
@@ -2048,7 +2055,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/road-policing-2/?s=
-    sha1: 58532afb41872058b048adb76ca347238d8ca7f5
+    sha1: 6216df6d0ae945c7939ae52c141dd0fbfc030b8b
     mime:
     link_or_collect: c
     requires_logon: n
@@ -2114,7 +2121,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/information-management/?s=
-    sha1: 0d83fe54bae541237156ab4f215c59a34214e3ee
+    sha1: 692675e44a4087e4c65eb9ea400032c3212eb4c2
     mime:
     link_or_collect: c
     requires_logon: n
@@ -2180,7 +2187,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/policing-elections/?s=
-    sha1: 68944026766d1f991363dedfead3f63558a76257
+    sha1: 259419681fa97306db6d08bc2600722092356b6d
     mime:
     link_or_collect: c
     requires_logon: n
@@ -2246,7 +2253,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/mobilisation/?s=
-    sha1: 0d1d04b4624d6969fecbb2946d1793e91f1094cb
+    sha1: 09f05e2fc65be529eb57375655876f79de9579d1
     mime:
     link_or_collect: c
     requires_logon: n
@@ -2312,7 +2319,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/intelligence-management/?s=
-    sha1: 1f4a3cb7c2dcf54c767b19e7b2183ffcdb66b21f
+    sha1: ae349d826137abfd293b086e67fa70a149b1aab4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -2380,7 +2387,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/mental-health/?s=
-    sha1: db0df64d2e80f38e87f13f17e31edf84ff553fc0
+    sha1: 46ab31ed55c2e17b4c39d3fad32cd1e5d0d4a8cc
     mime:
     link_or_collect: c
     requires_logon: n
@@ -2447,7 +2454,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/major-investigation-and-public-protection/?s=
-    sha1: c2689a0cd941f21ded858ef9ffc2227d15f82f61
+    sha1: 2626cc7e0a7c86dac209f4bdbe5acadedfaa2d46
     mime:
     link_or_collect: c
     requires_logon: n
@@ -2513,7 +2520,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/risk-2/?s=
-    sha1: f5f6fe7814d90383f7f3a0cc1f457d5470d19c94
+    sha1: 8a2af3f54bcfa8176771b89af1dd271ca791240d
     mime:
     link_or_collect: c
     requires_logon: n
@@ -2579,7 +2586,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/national-decision-model/?s=
-    sha1: 4522edd53a3a9c33f65da2386786c9b7d43ffd3e
+    sha1: ac809260b4980d71d3ef2c3db1b7663b3d32a3a2
     mime:
     link_or_collect: c
     requires_logon: n
@@ -2645,7 +2652,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.app.college.police.uk/app-content/investigations/?s=
-    sha1: 3b931b78635417696cff5325fa1cb9a107cf6fdd
+    sha1: 72b250b3504c48631fb441d48e639d23b36513e1
     mime:
     link_or_collect: c
     requires_logon: n
@@ -3115,7 +3122,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#the-purpose-of-the-technology-code-of-practice
-    sha1: b917c70da191da306f929d02523e0f93777aec08
+    sha1: ea617fb4298a02d3b1a750c28f5d109bc3fb1dc8
     mime:
     link_or_collect: c
     requires_logon: n
@@ -3870,7 +3877,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/10-steps-cyber-security
-    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    sha1: dff718b8596143a82957e9319d9b89201418ffa4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -3941,7 +3948,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/guidance/set-up-government-email-services-securely#configure-cloud-or-internet-based-email-services
-    sha1: 4cd411060c9c801f8eb4a7700f7821ec441aac5a
+    sha1: 968117ade5389245437514d810b40c01e19d8e2f
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4008,7 +4015,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/guidance/securing-government-email
-    sha1: c8d89d6bf80a0cc39c03b6154e38af1dfa8ebc7c
+    sha1: 95bf6271843ae7f035ab1f062fc6ed8c54b06c16
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4134,7 +4141,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/email-security-standards/domain-based-message-authentication-reporting-and-conformance-dmarc
-    sha1: 1f9099458a9f3bc0adff432097b830799f9782b9
+    sha1: 492c82d029d0376ee823c73335f59450b7258fde
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4201,7 +4208,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf
-    sha1: b51ff4a7d1ca371f657738ffa5fc1a7f5a61f7bc
+    sha1: cfa63844df5ae4a58274cac11ac220c250919fcf
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4268,7 +4275,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/email-security-standards/domainkeys-identified-mail-dkim
-    sha1: d9123a7e54079cdbbe6ad33a563dbafc586fc761
+    sha1: aac44c70dd9343e48f4980c657e949af61d1f892
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4339,7 +4346,7 @@ standards:
   usage:
   links:
   - collate_url: http://protectivemonitoring.com/category/protective-monitoring-controls/
-    sha1: c6cd5821c024899b1978d0f9c42e1e5eda7be4af
+    sha1: 3fa8cdd274f08ad5bba885569a30f4e04ab5fe98
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4408,7 +4415,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/government-network-policy-changes/government-network-policy-changes
-    sha1: b5a579d3812362af3d692ed113efa6df4cab796f
+    sha1: 2eebb1c51ef45713dfcbc8d90626d2f0f1cec682
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4547,7 +4554,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/54534.html
-    sha1: 066c283e3f628289c81473f759eb77f48d82aa04
+    sha1: d66f96844cd161de776531d39a902daeff7f2221
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4616,7 +4623,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/54533.html
-    sha1: 61c3f115c0536ddac2a88a1da5de46444c0cbcd0
+    sha1: abf28dd402ff5934bfa0f682683ed7e581b827d4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4691,7 +4698,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/64138.html
-    sha1: 5e187e5c3a3d602b0424ef25bfa265e169d1c529
+    sha1: 827a573f2d1fbe933bd6345ca24a0759ac3a88ae
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4768,7 +4775,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/44374.html
-    sha1: a21d69262d8931dd9a237b9b857735e5bd29f647
+    sha1: 7903341a9de9903109c1a712dd21fd2da81fbcf4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4836,7 +4843,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/44375.html
-    sha1: 4eb6428ef4604bff75e728688dad68700e133fc0
+    sha1: e94155a1dbf60cfbc4b4430814a4a0bc695370cf
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4907,7 +4914,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/63461.html
-    sha1: b4da34c0a4d5b27138a002a33d7fd429eec86601
+    sha1: 9bac0a0ee76f5a1c8ae37f791bc0884c622e8f61
     mime:
     link_or_collect: c
     requires_logon: n
@@ -4974,7 +4981,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/55582.html
-    sha1: 1b726b6714cdee63d088896393b673c3e4ff3f96
+    sha1: 9161a5ae935a46ec54f688c5f91d03dfb8daa596
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5095,7 +5102,7 @@ standards:
     - org:
       contact_email:
     projects:
-- title: Securing Technology at *sec_classification_official
+- title: Securing Technology at OFFICIAL
   ref_base: bps91524
   ref_part:
   ref_pub_date: 2015-11
@@ -5115,12 +5122,12 @@ standards:
     \ personal responsibility and using their judgement more actively."
   usage:
   links:
-  - collate_url: https://www.gov.uk/government/collections/securing-technology-at-*sec_classification_official
-    sha1: 2986b7b9f5c16ad4c90fac8e0b280e244751ddcc
+  - collate_url: https://www.gov.uk/government/collections/securing-technology-at-official
+    sha1: 67d069e8de5e6c2a029fa7217285eae966152c47
     mime:
     link_or_collect: c
     requires_logon: n
-    lib_url: file://{{collate_directory}}Open Access/CESG/bps91524-2015-11-securing-technology-at-*sec_classification_official.html
+    lib_url: file://{{collate_directory}}Open Access/CESG/bps91524-2015-11-securing-technology-at-official.html
     http_response:
     mime_type: .html
     publish_url: /library/bps91524/bps91524-2015-11.html
@@ -5185,7 +5192,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/50038.html
-    sha1: 32cfd5ed4d0bf7918f02024e3691a8ac51bd9d91
+    sha1: 99e71f31d1e2549545e98009387a426ebba1eb99
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5259,7 +5266,7 @@ standards:
   usage:
   links:
   - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030257143
-    sha1: 6414e05ecdbab3842943ea278d2f6b30f5596ed1
+    sha1: 63b021203e29da587a7c910c399ffc54db0ad997
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5328,7 +5335,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.ncsc.gov.uk/content/files/guidance_files/IS1%20%26%202%20-%20Information%20Risk%20Management%20-%20issue%204.0%20April%202012%20-%20NCSC%20Web.pdf
-    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    sha1: dff718b8596143a82957e9319d9b89201418ffa4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5394,7 +5401,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.nist.gov/cyberframework
-    sha1: 60159139d34166b03ee4d2ded5feaaa3a9e2220b
+    sha1: 513abdcdc9637a6d77f1d6e1935d8cd802dc3a76
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5482,7 +5489,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/security-policy-framework/hmg-security-policy-framework
-    sha1: f88307990cd99ba60afcf9e612384d74725b0091
+    sha1: f581571f4d4be155631ee6b08cca2c8d1f3ad09d
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5557,7 +5564,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/industry-security-notices-isns
-    sha1: e5196016fb5c11513d19a63306ef38178543af6d
+    sha1: 9f4b5cc4537df34a3acc1f62d1d647750cd1a077
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5623,7 +5630,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/63417.html
-    sha1: 48ec519e305c00b50543fe023ac3f373a8a45518
+    sha1: fdd0a0919e6d7411709f467fec6efe80cdf6f996
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5697,7 +5704,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/64120.html
-    sha1: 066a5bf506a801762660282eab103d869ded3ada
+    sha1: f011fd164941b197c62e13da790c4b6d7a6efb01
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5763,7 +5770,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/government/publications/open-standards-for-government/cross-platform-character-encoding-profile
-    sha1: d70d9ad6316cba23ac9e349e836d7a23e7dc8b72
+    sha1: d909217e930c7e57597457cbac365a695fdfa881
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5830,7 +5837,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/eud-security-guidance-windows-10-1703
-    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    sha1: dff718b8596143a82957e9319d9b89201418ffa4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5897,7 +5904,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/end-user-devices-security-principles
-    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    sha1: dff718b8596143a82957e9319d9b89201418ffa4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -5973,7 +5980,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/41532.html
-    sha1: 131abca9e206886f1a92abde75a52efb7d0e8601
+    sha1: ffbb8ffc774b2db82593d1554c4ebc3d4003ca22
     mime:
     link_or_collect: c
     requires_logon: n
@@ -6053,7 +6060,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.iso.org/standard/51986.html
-    sha1: df0e58e33c290bc6fd7a2331e401fb8ad7669553
+    sha1: 5cd95a9f290a42b09abcc282ed68eaa178da5056
     mime:
     link_or_collect: c
     requires_logon: n
@@ -6467,7 +6474,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.w3.org/standards/techs/rdf#w3c_all
-    sha1: a243156139866b2171c60bc6e6dc8fe68c7b2e04
+    sha1: e9f2cd437338c91ddee7af25b63fd7aceff20cea
     mime:
     link_or_collect: c
     requires_logon: n
@@ -6533,7 +6540,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/CRASH/1.1
-    sha1: a810bae0bea5893a6ea771bf3c1535ba584942e0
+    sha1: 13c5e121c4f59ae2a83570ab17727392320a0e06
     mime:
     link_or_collect: c
     requires_logon: n
@@ -6603,7 +6610,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/CorDM/7.3
-    sha1: 2eab565dc823733a9b7b3a75fbb5e6cd379b234b
+    sha1: a1f35df644f55ce8e8623661d0ec7ec64f1083df
     mime:
     link_or_collect: c
     requires_logon: n
@@ -6733,7 +6740,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/C%20and%20C/0.1
-    sha1: 8d7063948b33cb3482edbf04e3c6567bfb145eb7
+    sha1: 09229d764b5c337f279d461bb8d319c58a32f24d
     mime:
     link_or_collect: c
     requires_logon: n
@@ -6799,7 +6806,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/HOLMES3/0.4
-    sha1: 5bc50031c467e24b17d3701e998998e48670bd65
+    sha1: 508fa1629b6d9b630e61f46c4b94cd25f050c846
     mime:
     link_or_collect: c
     requires_logon: n
@@ -6865,7 +6872,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/Vehicle%20Makes%20and%20Models/2017.8
-    sha1: 05cb17f208fdca0836665bbf37c6d3e44d63b74c
+    sha1: 2aabe305f355a6ee676b57d8073c9a8c200ea492
     mime:
     link_or_collect: c
     requires_logon: n
@@ -6932,7 +6939,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/European%20Pool%20against%20Organised%20Crime%20(EPOC%20IV)/1.0
-    sha1: 52ccbbd43a38de5408d9964a8816bcd7d5a0d62f
+    sha1: 485eb4da6df3ba2face955398ae90256cb798b6f
     mime:
     link_or_collect: c
     requires_logon: n
@@ -6998,7 +7005,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/IDENT1/0.2
-    sha1: 5483d47726f3e14fe62146ca3d47905b6d0e7908
+    sha1: bcaab0e9f7c95f01410a509d48bd34640bcbf2ea
     mime:
     link_or_collect: c
     requires_logon: n
@@ -7064,7 +7071,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/NMIS/3.0
-    sha1: dc55d9f5de559be0958261477e5638ae5e817bfb
+    sha1: e17b5022a73a2111bb50e0631f9b4ceb5b22b8b1
     mime:
     link_or_collect: c
     requires_logon: n
@@ -7130,7 +7137,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/NSPIS%20Custody/0.2
-    sha1: 6d2ff03a9bdfe3da44b99cc95f7c3331194d3110
+    sha1: fc116032018570bfab5e3d414d7c7c3ccae91b8e
     mime:
     link_or_collect: c
     requires_logon: n
@@ -7196,7 +7203,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/HR/0.1
-    sha1: 98ac0a01fb77d68d72719910ecbdf450e7a32bfb
+    sha1: 2937f69e8533531918df09948e54c0b96b890015
     mime:
     link_or_collect: c
     requires_logon: n
@@ -7330,7 +7337,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/CLMS/5.3.1021
-    sha1: 1e8618096a8ff9dc9a40647094410bae8ac87aec
+    sha1: 8d05e330fb145e7075dc08bed2cec0bdc5af81df
     mime:
     link_or_collect: c
     requires_logon: n
@@ -7400,7 +7407,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/NFLMS/0.1
-    sha1: 93956c1aef05453fa321a6da39b8dcc2a9ec9ca6
+    sha1: 3a479e3087df3011eaefc7804154640172410b78
     mime:
     link_or_collect: c
     requires_logon: n
@@ -7466,7 +7473,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.listpoint.co.uk/Context/details/VPFPO/0.1
-    sha1: c8549f80aa800a35f4573e40eadb99c29d6e455b
+    sha1: f8e26a4df162185415a41678433a539cf9bef27f
     mime:
     link_or_collect: c
     requires_logon: n
@@ -7533,7 +7540,7 @@ standards:
   usage:
   links:
   - collate_url: http://dublincore.org/specifications/
-    sha1: ebe4616fc2ec9061569835d28540a8fd1260b3a8
+    sha1: 92acba5f965fa6bea49f9db58b73950dce40814e
     mime:
     link_or_collect: c
     requires_logon: n
@@ -7610,7 +7617,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.bapco.org.uk/what-we-do/mait/
-    sha1: 4d0b20d1075fa4b3558cd02f403b269d1b88a6d8
+    sha1: 4c28028e4e15c48862c132e42d095207cabad5e1
     mime:
     link_or_collect: c
     requires_logon: n
@@ -7630,7 +7637,7 @@ standards:
   classification:
   - ontology: bps
     classification: technical.specification.protocol
-  status: *doc_status_undefined
+  status: *doc_status_adopted
   subject_group: MAIT
   published_date:
   last_updated:
@@ -7653,7 +7660,7 @@ standards:
     approvals:
     - date:
       approver:
-      approval_org:
+      approval_org: *org_Cab-Off
       approval_org_email:
       approval_comments:
     reviews:
@@ -7668,7 +7675,7 @@ standards:
     identified_by:
     - org:
       contact_email:
-    projects:
+    projects: *project_gds-standards
 - title: Testing for accessibility
   ref_base: bps10795
   ref_part:
@@ -7687,7 +7694,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/service-manual/technology/testing-for-accessibility
-    sha1: 5fa0edfe5dc58104687b448ee603f871d61d02f2
+    sha1: bd903640fc7fec61475a8db65aa3430612bc6448
     mime:
     link_or_collect: c
     requires_logon: n
@@ -7754,7 +7761,7 @@ standards:
   usage:
   links:
   - collate_url: https://www.gov.uk/guidance/equality-act-2010-guidance
-    sha1: 2f0e348609bffed58f699730176d95dc79c2bde9
+    sha1: d111df4a58a522668113d6796ead15d2299c68c3
     mime:
     link_or_collect: c
     requires_logon: n
@@ -8109,7 +8116,7 @@ standards:
     procurement and deployment of generic applications.
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/generic-application-development-guidance
-    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    sha1: dff718b8596143a82957e9319d9b89201418ffa4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -14400,7 +14407,7 @@ standards:
     link_or_collect: c
     http_response:
     mime_type: .html
-    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    sha1: dff718b8596143a82957e9319d9b89201418ffa4
     lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps89305-0000-00-end-user-device-security-collection-ncsc.html
     publish_url: /library/bps89305/bps89305-0000-00.html
   classification:
@@ -14464,7 +14471,7 @@ standards:
     link_or_collect: c
     http_response:
     mime_type: .html
-    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    sha1: dff718b8596143a82957e9319d9b89201418ffa4
     lib_url: file://{{collate_directory}}Open Access/National Cyber Security Centre/bps03698-0000-00-end-user-device-security-principles-ncsc.html
     publish_url: /library/bps03698/bps03698-0000-00.html
   classification:
@@ -17336,7 +17343,7 @@ standards:
     left organisational control.
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/secure-sanitisation-storage-media
-    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    sha1: dff718b8596143a82957e9319d9b89201418ffa4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -17405,7 +17412,7 @@ standards:
     left organisational control.
   links:
   - collate_url: https://www.ncsc.gov.uk/guidance/secure-sanitisation-storage-media
-    sha1: 0706d8f7e1ece81c64da0a27dfd2eed8a3bd7046
+    sha1: dff718b8596143a82957e9319d9b89201418ffa4
     mime:
     link_or_collect: c
     requires_logon: n
@@ -17612,7 +17619,7 @@ standards:
   usage:
   links:
   - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030345718
-    sha1: 926eb5a98026e5c3ce64958fa3c0c2f4a872555e
+    sha1: 57ce90f4db49794829a158424367f4aa280c6a45
     mime:
     link_or_collect: c
     requires_logon: n
@@ -18552,14 +18559,15 @@ standards:
     based data.
   links:
   - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030317147#tabs-2
-    sha1: cd12f7e939efb2e3bb0fec98e157753d47cb7645
+    sha1: cd4fd3ed30ce466726172eb8e50e6903348eb89e
     mime:
     link_or_collect: c
     requires_logon:
       lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps45362-0000-00-geographic-information-preservation-of-digital-data-and-metadata-fundamentals.html
     http_response:
-      mime_type: .html
-      publish_url: /library/bps45362/bps45362-0000-00.html
+    mime_type: .html
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps45362-0000-00-geographic-information-preservation-of-digital-data-and-metadata-fundamentals.html
+    publish_url: /library/bps45362/bps45362-0000-00.html
   classification:
   - ontology:
     classification:
@@ -18625,14 +18633,15 @@ standards:
     for Image enhancements, restorations and compressions which is relevant to any
     editing or conversions of digital material.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://www.astm.org/Standards/E2825.htm
+    sha1: c27c5dbf3f0feb9e366645a015f45920a7460f4a
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps64907-0000-00-standard-guide-for-forensic-digital-image-processing.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps64907/bps64907-0000-00.html
   classification:
   - ontology:
     classification:
@@ -18699,14 +18708,15 @@ standards:
     analysis, prioritisation, and intelligence analysis are used. This is a best practice
     guide on determining statistical tolerance and prediction intervals
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030242634
+    sha1: 031f2a7527e3f18eaafea2713036ec56880df712
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps80219-0000-00-statistical-interpretation-of-data-determination-of-statistical-tolerance-intervals.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps80219/bps80219-0000-00.html
   classification:
   - ontology:
     classification:
@@ -18754,18 +18764,20 @@ standards:
     used in probability
   ref_base: bps03148
   ref_part:
-  ref_pub_date:
-  ref_full: bps03148-0000-00
+  ref_pub_date: 2007-09
+  ref_full: bps03148-2007-09
   alt_refs:
   - org: *org_DII
     ref: DII S&R 014
   - org: *org_ISO
     ref: 3534
-  permalink: bps03148-0000-00.html
+  - org: *org_BSI
+    ref: 3534-1:2006
+  permalink: bps03148-2007-09.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
-  author_org: *org_ISO
+  author_org: *org_BSI
   owner_org:
   abstract: "Areas covered within this standard are:\n1: General statistical and probability\
     \ terms\n2: Applied statistics\n3: Design of experiments"
@@ -18773,14 +18785,15 @@ standards:
     analysis, prioritisation, and intelligence analysis are used. This is a best practice
     guide on understanding the general statistical terms and probability terms used.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030117242
+    sha1: 19d2f593dd4a3fd3ff58db0a1bc39189eb3fa00c
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps03148-2007-09-statistics-vocabulary-and-symbols-general-statistical-terms-and-terms-used-in-probability.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps03148/bps03148-2007-09.html
   classification:
   - ontology:
     classification:
@@ -18850,14 +18863,15 @@ standards:
     availability and accessibility of any records that could be required as legal
     evidence.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://www.bsigroup.com/en-GB/bs-10008-electronic-information-management/
+    sha1: ef46bdaf01d7863c30f46ddbe75281770d6c3717
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps47095-0000-00-evidential-weight-and-legal-admissibility-of-electronic-information.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps47095/bps47095-0000-00.html
   classification:
   - ontology:
     classification:
@@ -18930,14 +18944,15 @@ standards:
   usage: This is relevant to everybody handling personal data and gives guidance on
     how to be GDPR compliant amongst other areas.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://www.bsigroup.com/en-GB/BS-10012-Personal-information-management
+    sha1: 01c72a406c31f8a05304df6e6e07bb21e2d11ce5
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps80736-0000-00-data-protection-specification-for-a-personal-information-management-system.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps80736/bps80736-0000-00.html
   classification:
   - ontology:
     classification:
@@ -18985,14 +19000,14 @@ standards:
     Data
   ref_base: bps80127
   ref_part:
-  ref_pub_date:
-  ref_full: bps80127-0000-00
+  ref_pub_date: 1991-12
+  ref_full: bps80127-1991-12
   alt_refs:
   - org: *org_DII
     ref: DII S&R 017
   - org: *org_BSI
     ref: BS 2846
-  permalink: bps80127-0000-00.html
+  permalink: bps80127-1991-12.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -19007,14 +19022,15 @@ standards:
     analysis, prioritisation, and intelligence analysis are used. This is a best practice
     guide on the different ways of interpreting quantitative data in analysis.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000000259613
+    sha1: 77aecca28b16d05c3a398f73eefecb7699d2724f
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps80127-1991-12-guide-to-statistical-interpretation-of-data-routine-analysis-of-quantitative-data.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps80127/bps80127-1991-12.html
   classification:
   - ontology:
     classification:
@@ -19062,14 +19078,14 @@ standards:
     data.
   ref_base: bps90764
   ref_part:
-  ref_pub_date:
-  ref_full: bps90764-0000-00
+  ref_pub_date: 2001-04
+  ref_full: bps90764-2001-04
   alt_refs:
   - org: *org_DII
     ref: DII S&R 018
   - org: *org_BSI
     ref: '5701 : 01'
-  permalink: bps90764-0000-00.html
+  permalink: bps90764-2001-04.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -19081,14 +19097,15 @@ standards:
     analysis, prioritisation, and intelligence analysis are used. This is a best practice
     guide on using data in performance improvement
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030016256
+    sha1: adbb22798beba3525537e7d7d734ab9ff8d5cba5
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps90764-2001-04-guide-to-quality-control-and-performance-improvement-using-qualitative-attribute-data.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps90764/bps90764-2001-04.html
   classification:
   - ontology:
     classification:
@@ -19135,14 +19152,14 @@ standards:
 - title: Guide to Data Analysis and Quality Control Using Custom Techniques.
   ref_base: bps23701
   ref_part:
-  ref_pub_date:
-  ref_full: bps23701-0000-00
+  ref_pub_date: 2003-03
+  ref_full: bps23701-2003-03
   alt_refs:
   - org: *org_DII
     ref: DII S&R 019
   - org: *org_BSI
     ref: BS 5703
-  permalink: bps23701-0000-00.html
+  permalink: bps23701-2003-03.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -19155,14 +19172,15 @@ standards:
     analysis, prioritisation, and intelligence analysis are used. This is a best practice
     guide on using different statistical data techniques in performance improvement
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030054380
+    sha1: 9dc92db4cedf8df9d105cd13d6555c6406ff1e86
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps23701-2003-03-guide-to-data-analysis-and-quality-control-using-custom-techniques.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps23701/bps23701-2003-03.html
   classification:
   - ontology:
     classification:
@@ -19209,14 +19227,16 @@ standards:
 - title: Statistical methods for use in proficiency testing by interlaboratory comparisons
   ref_base: bps09856
   ref_part:
-  ref_pub_date:
-  ref_full: bps09856-0000-00
+  ref_pub_date: 2015-08
+  ref_full: bps09856-2015-08
   alt_refs:
   - org: *org_DII
     ref: DII S&R 020
   - org: *org_ISO
     ref: 13528
-  permalink: bps09856-0000-00.html
+  - org: *org_BSI
+    ref: 13528:2015
+  permalink: bps09856-2015-08.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -19231,14 +19251,15 @@ standards:
     analysis, prioritisation, and intelligence analysis are used. This is a best practice
     guide on testing by interlaboratory comparisons.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030237515
+    sha1: e6b8450e06e75269276352308e7d41c75fcf5a2a
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps09856-2015-08-statistical-methods-for-use-in-proficiency-testing-by-interlaboratory-comparisons.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps09856/bps09856-2015-08.html
   classification:
   - ontology:
     classification:
@@ -19286,18 +19307,18 @@ standards:
     Part 1: General principles and concepts'
   ref_base: bps71938
   ref_part:
-  ref_pub_date:
-  ref_full: bps71938-0000-00
+  ref_pub_date: 2014-06
+  ref_full: bps71938-2014-06
   alt_refs:
   - org: *org_DII
     ref: DII S&R 021
-  - org: *org_ISO
-    ref: 22514
-  permalink: bps71938-0000-00.html
+  - org: *org_BSI
+    ref: 22514-1:2014
+  permalink: bps71938-2014-06.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
-  author_org: *org_ISO
+  author_org: *org_BSI
   owner_org:
   abstract: This international standard outlines the general principles and concepts
     involved in using statistical processes and methods to improve capability and
@@ -19306,14 +19327,15 @@ standards:
     analysis, prioritisation, and intelligence analysis are used. This is a best practice
     guide on the principles of using statistics in performance management.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030286033
+    sha1: acaeafe8830ca7a2893897f6dd91cc809d717eee
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps71938-2014-06-statistical-methods-in-process-management-capability-and-performance-part-1-general-principles-and-concepts.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps71938/bps71938-2014-06.html
   classification:
   - ontology:
     classification:
@@ -19360,18 +19382,18 @@ standards:
 - title: 'Control charts Part 1: General guidelines'
   ref_base: bps83126
   ref_part:
-  ref_pub_date:
-  ref_full: bps83126-0000-00
+  ref_pub_date: 2019-11
+  ref_full: bps83126-2019-11
   alt_refs:
   - org: *org_DII
     ref: DII S&R 022
   - org: *org_ISO
     ref: 7870
-  permalink: bps83126-0000-00.html
+  permalink: bps83126-2019-11.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
-  author_org: *org_ISO
+  author_org: *org_BSI
   owner_org:
   abstract: "This standard presents key elements and philosophy of the control chart\
     \ approach, and identifies a wide variety of control charts (including those related\
@@ -19384,14 +19406,15 @@ standards:
     analysis, prioritisation, and intelligence analysis are used. This is a best practice
     guide on the guidelines of control charting in analysis.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030344612
+    sha1: 1ddf6a76f6b6250fc3ad3decf6bd4d366c8aae7d
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps83126-2019-11-control-charts-part-1-general-guidelines.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps83126/bps83126-2019-11.html
   classification:
   - ontology:
     classification:
@@ -19459,14 +19482,15 @@ standards:
   usage: This gives relevant guidance around the data processing, layout and storage
     of various types of Biometric data.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/SearchResults/?q=19794
+    sha1: 3b7ba3c14b5f661e6a53675e8711dedf9764ec9e
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps45368-0000-00-information-technology-biometric-data-interchange-formats.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps45368/bps45368-0000-00.html
   classification:
   - ontology:
     classification:
@@ -19667,14 +19691,14 @@ standards:
 - title: Records Management Standard
   ref_base: bps09524
   ref_part:
-  ref_pub_date:
-  ref_full: bps09524-0000-00
+  ref_pub_date: 2016-05
+  ref_full: bps09524-2016-05
   alt_refs:
   - org: *org_DII
     ref: DII S&R 026
   - org: *org_ISO
-    ref: 15489:01
-  permalink: bps09524-0000-00.html
+    ref: 15489
+  permalink: bps09524-2016-05.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -19690,14 +19714,15 @@ standards:
     records over time regardless of their structure or form, and in all types of business
     and technological environments.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030298891
+    sha1: c6bd2f89e16abccbbd1186c7a10e6ddf2a0ec454
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps09524-2016-05-records-management-standard.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps09524/bps09524-2016-05.html
   classification:
   - ontology:
     classification:
@@ -19744,14 +19769,14 @@ standards:
 - title: Framework for developing long-term preservation strategy for digital material
   ref_base: bps57342
   ref_part:
-  ref_pub_date:
-  ref_full: bps57342-0000-00
+  ref_pub_date: 2006-02
+  ref_full: bps57342-2006-02
   alt_refs:
   - org: *org_DII
     ref: DII S&R 027
   - org: *org_ISO
     ref: 18492
-  permalink: bps57342-0000-00.html
+  permalink: bps57342-2006-02.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -19765,14 +19790,15 @@ standards:
   usage: This technical report from ISO provides a framework for developing a long
     term digital preservation strategy, relevant in many areas of DII.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030103511
+    sha1: 0b8abcadaa55c1cceb082d211e44ad5b4665ddf8
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps57342-2006-02-framework-for-developing-long-term-preservation-strategy-for-digital-material.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps57342/bps57342-2006-02.html
   classification:
   - ontology:
     classification:
@@ -19856,14 +19882,24 @@ standards:
   usage: This guidance contains further information covering the principles that support
     and govern records management and metadata, and how to implement them in any organsation
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030356276
+    sha1: 601c25e44d2edcea92cb6a11af116928bd2fb329
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps86709-0000-00-information-and-documentation-records-management-processes-metadata-for-records.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps86709/bps86709-0000-00.html
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030176724
+    sha1: 9917b010e6316343ef261aec911b5654b433e59c
+    mime:
+    link_or_collect: c
+    requires_logon:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps86709-0000-00-information-and-documentation-records-management-processes-metadata-for-records.html
+    http_response:
+    mime_type: .html
+    publish_url: /library/bps86709/bps86709-0000-00.html
   classification:
   - ontology:
     classification:
@@ -19939,14 +19975,15 @@ standards:
     on business and security requirements and include this in the schedule of regular
     audit and review.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/SearchResults/?q=27001
+    sha1: a7123a198ad60b29c02c240d099ca45db236df2a
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps94781-0000-00-information-security-management-standard.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps94781/bps94781-0000-00.html
   classification:
   - ontology:
     classification:
@@ -19990,7 +20027,7 @@ standards:
     - *org_DII
     projects:
     - *project_dii-standards
-- title: Information security risk management
+- title: Information Security Risk Management
   ref_base: bps27136
   ref_part:
   ref_pub_date:
@@ -20013,14 +20050,15 @@ standards:
   usage: This supplements ISO 27001 by giving details on how to perform risk assessment
     and treatment in relation to information security management
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030228522
+    sha1: 246811cae84410242c89d4f531c6d559fc0b76f7
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps27136-0000-00-information-security-risk-management.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps27136/bps27136-0000-00.html
   classification:
   - ontology:
     classification:
@@ -20068,14 +20106,14 @@ standards:
     of dates and times
   ref_base: bps82569
   ref_part:
-  ref_pub_date:
-  ref_full: bps82569-0000-00
+  ref_pub_date: 2019-02
+  ref_full: bps82569-2019-02
   alt_refs:
   - org: *org_DII
     ref: DII S&R 031
   - org: *org_ISO
     ref: 8601
-  permalink: bps82569-0000-00.html
+  permalink: bps82569-2019-02.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -20089,14 +20127,15 @@ standards:
   usage: This gives guidance on how to appropriately represent and format dates and
     times within data elements.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/SearchResults/?q=8601
+    sha1: ae895cdef9f040a32284468b7a36f6aac5e4db69
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps82569-2019-02-data-elements-and-interchange-formats-information-interchange-representation-of-dates-and-times.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps82569/bps82569-2019-02.html
   classification:
   - ontology:
     classification:
@@ -20143,14 +20182,14 @@ standards:
 - title: Quality Management Systems
   ref_base: bps14836
   ref_part:
-  ref_pub_date:
-  ref_full: bps14836-0000-00
+  ref_pub_date: 2015-09
+  ref_full: bps14836-2015-09
   alt_refs:
   - org: *org_DII
     ref: DII S&R 032
   - org: *org_ISO
     ref: 9001
-  permalink: bps14836-0000-00.html
+  permalink: bps14836-2015-09.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -20171,14 +20210,15 @@ standards:
     as organisations suitable to provide external audit services for policing forensics
     must be adhere to this standard.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail/?pid=000000000030273524
+    sha1: 0399c8ea5f29016eb1b69519dccaea01c8ce3e92
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps14836-2015-09-quality-management-systems.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps14836/bps14836-2015-09.html
   classification:
   - ontology:
     classification:
@@ -20225,14 +20265,14 @@ standards:
 - title: Quality Management Systems - Guidelines for performance improvement
   ref_base: bps16397
   ref_part:
-  ref_pub_date:
-  ref_full: bps16397-0000-00
+  ref_pub_date: 2018-04
+  ref_full: bps16397-2018-04
   alt_refs:
   - org: *org_DII
     ref: DII S&R 033
   - org: *org_ISO
     ref: 9004
-  permalink: bps16397-0000-00.html
+  permalink: bps16397-2018-04.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -20245,14 +20285,15 @@ standards:
     to any organisation, regardless of its size, type and activity.
   usage: This gives guidance on how to use quality management systems to improve performance.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030348166
+    sha1: 7a7ce791873fce4dd7daf78c900dee7c0b80a613
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps16397-2018-04-quality-management-systems-guidelines-for-performance-improvement.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps16397/bps16397-2018-04.html
   classification:
   - ontology:
     classification:
@@ -20317,14 +20358,15 @@ standards:
     and compressing JPEG files with the JPEG File Interchange Format (JFIF)
   usage: This gives guidance on the appropriate compression and coding of images.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/SearchResults/?q=10918
+    sha1: a7fccbeb5ac9dc0318886cfdf7f2acf777455414
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps87235-0000-00-information-technology-digital-compression-and-coding-of-continuous-tone-still-images-requirements-and-guidelines-jpeg.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps87235/bps87235-0000-00.html
   classification:
   - ontology:
     classification:
@@ -20395,14 +20437,15 @@ standards:
     of content.'
   usage: This gives guidance on the management of multimedia items (MPEGS).
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/SearchResults/?q=21000
+    sha1: 3ad6690ec49bbcec1124849aede7beb40f75c810
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps24576-0000-00-multimedia-framework-mpeg-21.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps24576/bps24576-0000-00.html
   classification:
   - ontology:
     classification:
@@ -20542,8 +20585,8 @@ standards:
   usage: Section 23 of the act gives the need for a code of practice to be developed
     which gives details on how images must be retained in accordance with law.
   links:
-  - collate_url: https://www.legislation.gov.uk/ukpga/1996/25/section/23 .pdf
-    sha1: 27636365f94da65d841611b82ab3ad0cd440b65f
+  - collate_url: https://www.legislation.gov.uk/ukpga/1996/25/section/23/data.pdf
+    sha1: 4dc9106b3278130ac68997d2dff57f28aec2054d
     mime:
     link_or_collect: c
     requires_logon:
@@ -20597,14 +20640,14 @@ standards:
 - title: Digital Imaging Procedure V2.1 Publication No. 58/07
   ref_base: bps54680
   ref_part:
-  ref_pub_date:
-  ref_full: bps54680-0000-00
+  ref_pub_date: 2007-11
+  ref_full: bps54680-2007-11
   alt_refs:
   - org: *org_DII
     ref: DII S&R 038
   - org: *org_HO
     ref: Publication 58/07 V2.1
-  permalink: bps54680-0000-00.html
+  permalink: bps54680-2007-11.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -20620,10 +20663,10 @@ standards:
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url: file://{{collate_directory}}Open Access/Home Office/bps54680-0000-00-digital-imaging-procedure-v2-1-publication-no-58-07.pdf
+    lib_url: file://{{collate_directory}}Open Access/Home Office/bps54680-2007-11-digital-imaging-procedure-v2-1-publication-no-58-07.pdf
     http_response:
     mime_type: .pdf
-    publish_url: /library/bps54680/bps54680-0000-00.pdf
+    publish_url: /library/bps54680/bps54680-2007-11.pdf
   classification:
   - ontology:
     classification:
@@ -20996,14 +21039,14 @@ standards:
 - title: Societal security -- Business continuity management systems -- Guidance.
   ref_base: bps59478
   ref_part:
-  ref_pub_date:
-  ref_full: bps59478-0000-00
+  ref_pub_date: 2012-12
+  ref_full: bps59478-2012-12
   alt_refs:
   - org: *org_DII
     ref: DII S&R 043
   - org: *org_ISO
     ref: 22313
-  permalink: bps59478-0000-00.html
+  permalink: bps59478-2012-12.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -21019,14 +21062,15 @@ standards:
     Conduct. Business Continuity is relevant to all areas of DII and must be tested
     on an annual basis.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030297547
+    sha1: 487672b885101e4f03b46f7872668e68e991ae5f
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps59478-2012-12-societal-security-business-continuity-management-systems-guidance.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps59478/bps59478-2012-12.html
   classification:
   - ontology:
     classification:
@@ -21075,14 +21119,14 @@ standards:
     forensic kit assembly.
   ref_base: bps19730
   ref_part:
-  ref_pub_date:
-  ref_full: bps19730-0000-00
+  ref_pub_date: 2012-06
+  ref_full: bps19730-2012-06
   alt_refs:
   - org: *org_DII
     ref: DII S&R 044
   - org: *org_BSI
     ref: PAS 377:2012
-  permalink: bps19730-0000-00.html
+  permalink: bps19730-2012-06.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -21101,14 +21145,15 @@ standards:
     relating to forensic 'kits' or products should not be procured unless they adhere
     to this standard.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030252063
+    sha1: 34c448ca781733123ec81924485c4a0ba5c42358
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/British Standards Institute/bps19730-2012-06-specification-for-consumables-used-in-the-collection-preservation-and-processing-of-material-for-forensic-analysis-requirements-for-product-manufacturing-and-forensic-kit-assembly.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps19730/bps19730-2012-06.html
   classification:
   - ontology:
     classification:
@@ -21178,14 +21223,16 @@ standards:
   usage: This framework could give a basis to Digital and DII skills based assessments
     and to discover training needs
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://www.sfjuk.com/about/sectors#Justice
+    sha1: 3b526d407489d60d32460cb4a4ab1aa99af5625c
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/Skills for Justice (Justice Sector
+      Skills Council)/bps01586-0000-00-national-occupation-standards-for-justice.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps01586/bps01586-0000-00.html
   classification:
   - ontology:
     classification:
@@ -21256,14 +21303,15 @@ standards:
     loss as a result of the scanning is within acceptable limits. This is essential
     to ensure the validity of anything that may be used as evidence in court.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/SearchResults/?q=12653
+    sha1: 4306fcd6f71d7b9b86f70604a88553a3f206b804
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps26043-0000-00-electronic-imaging-test-target-for-the-black-and-white-scanning-of-office-documents.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps26043/bps26043-0000-00.html
   classification:
   - ontology:
     classification:
@@ -21311,14 +21359,14 @@ standards:
     security management.
   ref_base: bps53076
   ref_part:
-  ref_pub_date:
-  ref_full: bps53076-0000-00
+  ref_pub_date: 2017-03
+  ref_full: bps53076-2017-03
   alt_refs:
   - org: *org_DII
     ref: DII S&R 047
   - org: *org_ISO
     ref: 27002
-  permalink: bps53076-0000-00.html
+  permalink: bps53076-2017-03.html
   security_classification: *sec_classification_official
   access_group: *access_group_open
   sponsor_org:
@@ -21339,14 +21387,15 @@ standards:
     conduct. It gives the code of practice around managing information security within
     an organisation.
   links:
-  - collate_url:
-    sha1:
+  - collate_url: https://shop.bsigroup.com/ProductDetail?pid=000000000030347481
+    sha1: cfd6018b8d115c0bb01d3fdb280e32b3e176b22b
     mime:
     link_or_collect: c
     requires_logon:
-    lib_url:
+    lib_url: file://{{collate_directory}}Open Access/International Standards Organisation/bps53076-2017-03-information-technology-security-techniques-code-of-practice-for-information-security-management.html
     http_response:
-    mime_type:
+    mime_type: .html
+    publish_url: /library/bps53076/bps53076-2017-03.html
   classification:
   - ontology:
     classification:
@@ -21541,4 +21590,160 @@ standards:
     - *org_DII
     projects:
     - *project_dii-standards
+- title: Exchanging Cyber Threat intelligence
+  ref_base: bps06948
+  ref_part:
+  ref_pub_date: 2019-10
+  ref_full: bps06948-2019-10
+  alt_refs:
+  - org:
+    ref:
+  permalink: bps06948-2019-10.html
+  security_classification: *sec_classification_official
+  access_group: *access_group_open
+  sponsor_org:
+  author_org: *org_GDS
+  owner_org:
+  abstract:
+  usage:
+  links:
+  - collate_url: https://www.gov.uk/government/publications/open-standards-for-government/exchanging-cyber-threat-intelligence
+    sha1: 9c4cda0e7222e93f99d579fbe44c2c63020ecde9
+    mime:
+    link_or_collect: c
+    requires_logon:
+    lib_url: file://{{collate_directory}}Open Access/Government Digital Service/bps06948-2019-10-exchanging-cyber-threat-intelligence.html
+    http_response:
+    mime_type: .html
+    publish_url: /library/bps06948/bps06948-2019-10.html
+  classification:
+  - ontology:
+    classification:
+  status: *doc_status_adopted
+  subject_group:
+  published_date:
+  last_updated:
+  obsoletes:
+  - ref:
+  obsoleted_by:
+  - ref:
+  changelog:
+  - date:
+    author:
+    comment:
+  log:
+  - date:
+  meta:
+    catalogued_date:
+    process_title: y
+    add_to_library: y
+    blog: n
+    display_inline: n
+    last_processed:
+    approvals:
+    - date: 2019-12-01
+      approver:
+      approval_org: *org_OSB
+      approval_org_email:
+      approval_comments: By OSB via Government Digital Service
+    reviews:
+    - date:
+      reviewer:
+      reviewer_org:
+      reviewer_org_email:
+      review_comments:
+    review_interval: 1y
+    next_review_date:
+    uri_retrievals:
+    harvested_from:
+    - *org_GDS
+    projects:
+    - *project_gds-standards
+- title: Date-times and time-stamps
+  ref_base: bps28576
+  ref_part:
+  ref_pub_date: 2019-10
+  ref_full: bps28576-2019-10
+  alt_refs:
+  - org:
+    ref:
+  permalink: bps28576-2019-10.html
+  security_classification: *sec_classification_official
+  access_group: *access_group_open
+  sponsor_org:
+  author_org: *org_GDS
+  owner_org:
+  abstract: Use ISO 8601 for dates and times where machine readability is the main
+    concern. This includes use in - + APIs + data exchanges such as metadata in documents
+    and websites + date sorting, for example, at the start of some filenames ISO 8601
+    does not apply when human readability is the main concern. For example, dates
+    and times added within the text of a document.
+  usage: Use ISO 8601 to the level of accuracy you require when a date or date and
+    time is being recorded or exchanged in an IT system. List date and time elements
+    in descending order of size (years, months, days, hours, minutes, seconds, milliseconds,
+    and microseconds). This profile is based on the assumption that you’re using local
+    time. A Coordinated Universal Time (UTC) offset may be added. For example, 2017-05-16T10:30:56+01:00
+    shows the instant of the 16 May 2017 at 30 minutes and 56 seconds past 10am. The
+    offset in this example is British summer time (BST), one hour ahead of UTC. The
+    standard’s format has a fixed number of digits padded with leading zeros to support
+    different levels of accuracy. The lowest level is four digits to represent a year,
+    and as you increase accuracy by adding the month, week or day the digits replace
+    the zero padding. When using a less accurate date, include hyphen separators to
+    avoid user confusion, for example, separate the digits for the year and the month
+    - YYYY-MM. If required, separate time from the date by a ‘T’ character and record
+    in a 24-hour format with 2 digits per element. The time format uses a ‘:’ separator
+    between hours and minutes.
+  links:
+  - collate_url: https://www.gov.uk/government/publications/open-standards-for-government/date-times-and-time-stamps-standard
+    sha1: 7d6717a88bea7d6f4cf8ad09a746347a461aca19
+    mime:
+    link_or_collect: c
+    requires_logon:
+    lib_url: file://{{collate_directory}}Open Access/Government Digital Service/bps28576-2019-10-date-times-and-time-stamps.html
+    http_response:
+    mime_type: .html
+    publish_url: /library/bps28576/bps28576-2019-10.html
+  classification:
+  - ontology:
+    classification:
+  status: *doc_status_adopted
+  subject_group:
+  published_date:
+  last_updated:
+  obsoletes:
+  - ref:
+  obsoleted_by:
+  - ref:
+  changelog:
+  - date:
+    author:
+    comment:
+  log:
+  - date:
+  meta:
+    catalogued_date:
+    process_title: y
+    add_to_library: y
+    blog: n
+    display_inline: n
+    last_processed:
+    approvals:
+    - date: 2019-12-01
+      approver:
+      approval_org: *org_OSB
+      approval_org_email:
+      approval_comments: By OSB via Government Digital Service
+    reviews:
+    - date:
+      reviewer:
+      reviewer_org:
+      reviewer_org_email:
+      review_comments:
+    review_interval: 1y
+    next_review_date:
+    uri_retrievals:
+    harvested_from:
+    - *org_GDS
+    projects:
+    - *project_gds-standards
 
